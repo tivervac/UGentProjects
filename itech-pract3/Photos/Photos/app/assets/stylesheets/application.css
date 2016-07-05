@@ -1,0 +1,126 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+body {
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+	height: 5px;
+	width: 5px;
+	-webkit-border-radius: 0px;
+	background-color:white;
+}
+	::-webkit-scrollbar-thumb{background-color:gray; }
+	::-webkit-scrollbar-track{background-color:white;}
+
+#header{
+    width: 100%;
+    background-color: #61B7CF;
+    height: 280px;
+    text-align: center;
+    color: white;
+    font-family: Calibri, sans-serif;
+}
+
+#header_title{
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-top: 80px;
+}
+
+#container{
+    margin-top: 70px;
+    width: 84%;
+    position: absolute;
+    left: 8%;
+    text-align: center;
+}
+
+.box {
+    height: 230px;
+    width: 330px;
+    text-align:center;
+    background-color: #e0e0e0;
+    display: inline-flex;
+}
+
+.box img {
+    max-width: 300px;
+    max-height: 200px;
+    margin: auto;
+}
+
+.wrap{
+    height: 230px;
+    width: 330px;
+    display: inline-block;
+    margin: 15px;
+    float: center;
+}
+
+.info{
+    text-align: center;
+    height: 200px;
+    width: 300px;
+    z-index: 50;
+    display: block;
+    background-color: #fff;
+    opacity: 0;
+    padding: 15px;
+    margin-top: -230px;
+    overflow: auto;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.wrap:hover .info{
+    opacity: 0.9;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+#searchbar{
+	padding: 20px;
+	height: 100px;
+	color: #444;
+	text-align: center;
+	margin-top: 20px;
+	margin:auto;
+	width: 28%;
+}
+
+input, select{
+	border: none;
+}
+
+input[type="text"]{
+	width: 195px;
+	padding: 3px;
+}
+
+select{
+	width: 96px;
+	padding: 2px;
+}
+
+input[type="submit"]{
+	background-color: white;
+	color: #444;
+	width: 302px;
+	padding: 3px;
+}

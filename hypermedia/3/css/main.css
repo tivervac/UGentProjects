@@ -1,0 +1,426 @@
+#menu nav {
+    position: fixed;
+	right: 0;
+	left: 0;
+	text-align: center;
+	top: 0;
+	background-color: #1b1b1b;
+	font-size: 14px;
+	color: #333;
+	height: 35px;
+	width: 100%;
+	z-index: 100;
+}
+
+#menu nav ul {
+	margin: 0 auto;
+}
+
+#menu nav li {
+	display: inline;
+}
+
+#menu nav a:link,#menu nav a:visited {
+	color: #999;
+	display: inline-block;
+	height: 30px;
+	padding: 6px 1.5em;
+	text-decoration: none;
+}
+
+#menu nav a:hover,#menu nav a:active,#menu nav .active a:link,#menu nav .active a:visited {
+	color: #fff;
+}
+
+body {
+	background: #F5F4EF;
+	color: #000305;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.4;
+}
+
+#helpful {
+	margin-top: 50px;
+	background: #fff;
+	margin-bottom: 2em;
+	padding: 10px;
+	width: 750px;
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 3px;
+}
+
+#helpful figure img {
+	display: block;
+	float: right;
+}
+
+h1 {
+	color: #C74451;
+}
+
+h2 {
+	color: #772830;
+}
+
+#container {
+	margin: 50px auto 100px;
+	width: 760px;
+	text-align: justify;
+	text-justify: inter-word;
+	caption-side: bottom;
+}
+
+#links ul {
+	list-style: none;
+}
+
+#links a:link,#links a:visited {
+	color: #444;
+	display: block;
+	border-bottom: 1px solid #F4E3E3;
+	text-decoration: none;
+	padding: .3em .25em;
+}
+
+#links li:last-child a {
+	border: 0;
+}
+
+#useful_links {
+	float: left;
+	width: 380px;
+	padding-bottom: 50px;
+}
+
+#social {
+	float: right;
+	width: 380px;
+}
+
+#source {
+	font-style: normal;
+	overflow: hidden;
+	text-align: left;
+	width: 760px;
+}
+
+form#contact fieldset {
+	padding: 10px 20px 20px;
+	border: 0;
+	background-color: #fff;
+	width: 300px;
+	text-align: left;
+	border-radius: 8px;
+	box-shadow: 0 0 10px #d3d3d3;
+}
+
+form#contact input[type=text],input[type=email],textarea {
+	margin: 3px 0 0;
+	padding: 6px;
+	width: 260px;
+	font-size: 12px;
+	border: 1px solid #ccc;
+}
+
+form#contact textarea {
+	width: 275px;
+	height: 150px;
+}
+
+form#contact label {
+	display: block;
+	font-size: 14px;
+	margin-top: 10px;
+	font-weight: 700;
+}
+
+form#contact {
+	float: left;
+	width: 380px;
+}
+
+#authors {
+	float: right;
+	width: 380px;
+}
+
+#authors a:link, #authors a:visited {
+	color: #444;
+	text-decoration: none;
+	font-style: normal;
+}
+
+#footer {
+	background: #ccc;
+	bottom: 0;
+	height: 35px;
+	left: 0;
+	position: fixed;
+	right: 0;
+	padding: 0 40px;
+	line-height: 0;
+	
+}
+
+#footer p {
+	float: left;
+}
+
+#footer p.text-right {
+	float: right;
+}
+
+.box {
+	position: absolute;
+	left: 0;
+	bottom: 100%;
+	z-index: 100;
+	background-color: #eeeeee;
+	border-radius: 20px; 
+	background-clip: padding-box; 
+	width: auto; 
+	line-height: normal;
+	padding: 20px;
+	margin: 24px 0;
+	opacity: 0;
+	-webkit-transition: -webkit-transform ease-out .35s, opacity ease-out .4s;
+	-moz-transition:    -moz-transform    ease-out .35s, opacity ease-out .4s;
+	-ms-transition:     -ms-transform     ease-out .35s, opacity ease-out .4s;
+	-o-transition:      -o-transform      ease-out .35s, opacity ease-out .4s;
+}
+		
+.box:after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 30px;
+	border-top: 20px solid #eee;
+	border-left:   14px solid transparent;
+	border-right:  14px solid transparent;
+	width:  0;
+	height: 0;
+}
+		
+.popUpControl:checked ~ label > .box {
+	opacity: 1;
+	-webkit-transform: scale(1) skew(0deg);
+	-moz-transform:    scale(1) skew(0deg);
+	-ms-transform:     scale(1) skew(0deg);
+	-o-transform:      scale(1) skew(0deg);
+}
+.popUpControl { 
+  display: none; 
+}
+.source{
+	text-decoration:underline;
+}
+
+table {
+	background-color: #FFF;
+	border-collapse:collapse;
+	margin: 0 auto;
+}
+
+table caption{
+	font-weight: bold;
+}
+
+
+table th, table thead {
+	border: 1px solid black;
+	background-color: #E0DCDE;
+	padding: 8px 8px 9px;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+table td {
+	border: 1px solid gray;
+	font-size: 12px;
+	padding: 5px 8px 2px;
+	vertical-align: top;
+}
+
+
+@media only screen and (max-width: 600px) {	
+	#menu nav {
+		position: absolute;	
+	}	
+	
+	#menu nav ul {
+		text-align: left;
+		background: url(icon-menu.svg) no-repeat 15px 10px;
+	}
+	
+	#menu nav li {
+		display: none; /* hide all <li> items */
+		margin: 0;
+	}
+	
+	#menu nav .active {
+		display: block; /* show only current <li> item */
+	}
+	
+	#menu nav a {
+		display: block;
+		padding: 5px 5px 5px 32px;
+		text-align: left;
+	}
+	
+	#menu nav .active a {
+		background: none;
+		color: #666;
+	}
+
+	/* on nav hover */
+	#menu nav ul:hover {
+		background-image: none;
+		background: #000;
+	}
+	
+	#menu nav ul:hover li {
+		display: block;
+		margin: 0 0 5px;
+	}
+	
+	#helpful{
+		width: 90%;
+		border-width: 2px;
+	}
+	
+	#container{
+		width: 90%;
+		text-align: left;
+	}
+		
+	#helpful figure img {
+		padding: 0px 0px 0px 0px;
+		width: 80px;
+		height: 80px;
+	}	
+	
+	#footer {
+		position: relative;
+		clear:both;
+		background: none;
+		line-height: normal;
+		padding-left: 0px;
+	}	
+	
+	#footer p.text-right {
+	float: left;
+	}
+	
+	
+		
+	#social {
+		width: 130px;
+	}
+	
+	form#contact{
+		width: 30%;
+	}
+		
+	#useful_links {
+		width: 130px;
+		padding-bottom: 25px;
+	}
+
+	form#contact label {
+		margin-top: 5px;
+	}
+		
+	form#contact fieldset {
+		width: 300%;
+	}
+
+	form#contact input[type=submit]{
+		width: 100%;
+	}
+	
+	form#contact input[type=text],input[type=email],textarea {
+		width: 90%;
+		height: 5px;
+	}
+
+	form#contact textarea {
+		width: 90%;
+		height: 40px;
+	}
+		
+	figure img{
+		width: 250px;
+		height: 200px;
+	}
+	
+	#authors {
+		float: left;
+		width: 90%
+	}
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px){
+	#container{
+		width: 90%;
+		text-align: left;
+	}
+	
+	#helpful{
+		width: 90%;
+		border-width: 3px;
+	}
+	
+	#helpful figure img{
+		padding: 0px 0px 0px 80px;
+		width: 100px;
+		height: 100px;
+	}
+	
+	#useful_links, #social{
+		width: 200px;
+	}
+	
+	#social{
+		float:left;
+	}
+	
+	
+	form#contact, #authors{
+		width: 280px;
+	}
+	
+	#authors {
+		float: left;
+		width: 90%
+	}
+	
+	form#contact label {
+		margin-top: 5px;
+	}
+		
+	form#contact fieldset {
+		width: 180%;
+	}
+
+	form#contact input[type=submit]{
+		width: 100%;
+		height: 25px;
+	}
+	
+	form#contact input[type=text],input[type=email],textarea {
+		width: 90%;
+		height: 10px;
+	}
+
+	form#contact textarea {
+		width: 90%;
+		height: 80px
+	}
+}
+
+@media only screen and (max-height: 560px){
+	form#contact, #authors, #container{
+		margin-bottom: 50px;
+	}
+}

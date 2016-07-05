@@ -1,0 +1,14 @@
+#!/bin/bash
+
+ITER=100
+M="$(basename $1).txt"
+for ((i=0; i<$ITER; i++)); do
+    /usr/bin/time -a -f "%U" -o "$M" $@
+done
+
+awk '{
+sum += $1
+}
+END {
+print sum/NR
+}' $M

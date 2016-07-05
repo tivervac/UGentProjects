@@ -1,0 +1,78 @@
+\documentclass[12pt,a4paper,oneside]{article}
+\usepackage[dutch]{babel}
+\usepackage{graphicx}
+\usepackage{a4wide}
+\usepackage{alltt}
+
+\begin{document}
+
+  \title{Parallel Computer Systems \\ Lab session 2}
+  \author{Caroline De Brouwer \& Titouan Vervack \\ Group 12}
+  \date{}
+  \maketitle
+  
+\subsubsection*{Question 1}
+The cache miss rate is 1,64277\%. The data read from DRAM is 10267 kbyte and the data written to DRAM is 8472 kbyte.
+  
+\subsubsection*{Question 2}
+The reason is cache incoherence: every CPU will write to its own cache, but the other CPU's will not get updates for this data. This does not fail when using one core because it modifies data in its own cache so it always has the most up to date data available.
+
+\subsubsection*{Question 3}
+$\bullet$ The use of four caches instead of one. However, even with a bigger cache, we have more cache misses, this is explained by the fact that we have to invalidate cache blocks regularly. Consequently there are also more DRAM reads.\\
+$\bullet$ There is more DRAM access: more reads as mentioned above, and more writes because there are more write-backs in the MI protocol.
+
+\subsubsection*{Question 4}
+Our first thought would be that execution time is 4 times smaller, but the extra DRAM access will significantly slow down the multithreaded program. The DRAM access is 5 times larger so we estimate that the total time consumed by memory operations per core will be 25\% larger. 
+
+\subsubsection*{Question 5}
+Another CPU may have changed another part of the cache block. If we don't fetch the block first, that change will be overridden with older data.
+
+\subsubsection*{Question 6}
+A cache block is in the exclusive state when the CPU has a unique copy but there have been no writes on this cache block yet, it's not dirty. The goal of this state is to lower the amount of write-backs compared to the MI protocol.
+For the problem in the MI protocol, assume a cache block that has been read, but that hasn't been written to. When a bus operation or an eviction occurs, this cache block will be written back, even though it hasn't changed. Therefore the write-back is useless.
+
+\subsubsection*{Question 7}
+\begin{tabular}{| l | r | r | r |}
+\hline
+&DRAM Access & DRAM Reads & DRAM Writes\\
+\hline
+MI & 1503742 & 752127 & 751615\\
+\hline
+MEI &  887853& 752127 & 135726\\
+\hline
+\end{tabular}\\\\
+We can indeed see a significant decrease in DRAM writes, which indicates that our problem is solved. We have reduced the WBs by not writing back if the data did not change yet, but when an eviction or bus operation occurs we still invalidate the cache block. This means that when we read it again it will again have to come from the main memory. \\
+When invalidating in the single core process we only invalidate one cache, with 4 cores we invalidate 4 caches. If the single core wants to reread this data this costs 1 read operation, for the multicore one it will take 4 read operations. This results in about 4 times the amount of reads for the quadcore process: 164k reads for single core as opposed to 752k for multi-core.
+
+\subsubsection*{Question 8}
+A cache block is in the shared state when there are multiple copies of it in the system. The goal of this state is to reduce the amount of invalidations needed. A bus read will no longer invalidate the cache block but will instead tag it as shared memory as we know that all CPU's now have
+this same cache block. This solves the problem of having to read a lot more than we have to write, the amount of reads and writes needed is reduced because we don't have to invalidate as many cache blocks as before.
+
+\subsubsection*{Question 9}
+\begin{tabular}{| l | r | r | r |}
+\hline
+&DRAM Access & DRAM Reads & DRAM Writes\\
+\hline
+MI & 1503742 & 752127 & 751615\\
+\hline
+MEI &  887853& 752127 & 135726\\
+\hline
+MESI & 243995 & 122238 & 121757\\
+\hline
+\end{tabular}\\\\
+We see a big decrease in DRAM reads and a slight decrease in DRAM writes in the MESI protocol as we expected, so we can conclude that the problem is indeed solved. 
+
+\subsubsection*{Question 10}
+The biggest difference is that there are almost 3x more bus operations, around 1,4M as to around 500k in MESI. This can become a performance issue if there is too much traffic on the bus, since the bus is a shared medium.
+
+\subsubsection*{Question 11}
+A cache block is in the shared clean state when there are multiple copies of it in the system but they haven't been modified yet. The main memory might also not be up-to-date.\\
+For the shared modified state things are a bit different, at most one cache has the cache block in the shared modified state, the others have it in the shared clean state. A cache block in the shared modified state is a cache block that has multiple copies of it in the system but that is dirty. The main memory also might not be up-to-date.\\
+The DRAGON protocol solves the problem of the many bus updates. It does so by only updating when we write to a cache block in a shared state or that was invalid but that isn't unique.
+
+\subsubsection*{Question 12}
+Yes the problem is solved, we now only have 191k bus updates, combined with our 112k bus reads this totals out to about 300k bus operations.
+
+\subsubsection*{Question 13}
+The execution won't fail but it would be slower. When there is a local write on a unique cache block that is in a shared state, it will go to the modified state. This state has the advantage that there is no bus update when we write to it. We conclude that leaving unique blocks in a shared state would increase the amount of bus updates, thus slowing down the execution.
+\end{document}

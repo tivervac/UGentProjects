@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Verslag</title>
+		<link href="2/A/css/main.css" rel="stylesheet" type="text/css">
+	</head>
+	<body id="index">
+		<div id="container">
+			<section id="content">
+				<h1>Verslag</h1>
+				
+				<h2>Opgave 1</h2>
+				<p>
+				Voor dit practicum hebben we TCP/IP als onderwerp gekozen. 
+				Dit omdat het in de lessen nog niet veel aan bod is gekomen, maar we er wel meer over wouden weten. 
+				Wat onze interesse verder aansprak was het hoorcollege dat we te horen kregen net voor het reces.
+				We bespreken nu enkele gebruikte tags die niet zo vanzelfsprekend zijn.
+				</p>
+				<h3>aside</h3>
+				<p>
+				Een <code>&lt;aside&gt;</code> heeft te maken met de inhoud, maar is geen deel van het artikel op de webpagina zelf.
+				Daarom hebben we ervoor gekozen om deze tag te gebruiken voor een boodschap bovenaan de pagina die de gebruiker waarschuwt dat het artikel zeer behulpzaam is.
+				</p>
+				<h3>blockquote</h3>
+				<p>
+				De <code>&lt;blockquote&gt;</code> tag gebruiken we op de pagina met de implementaties. We citeren de ontwikkelaar van een TCP/IP-implementatie. Deze tag is te herkennen aan het feit dat browsers dit element gewoonlijk laten inspringen.
+				</p>
+				<h3>dl, dt en dd</h3>
+				<p>
+				Deze tags zijn gebruikt op de homepage om de verschillende layers op te sommen met korte definities.
+				</p>
+				<h3>pre</h3>
+				<p>
+				De <code>&lt;pre&gt;</code> tag is genest in de <code>&lt;code&gt;</code> tag op de implementatiepagina, omdat we dan zelf bepalen hoe de code weergegeven wordt.
+				</p>
+				<h3>div</h3>
+				<p>
+				Deze tag was de laatste die we hebben gebruikt in deze opgave. De tag wordt gebruikt om elementen te groeperen, en er vervolgens layout aan te definiëren d.m.v. css. Als er gen stijl aan gedefinieerd wordt (zoals in deze opgave), zal deze geen andere opmaak krijgen. We dachten dat een grote container van de inhoud, dus met uitzondering van het menu, altijd handig zou zijn voor opgave 2.
+				</p>
+				<h3>Gebruik van de article-tag</h3>
+				<p>
+				Een <code>&lt;article&gt;</code> tag wordt gebruikt als de inhoud onafhankelijk is van de rest van de site. Dit is het geval bij onze waarschuwing op de homepage.
+				</p>
+				
+				<h2>Opgave 2</h2>
+				<p>
+				In deze opgave hebben we extra <code>&lt;div&gt;</code> tags in de html-bestanden toegevoegd om de stijl te kunnen definiëren van een groep van elementen. We voegen id's toe aan bepaalde tags die een unieke opmaak moeten hebben. Classes worden toegevoegd aan elementen die een gelijke opmaak moeten hebben.
+				Er is bewust voor gekozen om de 2 stijlen te bouwen in pure html en css, dus zonder gebruik te maken van javascript en dergelijke.
+				</p>
+				<h3>Stijl A</h3>
+				<p>
+				We kiezen voor een horizontale menubar bovenaan, en een fixed footer, die altijd zichtbaar is en niet meescrolt. Op de footer bevindt zich een link "Source of content". Wanneer men hier op klikt krijgt met een tekstballonnetje met de bronvermelding.
+				Naast het definieren van de opmaak voor basiselementen, zoals de kleur van de titels en het lettertype van de tekst, hebben we ook een stijl gedefinieerd voor de tabel in layers.html en het contactformulier op contact.html.
+				Ook de posities van de elementen op de pagina's is opgenomen in het css-bestand. Een voorbeeld is "Useful links" en "Social" op de homepage die naast elkaar weergegeven worden. Hiervoor gebruikten we <code>float: left;</code> en <code>float: right;</code>.
+				</p>
+				<h3>Stijl B</h3>
+				<p>
+				We hebben geprobeerd deze stijl zoveel mogelijk te laten verschillen van de voorgaande. Het menu wordt nu links weergegeven, met de menu-elementen verticaal onder elkaar. Er zijn andere kleuren, andere lettertypen en andere posities voor de elementen gekozen. De footer wordt nu altijd onderaan de pagina weergegeven, en is dus enkel zichtbaar als de gebruiker helemaal naar beneden scrolt.
+				</p>
+				
+				<h2>Opgave 3</h2>
+				<p>
+				We kozen ervoor om stijl A gemakkelijk toegankelijk te maken voor op toestellen met variërende schermgroottes. Deze stijl werd in opgave 2 het minst goed weergeven op kleinere schermgroottes, zoals menu-elementen die uit de menu bar springen vanaf een bepaalde grootte.
+				Om dit probleem op te lossen hebben we ervoor gezorgd dat er een knop op de menu bar verschijnt van zodra het scherm te smal wordt. De menu-elementen staan dan niet meer horizontaal naast elkaar, maar worden verticaal onder elkaar weergegeven van zodra de gebruiker met zijn muis over deze knop beweegt, of op deze knop drukt op een mobiel toestel.
+				Ook de tekst is veel te breed, en er verschijnt een horizontale scrollbar bij een smal browservenster. We hebben besloten om de breedte van elementen nu in procenten uit te drukken. Zo wordt de tekst automatisch over de regels verdeeld bij het verkleinen van het venster.
+				Een ander probleem was dat de afbeeldingen soms te breed bleken, als we nu het venster versmallen zullen de afbeeldingen ook kleiner worden.
+				Vanaf een breedte van 600px wordt de footer niet meer correct weergegeven. Wij vonden een fixed footer handig op brede schermen, omdat hij altijd in handbereik was van de gebruiker. Bij het testen op een mobiel toesten vonden we dit eerder irritant. Daarom besloten we vanaf deze breedte de 2 elementen in de footer onder elkaar te zetten, en hem niet meer fixed te maken, maar hem onderaan de pagina te zetten.
+				Wanneer we de hoogte beperken is het enige probleem dat de footer over sommige elementen komt te liggen. 
+				Om dit tegen te gaan voegen we onderaan een marge toe.
+				Ten slotte vielen de auteurs en het contactformulier ook nog samen.
+				We hebben om dit op te lossen de auteurs onder het contactformulier gezet eens het scherm te smal wordt.
+				</p>
+			</section>
+		</div>
+	</body>
+</html>

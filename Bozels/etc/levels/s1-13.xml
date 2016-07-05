@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<level>
+  <block x="88.795" y="1.713" material="solid" angle="0" width="10" height="10"/>
+  <block x="79.874" y="1.713" material="solid" angle="0" width="10" height="10"/>
+  <block x="83.477" y="21.31" material="stone" angle="0.122" width="8" height="1"/>
+  <block x="79.931" y="9.135" material="stone" angle="0.02" width="8" height="1"/>
+  <block x="90.157" y="16.188" material="stone" angle="359.997" width="1" height="1"/>
+  <block x="77.328" y="16.188" material="stone" angle="359.997" width="1" height="1"/>
+  <block x="86.991" y="22.859" material="stone" angle="89.581" width="2" height="1"/>
+  <block x="74.66" y="9.644" material="stone" angle="90.333" width="2" height="1"/>
+  <block x="93.418" y="9.65" material="stone" angle="89.499" width="2" height="1"/>
+  <block x="79.763" y="22.878" material="stone" angle="87.66" width="2" height="1"/>
+  <block x="86.696" y="18.786" material="ice" angle="90.122" width="4" height="2"/>
+  <block x="83.548" y="16.275" material="ice" angle="180.112" width="8" height="1"/>
+  <target type="small" x="85.324" y="22.89"/>
+  <target type="small" x="84.358" y="18.923"/>
+  <block x="83.88" y="10.215" material="wood" angle="0.485" width="4" height="1"/>
+  <block x="81.493" y="11.856" material="wood" angle="90" width="4" height="1"/>
+  <block x="83.559" y="17.341" material="wood" angle="0.133" width="4" height="1"/>
+  <block x="80.451" y="18.798" material="ice" angle="90.103" width="4" height="2"/>
+  <block x="86.411" y="11.774" material="wood" angle="90" width="4" height="1"/>
+  <bozel x="7.654999999999999" y="0.798" type="blue" id="2"/>
+  <bozel x="5.972" y="1.024" type="red" id="3"/>
+  <bozel x="10" y="0.643" type="blue" id="1"/>
+  <bozel x="3.932" y="1.091" type="red" id="4"/>
+  <block x="75.234" y="-0.116" material="solid" angle="225.001" width="10" height="10"/>
+  <block x="93.706" y="-0.81" material="solid" angle="315" width="10" height="10"/>
+  <block x="80.323" y="12.788" material="ice" angle="90" width="2" height="1"/>
+  <block x="78.29" y="12.788" material="ice" angle="90" width="2" height="1"/>
+  <block x="90.192" y="12.722" material="ice" angle="90" width="2" height="1"/>
+  <block x="79.334" y="12.788" material="ice" angle="90" width="2" height="1"/>
+  <block x="87.42" y="12.673" material="ice" angle="90" width="2" height="1"/>
+  <block x="77.355" y="12.788" material="ice" angle="90" width="2" height="1"/>
+  <block x="89.252" y="12.623" material="ice" angle="90" width="2" height="1"/>
+  <block x="88.311" y="12.623" material="ice" angle="90" width="2" height="1"/>
+  <block x="88.246" y="9.132999999999999" material="stone" angle="359.972" width="8" height="1"/>
+  <block x="88.864" y="10.678" material="stone" angle="359.85" width="4" height="2"/>
+  <block x="88.585" y="14.731" material="stone" angle="359.591" width="4" height="2"/>
+  <block x="78.875" y="10.682" material="stone" angle="0.056" width="4" height="2"/>
+  <block x="91.891" y="7.586" material="stone" angle="359.97" width="4" height="2"/>
+  <block x="84.107" y="7.583" material="stone" angle="0.017" width="4" height="2"/>
+  <target type="big" x="84.112" y="12.565"/>
+  <block x="78.811" y="14.739" material="stone" angle="0.254" width="4" height="2"/>
+  <block x="76.114" y="7.586" material="stone" angle="0.026" width="4" height="2"/>
+</level>

@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+    
+    <TextView android:id="@+id/homepage_title"
+              android:layout_centerHorizontal="true"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" 
+              android:textSize="22sp" 
+              android:padding="30dp"
+              android:fontFamily="roboto condensed light" />
+    
+    <RelativeLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/homepage_title"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+        
+        <Button android:id="@+id/events_button"
+                android:padding="10dp"
+                android:background="@color/button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:contentDescription="@string/to_events"
+                android:text="@string/events"
+                android:textSize="18sp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_events" 
+                android:gravity="left|center_vertical" />   
+     
+        <Button android:id="@+id/people_button"
+                android:padding="10dp"
+                android:layout_below="@id/events_button"
+                android:background="@color/button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:contentDescription="@string/to_people"
+                android:text="@string/people"
+                android:textSize="18sp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_people" 
+                android:gravity="left|center_vertical"
+                android:layout_marginTop="5dp" />
+    </RelativeLayout>
+</RelativeLayout>

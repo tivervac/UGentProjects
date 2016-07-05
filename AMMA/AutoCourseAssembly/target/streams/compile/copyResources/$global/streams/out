@@ -1,0 +1,6 @@
+[debug] Copy resource mappings: 
+[debug] 	(B:\Documents\GitHub\AMMA\AutoCourseAssembly\conf\application.conf,B:\Documents\GitHub\AMMA\AutoCourseAssembly\target\scala-2.11\classes\application.conf)
+[debug] 	(B:\Documents\GitHub\AMMA\AutoCourseAssembly\conf\evolutions,B:\Documents\GitHub\AMMA\AutoCourseAssembly\target\scala-2.11\classes\evolutions)
+[debug] 	(B:\Documents\GitHub\AMMA\AutoCourseAssembly\conf\routes,B:\Documents\GitHub\AMMA\AutoCourseAssembly\target\scala-2.11\classes\routes)
+[debug] 	(B:\Documents\GitHub\AMMA\AutoCourseAssembly\conf\evolutions\default,B:\Documents\GitHub\AMMA\AutoCourseAssembly\target\scala-2.11\classes\evolutions\default)
+[debug] 	(B:\Documents\GitHub\AMMA\AutoCourseAssembly\conf\evolutions\default\1.sql,B:\Documents\GitHub\AMMA\AutoCourseAssembly\target\scala-2.11\classes\evolutions\default\1.sql)

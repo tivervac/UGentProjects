@@ -1,0 +1,22 @@
+1)
+The first thing we notice is that the function `r` is no longer a global symbol.
+The first version makes use of the stack, the arguments for `r` are saved on the stack.
+In the second version the arguments for `r` are saved in the register `eax`.
+This means that we don't have to manipulate `esp` and we don't have to access the stack.
+As a result the second version will be more efficient.
+
+2)
+The change that was made in the second version is that the method `r` was changed to a static method.
+Since it is a static method it can only be called from within `recurse.c`. Due to this, the compiler knows
+every caller of the `r` function and is able to generate more efficient code. It can now inline
+the function (as done in `recurse-2-O2.s`) or move the static function closer to the callers
+to create shorter jumps. It could also have a look at what registers are used in the static function
+and use unused registers to pass arguments to the function instead of passing them through the stack
+(as is done in `recurse-1-O1.s`).
+
+3)
+Arguments for normal functions are passed through the stack.
+`ebx` is callee saved.
+Arguments for static functions are passed as registers if there are enough registers available, or
+through registers and the stack if not enough registers are available.
+The function result is returned by placing the return value in the `eax` register and calling `ret`.

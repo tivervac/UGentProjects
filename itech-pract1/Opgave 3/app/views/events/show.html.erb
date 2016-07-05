@@ -1,0 +1,80 @@
+<div id="title">
+	<%= @event.title %>
+</div>
+
+<p>
+	<strong>Description:</strong>
+	<%= @event.text %>
+</p>
+
+<p>
+	<strong>Start:</strong>
+	<%= @event.start.to_formatted_s(:long) %>
+	<br/>
+	<strong>End:</strong>
+	<%= @event.end.to_formatted_s(:long) %>
+</p>
+
+<p>
+	<h2>Participants</h2>
+	<h3>Attending this event:</h3>
+	<ul>
+		<% @event.people.each do |p| %>
+		<li>
+			<%= Person.find(p.id).name %>
+			(<%= link_to 'Delete', event_participant_path(@event, p.id),
+			method: :delete,
+			data: { confirm: 'Are you sure?' } %>)
+		</li>
+
+		<%end%>
+	</ul>
+</p>
+
+<br/>
+<h3>Add a participant:</h3>
+<%= form_for ([@event, @event.participants.build]) do |f| %>
+<p>
+	<%= f.label :people %>
+	<br />
+	<%= f.collection_select(:person_id, Person.all, :id, :name) %>
+</p>
+<p>
+	<%= f.submit %>
+</p>
+<% end %>
+<br/>
+<p>
+	<h2>Comments</h2>
+	<h3>All comments</h3>
+	<% @event.comments.each do |comment| %>
+	<strong><%= comment.person.name %></strong> commented on <%= comment.created_at.to_formatted_s(:long)%>: (<%= link_to 'Edit', edit_polymorphic_path([@event,comment])%>
+	| <%= link_to 'Delete', [comment.event, comment],
+	method: :delete,
+	data: { confirm: 'Are you sure?' } %>)
+	<div class="comment">
+		<%= comment.body %>
+	</div>
+	<%end%>
+</p>
+<h3>Add a comment</h3>
+<%= form_for([@event, @event.comments.build]) do |f| %>
+<p>
+<p>
+	<%= f.label :commenter %>
+	<br />
+	<%= f.collection_select(:person_id, Person.all, :id, :name) %>
+</p>
+<p>
+	<%= f.label :body %>
+	<br />
+	<%= f.text_area :body %>
+</p>
+</p>
+<p>
+	<%= f.submit %>
+</p>
+<% end %>
+<p>
+	<%= link_to 'Back', events_path %> | <%= link_to 'Edit', edit_event_path(@event) %>
+</p>

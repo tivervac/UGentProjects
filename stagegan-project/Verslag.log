@@ -1,0 +1,430 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.11.18)  4 JUN 2014 23:17
+entering extended mode
+**Verslag.tex
+(B:\Documents\GitHub\stagegan-project\Verslag.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+("C:\Program Files\MiKTeX\tex\latex\base\article.cls"
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX\tex\latex\base\size11.clo"
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX\tex\generic\babel\babel.sty"
+Package: babel 2008/07/08 v3.8m The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files\MiKTeX\tex\latex\00miktex\bblopts.cfg"
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+)
+("C:\Program Files\MiKTeX\tex\generic\babel\dutch.ldf"
+Language: dutch 2005/03/30 v3.8i Dutch support from the babel system
+
+("C:\Program Files\MiKTeX\tex\generic\babel\babel.def"
+File: babel.def 2008/07/08 v3.8m Babel common definitions
+\babel@savecnt=\count87
+\U@D=\dimen103
+)
+Package babel Info: Making " an active character on input line 132.
+))
+("C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files\MiKTeX\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count88
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+("C:\Program Files\MiKTeX\tex\latex\caption\subcaption.sty"
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+
+("C:\Program Files\MiKTeX\tex\latex\caption\caption.sty"
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+("C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty"
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen106
+\captionmargin@=\dimen107
+\captionwidth=\dimen108
+\caption@tempdima=\dimen109
+\caption@indent=\dimen110
+\caption@parindent=\dimen111
+\caption@hangindent=\dimen112
+)
+\c@ContinuedFloat=\count89
+)
+\c@subfigure=\count90
+\c@subtable=\count91
+)
+("C:\Program Files\MiKTeX\tex\latex\wrapfig\wrapfig.sty"
+\wrapoverhang=\dimen113
+\WF@size=\dimen114
+\c@WF@wrappedlines=\count92
+\WF@box=\box26
+\WF@everypar=\toks15
+Package: wrapfig 2003/01/31  v 3.6
+)
+("C:\Program Files\MiKTeX\tex\latex\preprint\fullpage.sty"
+Package: fullpage 1999/02/23 1.1 (PWD)
+\FP@margin=\skip43
+)
+("C:\Program Files\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty"
+\fancy@headwidth=\skip44
+\f@ncyO@elh=\skip45
+\f@ncyO@erh=\skip46
+\f@ncyO@olh=\skip47
+\f@ncyO@orh=\skip48
+\f@ncyO@elf=\skip49
+\f@ncyO@erf=\skip50
+\f@ncyO@olf=\skip51
+\f@ncyO@orf=\skip52
+)
+("C:\Program Files\MiKTeX\tex\latex\setspace\setspace.sty"
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+("C:\Program Files\MiKTeX\tex\latex\graphics\color.sty"
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+("C:\Program Files\MiKTeX\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+("C:\Program Files\MiKTeX\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count93
+\float@exts=\toks16
+\float@box=\box27
+\@float@everytoks=\toks17
+\@floatcapt=\box28
+)
+("C:\Program Files\MiKTeX\tex\latex\ltxmisc\parskip.sty"
+Package: parskip 2001/04/09 non-zero parskip adjustments
+)
+("C:\Program Files\MiKTeX\tex\latex\listings\listings.sty"
+\lst@mode=\count94
+\lst@gtempboxa=\box29
+\lst@token=\toks18
+\lst@length=\count95
+\lst@currlwidth=\dimen115
+\lst@column=\count96
+\lst@pos=\count97
+\lst@lostspace=\dimen116
+\lst@width=\dimen117
+\lst@newlines=\count98
+\lst@lineno=\count99
+\lst@maxwidth=\dimen118
+
+("C:\Program Files\MiKTeX\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
+\c@lstnumber=\count100
+\lst@skipnumbers=\count101
+\lst@framebox=\box30
+)
+("C:\Program Files\MiKTeX\tex\latex\listings\listings.cfg"
+File: listings.cfg 2013/08/26 1.5b listings configuration
+))
+Package: listings 2013/08/26 1.5b (Carsten Heinz)
+
+("C:\Program Files\MiKTeX\tex\latex\framed\framed.sty"
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip53
+\fb@frw=\dimen119
+\fb@frh=\dimen120
+\FrameRule=\dimen121
+\FrameSep=\dimen122
+)
+("C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2013/08/26 1.5b listings language file
+)
+("C:\Program Files\MiKTeX\tex\latex\listings\lstlang2.sty"
+File: lstlang2.sty 2013/08/26 1.5b listings language file
+)
+("C:\Program Files\MiKTeX\tex\latex\listings\lstlang3.sty"
+File: lstlang3.sty 2013/08/26 1.5b listings language file
+)
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 53.
+
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 54.
+
+(B:\Documents\GitHub\stagegan-project\Verslag.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+
+("C:\Program Files\MiKTeX\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count102
+\scratchdimen=\dimen123
+\scratchbox=\box31
+\nofMPsegments=\count103
+\nofMParguments=\count104
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count105
+\MPscratchDim=\dimen124
+\MPnumerator=\count106
+\makeMPintoPDFobject=\count107
+\everyMPtoPDFconversion=\toks20
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: wrapfig package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count108
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 61.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 61.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 61.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[1{C:/Users/Titouan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+]
+<barplot_a.pdf, id=8, 647.41875pt x 433.62pt>
+File: barplot_a.pdf Graphic file (type pdf)
+ <use barplot_a.pdf>
+Package pdftex.def Info: barplot_a.pdf used on input line 65.
+(pdftex.def)             Requested size: 291.33574pt x 195.1272pt.
+
+Overfull \hbox (64.85179pt too wide) in paragraph at lines 65--66
+ [] 
+ []
+
+<perm_a.pdf, id=9, 647.41875pt x 433.62pt>
+File: perm_a.pdf Graphic file (type pdf)
+ <use perm_a.pdf>
+Package pdftex.def Info: perm_a.pdf used on input line 68.
+(pdftex.def)             Requested size: 291.33574pt x 195.1272pt.
+
+Overfull \hbox (64.85179pt too wide) in paragraph at lines 68--69
+ [][] 
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 76.
+<barplot_b.pdf, id=10, 647.41875pt x 433.62pt>
+File: barplot_b.pdf Graphic file (type pdf)
+ <use barplot_b.pdf>
+Package pdftex.def Info: barplot_b.pdf used on input line 86.
+(pdftex.def)             Requested size: 226.59995pt x 151.76927pt.
+
+Overfull \hbox (4.64319pt too wide) in paragraph at lines 86--87
+[][] 
+ []
+
+<perm_b.pdf, id=11, 647.41875pt x 433.62pt>
+File: perm_b.pdf Graphic file (type pdf)
+ <use perm_b.pdf>
+Package pdftex.def Info: perm_b.pdf used on input line 91.
+(pdftex.def)             Requested size: 226.59995pt x 151.76927pt.
+
+Overfull \hbox (4.64319pt too wide) in paragraph at lines 91--92
+[][] 
+ []
+
+<scatter_c.pdf, id=12, 647.41875pt x 433.62pt>
+File: scatter_c.pdf Graphic file (type pdf)
+ <use scatter_c.pdf>
+Package pdftex.def Info: scatter_c.pdf used on input line 101.
+(pdftex.def)             Requested size: 291.33574pt x 195.1272pt.
+
+Overfull \hbox (64.85179pt too wide) in paragraph at lines 101--102
+ [] 
+ []
+
+<qqplot_d.pdf, id=13, 647.41875pt x 433.62pt>
+File: qqplot_d.pdf Graphic file (type pdf)
+ <use qqplot_d.pdf>
+Package pdftex.def Info: qqplot_d.pdf used on input line 105.
+(pdftex.def)             Requested size: 258.9629pt x 173.44492pt.
+
+Overfull \hbox (32.47896pt too wide) in paragraph at lines 105--106
+ [][] 
+ []
+
+[2 <B:/Documents/GitHub/stagegan-project/barplot_a.pdf> <B:/Documents/GitHub/st
+agegan-project/perm_a.pdf>]
+Overfull \hbox (15.60466pt too wide) in paragraph at lines 115--116
+\OT1/cmr/m/n/10.95 si-tieve in-vloed (schat-ting van $10\OML/cmm/m/it/10.95 :\O
+T1/cmr/m/n/10.95 917$) heeft. 
+ []
+
+[3 <B:/Documents/GitHub/stagegan-project/barplot_b.pdf> <B:/Documents/GitHub/st
+agegan-project/perm_b.pdf> <B:/Documents/GitHub/stagegan-project/scatter_c.pdf>
+ <B:/Documents/GitHub/stagegan-project/qqplot_d.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 125--133
+
+ []
+
+<box_b.pdf, id=59, 647.41875pt x 433.62pt>
+File: box_b.pdf Graphic file (type pdf)
+ <use box_b.pdf>
+Package pdftex.def Info: box_b.pdf used on input line 140.
+(pdftex.def)             Requested size: 291.33574pt x 195.1272pt.
+
+Overfull \hbox (64.85179pt too wide) in paragraph at lines 140--141
+ [] 
+ []
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 148.
+
+[4 <B:/Documents/GitHub/stagegan-project/box_b.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 153--155
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--155
+
+ []
+
+[5] (B:\Documents\GitHub\stagegan-project\Oplossingen.R
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 3.
+
+("C:\Program Files\MiKTeX\tex\latex\base\omlcmr.fd"
+File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <9> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 3.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 41.
+
+("C:\Program Files\MiKTeX\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 41.
+
+Overfull \hbox (9.83356pt too wide) in paragraph at lines 91--92
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+Missing character: There is no ë in font cmr9!
+Missing character: There is no ë in font cmr9!
+Missing character: There is no ë in font cmr9!
+Missing character: There is no ë in font cmr9!
+) [6]
+Underfull \vbox (badness 10000) detected at line 197
+ []
+
+
+Overfull \vbox (2.29312pt too high) detected at line 197
+ []
+
+[7]
+Underfull \vbox (badness 10000) detected at line 197
+ []
+
+
+Overfull \vbox (2.29312pt too high) detected at line 197
+ []
+
+[8]
+Underfull \vbox (badness 10000) detected at line 197
+ []
+
+
+Overfull \vbox (2.29312pt too high) detected at line 197
+ []
+
+[9] [10] (B:\Documents\GitHub\stagegan-project\Verslag.aux) ) 
+Here is how much of TeX's memory you used:
+ 5092 strings out of 493921
+ 72361 string characters out of 3148879
+ 381231 words of memory out of 3000000
+ 8334 multiletter control sequences out of 15000+200000
+ 9723 words of font info for 34 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 42i,11n,43p,1369b,1925s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><
+C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fi
+les/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:
+/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fil
+es/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmsy9.pfb>
+Output written on Verslag.pdf (10 pages, 233775 bytes).
+PDF statistics:
+ 135 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+

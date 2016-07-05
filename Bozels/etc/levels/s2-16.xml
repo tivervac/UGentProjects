@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<level>
+  <block x="95.83" y="9.558" material="wood" angle="0.165" width="8" height="1"/>
+  <block x="102.954" y="4.612" material="wood" angle="358.939" width="8" height="1"/>
+  <block x="101.032" y="13.675" material="wood" angle="180.281" width="8" height="1"/>
+  <block x="90.929" y="13.693" material="wood" angle="179.771" width="8" height="1"/>
+  <block x="43.512" y="12.238" material="wood" angle="180.626" width="8" height="1"/>
+  <block x="47.423" y="16.502" material="wood" angle="180.189" width="8" height="1"/>
+  <block x="88.856" y="4.597" material="wood" angle="0.73" width="8" height="1"/>
+  <block x="51.918" y="12.245" material="wood" angle="178.423" width="8" height="1"/>
+  <block x="74.291" y="7.759" material="wood" angle="87.899" width="8" height="1"/>
+  <block x="65.952" y="7.701" material="wood" angle="89.98" width="8" height="1"/>
+  <block x="106.735" y="2.07" material="stone" angle="89.962" width="4" height="2"/>
+  <block x="100.565" y="2.056" material="stone" angle="89.789" width="4" height="2"/>
+  <block x="91.206" y="2.056" material="stone" angle="90.164" width="4" height="2"/>
+  <block x="99.674" y="7.057" material="stone" angle="88.501" width="4" height="2"/>
+  <ellipse x="97.028" y="22.986" material="stone" angle="219.37" width="2" height="2"/>
+  <ellipse x="61.705" y="1.447" material="stone" angle="204.458" width="2" height="2"/>
+  <ellipse x="56.591" y="1.166" material="stone" angle="242.658" width="2" height="2"/>
+  <ellipse x="58.03" y="4.338" material="stone" angle="90.557" width="2" height="2"/>
+  <ellipse x="59.914" y="4.315" material="stone" angle="90.853" width="2" height="2"/>
+  <ellipse x="95.233" y="22.988" material="stone" angle="110.034" width="2" height="2"/>
+  <block x="99.032" y="11.092" material="wood" angle="270.469" width="2" height="2"/>
+  <block x="92.895" y="11.105" material="wood" angle="269.959" width="2" height="2"/>
+  <block x="15.112" y="4.548" material="solid" angle="270" width="10" height="10"/>
+  <block x="10.223" y="4.463" material="solid" angle="0" width="10" height="10"/>
+  <block x="99.019" y="12.633" material="wood" angle="0.528" width="2" height="1"/>
+  <block x="92.991" y="12.646" material="wood" angle="359.849" width="2" height="1"/>
+  <block x="99.201" y="15.237" material="wood" angle="359.921" width="2" height="2"/>
+  <block x="93.047" y="15.248" material="wood" angle="359.996" width="2" height="2"/>
+  <block x="52.212" y="13.317" material="wood" angle="178.77" width="1" height="1"/>
+  <block x="43.406" y="13.3" material="wood" angle="180.054" width="1" height="1"/>
+  <block x="70.154" y="13.247" material="wood" angle="179.91" width="4" height="1"/>
+  <block x="96.179" y="19.17" material="wood" angle="270" width="4" height="1"/>
+  <block x="94.482" y="29.502" material="wood" angle="331.113" width="4" height="1"/>
+  <block x="97.91" y="29.613" material="wood" angle="30.941" width="4" height="1"/>
+  <block x="85.059" y="2.085" material="stone" angle="90.055" width="4" height="2"/>
+  <block x="104.637" y="2.067" material="stone" angle="269.785" width="4" height="2"/>
+  <block x="96.363" y="29.07" material="ice" angle="90" width="2" height="1"/>
+  <target type="big" x="69.791" y="5.729"/>
+  <block x="96.094" y="27.743" material="ice" angle="180.095" width="8" height="1"/>
+  <block x="87.111" y="2.072" material="stone" angle="270.246" width="4" height="2"/>
+  <target type="big" x="47.723" y="5.583"/>
+  <block x="102.601" y="2.064" material="stone" angle="269.786" width="4" height="2"/>
+  <block x="89.17" y="2.064" material="stone" angle="270.193" width="4" height="2"/>
+  <block x="87.857" y="11.112" material="wood" angle="91.097" width="4" height="2"/>
+  <block x="104.232" y="11.128" material="wood" angle="89.088" width="4" height="2"/>
+  <block x="70.206" y="16.489" material="wood" angle="179.903" width="8" height="1"/>
+  <block x="96.033" y="21.774" material="wood" angle="0" width="8" height="1"/>
+  <block x="96.273" y="16.67" material="wood" angle="180" width="8" height="1"/>
+  <target type="big" x="95.942" y="2.37"/>
+  <block x="65.941" y="12.17" material="wood" angle="179.857" width="8" height="1"/>
+  <block x="74.02" y="12.223" material="wood" angle="178.774" width="8" height="1"/>
+  <block x="65.016" y="14.259" material="wood" angle="177.655" width="8" height="1"/>
+  <block x="75.098" y="14.347" material="wood" angle="180.362" width="8" height="1"/>
+  <block x="70.113" y="-1.161" material="solid" angle="90" width="10" height="10"/>
+  <block x="20.111" y="4.489" material="solid" angle="83.634" width="10" height="2"/>
+  <block x="65.3" y="0.277" material="solid" angle="225.001" width="5" height="5"/>
+  <block x="47.738" y="-1.161" material="solid" angle="90" width="10" height="10"/>
+  <block x="5" y="4.489" material="solid" angle="96.366" width="10" height="2"/>
+  <block x="42.863" y="0.339" material="solid" angle="45" width="5" height="5"/>
+  <block x="74.863" y="0.339" material="solid" angle="135" width="5" height="5"/>
+  <block x="52.613" y="0.339" material="solid" angle="45" width="5" height="5"/>
+  <block x="100.361" y="22.7" material="wood" angle="180.198" width="4" height="1"/>
+  <block x="92.072" y="22.713" material="wood" angle="180.015" width="4" height="1"/>
+  <block x="47.614" y="13.274" material="wood" angle="180.816" width="4" height="1"/>
+  <block x="99.313" y="19.281" material="wood" angle="90" width="4" height="2"/>
+  <block x="93.099" y="19.348" material="wood" angle="90" width="4" height="2"/>
+  <block x="92.409" y="7.06" material="wood" angle="90.782" width="4" height="2"/>
+  <block x="104.074" y="7.156" material="wood" angle="89.073" width="4" height="2"/>
+  <block x="87.768" y="7.145" material="wood" angle="91.099" width="4" height="2"/>
+  <block x="99.294" y="25.22" material="wood" angle="90.117" width="4" height="2"/>
+  <block x="93.127" y="25.229" material="wood" angle="90.094" width="4" height="2"/>
+  <bozel x="10.716" y="10.793" type="white" id="2"/>
+  <bozel x="6.912" y="10.295" type="yellow" id="3"/>
+  <bozel x="16.238" y="10.762" type="white" id="1"/>
+  <block x="65.987" y="13.231" material="wood" angle="179.068" width="1" height="1"/>
+  <block x="74.235" y="13.289" material="wood" angle="179.489" width="1" height="1"/>
+  <block x="44.93" y="15.442" material="wood" angle="179.756" width="1" height="1"/>
+  <block x="50.387" y="15.418" material="wood" angle="179.295" width="1" height="1"/>
+  <block x="43.344" y="7.771" material="wood" angle="90.728" width="8" height="1"/>
+  <block x="52.26" y="7.778" material="wood" angle="89.797" width="8" height="1"/>
+  <block x="66.919" y="15.402" material="wood" angle="177.9" width="1" height="1"/>
+  <block x="73.332" y="15.423" material="wood" angle="180.257" width="1" height="1"/>
+  <block x="42.538" y="14.352" material="wood" angle="179.398" width="8" height="1"/>
+  <block x="52.716" y="14.391" material="wood" angle="179.034" width="8" height="1"/>
+</level>

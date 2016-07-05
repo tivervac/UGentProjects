@@ -1,0 +1,75 @@
+OBST1
+=====
+
+Build for 100.000.000 elements finished in average 160.18259s.
+Average memory used is 3019.3748MB.
+Average memory used after GC is 3016.7153MB.
+Cost for 100.000.000 elements is -902112299. Calculated in average 6.3774s.
+
+Build for 100.000.000 elements finished in average 165.7016s.
+Average memory used is 3018.2427MB.
+Average memory used after GC is 3016.7158MB.
+Cost for 100.000.000 elements is -902112299. Calculated in average 6.3648s.
+
+Build for 100.000.00 elements finished in average 7.669s.
+Average memory used is 427.86172MB.
+Average memory used after GC is 305.05624MB.
+Cost for 10.000.000 elements is 290931697. Calculated in average 0.16780001s.
+
+Build for 10.000.000 elements finished in average 7.2772s.
+Average memory used is 427.98105MB.
+Average memory used after GC is 305.05624MB.
+Cost for 10.000.000 elements is 290931697. Calculated in average 0.1354s.
+
+Build for 10.000.000 elements finished in average 7.3464s.
+Average memory used is 428.05646MB.
+Average memory used after GC is 305.05624MB.
+Cost for 10.000.000 elements is 290931697. Calculated in average 0.14039999s.
+
+Build for 10.000.000 elements finished in average 7.3536s.
+Average memory used is 427.8211MB.
+Average memory used after GC is 305.05624MB.
+Cost for 10.000.000 elements is 290931697. Calculated in average 0.1334s.
+
+Build for 1.000.000 elements finished in average 0.43539998s.
+Average memory used is 55.67168MB.
+Average memory used after GC is 30.752344MB.
+Cost for 1.000.000 elements is 25219476. Calculated in average 0.010600001s.
+
+Build for 1.000.000 elements finished in average 0.4286s.
+Average memory used is 55.668358MB.
+Average memory used after GC is 30.751759MB.
+Cost for 1.000.000 elements is 25219476. Calculated in average 0.0104s.
+
+SBST1
+=====
+
+Build for 1.000.000 elements finished in average 3.5044s.
+Average memory used is 578.2031MB.
+Average memory used after GC is 30.755665MB.
+Cost for 1.000.000 elements is 22966522. Calculated in average 0.018s.
+
+Build for 1.000.000 elements finished in average 3.4826002s.
+Average memory used is 575.5529MB.
+Average memory used after GC is 30.752539MB.
+Cost for 1.000.000 elements is 23129928. Calculated in average 0.0182s.
+
+Build for 1.000.000 elements finished in average 3.5648s.
+Average memory used is 679.3459MB.
+Average memory used after GC is 30.756641MB.
+Cost for 1.000.000 elements is 22966522. Calculated in average 0.0172s.
+
+Build for 10.000.000 elements finished in average 50.374397s.
+Average memory used is 728.3705MB.
+Average memory used after GC is 305.05997MB.
+Cost for 10.000.000 elements is 271692163. Calculated in average 0.3846s.
+
+Build for 10.000.000 elements finished in average 53.423s.
+Average memory used is 791.43146MB.
+Average memory used after GC is 305.06094MB.
+Cost for 10.000.000 elements is 271692163. Calculated in average 0.40960002s.
+
+Build for 10.000.000 elements finished in average 34.915398s.
+Average memory used is 720.8041MB.
+Average memory used after GC is 305.05997MB.
+Cost for 10.000.000 elements is 271692163. Calculated in average 0.3072s.

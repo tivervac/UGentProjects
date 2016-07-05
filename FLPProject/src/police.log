@@ -1,0 +1,52 @@
+Assignment Name "color" Lit 100
+Assignment Name "wait" Lit 200
+Assignment Name "n" Lit 0
+Assignment Name "x" Lit 5
+While Name "x"
+Rgb [Lit 1,Name "color",Name "n",Name "n"]
+Wait Name "wait"
+Rgb [Lit 1,Name "n",Name "n",Name "n"]
+Wait Name "wait"
+Rgb [Lit 2,Name "n",Name "n",Name "color"]
+Wait Name "wait"
+Rgb [Lit 2,Name "n",Name "n",Name "n"]
+Wait Name "wait"
+Assignment Name "x" Name "x" :-: Lit 1
+Rgb [Lit 1,Name "color",Name "n",Name "n"]
+Wait Name "wait"
+Rgb [Lit 1,Name "n",Name "n",Name "n"]
+Wait Name "wait"
+Rgb [Lit 2,Name "n",Name "n",Name "color"]
+Wait Name "wait"
+Rgb [Lit 2,Name "n",Name "n",Name "n"]
+Wait Name "wait"
+Assignment Name "x" Name "x" :-: Lit 1
+Rgb [Lit 1,Name "color",Name "n",Name "n"]
+Wait Name "wait"
+Rgb [Lit 1,Name "n",Name "n",Name "n"]
+Wait Name "wait"
+Rgb [Lit 2,Name "n",Name "n",Name "color"]
+Wait Name "wait"
+Rgb [Lit 2,Name "n",Name "n",Name "n"]
+Wait Name "wait"
+Assignment Name "x" Name "x" :-: Lit 1
+Rgb [Lit 1,Name "color",Name "n",Name "n"]
+Wait Name "wait"
+Rgb [Lit 1,Name "n",Name "n",Name "n"]
+Wait Name "wait"
+Rgb [Lit 2,Name "n",Name "n",Name "color"]
+Wait Name "wait"
+Rgb [Lit 2,Name "n",Name "n",Name "n"]
+Wait Name "wait"
+Assignment Name "x" Name "x" :-: Lit 1
+Rgb [Lit 1,Name "color",Name "n",Name "n"]
+Wait Name "wait"
+Rgb [Lit 1,Name "n",Name "n",Name "n"]
+Wait Name "wait"
+Rgb [Lit 2,Name "n",Name "n",Name "color"]
+Wait Name "wait"
+Rgb [Lit 2,Name "n",Name "n",Name "n"]
+Wait Name "wait"
+Assignment Name "x" Name "x" :-: Lit 1
+Rgb [Lit 1,Name "n",Name "n",Name "n"]
+Rgb [Lit 2,Name "n",Name "n",Name "n"]

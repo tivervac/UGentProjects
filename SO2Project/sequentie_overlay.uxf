@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.5.1">
+  <zoom_level>8</zoom_level>
+  <element>
+    <type>com.umlet.element.SequenceDiagram</type>
+    <coordinates>
+      <x>0</x>
+      <y>0</y>
+      <w>768</w>
+      <h>472</h>
+    </coordinates>
+    <panel_attributes>title: AR overlay aanmaken
+_Gebruiker~id1_|_ARApplicatie~id2_|_Camera~id3_|_Foto~id4_|_FotoAnalyzer~id5_|_Projector~id6_
+id1-&gt;id2:id2,id3:&lt;&lt;create&gt;&gt;
+id1-&gt;id2:id2,id3:herkenObjecten()
+iframe{:Herken objecten
+id2-&gt;id3:id2,id3:maakFoto()
+id3-&gt;id4:id2,id3,id4:&lt;&lt;create&gt;&gt;
+id3.&gt;id2:id3,id2,id4: return Foto
+iframe}
+iframe{:Analyseer fotos
+id2-&gt;id5:id2,id4,id5:&lt;&lt;create&gt;&gt;
+id2-&gt;id5:id2,id5:herkenObject(Foto)
+id5.&gt;id2:id2,id5:return metainformatie
+iframe}
+iframe{:Teken overlay
+id2-&gt;id6:id2,id6:&lt;&lt;create&gt;&gt;
+id2-&gt;id6:id2,id6:projecteer(Foto)
+iframe}</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

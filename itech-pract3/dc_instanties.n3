@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+#
+# Pas op: Deze instanties zijn opgemaakt in de dublin core ontologie!
+# Nieuwe instanties moeten toegevoegd worden in de itechX ontologie en via de mapping gelinkt de worden aan de dublin core.
+#
+
+<http://multimedialab.elis.ugent.be/users/cholleme/itech/img1.jpg>
+    rdf:type foaf:Image ;
+    dc:title "Curiouser and Curiouser";
+    dc:date "2003" ;
+    dc:creator dbpedia:Annie_Leibovitz ;
+    dc:description "Beyond nonsense verse and coming-of-age fables, Lewis Carroll's true passion was photographing moody young beauties. Olivier Theyskens, in the guise of Carroll, captures model Natalia Vodianova as Alice Liddell. Natalia wears a Rochas iridescent blue-flower ruffle dress specially designed by Theyskens." ;
+    dc:type <http://dbpedia.org/resource/Category:Culture> ;
+    dc:subject dbpedia:Olivier_Theyskens ;
+    dc:subject dbpedia:Wonderland ;
+    dc:subject dbpedia:Natalia_Vodianova .
+
+<http://multimedialab.elis.ugent.be/users/cholleme/itech/img2.jpg>
+    rdf:type foaf:Image ;
+    dc:title "The Blues #2" ;
+    dc:date "2009" ;
+    dc:creator <http://dbpedia.org/resource/H%26M> ;
+    dc:description "Daria Werbowy in the 'The Blues' spring 2010 H&M campaign" ;
+    dc:type <http://dbpedia.org/resource/Category:Culture> ;
+    dc:subject dbpedia:Daria_Werbowy .
+
+<http://multimedialab.elis.ugent.be/users/cholleme/itech/img3.jpg>
+    rdf:type foaf:Image ;
+    dc:date "2011-03-21"^^xsd:date ;
+    dc:creator dbpedia:Algemeen_Nederlands_Persbureau ;
+    dc:description "A fully armed F-16 fighter jet at the military base of the 10th Tactical Wing, in Kleine Brogel, Peer" ;
+    dc:type <http://dbpedia.org/resource/Category:Politics> ;
+    dc:coverage <http://dbpedia.org/resource/Category:Peer%2C_Belgium> ;
+    dc:subject dbpedia:General_Dynamics_F-16_Fighting_Falcon .
+
+<http://multimedialab.elis.ugent.be/users/cholleme/itech/img4.jpg>
+    rdf:type foaf:Image ;
+    dc:date "2010-08-03"^^xsd:date ;
+    dc:description "Crabzilla, the biggest crab ever seen in Europe arrives at Sea Life in Scheveningen." ;
+    dc:type <http://dbpedia.org/resource/Category:Animals> ;
+    dc:type <http://dbpedia.org/resource/Category:Nature> ;
+    dc:subject dbpedia:Japanese_spider_crab .
+
+<http://multimedialab.elis.ugent.be/users/cholleme/itech/img5.jpg>
+    rdf:type foaf:Image ;
+    dc:title "AMERICA, FUCK YEAH!" ;
+    dc:date "2011-01-18"^^xsd:date ;
+    dc:description "The National Shooting Sports Foundation's 33rd annual Shooting, Hunting and Outdoor Trade Show at the Sands Expo and Convention Center." ;
+    dc:type <http://dbpedia.org/resource/Category:News> ;
+    dc:coverage <http://dbpedia.org/resource/Category:Las_Vegas%2C_Nevada> .
+
+<http://multimedialab.elis.ugent.be/users/cholleme/itech/img6.jpg>
+    rdf:type foaf:Image ;
+    dc:date "2011-03-03"^^xsd:date ;
+    dc:description "The smooth curves of the Alfa Romeo 4C, on the 81st. International Motor Show in Geneva." ;
+    dc:type <http://dbpedia.org/resource/Category:Humor> ;
+    dc:coverage dbpedia:Geneva .

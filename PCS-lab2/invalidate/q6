@@ -1,0 +1,7 @@
+A cache block is in the exclusive state when the CPU has a unique copy but there have been no writes
+on this cache block yet, it's not dirty.
+The goal of this state is to lower the amount of writebacks compared to the MI protocol.
+For the problem in the MI protocol assume a cache block that has been read, but it hasn't been written to.
+When a bus operation or an eviction occurs, this cache block will be written back anyway, even though
+this is hasn't changed, this is a useless write back since nothing changed.
+

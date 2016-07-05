@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+    
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+    
+        <TextView android:id="@+id/dperson_name"
+                  android:textSize="28sp"
+                  android:paddingTop="25dp"
+                  android:layout_centerHorizontal="true"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+    
+        <TextView android:id="@+id/dperson_email"
+                  android:textSize="18sp"
+                  android:padding="5dp"
+                  android:layout_below="@id/dperson_name"
+                  android:layout_centerHorizontal="true"
+                  android:textStyle="italic"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+    
+        <TextView android:id="@+id/dperson_details_label"
+                  android:textSize="18sp"
+                  android:textStyle="bold"
+                  android:paddingTop="20dp"
+                  android:paddingRight="15dp"
+                  android:layout_below="@id/dperson_email"
+                  android:text="@string/details"
+                  android:gravity="right"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content" />
+    
+        <View android:id="@+id/dperson_details_divider"
+              android:layout_below="@id/dperson_details_label"
+              android:layout_width="match_parent"
+              android:layout_height="1dip"
+              android:background="@color/divider" 
+              android:layout_marginRight="10dp"
+              android:layout_marginLeft="10dp" />
+    
+        <TextView android:id="@+id/dperson_birth"
+                  android:textSize="14sp"
+                  android:paddingTop="10dp"
+                  android:paddingLeft="10dp"
+                  android:layout_below="@id/dperson_details_divider"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+    
+        <TextView android:id="@+id/dperson_created"
+                  android:textSize="14sp"
+                  android:paddingTop="10dp"
+                  android:paddingLeft="10dp"
+                  android:layout_below="@id/dperson_birth"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+    
+        <TextView android:id="@+id/dperson_updated"
+                  android:textSize="14sp"
+                  android:paddingTop="10dp"
+                  android:paddingLeft="10dp"
+                  android:layout_below="@id/dperson_created"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+    
+        <TextView android:id="@+id/dperson_events_label"
+                  android:textSize="18sp"
+                  android:textStyle="bold"
+                  android:paddingTop="10dp"
+                  android:paddingRight="15dp"
+                  android:layout_below="@id/dperson_updated"
+                  android:text="@string/events"
+                  android:gravity="right"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content" />
+    
+        <View android:id="@+id/dperson_events_divider"
+              android:layout_below="@id/dperson_events_label"
+              android:layout_width="match_parent"
+              android:layout_height="1dip"
+              android:background="@color/divider" 
+              android:layout_marginRight="10dp"
+              android:layout_marginLeft="10dp" />
+    
+        <TableLayout android:id="@+id/dperson_events_table"
+                     android:layout_below="@id/dperson_events_divider"
+                     android:stretchColumns="0,1"
+                     android:layout_height="wrap_content" 
+                     android:layout_width="match_parent">
+        </TableLayout>
+    </RelativeLayout>
+</ScrollView>

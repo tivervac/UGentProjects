@@ -1,0 +1,37 @@
+let
+  type intarray = array of int
+  var arr : intarray := intarray[100] of 0 
+  var i : int := 0
+  var to_square : int := 0
+
+  function square() : int =
+    to_square * to_square
+ 
+  function add_sqr (a: intarray, limit: int) : int =
+  let
+    var idx : int := 0
+    var sum : int := 0
+    function addone () =
+      (
+	      to_square := a[idx];
+	      sum := sum + square ();
+	      idx := idx + 1;
+	      if (idx < limit) 
+        then
+	        addone ()
+      )
+  in
+    (
+      idx := 0;
+      sum := 0;
+      addone();
+      sum
+    )
+  end 
+in
+  (
+    for i := 0 to 9 do
+      arr[i] := i+1;
+    add_sqr (arr, 10)
+  )
+end

@@ -1,0 +1,91 @@
+Warmup finished. Build Sbst2 of 1000000 nodes.
+Obst4 56822
+PASSED: bigContainsTest Obst4
+=============================
+50000 elements
+Ran in: 0.01s
+Ran 1 times
+Used 567980 navigations
+Averaged to 11 navigations per contains
+Ongelijkmatigheid: 1
+Sbst2 66225
+PASSED: bigContainsTest Sbst2
+=============================
+50000 elements
+Ran in: 0.016s
+Ran 1 times
+Used 694417 navigations
+Averaged to 13 navigations per contains
+Ongelijkmatigheid: 1
+Obst4 69822
+PASSED: bigContainsTest Obst4
+=============================
+60000 elements
+Ran in: 0.003s
+Ran 1 times
+Used 698574 navigations
+Averaged to 11 navigations per contains
+Ongelijkmatigheid: 1
+Sbst2 80667
+PASSED: bigContainsTest Sbst2
+=============================
+60000 elements
+Ran in: 0.01s
+Ran 1 times
+Used 853466 navigations
+Averaged to 14 navigations per contains
+Ongelijkmatigheid: 1
+Obst4 82822
+PASSED: bigContainsTest Obst4
+=============================
+70000 elements
+Ran in: 0.003s
+Ran 1 times
+Used 827446 navigations
+Averaged to 11 navigations per contains
+Ongelijkmatigheid: 1
+Sbst2 101816
+PASSED: bigContainsTest Sbst2
+=============================
+70000 elements
+Ran in: 0.013s
+Ran 1 times
+Used 1014027 navigations
+Averaged to 14 navigations per contains
+Ongelijkmatigheid: 1
+Obst4 95822
+PASSED: bigContainsTest Obst4
+=============================
+80000 elements
+Ran in: 0.004s
+Ran 1 times
+Used 957862 navigations
+Averaged to 11 navigations per contains
+Ongelijkmatigheid: 1
+Sbst2 114731
+PASSED: bigContainsTest Sbst2
+=============================
+80000 elements
+Ran in: 0.016s
+Ran 1 times
+Used 1178049 navigations
+Averaged to 14 navigations per contains
+Ongelijkmatigheid: 1
+Obst4 109631
+PASSED: bigContainsTest Obst4
+=============================
+90000 elements
+Ran in: 0.006s
+Ran 1 times
+Used 1096485 navigations
+Averaged to 12 navigations per contains
+Ongelijkmatigheid: 1
+Sbst2 140523
+PASSED: bigContainsTest Sbst2
+=============================
+90000 elements
+Ran in: 0.017s
+Ran 1 times
+Used 1345529 navigations
+Averaged to 14 navigations per contains
+Ongelijkmatigheid: 1

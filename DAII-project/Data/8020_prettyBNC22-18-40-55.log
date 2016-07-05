@@ -1,0 +1,541 @@
+Warmup finished. Build Sbst2 of 1000000 nodes.
+PASSED: testBuildAndContains Obst4
+==================================
+1000000 elements
+Build in: 0.366s
+Used 246.54931640625MB
+Ran 2 times
+PASSED: bigContainsTest Obst4
+=============================
+Ran in: 3.004s
+Ran 1 times
+Used 250747441 navigations
+Averaged to 25 navigations per contains
+PASSED: testBuildAndContains Sbst1
+==================================
+1000000 elements
+Build in: 1.639s
+Used 374.6240234375MB
+Ran 2 times
+PASSED: bigContainsTest Sbst1
+=============================
+Ran in: 19.614s
+Ran 1 times
+Used 234915220 navigations
+Averaged to 23 navigations per contains
+PASSED: testBuildAndContains Sbst2
+==================================
+1000000 elements
+Build in: 0.6785s
+Used 308.4072265625MB
+Ran 2 times
+PASSED: bigContainsTest Sbst2
+=============================
+Ran in: 6.798s
+Ran 1 times
+Used 234915220 navigations
+Averaged to 23 navigations per contains
+PASSED: testBuildAndContains Obst4
+==================================
+1000000 elements
+Build in: 0.3285s
+Used 247.087890625MB
+Ran 2 times
+PASSED: bigContainsTest Obst4
+=============================
+Ran in: 2.875s
+Ran 1 times
+Used 250861431 navigations
+Averaged to 25 navigations per contains
+PASSED: testBuildAndContains Sbst1
+==================================
+1000000 elements
+Build in: 1.9845s
+Used 465.013671875MB
+Ran 2 times
+PASSED: bigContainsTest Sbst1
+=============================
+Ran in: 14.227s
+Ran 1 times
+Used 190670109 navigations
+Averaged to 19 navigations per contains
+PASSED: testBuildAndContains Sbst2
+==================================
+1000000 elements
+Build in: 0.656s
+Used 309.3486328125MB
+Ran 2 times
+PASSED: bigContainsTest Sbst2
+=============================
+Ran in: 4.345s
+Ran 1 times
+Used 190670109 navigations
+Averaged to 19 navigations per contains
+PASSED: testBuildAndContains Obst4
+==================================
+1000000 elements
+Build in: 0.3205s
+Used 246.15283203125MB
+Ran 2 times
+PASSED: bigContainsTest Obst4
+=============================
+Ran in: 2.771s
+Ran 1 times
+Used 250798053 navigations
+Averaged to 25 navigations per contains
+PASSED: testBuildAndContains Sbst1
+==================================
+1000000 elements
+Build in: 1.93s
+Used 462.28759765625MB
+Ran 2 times
+PASSED: bigContainsTest Sbst1
+=============================
+Ran in: 16.456s
+Ran 1 times
+Used 213335230 navigations
+Averaged to 21 navigations per contains
+PASSED: testBuildAndContains Sbst2
+==================================
+1000000 elements
+Build in: 0.6325s
+Used 309.31103515625MB
+Ran 2 times
+PASSED: bigContainsTest Sbst2
+=============================
+Ran in: 5.282s
+Ran 1 times
+Used 213335230 navigations
+Averaged to 21 navigations per contains
+PASSED: testBuildAndContains Obst4
+==================================
+2000000 elements
+Build in: 0.942s
+Used 504.4541015625MB
+Ran 2 times
+PASSED: bigContainsTest Obst4
+=============================
+Ran in: 7.048s
+Ran 1 times
+Used 527102493 navigations
+Averaged to 26 navigations per contains
+PASSED: testBuildAndContains Sbst1
+==================================
+2000000 elements
+Build in: 4.2895s
+Used 611.9775390625MB
+Ran 2 times
+PASSED: bigContainsTest Sbst1
+=============================
+Ran in: 42.182s
+Ran 1 times
+Used 494986430 navigations
+Averaged to 24 navigations per contains
+PASSED: testBuildAndContains Sbst2
+==================================
+2000000 elements
+Build in: 1.5935s
+Used 627.75244140625MB
+Ran 2 times
+PASSED: bigContainsTest Sbst2
+=============================
+Ran in: 15.314s
+Ran 1 times
+Used 494986430 navigations
+Averaged to 24 navigations per contains
+PASSED: testBuildAndContains Obst4
+==================================
+2000000 elements
+Build in: 0.8205s
+Used 504.54052734375MB
+Ran 2 times
+PASSED: bigContainsTest Obst4
+=============================
+Ran in: 6.814s
+Ran 1 times
+Used 527345383 navigations
+Averaged to 26 navigations per contains
+PASSED: testBuildAndContains Sbst1
+==================================
+2000000 elements
+Build in: 4.3765s
+Used 648.14306640625MB
+Ran 2 times
+PASSED: bigContainsTest Sbst1
+=============================
+Ran in: 31.849s
+Ran 1 times
+Used 406493595 navigations
+Averaged to 20 navigations per contains
+PASSED: testBuildAndContains Sbst2
+==================================
+2000000 elements
+Build in: 1.578s
+Used 628.96044921875MB
+Ran 2 times
+PASSED: bigContainsTest Sbst2
+=============================
+Ran in: 10.439s
+Ran 1 times
+Used 406493595 navigations
+Averaged to 20 navigations per contains
+PASSED: testBuildAndContains Obst4
+==================================
+2000000 elements
+Build in: 0.8355s
+Used 506.8544921875MB
+Ran 2 times
+PASSED: bigContainsTest Obst4
+=============================
+Ran in: 7.001s
+Ran 1 times
+Used 527176884 navigations
+Averaged to 26 navigations per contains
+PASSED: testBuildAndContains Sbst1
+==================================
+2000000 elements
+Build in: 4.4165s
+Used 685.21044921875MB
+Ran 2 times
+PASSED: bigContainsTest Sbst1
+=============================
+Ran in: 37.584s
+Ran 1 times
+Used 451840378 navigations
+Averaged to 22 navigations per contains
+PASSED: testBuildAndContains Sbst2
+==================================
+2000000 elements
+Build in: 1.586s
+Used 630.45068359375MB
+Ran 2 times
+PASSED: bigContainsTest Sbst2
+=============================
+Ran in: 13.142s
+Ran 1 times
+Used 451840378 navigations
+Averaged to 22 navigations per contains
+PASSED: testBuildAndContains Obst4
+==================================
+3000000 elements
+Build in: 1.469s
+Used 756.15185546875MB
+Ran 2 times
+PASSED: bigContainsTest Obst4
+=============================
+Ran in: 12.768s
+Ran 1 times
+Used 829963789 navigations
+Averaged to 27 navigations per contains
+PASSED: testBuildAndContains Sbst1
+==================================
+3000000 elements
+Build in: 7.1025s
+Used 1120.2373046875MB
+Ran 2 times
+PASSED: bigContainsTest Sbst1
+=============================
+Ran in: 69.463s
+Ran 1 times
+Used 764544196 navigations
+Averaged to 25 navigations per contains
+PASSED: testBuildAndContains Sbst2
+==================================
+3000000 elements
+Build in: 2.7585s
+Used 945.6640625MB
+Ran 2 times
+PASSED: bigContainsTest Sbst2
+=============================
+Ran in: 26.629s
+Ran 1 times
+Used 764544196 navigations
+Averaged to 25 navigations per contains
+PASSED: testBuildAndContains Obst4
+==================================
+3000000 elements
+Build in: 1.4495s
+Used 758.5380859375MB
+Ran 2 times
+PASSED: bigContainsTest Obst4
+=============================
+Ran in: 12.502s
+Ran 1 times
+Used 829237263 navigations
+Averaged to 27 navigations per contains
+PASSED: testBuildAndContains Sbst1
+==================================
+3000000 elements
+Build in: 7.391s
+Used 1133.37451171875MB
+Ran 2 times
+PASSED: bigContainsTest Sbst1
+=============================
+Ran in: 55.09s
+Ran 1 times
+Used 631816665 navigations
+Averaged to 21 navigations per contains
+PASSED: testBuildAndContains Sbst2
+==================================
+3000000 elements
+Build in: 2.7275s
+Used 938.86669921875MB
+Ran 2 times
+PASSED: bigContainsTest Sbst2
+=============================
+Ran in: 18.941s
+Ran 1 times
+Used 631816665 navigations
+Averaged to 21 navigations per contains
+PASSED: testBuildAndContains Obst4
+==================================
+3000000 elements
+Build in: 1.3985s
+Used 758.7216796875MB
+Ran 2 times
+PASSED: bigContainsTest Obst4
+=============================
+Ran in: 11.752s
+Ran 1 times
+Used 829735491 navigations
+Averaged to 27 navigations per contains
+PASSED: testBuildAndContains Sbst1
+==================================
+3000000 elements
+Build in: 7.3035s
+Used 1467.29248046875MB
+Ran 2 times
+PASSED: bigContainsTest Sbst1
+=============================
+Ran in: 60.441s
+Ran 1 times
+Used 699833141 navigations
+Averaged to 23 navigations per contains
+PASSED: testBuildAndContains Sbst2
+==================================
+3000000 elements
+Build in: 2.6875s
+Used 943.98779296875MB
+Ran 2 times
+PASSED: bigContainsTest Sbst2
+=============================
+Ran in: 21.924s
+Ran 1 times
+Used 699833141 navigations
+Averaged to 23 navigations per contains
+PASSED: testBuildAndContains Obst4
+==================================
+4000000 elements
+Build in: 2.047s
+Used 1040.8896484375MB
+Ran 2 times
+PASSED: bigContainsTest Obst4
+=============================
+Ran in: 17.049s
+Ran 1 times
+Used 1145921315 navigations
+Averaged to 28 navigations per contains
+PASSED: testBuildAndContains Sbst1
+==================================
+4000000 elements
+Build in: 9.962s
+Used 1541.75MB
+Ran 2 times
+PASSED: bigContainsTest Sbst1
+=============================
+Ran in: 94.748s
+Ran 1 times
+Used 1040277622 navigations
+Averaged to 26 navigations per contains
+PASSED: testBuildAndContains Sbst2
+==================================
+4000000 elements
+Build in: 3.813s
+Used 1288.953125MB
+Ran 2 times
+PASSED: bigContainsTest Sbst2
+=============================
+Ran in: 35.943s
+Ran 1 times
+Used 1040277622 navigations
+Averaged to 26 navigations per contains
+PASSED: testBuildAndContains Obst4
+==================================
+4000000 elements
+Build in: 2.071s
+Used 1035.6640625MB
+Ran 2 times
+PASSED: bigContainsTest Obst4
+=============================
+Ran in: 16.909s
+Ran 1 times
+Used 1145671818 navigations
+Averaged to 28 navigations per contains
+PASSED: testBuildAndContains Sbst1
+==================================
+4000000 elements
+Build in: 10.2765s
+Used 1877.623046875MB
+Ran 2 times
+PASSED: bigContainsTest Sbst1
+=============================
+Ran in: 75.652s
+Ran 1 times
+Used 863252920 navigations
+Averaged to 21 navigations per contains
+PASSED: testBuildAndContains Sbst2
+==================================
+4000000 elements
+Build in: 3.8445s
+Used 1284.4658203125MB
+Ran 2 times
+PASSED: bigContainsTest Sbst2
+=============================
+Ran in: 25.785s
+Ran 1 times
+Used 863252920 navigations
+Averaged to 21 navigations per contains
+PASSED: testBuildAndContains Obst4
+==================================
+4000000 elements
+Build in: 2.084s
+Used 1034.34765625MB
+Ran 2 times
+PASSED: bigContainsTest Obst4
+=============================
+Ran in: 18.284s
+Ran 1 times
+Used 1145783898 navigations
+Averaged to 28 navigations per contains
+PASSED: testBuildAndContains Sbst1
+==================================
+4000000 elements
+Build in: 10.572s
+Used 1931.03564453125MB
+Ran 2 times
+PASSED: bigContainsTest Sbst1
+=============================
+Ran in: 88.427s
+Ran 1 times
+Used 953954224 navigations
+Averaged to 23 navigations per contains
+PASSED: testBuildAndContains Sbst2
+==================================
+4000000 elements
+Build in: 3.9695s
+Used 1284.458984375MB
+Ran 2 times
+PASSED: bigContainsTest Sbst2
+=============================
+Ran in: 34.114s
+Ran 1 times
+Used 953954224 navigations
+Averaged to 23 navigations per contains
+PASSED: testBuildAndContains Obst4
+==================================
+5000000 elements
+Build in: 2.7345s
+Used 1240.84375MB
+Ran 2 times
+PASSED: bigContainsTest Obst4
+=============================
+Ran in: 22.737s
+Ran 1 times
+Used 1455895676 navigations
+Averaged to 29 navigations per contains
+PASSED: testBuildAndContains Sbst1
+==================================
+5000000 elements
+Build in: 13.265s
+Used 1688.705078125MB
+Ran 2 times
+PASSED: bigContainsTest Sbst1
+=============================
+Ran in: 124.401s
+Ran 1 times
+Used 1320579193 navigations
+Averaged to 26 navigations per contains
+PASSED: testBuildAndContains Sbst2
+==================================
+5000000 elements
+Build in: 5.0555s
+Used 1546.1513671875MB
+Ran 2 times
+PASSED: bigContainsTest Sbst2
+=============================
+Ran in: 47.364s
+Ran 1 times
+Used 1320579193 navigations
+Averaged to 26 navigations per contains
+PASSED: testBuildAndContains Obst4
+==================================
+5000000 elements
+Build in: 2.727s
+Used 1240.92236328125MB
+Ran 2 times
+PASSED: bigContainsTest Obst4
+=============================
+Ran in: 22.644s
+Ran 1 times
+Used 1456793213 navigations
+Averaged to 29 navigations per contains
+PASSED: testBuildAndContains Sbst1
+==================================
+5000000 elements
+Build in: 13.318s
+Used 1703.2666015625MB
+Ran 2 times
+PASSED: bigContainsTest Sbst1
+=============================
+Ran in: 95.626s
+Ran 1 times
+Used 1099320100 navigations
+Averaged to 21 navigations per contains
+PASSED: testBuildAndContains Sbst2
+==================================
+5000000 elements
+Build in: 5.048s
+Used 1545.89111328125MB
+Ran 2 times
+PASSED: bigContainsTest Sbst2
+=============================
+Ran in: 34.989s
+Ran 1 times
+Used 1099320100 navigations
+Averaged to 21 navigations per contains
+PASSED: testBuildAndContains Obst4
+==================================
+5000000 elements
+Build in: 2.735s
+Used 1240.75MB
+Ran 2 times
+PASSED: bigContainsTest Obst4
+=============================
+Ran in: 22.894s
+Ran 1 times
+Used 1456181970 navigations
+Averaged to 29 navigations per contains
+PASSED: testBuildAndContains Sbst1
+==================================
+5000000 elements
+Build in: 13.2375s
+Used 1702.46044921875MB
+Ran 2 times
+PASSED: bigContainsTest Sbst1
+=============================
+Ran in: 111.376s
+Ran 1 times
+Used 1212714109 navigations
+Averaged to 24 navigations per contains
+PASSED: testBuildAndContains Sbst2
+==================================
+5000000 elements
+Build in: 5.063s
+Used 1545.75048828125MB
+Ran 2 times
+PASSED: bigContainsTest Sbst2
+=============================
+Ran in: 41.88s
+Ran 1 times
+Used 1212714109 navigations
+Averaged to 24 navigations per contains

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--General-->
+    <string name="app_name">EventsApp</string>
+    <string name="events">Events</string>
+    <string name="people">People</string>
+    <string name="details">Details</string>
+    <string name="detailed_event">Detailed event</string>
+    <string name="detailed_person">Detailed person</string>
+    
+    <!--Buttons-->
+    <string name="to_events">Show the events!</string>
+    <string name="to_people">Show the subscribed people!</string>
+    
+    <string name="edit_person">Edit this person</string>
+    <string name="remove_person">Remove this person</string>
+    <string name="add_person">Add a new person</string>
+    
+    <string name="edit_event">Edit this event</string>
+    <string name="remove_event">Remove this event</string>
+    <string name="add_event">Add a new event</string>
+    
+    <!--Add Person-->
+    <string name="name">Name:</string>
+    <string name="name_hint">Enter your name</string>
+    <string name="email">Email:</string>
+    <string name="email_hint">Enter your email address</string>
+    <string name="birth">Birth date:</string>
+    <string name="create_person">Add the person</string>
+    
+    <!--Add Event-->
+    <string name="title">Title:</string>
+    <string name="title_hint">Enter the title of your event</string>
+    <string name="description">Description:</string>
+    <string name="desc_hint">Description of your event</string>
+    <string name="start">Start:</string>
+    <string name="end">End:</string>
+    <string name="create_event">Add the event</string>
+    
+    <string name="submit">Submit</string>
+    
+    <!--Detailed Event-->
+    <string name="participants">Participants</string>
+    <string name="messages">Messages</string>
+    <string name="leftat">said on</string>
+    
+    <!--Comment-->
+    <string name="add_message">Add a message</string>
+    <string name="add">Add</string>
+    <string name="comment_hint">Share a message</string>
+    <string name="remove_message">Remove message</string>
+    
+    <!--Participant-->
+    <string name="add_participant_title">Who do you want to add?</string>
+    <string name="add_participant">Add participant</string>
+    <string name="remove_participant">Remove participant</string>
+    
+    <!--Patches-->
+    <string name="patch_person">Edit person</string>
+    <string name="patch_event">Edit event</string>
+    <string name="patch_message">Edit message</string>
+</resources>

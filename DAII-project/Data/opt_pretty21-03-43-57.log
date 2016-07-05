@@ -1,0 +1,853 @@
+Warmup finished. Build Sbst2 of 1000000 nodes.
+PASSED: feedbackTest
+====================
+27 elements
+Build in: 0.0s
+Ran in: 0.0s
+Used 1.6943359375MB
+Ran 1 times
+
+PASSED: testOptimize Obst4
+==========================
+5000 elements
+Build in: 0.0s
+Ran in: 364.705s
+Used 289.8828125MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.008s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+5000 elements
+Build in: 0.016s
+Ran in: 296.108s
+Used 291.9150390625MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+5000 elements
+Build in: 0.0s
+Ran in: 298.864s
+Used 293.9736328125MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+6000 elements
+Build in: 0.0s
+Ran in: 602.7195s
+Used 417.71484375MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0075s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+6000 elements
+Build in: 0.0s
+Ran in: 538.5785s
+Used 417.95556640625MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+6000 elements
+Build in: 0.0s
+Ran in: 539.8425s
+Used 419.3857421875MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.008s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+7000 elements
+Build in: 0.0s
+Ran in: 892.2465s
+Used 568.65185546875MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.008s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+7000 elements
+Build in: 0.0s
+Ran in: 887.6575s
+Used 568.92724609375MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+7000 elements
+Build in: 0.0s
+Ran in: 887.91s
+Used 569.0341796875MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+8000 elements
+Build in: 0.0s
+Ran in: 1559.2275s
+Used 749.755859375MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+8000 elements
+Build in: 0.0s
+Ran in: 1362.3935s
+Used 755.30517578125MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0075s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+8000 elements
+Build in: 0.0s
+Ran in: 1364.552s
+Used 755.48291015625MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.008s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+9000 elements
+Build in: 0.0s
+Ran in: 1999.9915s
+Used 944.3544921875MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.008s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+9000 elements
+Build in: 0.0s
+Ran in: 1981.6825s
+Used 944.31005859375MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.008s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+9000 elements
+Build in: 0.0s
+Ran in: 2040.5015s
+Used 944.30126953125MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0045s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+5000 elements
+Build in: 0.0s
+Ran in: 316.059s
+Used 307.4150390625MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.002s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+5000 elements
+Build in: 0.0s
+Ran in: 314.0125s
+Used 307.416015625MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0025s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+5000 elements
+Build in: 0.0s
+Ran in: 311.7385s
+Used 307.416015625MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+5000 elements
+Build in: 0.0s
+Ran in: 299.6815s
+Used 307.416015625MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+5000 elements
+Build in: 0.0s
+Ran in: 299.442s
+Used 307.41650390625MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+5000 elements
+Build in: 0.0s
+Ran in: 299.2795s
+Used 307.4169921875MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+5000 elements
+Build in: 0.0s
+Ran in: 298.311s
+Used 307.41796875MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+5000 elements
+Build in: 0.0s
+Ran in: 298.9785s
+Used 307.41943359375MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+5000 elements
+Build in: 0.0s
+Ran in: 296.861s
+Used 307.419921875MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+5000 elements
+Build in: 0.0s
+Ran in: 298.2785s
+Used 307.4228515625MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+6000 elements
+Build in: 0.0s
+Ran in: 540.411s
+Used 425.427734375MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.008s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+6000 elements
+Build in: 0.0s
+Ran in: 539.269s
+Used 425.42578125MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+6000 elements
+Build in: 0.0s
+Ran in: 535.726s
+Used 425.4248046875MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+6000 elements
+Build in: 0.0s
+Ran in: 540.647s
+Used 425.4248046875MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+6000 elements
+Build in: 0.0s
+Ran in: 537.7585s
+Used 425.4228515625MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+6000 elements
+Build in: 0.0s
+Ran in: 541.448s
+Used 425.419921875MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+6000 elements
+Build in: 0.0s
+Ran in: 539.9945s
+Used 425.4150390625MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.008s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+6000 elements
+Build in: 0.0s
+Ran in: 537.7435s
+Used 425.41162109375MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+6000 elements
+Build in: 0.0s
+Ran in: 541.5145s
+Used 425.4033203125MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+6000 elements
+Build in: 0.0s
+Ran in: 539.214s
+Used 425.3974609375MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+7000 elements
+Build in: 0.008s
+Ran in: 892.254s
+Used 566.8896484375MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+7000 elements
+Build in: 0.0s
+Ran in: 893.121s
+Used 566.8896484375MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+7000 elements
+Build in: 0.0s
+Ran in: 894.213s
+Used 566.8916015625MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0075s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+7000 elements
+Build in: 0.0s
+Ran in: 894.754s
+Used 566.8916015625MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.008s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+7000 elements
+Build in: 0.0s
+Ran in: 893.008s
+Used 566.8916015625MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+7000 elements
+Build in: 0.0s
+Ran in: 893.114s
+Used 566.89404296875MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+7000 elements
+Build in: 0.0s
+Ran in: 891.961s
+Used 566.89599609375MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+7000 elements
+Build in: 0.0s
+Ran in: 891.7295s
+Used 566.896484375MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+7000 elements
+Build in: 0.0s
+Ran in: 892.1025s
+Used 566.900390625MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+7000 elements
+Build in: 0.0s
+Ran in: 895.4465s
+Used 566.9013671875MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+8000 elements
+Build in: 0.0s
+Ran in: 1355.964s
+Used 755.51025390625MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+8000 elements
+Build in: 0.008s
+Ran in: 1359.623s
+Used 755.5654296875MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.008s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+8000 elements
+Build in: 0.0s
+Ran in: 1353.8505s
+Used 755.591796875MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+8000 elements
+Build in: 0.0s
+Ran in: 1356.064s
+Used 755.60205078125MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+8000 elements
+Build in: 0.0s
+Ran in: 1358.4815s
+Used 755.60595703125MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.008s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+8000 elements
+Build in: 0.0s
+Ran in: 1353.5605s
+Used 755.609375MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+8000 elements
+Build in: 0.0s
+Ran in: 1347.9265s
+Used 755.6103515625MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.008s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+8000 elements
+Build in: 0.0s
+Ran in: 1352.323s
+Used 755.61328125MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+8000 elements
+Build in: 0.0s
+Ran in: 1365.3075s
+Used 755.61572265625MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.008s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+8000 elements
+Build in: 0.0s
+Ran in: 1355.02s
+Used 755.6171875MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+9000 elements
+Build in: 0.0s
+Ran in: 1992.6755s
+Used 944.4208984375MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.008s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+9000 elements
+Build in: 0.0s
+Ran in: 1988.2115s
+Used 944.3466796875MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.008s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+9000 elements
+Build in: 0.0s
+Ran in: 1997.7245s
+Used 944.3154296875MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.008s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+9000 elements
+Build in: 0.0s
+Ran in: 1975.901s
+Used 944.302734375MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0075s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+9000 elements
+Build in: 0.0s
+Ran in: 2007.064s
+Used 944.296875MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+9000 elements
+Build in: 0.0s
+Ran in: 1978.1525s
+Used 944.29541015625MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+9000 elements
+Build in: 0.0s
+Ran in: 2012.271s
+Used 944.29443359375MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+9000 elements
+Build in: 0.0s
+Ran in: 1991.037s
+Used 944.2958984375MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.008s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+9000 elements
+Build in: 0.0s
+Ran in: 1995.2425s
+Used 944.2958984375MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.0s
+Ran 2 times
+
+PASSED: testOptimize Obst4
+==========================
+9000 elements
+Build in: 0.0s
+Ran in: 1995.005s
+Used 944.2978515625MB
+Ran 2 times
+
+PASSED: containsTest Obst4
+==========================
+Ran in: 0.008s
+Ran 2 times

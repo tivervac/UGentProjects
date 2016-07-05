@@ -1,0 +1,102 @@
+\documentclass[12pt,a4paper,oneside]{article}
+\usepackage{longtable}
+\usepackage[dutch]{babel}
+\usepackage{titling,enumitem}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{a4wide}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{rotating}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{color}
+\usepackage{fancyhdr}
+% packages
+\usepackage[T1]{fontenc}
+\usepackage[a4paper]{geometry}
+\usepackage{array, xcolor}
+\usepackage{titling}
+\usepackage{blindtext}
+\usepackage{chngpage}
+\usepackage{calc}
+% rules
+\definecolor{lightgray}{gray}{0.8}
+\newcolumntype{L}{>{\raggedleft}p{0.50\textwidth}}
+\newcolumntype{R}{p{0.8\textwidth}}
+\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
+\renewcommand{\footrulewidth}{0.4pt}% default is 0pt
+%%%%%%%%%%%%TABULAR SHIT%%%%%%%%%%%%%%%%%%
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{0.9}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+ 
+\lstset{ %
+  language=PYTHON,                
+  basicstyle=\footnotesize,           
+  numbers=left,                  
+  numberstyle=\tiny\color{gray},  
+  stepnumber=2,                        
+  numbersep=5pt,                  
+  backgroundcolor=\color{white},      
+  showspaces=false,               
+  showstringspaces=false,        
+  showtabs=false,                 
+  frame=single,                   
+  rulecolor=\color{black},        
+  tabsize=2,                      
+  captionpos=b,                   
+  breaklines=true,                
+  breakatwhitespace=false,        
+  title=\lstname,                                                  
+  keywordstyle=\color{blue},          
+  commentstyle=\color{dkgreen},       
+  stringstyle=\color{mauve},         
+  escapeinside={\%*}{*)},            
+  morekeywords={*,...},              
+  deletekeywords={...}              
+}
+
+
+\begin{document}
+\newgeometry{top=0.5cm, right=1.70cm, left=1.7cm}
+\begin{titlepage} 
+\thispagestyle{fancy}
+\fancyhf{}
+\fancyfoot[L]{Vakgroep Informatietechnologie \\ Gaston Crommenlaan 8, bus 201, B - 9050 Gent \\ www.intec.UGent.be}
+\fancyfoot[R]{\raisebox{3ex-\height}{\includegraphics{intec.png}}}
+\begin{figure}[!ht]
+  \begin{adjustwidth}{-\oddsidemargin-1in}{-\rightmargin}
+    \centering
+    \includegraphics[width=\paperwidth]{banner}
+  \end{adjustwidth}
+\end{figure}
+\vspace{-0.2em}
+\hfill Vakgroep \textbf{Informatietechnologie} 
+\begin{center} 
+\vspace{1cm} 
+\Huge \textbf{SoftwareOntwikkeling \\ Project: Glass}\\ 
+\vspace{4cm}
+\textbf{Behoeftenanalyse en Architectuur}\\
+\vspace{6.0cm}
+\normalsize
+\begin{tabular}{L! {} R}
+& {\bf Academiejaar 2012-2013} \\
+& {\bf Groepnummer 16} \\\\
+& {\bf Groepsleden:}\\
+& \begin{itemize}
+\item Caroline De Brouwer
+\item Eveline Hoogstoel
+\item Stefaan Vermassen
+\item Titouan Vervack
+\end{itemize} \\
+
+\end{tabular}
+ 
+ 
+\end{center} 
+\end{titlepage}
+\end{document}

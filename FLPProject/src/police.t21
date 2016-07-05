@@ -1,0 +1,25 @@
+-- Intensity of the color
+color = 100
+-- Milliseconds to blink the light for
+wait = 200
+-- Represents no color
+n = 0
+-- Number of times to blink
+x = 5
+
+WHILE (x)
+  -- Blink the first led red
+  Rgb(1, color, n, n)
+  Wait(wait)
+  Rgb(1, n, n, n)
+  Wait(wait)
+  -- Blink the second led blue
+  Rgb(2, n, n, color)
+  Wait(wait)
+  Rgb(2, n, n, n)
+  Wait(wait)
+  x = (x - 1)
+ELIHW
+
+Rgb(1, n, n, n)
+Rgb(2, n, n, n)

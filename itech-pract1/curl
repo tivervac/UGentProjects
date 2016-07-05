@@ -1,0 +1,1 @@
+curl -X POST -d '{"name": "a", "email": "b@a.c", "dateofbirth": "1993-09-02"}' localhost:3000/people -H "Content-Type:application/json" -H "Accept: application/json"

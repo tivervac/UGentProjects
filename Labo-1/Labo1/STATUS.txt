@@ -1,0 +1,2 @@
+Details are not being shown yet.
+I only got as far as changing the existing callback methods for onItemSelected to uri arguments

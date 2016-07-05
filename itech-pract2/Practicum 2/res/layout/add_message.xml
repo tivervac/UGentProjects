@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+    
+    <TextView android:id="@+id/add_message_title"
+              android:textSize="22sp"
+              android:text="@string/add_message"
+              android:paddingTop="15dp"
+              android:layout_centerHorizontal="true"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+                
+    <Spinner android:id="@+id/comments_spinner" 
+             android:padding="10dp"
+             android:layout_marginTop="50dp"
+             android:layout_below="@id/add_message_title"
+             android:layout_centerInParent="true"
+             android:layout_alignParentTop="true"
+             android:layout_width="match_parent" 
+             android:layout_height="wrap_content" />
+    
+    <EditText android:id="@+id/comment_text"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="fill_horizontal"
+              android:inputType="textCapSentences"
+              android:layout_marginTop="15dp"
+              android:minLines="4"
+              android:maxLines="6"
+              android:layout_below="@id/comments_spinner"
+              android:hint="@string/comment_hint" />
+    
+    <Button android:id="@+id/add_comment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/submit"
+            android:layout_below="@id/comment_text"
+            android:textSize="14sp"
+            android:background="@color/addbutton"
+            android:textColor="@color/buttontext" />
+</RelativeLayout>

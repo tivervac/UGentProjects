@@ -1,0 +1,12 @@
+2016-05-10 22:15:59,393 - [INFO] - from play in pool-4-thread-3 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2016-05-10 22:16:02,960 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2016-05-10 22:16:03,361 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-05-10 22:16:03,662 - [INFO] - from play in play-akka.actor.default-dispatcher-3 
+Starting application default Akka system.
+

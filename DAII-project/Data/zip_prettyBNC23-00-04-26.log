@@ -1,0 +1,2251 @@
+Warmup finished. Build Sbst2 of 1000000 nodes.
+PASSED: testBuildAndContains Obst4
+==================================
+1000000 elements
+Build in: 0.399s
+Used 246.41455078125MB
+Ran 2 times
+Ongelijkmatigheid: 0.1
+PASSED: bigContainsTest Obst4
+=============================
+10000000 elements
+Ran in: 3.073s
+Ran 1 times
+Used 250734717 navigations
+Averaged to 25 navigations per contains
+Ongelijkmatigheid: 0.1
+PASSED: testBuildAndContains Sbst1
+==================================
+1000000 elements
+Build in: 2.174s
+Used 318.64599609375MB
+Ran 2 times
+Ongelijkmatigheid: 0.1
+PASSED: bigContainsTest Sbst1
+=============================
+10000000 elements
+Ran in: 20.092s
+Ran 1 times
+Used 234804811 navigations
+Averaged to 23 navigations per contains
+Ongelijkmatigheid: 0.1
+PASSED: testBuildAndContains Sbst2
+==================================
+1000000 elements
+Build in: 0.74s
+Used 308.64111328125MB
+Ran 2 times
+Ongelijkmatigheid: 0.1
+PASSED: bigContainsTest Sbst2
+=============================
+10000000 elements
+Ran in: 7.798s
+Ran 1 times
+Used 234804811 navigations
+Averaged to 23 navigations per contains
+Ongelijkmatigheid: 0.1
+PASSED: testBuildAndContains Obst4
+==================================
+1000000 elements
+Build in: 0.3655s
+Used 246.5087890625MB
+Ran 2 times
+Ongelijkmatigheid: 0.2
+PASSED: bigContainsTest Obst4
+=============================
+10000000 elements
+Ran in: 3.268s
+Ran 1 times
+Used 250694031 navigations
+Averaged to 25 navigations per contains
+Ongelijkmatigheid: 0.2
+PASSED: testBuildAndContains Sbst1
+==================================
+1000000 elements
+Build in: 2.0985s
+Used 416.6484375MB
+Ran 2 times
+Ongelijkmatigheid: 0.2
+PASSED: bigContainsTest Sbst1
+=============================
+10000000 elements
+Ran in: 21.209s
+Ran 1 times
+Used 234390157 navigations
+Averaged to 23 navigations per contains
+Ongelijkmatigheid: 0.2
+PASSED: testBuildAndContains Sbst2
+==================================
+1000000 elements
+Build in: 0.7565s
+Used 308.27734375MB
+Ran 2 times
+Ongelijkmatigheid: 0.2
+PASSED: bigContainsTest Sbst2
+=============================
+10000000 elements
+Ran in: 7.318s
+Ran 1 times
+Used 234390157 navigations
+Averaged to 23 navigations per contains
+Ongelijkmatigheid: 0.2
+PASSED: testBuildAndContains Obst4
+==================================
+1000000 elements
+Build in: 0.3695s
+Used 246.076171875MB
+Ran 2 times
+Ongelijkmatigheid: 0.3
+PASSED: bigContainsTest Obst4
+=============================
+10000000 elements
+Ran in: 3.306s
+Ran 1 times
+Used 250724734 navigations
+Averaged to 25 navigations per contains
+Ongelijkmatigheid: 0.3
+PASSED: testBuildAndContains Sbst1
+==================================
+1000000 elements
+Build in: 2.063s
+Used 319.60107421875MB
+Ran 2 times
+Ongelijkmatigheid: 0.3
+PASSED: bigContainsTest Sbst1
+=============================
+10000000 elements
+Ran in: 20.409s
+Ran 1 times
+Used 233473237 navigations
+Averaged to 23 navigations per contains
+Ongelijkmatigheid: 0.3
+PASSED: testBuildAndContains Sbst2
+==================================
+1000000 elements
+Build in: 0.7505s
+Used 308.048828125MB
+Ran 2 times
+Ongelijkmatigheid: 0.3
+PASSED: bigContainsTest Sbst2
+=============================
+10000000 elements
+Ran in: 7.497s
+Ran 1 times
+Used 233473237 navigations
+Averaged to 23 navigations per contains
+Ongelijkmatigheid: 0.3
+PASSED: testBuildAndContains Obst4
+==================================
+1000000 elements
+Build in: 0.356s
+Used 247.07861328125MB
+Ran 2 times
+Ongelijkmatigheid: 0.4
+PASSED: bigContainsTest Obst4
+=============================
+10000000 elements
+Ran in: 3.172s
+Ran 1 times
+Used 250743634 navigations
+Averaged to 25 navigations per contains
+Ongelijkmatigheid: 0.4
+PASSED: testBuildAndContains Sbst1
+==================================
+1000000 elements
+Build in: 2.152s
+Used 320.37646484375MB
+Ran 2 times
+Ongelijkmatigheid: 0.4
+PASSED: bigContainsTest Sbst1
+=============================
+10000000 elements
+Ran in: 20.001s
+Ran 1 times
+Used 231808890 navigations
+Averaged to 23 navigations per contains
+Ongelijkmatigheid: 0.4
+PASSED: testBuildAndContains Sbst2
+==================================
+1000000 elements
+Build in: 0.744s
+Used 308.50048828125MB
+Ran 2 times
+Ongelijkmatigheid: 0.4
+PASSED: bigContainsTest Sbst2
+=============================
+10000000 elements
+Ran in: 6.818s
+Ran 1 times
+Used 231808890 navigations
+Averaged to 23 navigations per contains
+Ongelijkmatigheid: 0.4
+PASSED: testBuildAndContains Obst4
+==================================
+1000000 elements
+Build in: 0.3635s
+Used 247.3388671875MB
+Ran 2 times
+Ongelijkmatigheid: 0.5
+PASSED: bigContainsTest Obst4
+=============================
+10000000 elements
+Ran in: 3.322s
+Ran 1 times
+Used 250738926 navigations
+Averaged to 25 navigations per contains
+Ongelijkmatigheid: 0.5
+PASSED: testBuildAndContains Sbst1
+==================================
+1000000 elements
+Build in: 2.1505s
+Used 329.00634765625MB
+Ran 2 times
+Ongelijkmatigheid: 0.5
+PASSED: bigContainsTest Sbst1
+=============================
+10000000 elements
+Ran in: 19.891s
+Ran 1 times
+Used 228856651 navigations
+Averaged to 22 navigations per contains
+Ongelijkmatigheid: 0.5
+PASSED: testBuildAndContains Sbst2
+==================================
+1000000 elements
+Build in: 0.7385s
+Used 307.7041015625MB
+Ran 2 times
+Ongelijkmatigheid: 0.5
+PASSED: bigContainsTest Sbst2
+=============================
+10000000 elements
+Ran in: 7.102s
+Ran 1 times
+Used 228856651 navigations
+Averaged to 22 navigations per contains
+Ongelijkmatigheid: 0.5
+PASSED: testBuildAndContains Obst4
+==================================
+1000000 elements
+Build in: 0.362s
+Used 247.05126953125MB
+Ran 2 times
+Ongelijkmatigheid: 0.6
+PASSED: bigContainsTest Obst4
+=============================
+10000000 elements
+Ran in: 3.062s
+Ran 1 times
+Used 250722806 navigations
+Averaged to 25 navigations per contains
+Ongelijkmatigheid: 0.6
+PASSED: testBuildAndContains Sbst1
+==================================
+1000000 elements
+Build in: 2.089s
+Used 459.40185546875MB
+Ran 2 times
+Ongelijkmatigheid: 0.6
+PASSED: bigContainsTest Sbst1
+=============================
+10000000 elements
+Ran in: 18.284s
+Ran 1 times
+Used 223781824 navigations
+Averaged to 22 navigations per contains
+Ongelijkmatigheid: 0.6
+PASSED: testBuildAndContains Sbst2
+==================================
+1000000 elements
+Build in: 0.709s
+Used 309.71240234375MB
+Ran 2 times
+Ongelijkmatigheid: 0.6
+PASSED: bigContainsTest Sbst2
+=============================
+10000000 elements
+Ran in: 6.417s
+Ran 1 times
+Used 223781824 navigations
+Averaged to 22 navigations per contains
+Ongelijkmatigheid: 0.6
+PASSED: testBuildAndContains Obst4
+==================================
+1000000 elements
+Build in: 0.3665s
+Used 246.06396484375MB
+Ran 2 times
+Ongelijkmatigheid: 0.7
+PASSED: bigContainsTest Obst4
+=============================
+10000000 elements
+Ran in: 3.193s
+Ran 1 times
+Used 250706914 navigations
+Averaged to 25 navigations per contains
+Ongelijkmatigheid: 0.7
+PASSED: testBuildAndContains Sbst1
+==================================
+1000000 elements
+Build in: 2.202s
+Used 290.68359375MB
+Ran 2 times
+Ongelijkmatigheid: 0.7
+PASSED: bigContainsTest Sbst1
+=============================
+10000000 elements
+Ran in: 18.578s
+Ran 1 times
+Used 215087982 navigations
+Averaged to 21 navigations per contains
+Ongelijkmatigheid: 0.7
+PASSED: testBuildAndContains Sbst2
+==================================
+1000000 elements
+Build in: 0.743s
+Used 307.62646484375MB
+Ran 2 times
+Ongelijkmatigheid: 0.7
+PASSED: bigContainsTest Sbst2
+=============================
+10000000 elements
+Ran in: 6.261s
+Ran 1 times
+Used 215087982 navigations
+Averaged to 21 navigations per contains
+Ongelijkmatigheid: 0.7
+PASSED: testBuildAndContains Obst4
+==================================
+1000000 elements
+Build in: 0.3595s
+Used 247.81201171875MB
+Ran 2 times
+Ongelijkmatigheid: 0.8
+PASSED: bigContainsTest Obst4
+=============================
+10000000 elements
+Ran in: 2.976s
+Ran 1 times
+Used 250739392 navigations
+Averaged to 25 navigations per contains
+Ongelijkmatigheid: 0.8
+PASSED: testBuildAndContains Sbst1
+==================================
+1000000 elements
+Build in: 2.13s
+Used 537.6982421875MB
+Ran 2 times
+Ongelijkmatigheid: 0.8
+PASSED: bigContainsTest Sbst1
+=============================
+10000000 elements
+Ran in: 16.804s
+Ran 1 times
+Used 200687980 navigations
+Averaged to 20 navigations per contains
+Ongelijkmatigheid: 0.8
+PASSED: testBuildAndContains Sbst2
+==================================
+1000000 elements
+Build in: 0.7155s
+Used 308.62109375MB
+Ran 2 times
+Ongelijkmatigheid: 0.8
+PASSED: bigContainsTest Sbst2
+=============================
+10000000 elements
+Ran in: 5.675s
+Ran 1 times
+Used 200687980 navigations
+Averaged to 20 navigations per contains
+Ongelijkmatigheid: 0.8
+PASSED: testBuildAndContains Obst4
+==================================
+1000000 elements
+Build in: 0.3485s
+Used 248.83349609375MB
+Ran 2 times
+Ongelijkmatigheid: 0.9
+PASSED: bigContainsTest Obst4
+=============================
+10000000 elements
+Ran in: 2.535s
+Ran 1 times
+Used 250823912 navigations
+Averaged to 25 navigations per contains
+Ongelijkmatigheid: 0.9
+PASSED: testBuildAndContains Sbst1
+==================================
+1000000 elements
+Build in: 2.1015s
+Used 460.22998046875MB
+Ran 2 times
+Ongelijkmatigheid: 0.9
+PASSED: bigContainsTest Sbst1
+=============================
+10000000 elements
+Ran in: 13.45s
+Ran 1 times
+Used 178585190 navigations
+Averaged to 17 navigations per contains
+Ongelijkmatigheid: 0.9
+PASSED: testBuildAndContains Sbst2
+==================================
+1000000 elements
+Build in: 0.6935s
+Used 309.47509765625MB
+Ran 2 times
+Ongelijkmatigheid: 0.9
+PASSED: bigContainsTest Sbst2
+=============================
+10000000 elements
+Ran in: 4.393s
+Ran 1 times
+Used 178585190 navigations
+Averaged to 17 navigations per contains
+Ongelijkmatigheid: 0.9
+PASSED: testBuildAndContains Obst4
+==================================
+1000000 elements
+Build in: 0.3475s
+Used 246.08447265625MB
+Ran 2 times
+Ongelijkmatigheid: 1
+PASSED: bigContainsTest Obst4
+=============================
+10000000 elements
+Ran in: 2.247s
+Ran 1 times
+Used 251087977 navigations
+Averaged to 25 navigations per contains
+Ongelijkmatigheid: 1
+PASSED: testBuildAndContains Sbst1
+==================================
+1000000 elements
+Build in: 2.115s
+Used 400.88037109375MB
+Ran 2 times
+Ongelijkmatigheid: 1
+PASSED: bigContainsTest Sbst1
+=============================
+10000000 elements
+Ran in: 10.768s
+Ran 1 times
+Used 149575351 navigations
+Averaged to 14 navigations per contains
+Ongelijkmatigheid: 1
+PASSED: testBuildAndContains Sbst2
+==================================
+1000000 elements
+Build in: 0.694s
+Used 310.16943359375MB
+Ran 2 times
+Ongelijkmatigheid: 1
+PASSED: bigContainsTest Sbst2
+=============================
+10000000 elements
+Ran in: 3.412s
+Ran 1 times
+Used 149575351 navigations
+Averaged to 14 navigations per contains
+Ongelijkmatigheid: 1
+PASSED: testBuildAndContains Obst4
+==================================
+2000000 elements
+Build in: 0.9045s
+Used 504.755859375MB
+Ran 2 times
+Ongelijkmatigheid: 0.1
+PASSED: bigContainsTest Obst4
+=============================
+20000000 elements
+Ran in: 7.604s
+Ran 1 times
+Used 527134674 navigations
+Averaged to 26 navigations per contains
+Ongelijkmatigheid: 0.1
+PASSED: testBuildAndContains Sbst1
+==================================
+2000000 elements
+Build in: 4.599s
+Used 580.998046875MB
+Ran 2 times
+Ongelijkmatigheid: 0.1
+PASSED: bigContainsTest Sbst1
+=============================
+20000000 elements
+Ran in: 43.574s
+Ran 1 times
+Used 494756576 navigations
+Averaged to 24 navigations per contains
+Ongelijkmatigheid: 0.1
+PASSED: testBuildAndContains Sbst2
+==================================
+2000000 elements
+Build in: 1.711s
+Used 625.88720703125MB
+Ran 2 times
+Ongelijkmatigheid: 0.1
+PASSED: bigContainsTest Sbst2
+=============================
+20000000 elements
+Ran in: 16.158s
+Ran 1 times
+Used 494756576 navigations
+Averaged to 24 navigations per contains
+Ongelijkmatigheid: 0.1
+PASSED: testBuildAndContains Obst4
+==================================
+2000000 elements
+Build in: 0.884s
+Used 504.47900390625MB
+Ran 2 times
+Ongelijkmatigheid: 0.2
+PASSED: bigContainsTest Obst4
+=============================
+20000000 elements
+Ran in: 7.603s
+Ran 1 times
+Used 527055300 navigations
+Averaged to 26 navigations per contains
+Ongelijkmatigheid: 0.2
+PASSED: testBuildAndContains Sbst1
+==================================
+2000000 elements
+Build in: 4.83s
+Used 716.13525390625MB
+Ran 2 times
+Ongelijkmatigheid: 0.2
+PASSED: bigContainsTest Sbst1
+=============================
+20000000 elements
+Ran in: 45.889s
+Ran 1 times
+Used 493931198 navigations
+Averaged to 24 navigations per contains
+Ongelijkmatigheid: 0.2
+PASSED: testBuildAndContains Sbst2
+==================================
+2000000 elements
+Build in: 1.7105s
+Used 631.12451171875MB
+Ran 2 times
+Ongelijkmatigheid: 0.2
+PASSED: bigContainsTest Sbst2
+=============================
+20000000 elements
+Ran in: 16.141s
+Ran 1 times
+Used 493931198 navigations
+Averaged to 24 navigations per contains
+Ongelijkmatigheid: 0.2
+PASSED: testBuildAndContains Obst4
+==================================
+2000000 elements
+Build in: 0.929s
+Used 503.68212890625MB
+Ran 2 times
+Ongelijkmatigheid: 0.3
+PASSED: bigContainsTest Obst4
+=============================
+20000000 elements
+Ran in: 7.707s
+Ran 1 times
+Used 527136189 navigations
+Averaged to 26 navigations per contains
+Ongelijkmatigheid: 0.3
+PASSED: testBuildAndContains Sbst1
+==================================
+2000000 elements
+Build in: 4.763s
+Used 713.94873046875MB
+Ran 2 times
+Ongelijkmatigheid: 0.3
+PASSED: bigContainsTest Sbst1
+=============================
+20000000 elements
+Ran in: 43.671s
+Ran 1 times
+Used 492071276 navigations
+Averaged to 24 navigations per contains
+Ongelijkmatigheid: 0.3
+PASSED: testBuildAndContains Sbst2
+==================================
+2000000 elements
+Build in: 1.68s
+Used 626.98779296875MB
+Ran 2 times
+Ongelijkmatigheid: 0.3
+PASSED: bigContainsTest Sbst2
+=============================
+20000000 elements
+Ran in: 16.138s
+Ran 1 times
+Used 492071276 navigations
+Averaged to 24 navigations per contains
+Ongelijkmatigheid: 0.3
+PASSED: testBuildAndContains Obst4
+==================================
+2000000 elements
+Build in: 0.8975s
+Used 507.11474609375MB
+Ran 2 times
+Ongelijkmatigheid: 0.4
+PASSED: bigContainsTest Obst4
+=============================
+20000000 elements
+Ran in: 7.932s
+Ran 1 times
+Used 527099936 navigations
+Averaged to 26 navigations per contains
+Ongelijkmatigheid: 0.4
+PASSED: testBuildAndContains Sbst1
+==================================
+2000000 elements
+Build in: 4.8215s
+Used 1221.1533203125MB
+Ran 2 times
+Ongelijkmatigheid: 0.4
+PASSED: bigContainsTest Sbst1
+=============================
+20000000 elements
+Ran in: 44.922s
+Ran 1 times
+Used 488731391 navigations
+Averaged to 24 navigations per contains
+Ongelijkmatigheid: 0.4
+PASSED: testBuildAndContains Sbst2
+==================================
+2000000 elements
+Build in: 1.869s
+Used 629.08154296875MB
+Ran 2 times
+Ongelijkmatigheid: 0.4
+PASSED: bigContainsTest Sbst2
+=============================
+20000000 elements
+Ran in: 17.877s
+Ran 1 times
+Used 488731391 navigations
+Averaged to 24 navigations per contains
+Ongelijkmatigheid: 0.4
+PASSED: testBuildAndContains Obst4
+==================================
+2000000 elements
+Build in: 0.9555s
+Used 509.2109375MB
+Ran 2 times
+Ongelijkmatigheid: 0.5
+PASSED: bigContainsTest Obst4
+=============================
+20000000 elements
+Ran in: 8.361s
+Ran 1 times
+Used 527070199 navigations
+Averaged to 26 navigations per contains
+Ongelijkmatigheid: 0.5
+PASSED: testBuildAndContains Sbst1
+==================================
+2000000 elements
+Build in: 5.142s
+Used 1060.9990234375MB
+Ran 2 times
+Ongelijkmatigheid: 0.5
+PASSED: bigContainsTest Sbst1
+=============================
+20000000 elements
+Ran in: 46.517s
+Ran 1 times
+Used 482787072 navigations
+Averaged to 24 navigations per contains
+Ongelijkmatigheid: 0.5
+PASSED: testBuildAndContains Sbst2
+==================================
+2000000 elements
+Build in: 1.8435s
+Used 630.9765625MB
+Ran 2 times
+Ongelijkmatigheid: 0.5
+PASSED: bigContainsTest Sbst2
+=============================
+20000000 elements
+Ran in: 17.498s
+Ran 1 times
+Used 482787072 navigations
+Averaged to 24 navigations per contains
+Ongelijkmatigheid: 0.5
+PASSED: testBuildAndContains Obst4
+==================================
+2000000 elements
+Build in: 0.9215s
+Used 503.59521484375MB
+Ran 2 times
+Ongelijkmatigheid: 0.6
+PASSED: bigContainsTest Obst4
+=============================
+20000000 elements
+Ran in: 7.725s
+Ran 1 times
+Used 526954444 navigations
+Averaged to 26 navigations per contains
+Ongelijkmatigheid: 0.6
+PASSED: testBuildAndContains Sbst1
+==================================
+2000000 elements
+Build in: 5.072s
+Used 919.91943359375MB
+Ran 2 times
+Ongelijkmatigheid: 0.6
+PASSED: bigContainsTest Sbst1
+=============================
+20000000 elements
+Ran in: 43.29s
+Ran 1 times
+Used 472502729 navigations
+Averaged to 23 navigations per contains
+Ongelijkmatigheid: 0.6
+PASSED: testBuildAndContains Sbst2
+==================================
+2000000 elements
+Build in: 1.775s
+Used 632.84716796875MB
+Ran 2 times
+Ongelijkmatigheid: 0.6
+PASSED: bigContainsTest Sbst2
+=============================
+20000000 elements
+Ran in: 15.699s
+Ran 1 times
+Used 472502729 navigations
+Averaged to 23 navigations per contains
+Ongelijkmatigheid: 0.6
+PASSED: testBuildAndContains Obst4
+==================================
+2000000 elements
+Build in: 0.9455s
+Used 504.916015625MB
+Ran 2 times
+Ongelijkmatigheid: 0.7
+PASSED: bigContainsTest Obst4
+=============================
+20000000 elements
+Ran in: 8.074s
+Ran 1 times
+Used 526700898 navigations
+Averaged to 26 navigations per contains
+Ongelijkmatigheid: 0.7
+PASSED: testBuildAndContains Sbst1
+==================================
+2000000 elements
+Build in: 5.164s
+Used 775.099609375MB
+Ran 2 times
+Ongelijkmatigheid: 0.7
+PASSED: bigContainsTest Sbst1
+=============================
+20000000 elements
+Ran in: 42.762s
+Ran 1 times
+Used 454646281 navigations
+Averaged to 22 navigations per contains
+Ongelijkmatigheid: 0.7
+PASSED: testBuildAndContains Sbst2
+==================================
+2000000 elements
+Build in: 1.8955s
+Used 634.7041015625MB
+Ran 2 times
+Ongelijkmatigheid: 0.7
+PASSED: bigContainsTest Sbst2
+=============================
+20000000 elements
+Ran in: 15.978s
+Ran 1 times
+Used 454646281 navigations
+Averaged to 22 navigations per contains
+Ongelijkmatigheid: 0.7
+PASSED: testBuildAndContains Obst4
+==================================
+2000000 elements
+Build in: 0.949s
+Used 506.662109375MB
+Ran 2 times
+Ongelijkmatigheid: 0.8
+PASSED: bigContainsTest Obst4
+=============================
+20000000 elements
+Ran in: 7.806s
+Ran 1 times
+Used 526063624 navigations
+Averaged to 26 navigations per contains
+Ongelijkmatigheid: 0.8
+PASSED: testBuildAndContains Sbst1
+==================================
+2000000 elements
+Build in: 5.2665s
+Used 650.5546875MB
+Ran 2 times
+Ongelijkmatigheid: 0.8
+PASSED: bigContainsTest Sbst1
+=============================
+20000000 elements
+Ran in: 38.97s
+Ran 1 times
+Used 424369774 navigations
+Averaged to 21 navigations per contains
+Ongelijkmatigheid: 0.8
+PASSED: testBuildAndContains Sbst2
+==================================
+2000000 elements
+Build in: 1.8655s
+Used 625.98046875MB
+Ran 2 times
+Ongelijkmatigheid: 0.8
+PASSED: bigContainsTest Sbst2
+=============================
+20000000 elements
+Ran in: 14.261s
+Ran 1 times
+Used 424369774 navigations
+Averaged to 21 navigations per contains
+Ongelijkmatigheid: 0.8
+PASSED: testBuildAndContains Obst4
+==================================
+2000000 elements
+Build in: 0.9245s
+Used 508.11669921875MB
+Ran 2 times
+Ongelijkmatigheid: 0.9
+PASSED: bigContainsTest Obst4
+=============================
+20000000 elements
+Ran in: 6.628s
+Ran 1 times
+Used 524936048 navigations
+Averaged to 26 navigations per contains
+Ongelijkmatigheid: 0.9
+PASSED: testBuildAndContains Sbst1
+==================================
+2000000 elements
+Build in: 5.128s
+Used 1545.56103515625MB
+Ran 2 times
+Ongelijkmatigheid: 0.9
+PASSED: bigContainsTest Sbst1
+=============================
+20000000 elements
+Ran in: 31.715s
+Ran 1 times
+Used 377145443 navigations
+Averaged to 18 navigations per contains
+Ongelijkmatigheid: 0.9
+PASSED: testBuildAndContains Sbst2
+==================================
+2000000 elements
+Build in: 1.7885s
+Used 627.0322265625MB
+Ran 2 times
+Ongelijkmatigheid: 0.9
+PASSED: bigContainsTest Sbst2
+=============================
+20000000 elements
+Ran in: 11.02s
+Ran 1 times
+Used 377145443 navigations
+Averaged to 18 navigations per contains
+Ongelijkmatigheid: 0.9
+PASSED: testBuildAndContains Obst4
+==================================
+2000000 elements
+Build in: 0.9525s
+Used 509.478515625MB
+Ran 2 times
+Ongelijkmatigheid: 1
+PASSED: bigContainsTest Obst4
+=============================
+20000000 elements
+Ran in: 6.16s
+Ran 1 times
+Used 523332502 navigations
+Averaged to 26 navigations per contains
+Ongelijkmatigheid: 1
+PASSED: testBuildAndContains Sbst1
+==================================
+2000000 elements
+Build in: 5.247s
+Used 1479.32470703125MB
+Ran 2 times
+Ongelijkmatigheid: 1
+PASSED: bigContainsTest Sbst1
+=============================
+20000000 elements
+Ran in: 25.856s
+Ran 1 times
+Used 314527880 navigations
+Averaged to 15 navigations per contains
+Ongelijkmatigheid: 1
+PASSED: testBuildAndContains Sbst2
+==================================
+2000000 elements
+Build in: 1.8525s
+Used 627.849609375MB
+Ran 2 times
+Ongelijkmatigheid: 1
+PASSED: bigContainsTest Sbst2
+=============================
+20000000 elements
+Ran in: 8.952s
+Ran 1 times
+Used 314527880 navigations
+Averaged to 15 navigations per contains
+Ongelijkmatigheid: 1
+PASSED: testBuildAndContains Obst4
+==================================
+3000000 elements
+Build in: 1.577s
+Used 755.845703125MB
+Ran 2 times
+Ongelijkmatigheid: 0.1
+PASSED: bigContainsTest Obst4
+=============================
+30000000 elements
+Ran in: 13.26s
+Ran 1 times
+Used 830002638 navigations
+Averaged to 27 navigations per contains
+Ongelijkmatigheid: 0.1
+PASSED: testBuildAndContains Sbst1
+==================================
+3000000 elements
+Build in: 7.7975s
+Used 1178.330078125MB
+Ran 2 times
+Ongelijkmatigheid: 0.1
+PASSED: bigContainsTest Sbst1
+=============================
+30000000 elements
+Ran in: 73.873s
+Ran 1 times
+Used 764182347 navigations
+Averaged to 25 navigations per contains
+Ongelijkmatigheid: 0.1
+PASSED: testBuildAndContains Sbst2
+==================================
+3000000 elements
+Build in: 3.0145s
+Used 939.8857421875MB
+Ran 2 times
+Ongelijkmatigheid: 0.1
+PASSED: bigContainsTest Sbst2
+=============================
+30000000 elements
+Ran in: 27.626s
+Ran 1 times
+Used 764182347 navigations
+Averaged to 25 navigations per contains
+Ongelijkmatigheid: 0.1
+PASSED: testBuildAndContains Obst4
+==================================
+3000000 elements
+Build in: 1.541s
+Used 759.50537109375MB
+Ran 2 times
+Ongelijkmatigheid: 0.2
+PASSED: bigContainsTest Obst4
+=============================
+30000000 elements
+Ran in: 13.628s
+Ran 1 times
+Used 830041248 navigations
+Averaged to 27 navigations per contains
+Ongelijkmatigheid: 0.2
+PASSED: testBuildAndContains Sbst1
+==================================
+3000000 elements
+Build in: 7.942s
+Used 2001.4931640625MB
+Ran 2 times
+Ongelijkmatigheid: 0.2
+PASSED: bigContainsTest Sbst1
+=============================
+30000000 elements
+Ran in: 73.943s
+Ran 1 times
+Used 762948944 navigations
+Averaged to 25 navigations per contains
+Ongelijkmatigheid: 0.2
+PASSED: testBuildAndContains Sbst2
+==================================
+3000000 elements
+Build in: 2.8975s
+Used 942.97998046875MB
+Ran 2 times
+Ongelijkmatigheid: 0.2
+PASSED: bigContainsTest Sbst2
+=============================
+30000000 elements
+Ran in: 26.83s
+Ran 1 times
+Used 762948944 navigations
+Averaged to 25 navigations per contains
+Ongelijkmatigheid: 0.2
+PASSED: testBuildAndContains Obst4
+==================================
+3000000 elements
+Build in: 1.5585s
+Used 762.9599609375MB
+Ran 2 times
+Ongelijkmatigheid: 0.3
+PASSED: bigContainsTest Obst4
+=============================
+30000000 elements
+Ran in: 13.643s
+Ran 1 times
+Used 830076508 navigations
+Averaged to 27 navigations per contains
+Ongelijkmatigheid: 0.3
+PASSED: testBuildAndContains Sbst1
+==================================
+3000000 elements
+Build in: 8.0215s
+Used 1763.69970703125MB
+Ran 2 times
+Ongelijkmatigheid: 0.3
+PASSED: bigContainsTest Sbst1
+=============================
+30000000 elements
+Ran in: 73.846s
+Ran 1 times
+Used 760216730 navigations
+Averaged to 25 navigations per contains
+Ongelijkmatigheid: 0.3
+PASSED: testBuildAndContains Sbst2
+==================================
+3000000 elements
+Build in: 3.0905s
+Used 945.7041015625MB
+Ran 2 times
+Ongelijkmatigheid: 0.3
+PASSED: bigContainsTest Sbst2
+=============================
+30000000 elements
+Ran in: 28.647s
+Ran 1 times
+Used 760216730 navigations
+Averaged to 25 navigations per contains
+Ongelijkmatigheid: 0.3
+PASSED: testBuildAndContains Obst4
+==================================
+3000000 elements
+Build in: 1.561s
+Used 765.37744140625MB
+Ran 2 times
+Ongelijkmatigheid: 0.4
+PASSED: bigContainsTest Obst4
+=============================
+30000000 elements
+Ran in: 13.435s
+Ran 1 times
+Used 830131045 navigations
+Averaged to 27 navigations per contains
+Ongelijkmatigheid: 0.4
+PASSED: testBuildAndContains Sbst1
+==================================
+3000000 elements
+Build in: 7.9295s
+Used 1560.6806640625MB
+Ran 2 times
+Ongelijkmatigheid: 0.4
+PASSED: bigContainsTest Sbst1
+=============================
+30000000 elements
+Ran in: 72.241s
+Ran 1 times
+Used 755168652 navigations
+Averaged to 25 navigations per contains
+Ongelijkmatigheid: 0.4
+PASSED: testBuildAndContains Sbst2
+==================================
+3000000 elements
+Build in: 2.924s
+Used 948.3701171875MB
+Ran 2 times
+Ongelijkmatigheid: 0.4
+PASSED: bigContainsTest Sbst2
+=============================
+30000000 elements
+Ran in: 27.903s
+Ran 1 times
+Used 755168652 navigations
+Averaged to 25 navigations per contains
+Ongelijkmatigheid: 0.4
+PASSED: testBuildAndContains Obst4
+==================================
+3000000 elements
+Build in: 1.4905s
+Used 766.0283203125MB
+Ran 2 times
+Ongelijkmatigheid: 0.5
+PASSED: bigContainsTest Obst4
+=============================
+30000000 elements
+Ran in: 12.543s
+Ran 1 times
+Used 830166379 navigations
+Averaged to 27 navigations per contains
+Ongelijkmatigheid: 0.5
+PASSED: testBuildAndContains Sbst1
+==================================
+3000000 elements
+Build in: 7.864s
+Used 1373.41650390625MB
+Ran 2 times
+Ongelijkmatigheid: 0.5
+PASSED: bigContainsTest Sbst1
+=============================
+30000000 elements
+Ran in: 70.224s
+Ran 1 times
+Used 746286359 navigations
+Averaged to 24 navigations per contains
+Ongelijkmatigheid: 0.5
+PASSED: testBuildAndContains Sbst2
+==================================
+3000000 elements
+Build in: 2.8615s
+Used 951.01953125MB
+Ran 2 times
+Ongelijkmatigheid: 0.5
+PASSED: bigContainsTest Sbst2
+=============================
+30000000 elements
+Ran in: 25.73s
+Ran 1 times
+Used 746286359 navigations
+Averaged to 24 navigations per contains
+Ongelijkmatigheid: 0.5
+PASSED: testBuildAndContains Obst4
+==================================
+3000000 elements
+Build in: 1.4995s
+Used 755.27685546875MB
+Ran 2 times
+Ongelijkmatigheid: 0.6
+PASSED: bigContainsTest Obst4
+=============================
+30000000 elements
+Ran in: 12.455s
+Ran 1 times
+Used 830425370 navigations
+Averaged to 27 navigations per contains
+Ongelijkmatigheid: 0.6
+PASSED: testBuildAndContains Sbst1
+==================================
+3000000 elements
+Build in: 8.109s
+Used 1160.021484375MB
+Ran 2 times
+Ongelijkmatigheid: 0.6
+PASSED: bigContainsTest Sbst1
+=============================
+30000000 elements
+Ran in: 68.648s
+Ran 1 times
+Used 730711254 navigations
+Averaged to 24 navigations per contains
+Ongelijkmatigheid: 0.6
+PASSED: testBuildAndContains Sbst2
+==================================
+3000000 elements
+Build in: 2.934s
+Used 938.22705078125MB
+Ran 2 times
+Ongelijkmatigheid: 0.6
+PASSED: bigContainsTest Sbst2
+=============================
+30000000 elements
+Ran in: 25.694s
+Ran 1 times
+Used 730711254 navigations
+Averaged to 24 navigations per contains
+Ongelijkmatigheid: 0.6
+PASSED: testBuildAndContains Obst4
+==================================
+3000000 elements
+Build in: 1.6935s
+Used 766.42041015625MB
+Ran 2 times
+Ongelijkmatigheid: 0.7
+PASSED: bigContainsTest Obst4
+=============================
+30000000 elements
+Ran in: 13.581s
+Ran 1 times
+Used 831160907 navigations
+Averaged to 27 navigations per contains
+Ongelijkmatigheid: 0.7
+PASSED: testBuildAndContains Sbst1
+==================================
+3000000 elements
+Build in: 8.33s
+Used 965.23876953125MB
+Ran 2 times
+Ongelijkmatigheid: 0.7
+PASSED: bigContainsTest Sbst1
+=============================
+30000000 elements
+Ran in: 68.491s
+Ran 1 times
+Used 703497992 navigations
+Averaged to 23 navigations per contains
+Ongelijkmatigheid: 0.7
+PASSED: testBuildAndContains Sbst2
+==================================
+3000000 elements
+Build in: 2.9735s
+Used 940.12841796875MB
+Ran 2 times
+Ongelijkmatigheid: 0.7
+PASSED: bigContainsTest Sbst2
+=============================
+30000000 elements
+Ran in: 26.16s
+Ran 1 times
+Used 703497992 navigations
+Averaged to 23 navigations per contains
+Ongelijkmatigheid: 0.7
+PASSED: testBuildAndContains Obst4
+==================================
+3000000 elements
+Build in: 1.518s
+Used 766.3955078125MB
+Ran 2 times
+Ongelijkmatigheid: 0.8
+PASSED: bigContainsTest Obst4
+=============================
+30000000 elements
+Ran in: 12.55s
+Ran 1 times
+Used 833278932 navigations
+Averaged to 27 navigations per contains
+Ongelijkmatigheid: 0.8
+PASSED: testBuildAndContains Sbst1
+==================================
+3000000 elements
+Build in: 8.301s
+Used 2361.841796875MB
+Ran 2 times
+Ongelijkmatigheid: 0.8
+PASSED: bigContainsTest Sbst1
+=============================
+30000000 elements
+Ran in: 59.353s
+Ran 1 times
+Used 656757293 navigations
+Averaged to 21 navigations per contains
+Ongelijkmatigheid: 0.8
+PASSED: testBuildAndContains Sbst2
+==================================
+3000000 elements
+Build in: 2.9115s
+Used 941.96337890625MB
+Ran 2 times
+Ongelijkmatigheid: 0.8
+PASSED: bigContainsTest Sbst2
+=============================
+30000000 elements
+Ran in: 21.928s
+Ran 1 times
+Used 656757293 navigations
+Averaged to 21 navigations per contains
+Ongelijkmatigheid: 0.8
+PASSED: testBuildAndContains Obst4
+==================================
+3000000 elements
+Build in: 1.5865s
+Used 755.36181640625MB
+Ran 2 times
+Ongelijkmatigheid: 0.9
+PASSED: bigContainsTest Obst4
+=============================
+30000000 elements
+Ran in: 11.997s
+Ran 1 times
+Used 838560646 navigations
+Averaged to 27 navigations per contains
+Ongelijkmatigheid: 0.9
+PASSED: testBuildAndContains Sbst1
+==================================
+3000000 elements
+Build in: 8.3925s
+Used 2282.5908203125MB
+Ran 2 times
+Ongelijkmatigheid: 0.9
+PASSED: bigContainsTest Sbst1
+=============================
+30000000 elements
+Ran in: 51.065s
+Ran 1 times
+Used 582555100 navigations
+Averaged to 19 navigations per contains
+Ongelijkmatigheid: 0.9
+PASSED: testBuildAndContains Sbst2
+==================================
+3000000 elements
+Build in: 2.9585s
+Used 942.50439453125MB
+Ran 2 times
+Ongelijkmatigheid: 0.9
+PASSED: bigContainsTest Sbst2
+=============================
+30000000 elements
+Ran in: 19.106s
+Ran 1 times
+Used 582555100 navigations
+Averaged to 19 navigations per contains
+Ongelijkmatigheid: 0.9
+PASSED: testBuildAndContains Obst4
+==================================
+3000000 elements
+Build in: 1.4855s
+Used 755.6435546875MB
+Ran 2 times
+Ongelijkmatigheid: 1
+PASSED: bigContainsTest Obst4
+=============================
+30000000 elements
+Ran in: 9.141s
+Ran 1 times
+Used 849251530 navigations
+Averaged to 28 navigations per contains
+Ongelijkmatigheid: 1
+PASSED: testBuildAndContains Sbst1
+==================================
+3000000 elements
+Build in: 8.0125s
+Used 2250.49462890625MB
+Ran 2 times
+Ongelijkmatigheid: 1
+PASSED: bigContainsTest Sbst1
+=============================
+30000000 elements
+Ran in: 38.278s
+Ran 1 times
+Used 482875818 navigations
+Averaged to 16 navigations per contains
+Ongelijkmatigheid: 1
+PASSED: testBuildAndContains Sbst2
+==================================
+3000000 elements
+Build in: 2.8355s
+Used 942.68408203125MB
+Ran 2 times
+Ongelijkmatigheid: 1
+PASSED: bigContainsTest Sbst2
+=============================
+30000000 elements
+Ran in: 13.247s
+Ran 1 times
+Used 482875818 navigations
+Averaged to 16 navigations per contains
+Ongelijkmatigheid: 1
+PASSED: testBuildAndContains Obst4
+==================================
+4000000 elements
+Build in: 2.214s
+Used 1043.193359375MB
+Ran 2 times
+Ongelijkmatigheid: 0.1
+PASSED: bigContainsTest Obst4
+=============================
+40000000 elements
+Ran in: 19.159s
+Ran 1 times
+Used 1145936974 navigations
+Averaged to 28 navigations per contains
+Ongelijkmatigheid: 0.1
+PASSED: testBuildAndContains Sbst1
+==================================
+4000000 elements
+Build in: 11.1525s
+Used 1898.5693359375MB
+Ran 2 times
+Ongelijkmatigheid: 0.1
+PASSED: bigContainsTest Sbst1
+=============================
+40000000 elements
+Ran in: 105.498s
+Ran 1 times
+Used 1039829123 navigations
+Averaged to 25 navigations per contains
+Ongelijkmatigheid: 0.1
+PASSED: testBuildAndContains Sbst2
+==================================
+4000000 elements
+Build in: 4.2155s
+Used 1283.71533203125MB
+Ran 2 times
+Ongelijkmatigheid: 0.1
+PASSED: bigContainsTest Sbst2
+=============================
+40000000 elements
+Ran in: 40.546s
+Ran 1 times
+Used 1039829123 navigations
+Averaged to 25 navigations per contains
+Ongelijkmatigheid: 0.1
+PASSED: testBuildAndContains Obst4
+==================================
+4000000 elements
+Build in: 2.211s
+Used 1042.84033203125MB
+Ran 2 times
+Ongelijkmatigheid: 0.2
+PASSED: bigContainsTest Obst4
+=============================
+40000000 elements
+Ran in: 19.246s
+Ran 1 times
+Used 1145908764 navigations
+Averaged to 28 navigations per contains
+Ongelijkmatigheid: 0.2
+PASSED: testBuildAndContains Sbst1
+==================================
+4000000 elements
+Build in: 11.0835s
+Used 1897.09765625MB
+Ran 2 times
+Ongelijkmatigheid: 0.2
+PASSED: bigContainsTest Sbst1
+=============================
+40000000 elements
+Ran in: 102.775s
+Ran 1 times
+Used 1038158481 navigations
+Averaged to 25 navigations per contains
+Ongelijkmatigheid: 0.2
+PASSED: testBuildAndContains Sbst2
+==================================
+4000000 elements
+Build in: 4.1735s
+Used 1283.88330078125MB
+Ran 2 times
+Ongelijkmatigheid: 0.2
+PASSED: bigContainsTest Sbst2
+=============================
+40000000 elements
+Ran in: 40.48s
+Ran 1 times
+Used 1038158481 navigations
+Averaged to 25 navigations per contains
+Ongelijkmatigheid: 0.2
+PASSED: testBuildAndContains Obst4
+==================================
+4000000 elements
+Build in: 2.2115s
+Used 1043.06787109375MB
+Ran 2 times
+Ongelijkmatigheid: 0.3
+PASSED: bigContainsTest Obst4
+=============================
+40000000 elements
+Ran in: 19.182s
+Ran 1 times
+Used 1145957218 navigations
+Averaged to 28 navigations per contains
+Ongelijkmatigheid: 0.3
+PASSED: testBuildAndContains Sbst1
+==================================
+4000000 elements
+Build in: 11.028s
+Used 1909.421875MB
+Ran 2 times
+Ongelijkmatigheid: 0.3
+PASSED: bigContainsTest Sbst1
+=============================
+40000000 elements
+Ran in: 102.8s
+Ran 1 times
+Used 1034488540 navigations
+Averaged to 25 navigations per contains
+Ongelijkmatigheid: 0.3
+PASSED: testBuildAndContains Sbst2
+==================================
+4000000 elements
+Build in: 4.337s
+Used 1283.861328125MB
+Ran 2 times
+Ongelijkmatigheid: 0.3
+PASSED: bigContainsTest Sbst2
+=============================
+40000000 elements
+Ran in: 40.469s
+Ran 1 times
+Used 1034488540 navigations
+Averaged to 25 navigations per contains
+Ongelijkmatigheid: 0.3
+PASSED: testBuildAndContains Obst4
+==================================
+4000000 elements
+Build in: 2.214s
+Used 1042.97412109375MB
+Ran 2 times
+Ongelijkmatigheid: 0.4
+PASSED: bigContainsTest Obst4
+=============================
+40000000 elements
+Ran in: 18.853s
+Ran 1 times
+Used 1145945806 navigations
+Averaged to 28 navigations per contains
+Ongelijkmatigheid: 0.4
+PASSED: testBuildAndContains Sbst1
+==================================
+4000000 elements
+Build in: 11.196s
+Used 1898.43212890625MB
+Ran 2 times
+Ongelijkmatigheid: 0.4
+PASSED: bigContainsTest Sbst1
+=============================
+40000000 elements
+Ran in: 98.466s
+Ran 1 times
+Used 1027784042 navigations
+Averaged to 25 navigations per contains
+Ongelijkmatigheid: 0.4
+PASSED: testBuildAndContains Sbst2
+==================================
+4000000 elements
+Build in: 4.1005s
+Used 1283.81005859375MB
+Ran 2 times
+Ongelijkmatigheid: 0.4
+PASSED: bigContainsTest Sbst2
+=============================
+40000000 elements
+Ran in: 38.11s
+Ran 1 times
+Used 1027784042 navigations
+Averaged to 25 navigations per contains
+Ongelijkmatigheid: 0.4
+PASSED: testBuildAndContains Obst4
+==================================
+4000000 elements
+Build in: 2.2165s
+Used 1042.8369140625MB
+Ran 2 times
+Ongelijkmatigheid: 0.5
+PASSED: bigContainsTest Obst4
+=============================
+40000000 elements
+Ran in: 18.63s
+Ran 1 times
+Used 1145993267 navigations
+Averaged to 28 navigations per contains
+Ongelijkmatigheid: 0.5
+PASSED: testBuildAndContains Sbst1
+==================================
+4000000 elements
+Build in: 11.184s
+Used 1897.06005859375MB
+Ran 2 times
+Ongelijkmatigheid: 0.5
+PASSED: bigContainsTest Sbst1
+=============================
+40000000 elements
+Ran in: 100.073s
+Ran 1 times
+Used 1015885619 navigations
+Averaged to 25 navigations per contains
+Ongelijkmatigheid: 0.5
+PASSED: testBuildAndContains Sbst2
+==================================
+4000000 elements
+Build in: 4.1985s
+Used 1284.08349609375MB
+Ran 2 times
+Ongelijkmatigheid: 0.5
+PASSED: bigContainsTest Sbst2
+=============================
+40000000 elements
+Ran in: 37.289s
+Ran 1 times
+Used 1015885619 navigations
+Averaged to 25 navigations per contains
+Ongelijkmatigheid: 0.5
+PASSED: testBuildAndContains Obst4
+==================================
+4000000 elements
+Build in: 2.2235s
+Used 1043.19580078125MB
+Ran 2 times
+Ongelijkmatigheid: 0.6
+PASSED: bigContainsTest Obst4
+=============================
+40000000 elements
+Ran in: 19.291s
+Ran 1 times
+Used 1146258117 navigations
+Averaged to 28 navigations per contains
+Ongelijkmatigheid: 0.6
+PASSED: testBuildAndContains Sbst1
+==================================
+4000000 elements
+Build in: 11.256s
+Used 1910.98681640625MB
+Ran 2 times
+Ongelijkmatigheid: 0.6
+PASSED: bigContainsTest Sbst1
+=============================
+40000000 elements
+Ran in: 98.563s
+Ran 1 times
+Used 995072174 navigations
+Averaged to 24 navigations per contains
+Ongelijkmatigheid: 0.6
+PASSED: testBuildAndContains Sbst2
+==================================
+4000000 elements
+Build in: 4.266s
+Used 1283.83740234375MB
+Ran 2 times
+Ongelijkmatigheid: 0.6
+PASSED: bigContainsTest Sbst2
+=============================
+40000000 elements
+Ran in: 39.219s
+Ran 1 times
+Used 995072174 navigations
+Averaged to 24 navigations per contains
+Ongelijkmatigheid: 0.6
+PASSED: testBuildAndContains Obst4
+==================================
+4000000 elements
+Build in: 2.292s
+Used 1034.4443359375MB
+Ran 2 times
+Ongelijkmatigheid: 0.7
+PASSED: bigContainsTest Obst4
+=============================
+40000000 elements
+Ran in: 19.942s
+Ran 1 times
+Used 1147183066 navigations
+Averaged to 28 navigations per contains
+Ongelijkmatigheid: 0.7
+PASSED: testBuildAndContains Sbst1
+==================================
+4000000 elements
+Build in: 11.3595s
+Used 1927.02197265625MB
+Ran 2 times
+Ongelijkmatigheid: 0.7
+PASSED: bigContainsTest Sbst1
+=============================
+40000000 elements
+Ran in: 99.168s
+Ran 1 times
+Used 958486210 navigations
+Averaged to 23 navigations per contains
+Ongelijkmatigheid: 0.7
+PASSED: testBuildAndContains Sbst2
+==================================
+4000000 elements
+Build in: 4.474s
+Used 1283.61572265625MB
+Ran 2 times
+Ongelijkmatigheid: 0.7
+PASSED: bigContainsTest Sbst2
+=============================
+40000000 elements
+Ran in: 38.42s
+Ran 1 times
+Used 958486210 navigations
+Averaged to 23 navigations per contains
+Ongelijkmatigheid: 0.7
+PASSED: testBuildAndContains Obst4
+==================================
+4000000 elements
+Build in: 2.4415s
+Used 1034.41259765625MB
+Ran 2 times
+Ongelijkmatigheid: 0.8
+PASSED: bigContainsTest Obst4
+=============================
+40000000 elements
+Ran in: 16.906s
+Ran 1 times
+Used 1150064438 navigations
+Averaged to 28 navigations per contains
+Ongelijkmatigheid: 0.8
+PASSED: testBuildAndContains Sbst1
+==================================
+4000000 elements
+Build in: 11.0815s
+Used 1926.61572265625MB
+Ran 2 times
+Ongelijkmatigheid: 0.8
+PASSED: bigContainsTest Sbst1
+=============================
+40000000 elements
+Ran in: 81.655s
+Ran 1 times
+Used 895047672 navigations
+Averaged to 22 navigations per contains
+Ongelijkmatigheid: 0.8
+PASSED: testBuildAndContains Sbst2
+==================================
+4000000 elements
+Build in: 4.081s
+Used 1283.56005859375MB
+Ran 2 times
+Ongelijkmatigheid: 0.8
+PASSED: bigContainsTest Sbst2
+=============================
+40000000 elements
+Ran in: 30.689s
+Ran 1 times
+Used 895047672 navigations
+Averaged to 22 navigations per contains
+Ongelijkmatigheid: 0.8
+PASSED: testBuildAndContains Obst4
+==================================
+4000000 elements
+Build in: 2.3145s
+Used 1042.99560546875MB
+Ran 2 times
+Ongelijkmatigheid: 0.9
+PASSED: bigContainsTest Obst4
+=============================
+40000000 elements
+Ran in: 17.337s
+Ran 1 times
+Used 1157212310 navigations
+Averaged to 28 navigations per contains
+Ongelijkmatigheid: 0.9
+PASSED: testBuildAndContains Sbst1
+==================================
+4000000 elements
+Build in: 11.311s
+Used 1898.5615234375MB
+Ran 2 times
+Ongelijkmatigheid: 0.9
+PASSED: bigContainsTest Sbst1
+=============================
+40000000 elements
+Ran in: 73.835s
+Ran 1 times
+Used 792978882 navigations
+Averaged to 19 navigations per contains
+Ongelijkmatigheid: 0.9
+PASSED: testBuildAndContains Sbst2
+==================================
+4000000 elements
+Build in: 4.42s
+Used 1283.10302734375MB
+Ran 2 times
+Ongelijkmatigheid: 0.9
+PASSED: bigContainsTest Sbst2
+=============================
+40000000 elements
+Ran in: 26.293s
+Ran 1 times
+Used 792978882 navigations
+Averaged to 19 navigations per contains
+Ongelijkmatigheid: 0.9
+PASSED: testBuildAndContains Obst4
+==================================
+4000000 elements
+Build in: 2.11s
+Used 1034.18505859375MB
+Ran 2 times
+Ongelijkmatigheid: 1
+PASSED: bigContainsTest Obst4
+=============================
+40000000 elements
+Ran in: 13.048s
+Ran 1 times
+Used 1170675439 navigations
+Averaged to 29 navigations per contains
+Ongelijkmatigheid: 1
+PASSED: testBuildAndContains Sbst1
+==================================
+4000000 elements
+Build in: 10.4235s
+Used 1929.00244140625MB
+Ran 2 times
+Ongelijkmatigheid: 1
+PASSED: bigContainsTest Sbst1
+=============================
+40000000 elements
+Ran in: 52.729s
+Ran 1 times
+Used 653523990 navigations
+Averaged to 16 navigations per contains
+Ongelijkmatigheid: 1
+PASSED: testBuildAndContains Sbst2
+==================================
+4000000 elements
+Build in: 4.0s
+Used 1282.76953125MB
+Ran 2 times
+Ongelijkmatigheid: 1
+PASSED: bigContainsTest Sbst2
+=============================
+40000000 elements
+Ran in: 18.004s
+Ran 1 times
+Used 653523990 navigations
+Averaged to 16 navigations per contains
+Ongelijkmatigheid: 1
+PASSED: testBuildAndContains Obst4
+==================================
+5000000 elements
+Build in: 2.8825s
+Used 1233.7314453125MB
+Ran 2 times
+Ongelijkmatigheid: 0.1
+PASSED: bigContainsTest Obst4
+=============================
+50000000 elements
+Ran in: 25.014s
+Ran 1 times
+Used 1455891839 navigations
+Averaged to 29 navigations per contains
+Ongelijkmatigheid: 0.1
+PASSED: testBuildAndContains Sbst1
+==================================
+5000000 elements
+Build in: 13.7775s
+Used 1733.53564453125MB
+Ran 2 times
+Ongelijkmatigheid: 0.1
+PASSED: bigContainsTest Sbst1
+=============================
+50000000 elements
+Ran in: 130.31s
+Ran 1 times
+Used 1319989446 navigations
+Averaged to 26 navigations per contains
+Ongelijkmatigheid: 0.1
+PASSED: testBuildAndContains Sbst2
+==================================
+5000000 elements
+Build in: 5.4755s
+Used 1544.14453125MB
+Ran 2 times
+Ongelijkmatigheid: 0.1
+PASSED: bigContainsTest Sbst2
+=============================
+50000000 elements
+Ran in: 51.608s
+Ran 1 times
+Used 1319989446 navigations
+Averaged to 26 navigations per contains
+Ongelijkmatigheid: 0.1
+PASSED: testBuildAndContains Obst4
+==================================
+5000000 elements
+Build in: 2.8835s
+Used 1240.5615234375MB
+Ran 2 times
+Ongelijkmatigheid: 0.2
+PASSED: bigContainsTest Obst4
+=============================
+50000000 elements
+Ran in: 24.922s
+Ran 1 times
+Used 1455971430 navigations
+Averaged to 29 navigations per contains
+Ongelijkmatigheid: 0.2
+PASSED: testBuildAndContains Sbst1
+==================================
+5000000 elements
+Build in: 13.7865s
+Used 1703.6923828125MB
+Ran 2 times
+Ongelijkmatigheid: 0.2
+PASSED: bigContainsTest Sbst1
+=============================
+50000000 elements
+Ran in: 129.845s
+Ran 1 times
+Used 1317855614 navigations
+Averaged to 26 navigations per contains
+Ongelijkmatigheid: 0.2
+PASSED: testBuildAndContains Sbst2
+==================================
+5000000 elements
+Build in: 5.3575s
+Used 1546.154296875MB
+Ran 2 times
+Ongelijkmatigheid: 0.2
+PASSED: bigContainsTest Sbst2
+=============================
+50000000 elements
+Ran in: 51.418s
+Ran 1 times
+Used 1317855614 navigations
+Averaged to 26 navigations per contains
+Ongelijkmatigheid: 0.2
+PASSED: testBuildAndContains Obst4
+==================================
+5000000 elements
+Build in: 2.8815s
+Used 1240.93212890625MB
+Ran 2 times
+Ongelijkmatigheid: 0.3
+PASSED: bigContainsTest Obst4
+=============================
+50000000 elements
+Ran in: 25.078s
+Ran 1 times
+Used 1456001000 navigations
+Averaged to 29 navigations per contains
+Ongelijkmatigheid: 0.3
+PASSED: testBuildAndContains Sbst1
+==================================
+5000000 elements
+Build in: 13.6545s
+Used 1702.7138671875MB
+Ran 2 times
+Ongelijkmatigheid: 0.3
+PASSED: bigContainsTest Sbst1
+=============================
+50000000 elements
+Ran in: 128.774s
+Ran 1 times
+Used 1313357282 navigations
+Averaged to 26 navigations per contains
+Ongelijkmatigheid: 0.3
+PASSED: testBuildAndContains Sbst2
+==================================
+5000000 elements
+Build in: 5.394s
+Used 1544.40380859375MB
+Ran 2 times
+Ongelijkmatigheid: 0.3
+PASSED: bigContainsTest Sbst2
+=============================
+50000000 elements
+Ran in: 51.172s
+Ran 1 times
+Used 1313357282 navigations
+Averaged to 26 navigations per contains
+Ongelijkmatigheid: 0.3
+PASSED: testBuildAndContains Obst4
+==================================
+5000000 elements
+Build in: 2.8695s
+Used 1240.6572265625MB
+Ran 2 times
+Ongelijkmatigheid: 0.4
+PASSED: bigContainsTest Obst4
+=============================
+50000000 elements
+Ran in: 24.933s
+Ran 1 times
+Used 1455917452 navigations
+Averaged to 29 navigations per contains
+Ongelijkmatigheid: 0.4
+PASSED: testBuildAndContains Sbst1
+==================================
+5000000 elements
+Build in: 13.7255s
+Used 1702.2587890625MB
+Ran 2 times
+Ongelijkmatigheid: 0.4
+PASSED: bigContainsTest Sbst1
+=============================
+50000000 elements
+Ran in: 123.191s
+Ran 1 times
+Used 1304956065 navigations
+Averaged to 26 navigations per contains
+Ongelijkmatigheid: 0.4
+PASSED: testBuildAndContains Sbst2
+==================================
+5000000 elements
+Build in: 5.248s
+Used 1544.41455078125MB
+Ran 2 times
+Ongelijkmatigheid: 0.4
+PASSED: bigContainsTest Sbst2
+=============================
+50000000 elements
+Ran in: 47.991s
+Ran 1 times
+Used 1304956065 navigations
+Averaged to 26 navigations per contains
+Ongelijkmatigheid: 0.4
+PASSED: testBuildAndContains Obst4
+==================================
+5000000 elements
+Build in: 2.854s
+Used 1240.4931640625MB
+Ran 2 times
+Ongelijkmatigheid: 0.5
+PASSED: bigContainsTest Obst4
+=============================
+50000000 elements
+Ran in: 24.581s
+Ran 1 times
+Used 1455934233 navigations
+Averaged to 29 navigations per contains
+Ongelijkmatigheid: 0.5
+PASSED: testBuildAndContains Sbst1
+==================================
+5000000 elements
+Build in: 13.773s
+Used 1703.36083984375MB
+Ran 2 times
+Ongelijkmatigheid: 0.5
+PASSED: bigContainsTest Sbst1
+=============================
+50000000 elements
+Ran in: 125.993s
+Ran 1 times
+Used 1290035247 navigations
+Averaged to 25 navigations per contains
+Ongelijkmatigheid: 0.5
+PASSED: testBuildAndContains Sbst2
+==================================
+5000000 elements
+Build in: 5.3685s
+Used 1546.08544921875MB
+Ran 2 times
+Ongelijkmatigheid: 0.5
+PASSED: bigContainsTest Sbst2
+=============================
+50000000 elements
+Ran in: 50.109s
+Ran 1 times
+Used 1290035247 navigations
+Averaged to 25 navigations per contains
+Ongelijkmatigheid: 0.5
+PASSED: testBuildAndContains Obst4
+==================================
+5000000 elements
+Build in: 2.8585s
+Used 1233.67822265625MB
+Ran 2 times
+Ongelijkmatigheid: 0.6
+PASSED: bigContainsTest Obst4
+=============================
+50000000 elements
+Ran in: 24.531s
+Ran 1 times
+Used 1455918038 navigations
+Averaged to 29 navigations per contains
+Ongelijkmatigheid: 0.6
+PASSED: testBuildAndContains Sbst1
+==================================
+5000000 elements
+Build in: 13.6995s
+Used 1734.4365234375MB
+Ran 2 times
+Ongelijkmatigheid: 0.6
+PASSED: bigContainsTest Sbst1
+=============================
+50000000 elements
+Ran in: 121.597s
+Ran 1 times
+Used 1263951230 navigations
+Averaged to 25 navigations per contains
+Ongelijkmatigheid: 0.6
+PASSED: testBuildAndContains Sbst2
+==================================
+5000000 elements
+Build in: 5.429s
+Used 1544.0517578125MB
+Ran 2 times
+Ongelijkmatigheid: 0.6
+PASSED: bigContainsTest Sbst2
+=============================
+50000000 elements
+Ran in: 48.598s
+Ran 1 times
+Used 1263951230 navigations
+Averaged to 25 navigations per contains
+Ongelijkmatigheid: 0.6
+PASSED: testBuildAndContains Obst4
+==================================
+5000000 elements
+Build in: 2.832s
+Used 1240.7216796875MB
+Ran 2 times
+Ongelijkmatigheid: 0.7
+PASSED: bigContainsTest Obst4
+=============================
+50000000 elements
+Ran in: 24.405s
+Ran 1 times
+Used 1455831769 navigations
+Averaged to 29 navigations per contains
+Ongelijkmatigheid: 0.7
+PASSED: testBuildAndContains Sbst1
+==================================
+5000000 elements
+Build in: 13.737s
+Used 1701.76025390625MB
+Ran 2 times
+Ongelijkmatigheid: 0.7
+PASSED: bigContainsTest Sbst1
+=============================
+50000000 elements
+Ran in: 115.901s
+Ran 1 times
+Used 1217823714 navigations
+Averaged to 24 navigations per contains
+Ongelijkmatigheid: 0.7
+PASSED: testBuildAndContains Sbst2
+==================================
+5000000 elements
+Build in: 5.372s
+Used 1543.7197265625MB
+Ran 2 times
+Ongelijkmatigheid: 0.7
+PASSED: bigContainsTest Sbst2
+=============================
+50000000 elements
+Ran in: 45.106s
+Ran 1 times
+Used 1217823714 navigations
+Averaged to 24 navigations per contains
+Ongelijkmatigheid: 0.7
+PASSED: testBuildAndContains Obst4
+==================================
+5000000 elements
+Build in: 2.876s
+Used 1233.390625MB
+Ran 2 times
+Ongelijkmatigheid: 0.8
+PASSED: bigContainsTest Obst4
+=============================
+50000000 elements
+Ran in: 23.664s
+Ran 1 times
+Used 1455504215 navigations
+Averaged to 29 navigations per contains
+Ongelijkmatigheid: 0.8
+PASSED: testBuildAndContains Sbst1
+==================================
+5000000 elements
+Build in: 13.6965s
+Used 1735.2998046875MB
+Ran 2 times
+Ongelijkmatigheid: 0.8
+PASSED: bigContainsTest Sbst1
+=============================
+50000000 elements
+Ran in: 105.458s
+Ran 1 times
+Used 1137424135 navigations
+Averaged to 22 navigations per contains
+Ongelijkmatigheid: 0.8
+PASSED: testBuildAndContains Sbst2
+==================================
+5000000 elements
+Build in: 5.4105s
+Used 1543.71533203125MB
+Ran 2 times
+Ongelijkmatigheid: 0.8
+PASSED: bigContainsTest Sbst2
+=============================
+50000000 elements
+Ran in: 41.085s
+Ran 1 times
+Used 1137424135 navigations
+Averaged to 22 navigations per contains
+Ongelijkmatigheid: 0.8
+PASSED: testBuildAndContains Obst4
+==================================
+5000000 elements
+Build in: 2.807s
+Used 1233.56689453125MB
+Ran 2 times
+Ongelijkmatigheid: 0.9
+PASSED: bigContainsTest Obst4
+=============================
+50000000 elements
+Ran in: 19.711s
+Ran 1 times
+Used 1454810924 navigations
+Averaged to 29 navigations per contains
+Ongelijkmatigheid: 0.9
+PASSED: testBuildAndContains Sbst1
+==================================
+5000000 elements
+Build in: 13.4565s
+Used 1733.77490234375MB
+Ran 2 times
+Ongelijkmatigheid: 0.9
+PASSED: bigContainsTest Sbst1
+=============================
+50000000 elements
+Ran in: 86.595s
+Ran 1 times
+Used 1006975757 navigations
+Averaged to 20 navigations per contains
+Ongelijkmatigheid: 0.9
+PASSED: testBuildAndContains Sbst2
+==================================
+5000000 elements
+Build in: 5.278s
+Used 1543.03759765625MB
+Ran 2 times
+Ongelijkmatigheid: 0.9
+PASSED: bigContainsTest Sbst2
+=============================
+50000000 elements
+Ran in: 31.545s
+Ran 1 times
+Used 1006975757 navigations
+Averaged to 20 navigations per contains
+Ongelijkmatigheid: 0.9
+PASSED: testBuildAndContains Obst4
+==================================
+5000000 elements
+Build in: 2.8805s
+Used 1240.494140625MB
+Ran 2 times
+Ongelijkmatigheid: 1
+PASSED: bigContainsTest Obst4
+=============================
+50000000 elements
+Ran in: 17.99s
+Ran 1 times
+Used 1453306449 navigations
+Averaged to 29 navigations per contains
+Ongelijkmatigheid: 1
+PASSED: testBuildAndContains Sbst1
+==================================
+5000000 elements
+Build in: 13.6835s
+Used 1703.18505859375MB
+Ran 2 times
+Ongelijkmatigheid: 1
+PASSED: bigContainsTest Sbst1
+=============================
+50000000 elements
+Ran in: 68.562s
+Ran 1 times
+Used 827591604 navigations
+Averaged to 16 navigations per contains
+Ongelijkmatigheid: 1
+PASSED: testBuildAndContains Sbst2
+==================================
+5000000 elements
+Build in: 5.331s
+Used 1542.6884765625MB
+Ran 2 times
+Ongelijkmatigheid: 1
+PASSED: bigContainsTest Sbst2
+=============================
+50000000 elements
+Ran in: 25.122s
+Ran 1 times
+Used 827591604 navigations
+Averaged to 16 navigations per contains
+Ongelijkmatigheid: 1

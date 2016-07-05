@@ -1,0 +1,21 @@
+-- Threshold of when to turn
+t = 20
+-- How long to turn
+time = 400
+-- How long to moonwalk
+mwalk = 200
+
+-- Repeat forever, stop the program with Ctrl + C
+WHILE (True)
+  -- Get the distance from the sensor
+  distance = Feel
+  IF (distance < t)
+    Hammertime
+    Moonwalk
+    Wait(mwalk)
+    TurnRight
+    Wait(time)
+  ELSE
+    Walk
+  FI
+ELIHW

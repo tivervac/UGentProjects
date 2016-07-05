@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.0">
+  <zoom_level>9</zoom_level>
+  <element>
+    <type>com.umlet.element.SequenceDiagram</type>
+    <coordinates>
+      <x>0</x>
+      <y>18</y>
+      <w>1044</w>
+      <h>369</h>
+    </coordinates>
+    <panel_attributes>title: Webshop
+_Apparetenconnectie~id1_|_Webshopapp~id2_|_Camera~id3_|_Foto~id6_|_FotoAnalyzer~id4_|_Projector~id5_
+id1-&gt;id2:id1,id2:&lt;&lt;create&gt;&gt;
+id2-&gt;&gt;&gt;id3:id2,id3:maakFoto()
+iframe{:alt if
+id3-&gt;id6:id3,id6:&lt;&lt;create&gt;&gt;
+id3.&gt;id2:id3,id2:Foto
+
+id2-&gt;id4:id2,id4:&lt;&lt;create&gt;&gt;
+id2-&gt;&gt;&gt;id4:id2,id4:Analiseer(Foto)
+id4.&gt;id2:id4,id2:Gegevens
+
+id2-&gt;id5:id2,id5:Projecteer(Foto, coordinaten)
+iframe}
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

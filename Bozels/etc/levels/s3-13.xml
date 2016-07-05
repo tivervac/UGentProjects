@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<level>
+  <block x="80.966" y="2.591" material="solid" angle="0" width="10" height="10"/>
+  <block x="80.966" y="12.058" material="solid" angle="0" width="10" height="10"/>
+  <block x="119.445" y="19.064" material="ice" angle="359.946" width="8" height="1"/>
+  <target type="small" x="73.635" y="22.672"/>
+  <block x="54.168" y="4.501" material="solid" angle="123.91" width="10" height="10"/>
+  <block x="39.023" y="8.349" material="solid" angle="90" width="10" height="10"/>
+  <block x="62.525" y="0.054" material="solid" angle="225.001" width="10" height="10"/>
+  <block x="57.792" y="2.054" material="solid" angle="180" width="10" height="10"/>
+  <block x="39.509" y="0.866" material="solid" angle="270" width="10" height="10"/>
+  <block x="48.842" y="0.932" material="solid" angle="270" width="10" height="10"/>
+  <block x="80.878" y="24.513" material="solid" angle="0" width="10" height="10"/>
+  <block x="29.905" y="3.274" material="solid" angle="270" width="10" height="10"/>
+  <block x="48.08" y="8.241" material="solid" angle="0" width="10" height="10"/>
+  <block x="28.44" y="17.712" material="solid" angle="0" width="10" height="10"/>
+  <block x="35.025" y="17.749" material="solid" angle="90" width="10" height="10"/>
+  <block x="20.944" y="23.969" material="solid" angle="0" width="10" height="10"/>
+  <block x="11.636" y="5.343" material="solid" angle="89.997" width="10" height="10"/>
+  <block x="8.933" y="22.314" material="solid" angle="25.538" width="10" height="10"/>
+  <block x="25.497" y="21.918" material="solid" angle="45" width="10" height="10"/>
+  <block x="41.522" y="17.628" material="solid" angle="0" width="10" height="10"/>
+  <block x="78.08" y="18.059" material="solid" angle="0" width="5" height="5"/>
+  <block x="73.888" y="7.777" material="stone" angle="359.254" width="2" height="2"/>
+  <bozel x="13.981" y="30.234" type="black" id="2"/>
+  <bozel x="10.906" y="29.994" type="black" id="3"/>
+  <bozel x="21.873" y="29.792" type="red" id="1"/>
+  <block x="5" y="12.812" material="solid" angle="179.997" width="5" height="5"/>
+  <block x="5" y="8.247999999999999" material="solid" angle="179.997" width="5" height="5"/>
+  <block x="69.526" y="18.042" material="solid" angle="0" width="5" height="5"/>
+  <block x="5" y="17.544" material="solid" angle="179.997" width="5" height="5"/>
+  <block width="4.40" height="9.80" x="113.973" y="13.937" material="metal" angle="0.362"/>
+  <block width="4.40" height="9.80" x="124.827" y="4.723" material="metal" angle="359.969"/>
+  <block x="5" y="3.6" material="solid" angle="179.997" width="5" height="5"/>
+  <block width="4.40" height="9.80" x="113.826" y="4.716" material="metal" angle="0.055"/>
+  <block x="73.928" y="21.089" material="ice" angle="359.771" width="4" height="1"/>
+  <block width="4.40" height="9.80" x="124.898" y="13.945" material="metal" angle="359.615"/>
+  <ellipse x="93.15" y="47.433" material="stone" angle="0" width="2" height="2"/>
+  <target type="big" x="97.69" y="9.025"/>
+  <block x="84.236" y="17.378" material="solid" angle="45" width="10" height="10"/>
+  <block x="90.036" y="12.778" material="solid" angle="90" width="10" height="10"/>
+  <block x="90.02" y="3.445" material="solid" angle="90" width="10" height="10"/>
+  <block x="98.007" y="2.124" material="solid" angle="180" width="10" height="10"/>
+  <block x="102.741" y="0.191" material="solid" angle="225.001" width="10" height="10"/>
+  <block x="20.717" y="5.254" material="solid" angle="180" width="10" height="10"/>
+  <block x="29.722" y="8.737" material="solid" angle="180" width="10" height="10"/>
+  <block x="11.615" y="14.826" material="solid" angle="180" width="10" height="10"/>
+  <block x="11.597" y="23.894" material="solid" angle="180" width="10" height="10"/>
+  <block x="20.873" y="14.825" material="solid" angle="180" width="10" height="10"/>
+  <block x="11.592" y="-0.287" material="solid" angle="179.997" width="10" height="2"/>
+  <block x="96.937" y="45.668" material="solid" angle="0" width="10" height="2"/>
+  <block x="5" y="0.643" material="solid" angle="179.997" width="5" height="2"/>
+  <block x="119.573" y="20.611" material="stone" angle="359.953" width="4" height="2"/>
+  <ellipse x="51.727" y="14.934" material="stone" angle="0" width="4" height="4"/>
+  <ellipse x="83.838" y="31.251" material="stone" angle="0" width="4" height="4"/>
+  <target type="big" x="61.949" y="8.853999999999999"/>
+  <block x="94.363" y="19.715" material="stone" angle="90" width="4" height="1"/>
+  <target type="big" x="119.315" y="2.253"/>
+</level>

@@ -1,0 +1,103 @@
+@import 'reset';
+
+body {
+	margin: 0%;
+	color: #000000;
+	background-color: #FFFFFF;
+	overflow: hidden;
+	font-family: Arial;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#blueheader{
+	background-color: navy;
+	width: 100%;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+	padding: 3%;
+	font-size: 24px;
+}
+
+#searchbar{
+	background-color: #F0F0F0;
+	width: 100%;
+	padding: 2% 0%;
+	text-align: center;
+}
+
+#searchbar input{
+	width: 98%;
+}
+
+#parkingcontainer{
+	margin: 1%;
+}
+
+@media all and (min-width: 400px) {
+	.parkingbox {width: 43%;}
+}
+
+@media all and (min-width:800px) {
+    .parkingbox{width: 27%;}
+}
+
+@media all and (min-width: 1200px) {
+    .parkingbox{width: 18%;}
+}
+
+.parkingbox{
+    float: left;
+	padding: 1%;
+	border: 1px solid gray;
+	margin: 2% 2% 0% 2%;
+    font-size: 13px;
+	color: gray;
+}
+
+.title {
+	font-weight: bold;
+	font-size: larger;
+	color: black;
+}
+
+.goodbar{
+	background-color: #CCFFCC;
+	width: 95%;
+	margin: auto;
+	margin-top: 3%;
+	padding: 2%;
+	color: green;
+}
+
+.badbar{
+	background-color: #FFCCCC;
+	width: 95%;
+	margin: auto;
+	margin-top: 3%;
+	padding: 2%;
+	color: red;
+}
+
+.emptyspaces{
+	font-weight: bold;
+	display: inline;
+	font-size: larger;
+}
+
+.address{
+	margin-top: 3%;
+	line-height: 125%;
+}
+
+.away{
+	font-weight: bold;
+	margin-top: 5%;
+}
+
+.yellow{
+	background-color: #FFFFCC;
+}
+

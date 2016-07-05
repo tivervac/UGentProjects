@@ -1,0 +1,84 @@
+%T21: 2, 4, 7, 11, 14, 20, hillier (13 in reference paper)
+
+\documentclass[twoside]{article}
+\usepackage{fontspec}
+\setromanfont[BoldFont={GenBasB.ttf},ItalicFont={GenBasI.ttf},BoldItalicFont={GenBasBI.ttf}]{GenBasR.ttf}
+\usepackage{lipsum} % Package to generate dummy text throughout this template
+
+\usepackage[sc]{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\linespread{1.05} % Line spacing - Palatino needs more space between lines
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+
+\usepackage[hmarginratio=1:1,top=30mm,left=15mm, bottom=30mm,columnsep=20pt]{geometry} % Document margins
+\usepackage{multicol} % Used for the two-column layout of the document
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
+\usepackage{float} % Required for tables and figures in the multi-column environment - they need to be placed in specific locations with the [H] (e.g. \begin{table}[H])
+\usepackage{hyperref} % For hyperlinks in the PDF
+
+\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+\usepackage{paralist} % Used for the compactitem environment which makes bullet points with less space between them
+
+\usepackage{abstract} % Allows abstract customization
+\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
+\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
+
+\usepackage{fancyhdr} % Headers and footers
+\pagestyle{fancy} % All pages have headers and footers
+\fancyhead{} % Blank out the default header
+\fancyfoot{} % Blank out the default footer
+\fancyhead[C]{Appendix $\bullet$ Paper review} % Custom header text
+\fancyfoot[LO,LE]{[1] R. Andriansyah, T. van Woensel, F. R. B. Cruz, and L. Duczmal, Performance optimization of open zero-buffer multi-server queueing networks, \textit{Computers \& Operations Research}, vol. 37, no. 8, pp. 1472-1487, 2010.} % Custom footer text
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\title{\vspace{-15mm}\fontsize{24pt}{10pt}\selectfont\textbf{Paper review \\ \large Performance optimization of open zero-buffer multi-server queueing networks \small[1]}} % Article title
+
+\author{
+\large
+\textsc{Stefaan Vermassen \& Titouan Vervack}\\[2mm] 
+\normalsize Ghent University \\ 
+\normalsize \href{mailto:Stefaan.Vermassen@UGent.be}{Stefaan.Vermassen@UGent.be} \\
+\normalsize \href{mailto:Titouan.Vervack@UGent.be}{Titouan.Vervack@UGent.be} 
+\vspace{-6mm}
+}
+\date{}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Insert title
+
+\thispagestyle{fancy} % All pages have headers and footers
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+
+\begin{abstract}
+\vspace{-4mm}
+The main article discusses the optimization of the throughput of an open zero-buffer multi-server general queueing networks with blocking. These networks have a lot of real life examples, especially as systems in the semi-process and process industries. With use of the generalized expansion method (GEM) the performance of these systems is evaluated and compared to simulations. This evaluation is then embedded in a multi-objective optimization (MOO) setting with contradicting goals, maximizing throughput by adding more servers and minimizing cost by removing servers. This multi-objective optimization, solved with a genetic algorithm, results in Pareto-efficient curves that show the relationship between the amount of servers per node and the throughput of the system. The article presents experiments for a number of settings and different network topologies to show the efficacy of the approach.
+\end{abstract}
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+\begin{multicols}{2} % Two-column layout throughout the main article text
+\subsubsection*{1. Uniqueness}
+Zero-buffer queueing networks were mostly an unexplored area, since the few articles that were available mainly focused on single-server tandem lines. The authors were the first to use the MOO method, combined with a genetic search algorithm, to evaluate and optimise this type of queueing networks. This MOO was able to successfully derive Pareto sets which are able to prove the predictability of some of the optimal configurations. These configurations aren't always predictable though, as shown in the asymmetrical network configurations.\\
+The use of GEM method was proven to be a very good method to evaluate the performance of zero-buffer systems, since the authors achieved a deviation in the performance results of mostly 5\% for most of the topologies, both symmetrical and asymmetrical.\\
+\subsubsection*{2. Noteworthy aspects}
+The article starts out very friendly towards the reader, a few real-life examples of the models that were researched are presented such as the canning process in a food factory or the steel production process. The article then moves on to explaining the entire concept of queueing networks, not only limited to what was researched. Afterwards a large and thorough literature study with plenty of references is presented. In the same section some of the less covered aspects of queueing networks, such as blocking, are also covered into some detail.\\
+The methods used to solve the problem were clearly explained and all the needed formulas and pseudocode of the used algorithms were shown and explained well.\\
+The experiments are very well supported by visual representations of the different topologies covered. The results of these experiments have been reported very clearly by the use of tables, boxplots and graphs.\\
+\subsubsection*{3. Possible improvements}
+Even though most of the theory regarding queueing networks has been explained, the modelling decisions aren't always as clear. The different kinds of blocking are explained and BAS is mentioned as the most popular method, but next to this, no reason is given as to why the decision was made to use BAS in the article. The article features a lot of graphs and tables filled with results, but some of the tests and conclusions need some additional work. The tests to optimize the population size and mutation chance of the genetic algorithm only have 4 test results and there are only 3 different values for each of the parameters. The differences on the shown graph also aren't very clear while the article claims they are.\\ Adding the tables filled with results as an appendix would likely improve the readability of the article as most of the values are already visible on the graphs.
+\subsubsection*{4. General evaluation}
+We thought the main article was a good scientific paper, it's uniqueness and the many visual aids as well as explanations made this article one of the best we've read.
+\end{multicols}
+\end{document}

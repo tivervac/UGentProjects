@@ -1,0 +1,246 @@
+\documentclass[a4paper]{article}
+% Margins
+\usepackage{a4wide}
+% BNF syntax
+\usepackage{syntax}
+% Write dutch
+\usepackage[dutch]{babel}
+% Used for images
+\usepackage{graphicx}
+\usepackage{epstopdf}
+% Needed to use headers
+\usepackage{fancyhdr}
+% Used for the euro symbol
+\usepackage[gen]{eurosym}
+% Used for optimal usage of gensymb
+\usepackage{textcomp}
+% Used for the degree symbol
+\usepackage{gensymb}
+% Used for captions and subcaptions on images
+\usepackage{caption}
+\usepackage{subcaption}
+% Used for tables
+\usepackage{tabu}
+% Used for colors
+\usepackage[usenames,dvipsnames,svgnames]{xcolor}
+\usepackage{caption}
+\usepackage{minted}
+\usemintedstyle{colorful}
+% No tab at start of paragraph
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1em}
+% Allows to change margin for a block
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+% Header
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[HR]{\thepage}
+\fancyhead[L]{Titouan Vervack}
+\begin{document}
+\begin{titlepage}
+\fontsize{12pt}{14pt}\selectfont
+
+\begin{center}
+
+% Het logo van de Universiteit Gent
+\includegraphics[height=3cm]{logo}
+
+\vspace{1cm}
+
+\fontsize{14pt}{17pt}\selectfont
+% De Faculteit:
+\textsc{Master of Science in Computer Science Engineering}
+\fontsize{12pt}{14pt}\selectfont
+\vspace{0.3cm}
+
+\vspace{1.2cm}
+
+Academic year 2015--2016
+
+\vspace{2.8cm}
+
+\fontsize{17.28pt}{21pt}\selectfont
+
+% De titel van de thesis:
+\textsc{Functionele en Logische Programmeertalen}
+\fontsize{14.28pt}{21pt}\selectfont
+\textsc{Project MBot}
+
+\fontseries{m}
+\fontsize{12pt}{14pt}\selectfont
+
+\vspace{2.8cm}
+
+% De auteur van de thesis:
+Titouan Vervack
+
+\end{center}
+\end{titlepage}
+\newpage
+\fontsize{12pt}{16pt}\selectfont
+% 1. Inleiding : In je inleiding geef je een overzicht van je project wat je verwezenlijk hebt. Geef ook aan op
+% welke bestaande programmeertalen je eigen programmeertaal gebaseerd is.
+\section{Inleiding}
+Voor dit project is een minimale programmeertaal ontworpen voor het besturen van een robot. De taal kreeg de naam T21 (lees als: Tee-Two-One). De inspiratie voor de taal komt uit de programmeertalen Java, Pascal, Bash en C.\\
+Naast de taal, werd er ook een interpreter voor de taal geschreven. Deze laat toe van een programma, geschreven in T21, uit te voeren. De volledige broncode van de interpreter vindt u terug in Sectie \ref{sec:broncode}.\\
+Tenslotte zijn er een aantal voorbeeld programma's geschreven in T21. In deze programma's laat de robot zijn LED lichtjes flikkeren als een politiewagen, probeert hij obstakels te ontwijken of tracht hij een donkere lijn te 
+volgen.
+
+% 2. Syntax van de taal: Geeft een overzicht van de constructies in je taal in BNF vorm.
+\section{Syntax van de taal}
+Zodat de code proper oogt, is het toegelaten om witruimte aan het begin van een statement te plaatsen.
+Er zijn voor deze reden ook vaak verplichte spaties, bijvoorbeeld voor en na een binaire operator.\\
+Om op het zicht te verstaan wat een statement doet moeten keywords in hoofdletters staan, variabelen beginnen met een kleine letter en beginnen functies met een hoofdletter.
+De syntax van T21 wordt gegeven door de volgende EBNF.\\
+Hierbij is \verb|string| een string van eender welke karakters, uitgesloten \verb|--| en \verb|\n| (alles dat matched met \verb|not . isControl|).\\
+De definitie \verb|WS| bevat alle Unicode space karakters en de controle karakters `\textbackslash t', `\textbackslash n', `\textbackslash r', `\textbackslash f' en `\textbackslash v' (alles wat matched met \verb|Data.Char.isSpace|).
+\setlength{\grammarindent}{12em}
+\begin{grammar}
+
+<program> ::= <statement>*
+
+<statement> ::= <WS>* <stat> <NL>
+\alt <comment>
+\alt <empty>
+
+<stat> ::= <assignment> | <rgb> | <wait> | <walk> | <moonwalk>
+\alt <hammertime>| <turnleft> | <turnright> | <while> | <if>
+
+<exp> ::= `Feel' | `Look' | <literal> | <name>
+\alt exp <binop> exp 
+\alt `(' exp `)'
+
+<literal> ::= <bliteral> | [0-9]+
+
+<bliteral> ::= `True' | `False'
+
+<name> ::= [a-z][a-zA-Z0-9]*
+
+<binop> ::= `+' | `-' | `*' | `==' | `!=' | `>' | `>=' | `<' | `<=' | `&&' | `||'
+
+<assignment> ::= <name> <S> `=' <S> exp
+
+<rgb> ::= `Rgb' `(' exp <C> exp <C> exp <C> exp <C> `)'
+
+<wait> ::= `Wait' `(' exp `)'
+
+<walk> ::= `Walk'
+
+<moonwalk> ::= `Moonwalk'
+
+<hammertime> ::= `Hammertime'
+
+<turnleft> ::= `TurnLeft'
+
+<turnright> ::= `TurnRight'
+
+<comment> ::= `--' <S> <string>
+
+<while> ::= `WHILE' <S> <exp> `ELIHW'
+
+<if> ::= IF <S> <exp> `FI'
+
+<NL> ::= `\textbackslash r'? `\textbackslash n'
+
+<C> ::= `,' <S>
+
+<S> ::= ` '
+\end{grammar}
+
+% 3. Semantiek van de taal: Voor elk van je taalconstructies geef een korte uitleg wat de taalconstructies doen
+% en hoe je deze gebruikt.
+\section{Semantiek van de taal}
+Een programma bestaat uit een opeenvolging van \verb|statement|s. Deze kunnen beginnen met witruimte en hebben geen puntkomma aan het einde. Er kan ook slechts \'e\'en statement per lijn staan.
+Hieronder worden alle statements individueel uitgelegd.
+\begin{itemize}
+\item \verb|assignment|: Dit wordt gebruikt om variabelen te declareren alsook om een nieuwe waarde toe te kennen aan een variabele. Het linker lid bevat enkel een naam, het rechterlid bevat een expressie.
+\item \verb|rgb|: Dit is een ingebouwde functie die toe laat van de LED's op de robot te bedienen. Ze neemt vier argumenten, de index van de LED en de kleur in RGB.
+\item \verb|wait|: Dit laat toe om het programma te onderbreken gedurende een gegeven aantal milliseconden. Dit wordt gebruikt om te bepalen hoe lang bepaalde acties moeten uitgevoerd worden. Om gedurende 500 milliseconden te draaien voert u bijvoorbeeld de volgende reeks statements uit: \verb|TurnLeft|; \verb|Wait(500)|; \verb|Hammertime|.
+\item \verb|walk|: Dit laat de robot vooruit rijden aan een vooraf ingestelde snelheid.
+\item \verb|moonwalk|: Dit laat de robot achteruit rijden aan dezelfde snelheid als hij vooruit rijdt.
+\item \verb|hammertime|: Dit stopt beide motoren.
+\item \verb|turnleft|: Dit draait de robot naar links.
+\item \verb|turnright|: Dit draait de robot naar rechts.
+\item \verb|while|: Dit herhaalt een reeks statements zolang de conditie naar \verb|True| evalueert. Het statement begint met een \verb|WHILE| gevolgd door een spatie en een expressie en ze eindigt met een \verb|ELIHW|.
+\item \verb|if|: Dit voert het blok tussen IF en ELSE uit indien de conditie evalueert naar \verb|True|. In het andere geval wordt het blok tussen ELSE en FI uitgevoerd. Zowel het \verb|True|- als \verb|Falseblok| zijn dus verplicht.
+\end{itemize}
+
+% 4. Voorbeelden programma’s: Geef volledige uitleg bij de programma’s die je geïmplementeerd hebt in je
+% eigen programmeertaal.
+\section{Voorbeeld programma's}
+\subsection*{Police}
+Dit programma vindt u terug in \verb|police.t21|, u kan het uitvoeren met het volgende commando: \verb|runhaskell Main.hs police.t21|.\\
+In dit programma laten we de robot een politiewagen simuleren.
+
+\par Het voorbeeld begint met het defini\"eren van een aantal variabelen. Een van deze variabelen, \verb|x|, bepaalt hoeveel keer we de LED's aan en af zetten. Vervolgens zetten we de eerste let op rood en wachten we gedurende \verb|wait| milliseconden, waarna we deze weer afzetten. Dan wachten we nog eens \verb|wait| milliseconden en herhalen we het process voor de tweede LED, die we blauw kleuren. De lus wordt afgesloten door de variabele \verb|x| met 1 te verminderen.\\
+Tenslotte zetten we beide LED's terug uit na het aflopen van de lus.
+
+\subsection*{Obstacles}
+Dit programma vindt u terug in \verb|obstacles.t21|, u kan het uitvoeren met het volgende commando: \verb|runhaskell Main.hs obstacles.t21|.\\
+In dit voorbeeld rijdt de robot vooruit en probeert hij obstakels te ontwijken.
+
+\par Het programma begint opnieuw met een aantal variabele declaraties. Hier bepaalt \verb|t| hoe dicht een obstakel mag staan eer we het proberen te ontwijken. Na de variabele declaraties starten we een oneindige lus. In deze lus slaan we de waarde van de ultrasone sensor op in de variabele \verb|distance|. De waarde van de sensor vragen we op met de \verb|Feel| expressie. Deze heet zo omdat het is alsof de robot voor zich aan het voelen is om zeker te zijn dat hij nergens tegen loopt.\\
+Indien we geen obstakel tegenkomen binnen onze threshold \verb|t|, lopen we gewoonweg vooruit. Indien we wel een obstakel tegenkomen, dan stoppen we de robot en rijden we achteruit gedurende \verb|mwalk| milliseconden. Daarna draaien we gedurende \verb|time| milliseconden naar rechts. Hierna eindigt deze iteratie van de while-lus en herhalen we deze operaties opnieuw.
+
+\subsection*{Line}
+Dit programma vindt u terug in \verb|line.t21|, u kan het uitvoeren met het volgende commando: \verb|runhaskell Main.hs line.t21|.\\
+In dit voorbeeld probeert de robot een donkere lijn te volgen.
+\par We defini\"eren opnieuw een aantal variabelen en starten dan terug een oneindige lus. In deze lus halen we eerst de waarde van onze lijn sensors op met de \verb|Look| expressie. Dit slaan we op in de \verb|curr| variabele. De \verb|Look| expressie heet zo omdat het is alsof de robot naar de grond kijkt.
+
+\par Vervolgens kijken we of beide sensoren een wit oppervlak zien. Indien dit zo is en dit in de vorige meting ook zo was, dan gaan we er van uit dat we onze lijn kwijt zijn en draaien we constant naar rechts op zoek naar een lijn.\\
+Indien beide sensoren beiden een wit oppervlak zien en de vorige iteratie enkel de linkse sensor een zwart oppervlak zag, draaien we naar links zolang we niet met beide sensoren een zwart oppervlak zien.\\
+Als de rechtse sensor in de vorige iteratie een zwart oppervlak zag, dan draaien we naar rechts tot beide sensoren een zwart oppervlak zien.\\
+Indien \'e\'en van de vorige twee gevallen voorkomt, passen we \verb|curr| aan naar de nieuwe waarde en stoppen we de robot. Dit doen we om te vermijden dat hij terug onmiddellijk van de lijn afwijkt en om zeker te zijn over onze vorige meting (er kan geen meting gemist zijn indien de robot stil staat).\\
+
+\par Indien \'e\'en van de sensoren dus een zwart oppervlak ziet rijden we vooruit. Indien beide echter een wit oppervlak zien proberen we de robot terug op de lijn te krijgen a.h.v. van de vorige gemeten waarde.\\
+We eindigen de lus door de huidige waarde op te slaan in \verb|prev|, om deze in de volgende iteratie beschikbaar te hebben.
+
+% 5. Implementatie: Geef een overzicht van de belangrijke punten van de implementatie. Refereer naar de
+% lijnnummers in je code. Kleine stukjes code die heel belangrijk zijn kan je ook inline in je rapport
+% plaatsen. Het is echter niet de bedoeling dat je verslag een kopie van je broncode is.
+\section{Implementatie}
+Op lijn 11 en 12 van \verb|Main.hs| wordt een bestand aangemaakt. Dit bestand is een log bestand, na de afloop van een programma vindt u de trace van het programma terug in dit bestand. Deze twee lijnen gaan er van uit dat de naam van het programma eindigt met een extensie van exact drie karakters lang. Het is dus niet verplicht om een bestand de extensie \verb|t21| te geven, maar ze moet wel drie karakters lang zijn.
+
+\par Lijn 10 en 15 van \verb|Main.hs| open en sluiten de connectie van de robot, dit gebeurt dus slechts \'e\'en maal in het programma en niet bij elk commando.
+
+\par Op lijn 22 van \verb|Interpreter.hs| wordt de waarde van de ultrasone waarde opgehaald en afgekapt om er een integer van te maken. Dit doen we omdat we dan enkel rekening moeten houden met integers en omdat die precisie overbodig is (volgens eigen testen).
+
+\par Op lijn 23 van \verb|Interpreter.hs| wordt de waarde van de lijn sensor opgehaald en omgezet in waarde van 1 t.e.m. 4. Dit wordt opnieuw gedaan zodat we ons enkel zorgen hoeven te maken over integers.
+
+\par De lijnen 48 t.e.m 64 in \verb|Interpreter.hs| laten ons toe om eenvoudig binaire operators te evalueren. Om een booleaanse waarde te verkrijgen uit een binaire operatie (voor \verb|&&| en \verb~||~) gebruiken we de lijnen 53-59. Deze zetten eerst de integer waarden om in booleans (strikt positieve waarden zijn \verb|True|, de andere \verb|False|) en voeren dan de booleanse operator uit in Haskell. Tenslotte wordt deze boolean, alsook elke andere boolean in het programma, terug omgezet in een integer waarde. \verb|True| wordt voorgesteld door de waarde 1 en \verb|False| door de waarde 0.
+
+\par De lijnen 82 t.e.m. 107 in \verb|Interpreter.hs| maken gebruik van de \verb|plog| functie (gedefini\"eerd op lijn 161). Deze logs vormen de trace in \verb|programma_naam.log| zoals eerder vermeld.
+
+\par In \verb|Parser.hs| worden de lijnen 155 t.e.m. 161 gebruikt om eenvoudig expressies met binaire operatoren te parsen.
+
+\par De lijnen 164 t.e.m. 166 in \verb|Parser.hs| laten toe om indentatie toe te voegen aan de T21 programma's.
+
+\par Tenslotte laten de lijnen 256 t.e.m. 259 in \verb|Parser.hs| toe van expressies te omringen met ronde haken.
+
+% 6. Conclusie : Geef een overzicht van wat je gerealiseerd hebt en hoe je de bestaande code eventueel nog
+% zou kunnen verbeteren.
+\section{Conclusie}
+Voor dit project hebben we een minimale programmeertaal, genaamd T21, ontworpen voor het besturen van een robot. De taal gebruikt strikte naamgevingen en is strikt over het gebruikt van witruimte in zijn programma's om de code beter te doen ogen. Ze gebruikt welbekende concepten uit bestaande programmeertalen, zoals \verb|while| en \verb|if| om eenvoud te behouden. Ze maakt intern ook enkel gebruik van integers, wat de taal zeer eenvoudig maakt en type declaraties overbodig maakt.
+
+\par Met behulp van deze taal kunnen we de LED's en motoren van een mBot controleren. Dit laat ons toe om de robot om te vormen tot een politiewagen, hem obstakels te doen ontwijken en hem lijnen te doen volgen.
+
+\par Tenslotte kunnen er nog enkele verbeteringen aangebracht worden aan de taal.\\
+We gebruiken op dit ogenblik enkel integers, waardoor we dus geen strings kunnen gebruiken. Dit zou echter handig zijn voor logging, gebruikersinteractie en IO.\\
+Al de functies zijn op dit ogenblik gedefini\"eerd en ge\"implementeerd in de compiler. In de toekomst zou de gebruiker dit zelf moeten kunnen om zijn code verder te kunnen opsplitsen en te hergebruiken.\\
+Het zou ook nuttig zijn een multiline comment te voorzien. Dit is echter niet noodzakelijk.
+
+% 7. Appendix Broncode: Geef de volledige code van je project, zorg ervoor dat hierbij lijnnummers staan
+% zodat je hier makkelijk naar kan refereren.
+\section{Appendix broncode}
+\label{sec:broncode}
+\inputminted[numbersep=7pt,fontsize=\footnotesize,linenos]{haskell}{../src/Main.hs}
+\captionof{listing}{Main.hs}
+\inputminted[numbersep=7pt,fontsize=\footnotesize,linenos]{haskell}{../src/Interpreter.hs}
+\captionof{listing}{Interpreter.hs}
+\inputminted[numbersep=7pt,fontsize=\footnotesize,linenos]{haskell}{../src/Parser.hs}
+\captionof{listing}{Parser.hs}
+\inputminted[numbersep=7pt,fontsize=\footnotesize,linenos]{haskell}{../src/Commander.hs}
+\captionof{listing}{Commander.hs}
+\end{document}

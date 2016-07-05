@@ -1,0 +1,39 @@
+%  Titelblad
+
+% Opmerking: gaat uit van een \baselinestretch waarde van 1.5 (die moet
+% ingesteld worden voor het begin van de document environment)
+
+\begin{titlepage}
+\pagenumbering{gobble}% Remove page numbers (and reset to 1)
+\clearpage
+\newgeometry{top=2cm, bottom=2cm, right=1.5cm, left=1.5cm}
+
+%logo
+\begin{figure}[!ht]
+  \begin{adjustwidth}{-1.5cm}{}
+    \centering
+    \includegraphics[width=\paperwidth]{logo.jpg}
+  \end{adjustwidth}
+\end{figure}
+
+\begin{center}
+
+\fontsize{12pt}{14pt}
+\selectfont
+ 
+\vspace{6cm} 
+\Huge \textsc{Design of Multimedia Applications:}\\ 
+\vspace{1cm}
+\huge
+\textsc{Video Shot Detection, Annotation,\\ and Retrieval}\\
+\vspace{10.5cm}
+\Large
+Group 40:\\
+Eveline Hoogstoel, Titouan Vervack and Dries Wijns\\
+$1^{st}$ Master in Computer Science Engineering
+
+
+\end{center}
+\end{titlepage}
+
+\thispagestyle{empty}

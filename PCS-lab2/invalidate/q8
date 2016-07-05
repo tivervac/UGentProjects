@@ -1,0 +1,6 @@
+A cacheblock is in the shared state when there are multiple copies of it in the system.
+The goal of this state is to reduce the amount of invalidations needed. A bus read will no longer
+invalidate the cache block but will instead tag it as shared memory as we know that all cpu's now have
+this same cache block. This solves the problem of having to read a lot more than we have to write,
+the amount of reads needed is a lot less because we don't have to invalidate as much of that caches
+anymore.

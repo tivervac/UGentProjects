@@ -1,0 +1,49 @@
+Question 2
+---------- 
+The extra argument is a pointer to the frame where the function is defined. This is calculated by following the static links in the calling context for a function. This is necessary to access variables from the enclosing scope where the function was defined and to access arguments of the function.
+line 3: CALL initArray: here the frame pointer is 0 as this function is probably defined in some kind of library does not access any variables from it's surrounding scope.
+line 35:CALL add_sqr: this function is defined in the same surrounding scope as this call to is, so we can just pass the current frame pointer (t100).
+line 27: CALL addone: this function is defined in the body of add_sqr and the call to it is also in the same scope, so we can again pass the current frame pointer to the function (t100).
+line 17: CALL square: this call happens in the body of addone which is in turn called in add_sqr. Because the function square is defined in the same enclosing scope as add_sqr, we must follow the static link of the function addone and add_sqr to find the frame pointer for the function square: MEM(MEM(t100+8)+8)
+line 21: CALL addone: this is a recursive call, add one is called in the body of addone, so we must follow one static link upwards, to obtain the frame where addone is defined (t100+8).
+
+Question 3
+----------
+add_sqr
+
+         +--------------+
+t100 +16 | limit : int  |  second function arument
+t100 +12 | a : intarray |  first function argument
+t100 +8  | static link  |  contains frame pointer of scope in which function definition is enclosed
+t100 +4  |              |
+         +--------------+
+t100     |              |
+t100 -4  | idx: int     |  local variable of the function
+t100 -8  | sum: int     |  local variable of the function
+         +--------------+
+
+addone
+
+         +-------------------------+
+t100 +8  | static link             |
+t100 +4  |                         |
+         +-------------------------+
+t100     |                         |
+t100 -4  | temp with return value  |  temporary used to store the return value
+t100 -8  | flag                    |  flag set by if statement, later used to determine correct execution
+t100 -12 | temp = square()         |  temporary containing the result of square, later used to calculate sum := sum + -->square<--
+t100 -16 | local copy of sum       |  local copy of the value of the variable sum: used for sum := -->sum<-- + square
+t100 -20 | pointer to variable sum |  to store the result: -->sum<-- := sum + square
+         +-------------------------+
+
+ main
+
+          +-----------------+
+ t100 -4  | *arr            |  local variable arr, result of initarray
+ t100 -8  | i : int         |  local variable i
+ t100 -12 | to_square : int |  local variable to_square
+ t100 -16 | counter i : int |  counter i in for loop
+ t100 -20 | temp1 = 9       |  temporary containing the upperbound for the foor loop
+ t100 -24 | temp2 = *arr    |  temporary containing the result of initarray, later copied to t100-4
+ t100 -28 | address t100-4  |  temporary containing the address where the result of initarray (*arr) should be copied
+          +-----------------+

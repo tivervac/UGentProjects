@@ -1,0 +1,535 @@
+Assignment Name "time" Lit 60
+Assignment Name "prev" Lit 0
+While Lit 1
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+If Name "prev" :==: Lit 1
+If Name "prev" :==: Lit 2
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+Turn right
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+Turn right
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+Turn right
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+Turn right
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+Turn right
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+Turn right
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+Turn right
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+Turn right
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+Turn right
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+Turn right
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+Turn right
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+If Name "prev" :==: Lit 1
+If Name "prev" :==: Lit 2
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+Turn right
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+Turn right
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+Turn right
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+Turn right
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+Turn right
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+If Name "prev" :==: Lit 1
+Assignment Name "l" Look
+While Name "l" :!=: Lit 3
+Turn left
+Assignment Name "l" Look
+Turn left
+Assignment Name "l" Look
+Turn left
+Assignment Name "l" Look
+Turn left
+Assignment Name "l" Look
+Turn left
+Assignment Name "l" Look
+Turn left
+Assignment Name "l" Look
+Assignment Name "curr" Lit 3
+Hammertime
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+If Name "prev" :==: Lit 1
+If Name "prev" :==: Lit 2
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+Turn right
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+If Name "prev" :==: Lit 1
+Assignment Name "l" Look
+While Name "l" :!=: Lit 3
+Turn left
+Assignment Name "l" Look
+Turn left
+Assignment Name "l" Look
+Turn left
+Assignment Name "l" Look
+Turn left
+Assignment Name "l" Look
+Turn left
+Assignment Name "l" Look
+Turn left
+Assignment Name "l" Look
+Assignment Name "curr" Lit 3
+Hammertime
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+If Name "prev" :==: Lit 1
+Assignment Name "l" Look
+While Name "l" :!=: Lit 3
+Turn left
+Assignment Name "l" Look
+Turn left
+Assignment Name "l" Look
+Turn left
+Assignment Name "l" Look
+Turn left
+Assignment Name "l" Look
+Turn left
+Assignment Name "l" Look
+Assignment Name "curr" Lit 3
+Hammertime
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+If Name "prev" :==: Lit 1
+Assignment Name "l" Look
+While Name "l" :!=: Lit 3
+Turn left
+Assignment Name "l" Look
+Turn left
+Assignment Name "l" Look
+Turn left
+Assignment Name "l" Look
+Turn left
+Assignment Name "l" Look
+Turn left
+Assignment Name "l" Look
+Assignment Name "curr" Lit 3
+Hammertime
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+If Name "prev" :==: Lit 1
+Assignment Name "l" Look
+While Name "l" :!=: Lit 3
+Turn left
+Assignment Name "l" Look
+Turn left
+Assignment Name "l" Look
+Turn left
+Assignment Name "l" Look
+Turn left
+Assignment Name "l" Look
+Turn left
+Assignment Name "l" Look
+Assignment Name "curr" Lit 3
+Hammertime
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+If Name "prev" :==: Lit 1
+Assignment Name "l" Look
+While Name "l" :!=: Lit 3
+Turn left
+Assignment Name "l" Look
+Turn left
+Assignment Name "l" Look
+Turn left
+Assignment Name "l" Look
+Turn left
+Assignment Name "l" Look
+Turn left
+Assignment Name "l" Look
+Turn left
+Assignment Name "l" Look
+Assignment Name "curr" Lit 3
+Hammertime
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+If Name "prev" :==: Lit 1
+If Name "prev" :==: Lit 2
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+Turn right
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+If Name "prev" :==: Lit 1
+Assignment Name "l" Look
+While Name "l" :!=: Lit 3
+Turn left
+Assignment Name "l" Look
+Turn left
+Assignment Name "l" Look
+Turn left
+Assignment Name "l" Look
+Turn left
+Assignment Name "l" Look
+Turn left
+Assignment Name "l" Look
+Turn left
+Assignment Name "l" Look
+Assignment Name "curr" Lit 3
+Hammertime
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+If Name "prev" :==: Lit 1
+If Name "prev" :==: Lit 2
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+Turn right
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+Turn right
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+Turn right
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+Turn right
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+Turn right
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+Turn right
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+Turn right
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+Turn right
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+If Name "prev" :==: Lit 1
+If Name "prev" :==: Lit 2
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+Turn right
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+Turn right
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+Turn right
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+Turn right
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+If Name "prev" :==: Lit 1
+If Name "prev" :==: Lit 2
+Walk
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+Turn right
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+Turn right
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look
+If Name "curr" :==: Lit 4
+If Name "prev" :==: Name "curr"
+Turn right
+Assignment Name "prev" Name "curr"
+Assignment Name "curr" Look

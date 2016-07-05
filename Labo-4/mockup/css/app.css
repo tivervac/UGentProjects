@@ -1,0 +1,95 @@
+body {
+	margin: 0;
+	color: #000000;
+	background-color: #FFFFFF;
+	overflow: hidden;
+	font-family: Arial;
+}
+
+#blueheader{
+	background-color: navy;
+	width:100%;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+	padding: 17px;
+	font-size: 24px;
+}
+
+#searchbar{
+	background-color: #F0F0F0;
+	width: 100%;
+	padding: 15px 0px;
+	text-align: center;
+}
+
+#searchbar input{
+	width: 98%;
+}
+
+#parkingcontainer{
+	margin: 10px;
+}
+
+@media screen
+{
+	.parkingbox {width: 20%; display: inline-block;}
+}
+
+@media handheld
+{
+	.parkingbox{}
+}
+
+.parkingbox{
+	padding: 15px;
+	border: 2px solid gray;
+	margin: 5px;
+	font-size: 13px;
+	color: gray;
+}
+
+.title {
+	font-weight: bold;
+	font-size: larger;
+	color: black;
+}
+
+.goodbar{
+	background-color: #CCFFCC;
+	width: 95%;
+	margin: auto;
+	margin-top: 10px;
+	padding: 7px;
+	color: green;
+}
+
+.badbar{
+	background-color: #FFCCCC;
+	width: 95%;
+	margin: auto;
+	margin-top: 10px;
+	padding: 7px;
+	color: red;
+}
+
+.emptyspaces{
+	font-weight: bold;
+	display: inline;
+	font-size: larger;
+}
+
+.address{
+	margin-top: 5px;
+	line-height: 125%;
+}
+
+.away{
+	font-weight: bold;
+	margin-top: 7px;
+}
+
+.yellow{
+	background-color: #FFFFCC;
+}
+

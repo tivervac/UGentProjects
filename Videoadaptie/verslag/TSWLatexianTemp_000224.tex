@@ -1,0 +1,89 @@
+\documentclass[12pt,a4paper,oneside]{article}
+\usepackage[dutch]{babel}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{a4wide}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{rotating}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{color}
+\usepackage{fancyhdr}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+ 
+\lstset{ %
+  language=PYTHON,                
+  basicstyle=\footnotesize,           
+  numbers=left,                  
+  numberstyle=\tiny\color{gray},  
+  stepnumber=2,                        
+  numbersep=5pt,                  
+  backgroundcolor=\color{white},      
+  showspaces=false,               
+  showstringspaces=false,        
+  showtabs=false,                 
+  frame=single,                   
+  rulecolor=\color{black},        
+  tabsize=2,                      
+  captionpos=b,                   
+  breaklines=true,                
+  breakatwhitespace=false,        
+  title=\lstname,                                                  
+  keywordstyle=\color{blue},          
+  commentstyle=\color{dkgreen},       
+  stringstyle=\color{mauve},         
+  escapeinside={\%*}{*)},            
+  morekeywords={*,...},              
+  deletekeywords={...}              
+}
+
+\begin{document}
+
+\title{Videoadaptatie \& schaalbare videocodering}
+\author{Stefaan Vermassen \\
+	     Titouan Vervack}
+\date{\today}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{Stefaan Vermassen \& Titouan Vervack}
+\fancyhead[L]{Multimedia: practicum 4}
+\fancyfoot[C]{\thepage}
+\maketitle
+\section{Kwaliteitsschaalbaarheid}
+Voor de single-layer codering en de kwaliteitsschaalbaarheid met SVC zonder inter-layer predictie konden we de benodigde waarden voor het opstellen van de RD-curve aflezen uit de output van de \verb$H264AVCEncoderLibTestStatic.exe -pf main.cfg$. We lieten de QP waarde vari\"eren in \verb$layer0.cfg$.
+Om de waarden voor de kwaliteitsschaalbaarheid met SVC met inter-layer predictie te bepalen, extraheerden we de layers met het commando.
+\begin{verbatim}
+BitStreamExtractorStatic.exe output.264 extracted.264 -f{0,1,2}
+\end{verbatim}
+We decodeerden de 3 bekomen bitstromen en meten de PSNR-Y.
+\begin{verbatim}
+H264AVCDecoderLibTestStatic.exe extracted.264 output.yuv
+VQMT BBB_640x360_24.yuv output.yuv 640 360 50 data PSNR
+\end{verbatim}
+\begin{figure}[H]
+  \begin{center}
+    \input{1.tex}
+    \caption{Configuraties kwaliteitsschaalbaarheid}
+    \label{graph:graph1}
+  \end{center}
+\end{figure}
+We merken op dat de single-layer codering voor een zo laag mogelijke bitrate een zo goed mogelijke kwaliteit levert. Dit hadden we verwacht. De single-layer codering houdt het minste informatie bij, daarom is de bitrate lager in vergelijking met SVC, die dubbele informatie kan bevatten. Voor een bepaalde kwaliteit heeft SVC dus een hogere bitrate dan single-layer codering.
+Theoretisch zouden we verwachten dat SVC met inter-layer predictie effici\"enter presteert dan SVC zonder inter-layer predictie. Onze meetresultaten spreken dit tegen.
+\section{Spatiale schaalbaarheid}
+We maakten eerst een geschaalde versie van \verb$BBB_640x360_24.yuv$ aan met het commando
+\begin{verbatim}
+DownconvertStatic.exe 640 360 BBB_640x360_24.yuv 320 180 BBB_320x180_12.yuv
+\end{verbatim}
+De PSNR waarden werden berekend zoals besproken in de vorige opgave.
+\begin{figure}[H]
+  \begin{center}
+    \input{2.tex}
+    \caption{Configuraties spatiale schaalbaarheid}
+    \label{graph:graph1}
+  \end{center}
+\end{figure}
+\noindent Zoals verwacht presteert single-layer het beste. We zien opnieuw dat SVC met inter-layer predictie niet effici\"enter is dan zonder, wat tegen onze verwachtingen in ligt. We zouden verwachten dat inter-layer predictie zorgt voor een bitsnelheidsreductie ten opzichte van de configuratie zonder inter-layer predictie.
+\end{document}

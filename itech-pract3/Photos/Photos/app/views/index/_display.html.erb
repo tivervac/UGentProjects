@@ -1,0 +1,35 @@
+<div id="header">
+<div id="header_title">Find your photo</div>
+hover over the pictures for more info!
+
+<div id="searchbar">
+<%= form_tag controller: "index", action: "search", method: :post do %>
+    <%= select_tag "prop1", options_for_select(props) %>
+    <%= text_field_tag "field1" %><br/>
+    <%= select_tag "prop2", options_for_select(props) %>
+    <%= text_field_tag "field2" %><br/>
+    <%= submit_tag "Search" %>
+<%end%>
+</div>
+</div>
+</div>
+
+<div id="container">
+
+<% @images.each_value do |img| %>
+    <div class="wrap">
+    <div class="box"><img src="<%=img['picture']%>"/></div>
+    <div class="info">
+        <p><strong><%=if img['title'].nil? then 'Untitled' else img['title'].gsub("_", " ") end%></strong><br/>
+            <%=if img['creator'].nil? then 'Unknown artist' else img['hrcreator'].gsub("_", " ") end%>
+        </p>
+        <p style="font-size: 12px;"><%=img['description']%><br/><br/>
+            Location: <%=if img['coverage'].nil? then 'Not specified' else img['hrcoverage'].gsub("_", " ") end%><br />
+            Date: <%=img['date']%><br/>
+            Category: <%=img['hrtype'].gsub("_", " ")%><br/>
+            Subject: <%=if img['subject'].nil? then 'Not specified' else img['hrsubject'].gsub("_", " ") end%>
+        </p>
+    </div>
+    </div>
+<%end%>
+</div>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>TCP/IP: Implementations</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+
+				<li>
+					<a href="history.html">History</a>
+				</li>
+
+				<li>
+					<a href="layers.html">Layers</a>
+				</li>
+
+				<li>
+					<a href="implementations.html">Implementations</a>
+				</li>
+
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<div id="container">
+		<section>
+			<header>
+				<h2>Software requirements</h2>
+			</header>
+
+			<p>No specific hardware or software implementation is required by
+			the protocols or the layered model, so there are many. Most
+			computer operating systems in use today, including all
+			consumer-targeted systems, include a TCP/IP implementation.</p>
+
+			<p>A minimally acceptable implementation includes the following
+			protocols, listed from most essential to least essential: IP, ARP,
+			ICMP, UDP, TCP and sometimes IGMP. In principle, it is possible to
+			support only one transport protocol, such as UDP, but this is
+			rarely done, because it limits usage of the whole implementation.
+			IPv6, beyond its own version of ARP (NDP), ICMP (ICMPv6) and IGMP
+			(IGMPv6), has some additional required functions, and often is
+			accompanied by an integrated IPSec security layer. Other protocols
+			could be easily added later (possibly being implemented entirely in
+			userspace), such as DNS for resolving domain names to IP addresses,
+			or DHCP for automatically configuring network interfaces</p>
+
+			<p>Normally, application programmers are concerned only with
+			interfaces in the application layer and often also in the transport
+			layer, while the layers below are services provided by the TCP/IP
+			stack in the operating system. Most IP implementations are
+			accessible to programmers through sockets and APIs.</p>
+
+			<p>Unique implementations include Lightweight TCP/IP, an open
+			source stack designed for embedded systems, and KA9Q NOS, a stack
+			and associated protocols for amateur packet radio systems and
+			personal computers connected via serial lines.</p>
+
+			<p>Microcontroller firmware in the network adapter typically
+			handles link issues, supported by driver software in the
+			operational system. Non-programmable analog and digital electronics
+			are normally in charge of the physical components below the link
+			layer, typically using an application-specific integrated circuit
+			(ASIC) chipset for each network interface or other physical
+			standard. High-performance routers are to a large extent based on
+			fast non-programmable digital electronics, carrying out link level
+			switching.</p>
+
+			<header>
+				<h2>Example of the usage of a TCP/IP communications
+				library</h2>
+			</header>
+
+			<p>Developer Owen Emlen implemented a high-performance TCP/IP
+			library in Java. Here is a quote from his website:</p>
+
+			<blockquote cite=
+			"http://www.codeproject.com/Articles/38374/Design-and-Implementation-of-a-High-performance-TC">
+			Okay, enough confusion. For my sake and yours, this is not a
+			peer-to-peer project. It's a straightforward client-server TCP/IP
+			implementation. Here is how it works:
+
+				<ul>
+					<li>The client is responsible for initiating a connection
+					to the server. Therefore, the client only needs to process
+					and take care of a single outgoing connection.</li>
+
+					<li>The communications server listens for connection
+					requests from clients. The communications server must
+					process and take care of multiple incoming connection
+					requests and incoming connections.</li>
+				</ul>
+			</blockquote>
+
+			<p>This step for example will set up the server that will accept
+			incoming connections:</p>
+			<pre>
+<code>
+<strong>Java:</strong>
+CommunicationsServer server =
+new CommServer(IPAddress.Any);
+server.BeginListening();
+</code>
+</pre>
+		</section>
+
+		<footer>
+			<p>Source of content:Wikipedia, The Free Encyclopedia, "Internet
+			protocol suite", April 2013,
+			http://en.wikipedia.org/wiki/Internet_protocol_suites</p>
+
+			<p>Group 39, Stefaan Vermassen and Titouan Vervack.</p>
+		</footer>
+	</div>
+</body>
+</html>

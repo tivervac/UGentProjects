@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+        <records>
+                <record>
+
+                        <rec-number>1</rec-number>
+
+                        <ref-type name="book1">6</ref-type>
+
+                        <contributors>
+                                <authors>
+                                        <author>Andrew W. Appel</author>
+                                </authors>
+                        </contributors>
+
+                        <titles>
+                                <title>Modern Compiler Implementation in C</title>
+                        </titles>
+
+                        <dates>
+                                <year>1998</year>
+                        </dates>
+
+                        <publisher>Cambridge University Press</publisher>
+
+                </record>
+
+
+                <record>
+
+                        <rec-number>2</rec-number>
+
+                        <ref-type name="article1">17</ref-type>
+
+                        <contributors>
+                                <authors>
+                                        <author>Andrew W. Appel</author>
+                                        <author>Trevor Jim</author>
+                                </authors>
+                        </contributors>
+
+                        <titles>
+                                <title>Shrinking lambda expressions in linear time</title>
+                        </titles>
+                        <periodical>
+                                <full-title>Journal of Functional Programming</full-title>
+                        </periodical>
+                        <pages>515--540</pages>
+
+                        <volume>7</volume>
+
+                        <number>5</number>
+
+                        <dates>
+                                <year>1997</year>
+                        </dates>
+
+                </record>
+
+                <record>
+
+                        <rec-number>3</rec-number>
+
+                        <ref-type name="conference1">47</ref-type>
+
+                        <contributors>
+                                <authors>
+                                        <author>Matthias Blume</author>
+                                        <author>Andrew W. Appel</author>
+                                </authors>
+                        </contributors>
+
+                        <titles>
+                                <title>Lambda-Splitting: A Higher-Order Approach to Cross-Module Optimizations</title>
+                        </titles>
+
+                        <pages>112--124</pages>
+
+                        <dates>
+                                <year>1997</year>
+                                <month>jan</month>
+                        </dates>
+
+                </record>
+
+        </records>
+</xml>

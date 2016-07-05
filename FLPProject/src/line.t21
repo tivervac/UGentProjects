@@ -1,0 +1,45 @@
+-- Time to turn
+time = 60
+-- The previous value of the line sensor
+prev = 0
+
+WHILE (True)
+  -- The current value of the line sensor
+  curr = Look
+  -- Both white
+  IF (curr == 4)
+    -- Two times both white
+    IF (prev == curr)
+      TurnRight
+    -- Not two times both white
+    ELSE
+      -- Previously left was black
+      IF (prev == 1)
+        l = Look
+        WHILE (l != 3)
+          TurnLeft
+          l = Look
+        ELIHW
+        curr = 3
+        Hammertime
+      ELSE
+        -- Previously right was black
+        IF (prev == 2)
+          l = Look
+          WHILE (l != 3)
+            TurnRight
+            l = Look
+          ELIHW
+          curr = 3
+          Hammertime
+        ELSE
+          Walk
+        FI
+      FI
+    FI
+  -- Not both white, go ahead
+  ELSE
+    Walk
+  FI
+  prev = curr
+ELIHW

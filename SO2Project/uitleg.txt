@@ -1,0 +1,27 @@
+Beste,
+
+De bedoeling is dat jullie een platform bouwen voor ondersteuning van 
+verschillende "applicaties". Jullie starten met het bedenken van vier 
+"applicaties" en hiervan de belangrijkste use cases te identificeren. 
+Deze worden allen weergegeven in 1 use case diagram in de eerste sectie. 
+Vervolgens kiezen jullie hieruit de vier belangrijkste use cases, en 
+deze worden meer in detail uitgewerkt, eerst door een use case 
+beschrijving, en later mbv een interactie diagram.
+
+Uitgaande van een projectbeschrijving (die jullie vier applicaties 
+beschrijft) en de use case beschrijvingen en interactiediagramma komen 
+jullie dan tot een klassenlijst, die alle klasses weergeeft die nodig 
+zijn. Ook al zijn de vier applicaties verschillend, een aantal klassen 
+zullen waarschijnlijk wel gedeeld (kunnen) worden, dewelke dan het 
+zogenaamde "platform" of " framework" vormen waarbovenop de applicaties 
+gebouwd worden.
+
+Tot slot tekenen jullie 1 klassediagram dat de associaties, aggregaties 
+en eventuele overervingen weergeeft tussen alle klassen in jullie 
+klassenlijst.
+
+Ik hoop dat dit alles verduidelijkt.
+
+Met vriendelijke groeten,
+
+Tim Verbelen

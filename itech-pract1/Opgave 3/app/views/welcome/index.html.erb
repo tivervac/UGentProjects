@@ -1,0 +1,30 @@
+<h1>Welcome to Event App</h1>
+<p>
+	<%= link_to "Go to Events", controller: "events" %>
+</p>
+<p>
+	<%= link_to "Go to People", controller: "people" %>
+</p>
+
+<div>
+	<input type="text" id="search-criteria"/>
+    <input type="button" id="search" value="search" onClick="getJSON()"/> </div>
+    <br/>
+<div id="results"></div>
+
+<script>
+
+// search function
+function getJSON(){
+	$.getJSON('events.json', function(data) {
+		var s = $('#search-criteria').val();
+		var out = "Search results: <br/> <ul>";
+		$(data).each(function(i,elem){
+			if (elem.title.toLowerCase().search(s.toLowerCase()) != -1){
+				out += "<li><a href=\"" + elem.event + "\">" + elem.title + "</a></li>";
+			}
+		});
+		document.getElementById('results').innerHTML=out;
+	});
+}
+</script>

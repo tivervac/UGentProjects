@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<level>
+  <block x="98.903" y="7.664" material="wood" angle="0.023" width="8" height="1"/>
+  <bozel x="5.964" y="0.869" type="red" id="2"/>
+  <bozel x="3.151" y="0.84" type="red" id="3"/>
+  <block x="98.835" y="6.123" material="wood" angle="0.021" width="4" height="2"/>
+  <bozel x="10" y="0.891" type="red" id="1"/>
+  <bozel x="0.346" y="0.971" type="red" id="4"/>
+  <ellipse x="74.515" y="8.172000000000001" material="wood" angle="89.997" width="4" height="4"/>
+  <block x="98.773" y="4.59" material="stone" angle="0.042" width="4" height="1"/>
+  <block x="100.361" y="2.076" material="stone" angle="269.932" width="4" height="1"/>
+  <block x="98.805" y="8.727" material="wood" angle="0.058" width="2" height="1"/>
+  <target type="small" x="89.476" y="1.094"/>
+  <target type="small" x="92.313" y="1.095"/>
+  <block x="97.263" y="2.076" material="stone" angle="270.053" width="4" height="1"/>
+  <block x="72.199" y="-0.568" material="solid" angle="135" width="10" height="10"/>
+  <block x="74.485" y="3.937" material="solid" angle="270" width="5" height="5"/>
+  <block x="76.852" y="-0.518" material="solid" angle="225.001" width="10" height="10"/>
+</level>

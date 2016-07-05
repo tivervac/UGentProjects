@@ -1,0 +1,506 @@
+Assignment Name "t" Lit 20
+Assignment Name "time" Lit 400
+Assignment Name "mwalk" Lit 200
+While Lit 1
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Hammertime
+Moonwalk
+Wait Name "mwalk"
+Turn right
+Wait Name "time"
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Hammertime
+Moonwalk
+Wait Name "mwalk"
+Turn right
+Wait Name "time"
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Hammertime
+Moonwalk
+Wait Name "mwalk"
+Turn right
+Wait Name "time"
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Hammertime
+Moonwalk
+Wait Name "mwalk"
+Turn right
+Wait Name "time"
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Hammertime
+Moonwalk
+Wait Name "mwalk"
+Turn right
+Wait Name "time"
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Walk
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Hammertime
+Moonwalk
+Wait Name "mwalk"
+Turn right
+Wait Name "time"
+Assignment Name "distance" Feel
+If Name "distance" :<: Name "t"
+Hammertime
+Moonwalk
+Wait Name "mwalk"
+Turn right
+Wait Name "time"

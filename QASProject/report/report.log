@@ -1,0 +1,905 @@
+This is LuaTeX, Version beta-0.80.0 (MiKTeX 2.9 64-bit) (rev 5238)  (format=lualatex 2016.4.23)  20 MAY 2016 23:59
+ \write18 enabled.
+**report.tex
+(./report.tex
+LaTeX2e <2015/10/01> patch level 2
+Babel <3.9n> and hyphenation patterns for 69 languages loaded.
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/a4wide/a4wide.sty"
+Package: a4wide 1994/08/30
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/ntgclass/a4.sty"
+Package: a4 2004/04/15 v1.2g A4 based page layout
+))
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/generic/babel/babel.sty"
+Package: babel 2016/01/08 3.9n The Babel package
+*************************************
+* Local config file bblopts.cfg used
+*
+
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/00miktex/bblopts.c
+fg"
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+)
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/babel-dutch/dutch.
+ldf"
+Language: dutch 2005/03/30 v3.8i Dutch support from the babel system
+
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/generic/babel/babel.def"
+File: babel.def 2016/01/08 3.9n Babel common definitions
+\babel@savecnt=\count87
+\U@D=\dimen103
+
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/generic/babel/luababel.d
+ef"
+luatex-hyphen: using data file: C:/Users/tverv/AppData/Roaming/MiKTeX/2.9/tex/ge
+neric/config/language.dat.lua))
+Package babel Info: Making " an active character on input line 132.
+luatex-hyphen: loading patterns and exceptions for: dutch (\language16)
+luatex-hyphen: info: no hyphenation exceptions for this language))
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/graphicx.
+sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/keyval.st
+y"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/graphics.
+sty"
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/00miktex/graphics.
+cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/pdftex-def/pdftex.
+def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/infware
+rr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/ltxcmds
+.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count88
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/epstopdf.
+sty"
+Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
+
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/epstopdf-
+base.sty"
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/grfext.st
+y"
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/kvdefin
+ekeys.sty"
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/kvoptions
+.sty"
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/kvsetke
+ys.sty"
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/etexcmd
+s.sty"
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/ifluate
+x.sty"
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX detected.
+))))
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/pdftexc
+mds.sty"
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO)
+
+
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/ifpdf.s
+ty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/luatex-
+loader.sty"
+Package: luatex-loader 2010/03/09 v0.4 Lua module loader (HO)
+
+(C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/scripts/oberdiek/oberdiek.luat
+ex.lua))
+\pdftexcmds@toks=\toks15
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.tif,.jpeg,.PNG,.PDF,.JPG,.JPEG,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+))
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/fancyhdr/fancyhdr.
+sty"
+\fancy@headwidth=\skip43
+\f@ncyO@elh=\skip44
+\f@ncyO@erh=\skip45
+\f@ncyO@olh=\skip46
+\f@ncyO@orh=\skip47
+\f@ncyO@elf=\skip48
+\f@ncyO@erf=\skip49
+\f@ncyO@olf=\skip50
+\f@ncyO@orf=\skip51
+)
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/eurosym/eurosym.st
+y"
+Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
+\@eurobox=\box26
+)
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/textcomp.sty"
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/ts1enc.def"
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+)
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/was/gensymb.sty"
+Package: gensymb 2003/07/02 v1.0 (WaS)
+)
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/caption/caption.st
+y"
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/caption/caption3.s
+ty"
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen106
+\captionmargin@=\dimen107
+\captionwidth=\dimen108
+\caption@tempdima=\dimen109
+\caption@indent=\dimen110
+\caption@parindent=\dimen111
+\caption@hangindent=\dimen112
+)
+\c@ContinuedFloat=\count89
+)
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/caption/subcaption
+.sty"
+Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
+\c@subfigure=\count90
+\c@subtable=\count91
+)
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/tabu/tabu.sty"
+Package: tabu 2011/02/26 v2.8 - flexible LaTeX tabulars (FC)
+
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/tools/array.sty"
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen113
+\extrarowheight=\dimen114
+\NC@list=\toks16
+\extratabsurround=\skip52
+\backup@length=\skip53
+)
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/ltxmisc/varwidth.s
+ty"
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box27
+\sift@deathcycles=\count92
+\@vwid@loff=\dimen115
+\@vwid@roff=\dimen116
+)
+\c@taburow=\count93
+\tabu@nbcols=\count94
+\tabu@cnt=\count95
+\tabu@Xcol=\count96
+\tabu@alloc=\count97
+\tabu@nested=\count98
+\tabu@target=\dimen117
+\tabu@spreadtarget=\dimen118
+\tabu@naturalX=\dimen119
+\tabucolX=\dimen120
+\tabu@Xsum=\dimen121
+\extrarowdepth=\dimen122
+\abovetabulinesep=\dimen123
+\belowtabulinesep=\dimen124
+\tabustrutrule=\dimen125
+\tabu@thebody=\toks17
+\tabu@footnotes=\toks18
+\tabu@box=\box28
+\tabu@arstrutbox=\box29
+\tabu@hleads=\box30
+\tabu@vleads=\box31
+\tabu@cellskip=\skip54
+)
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xcolor/xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/00miktex/color.cfg
+"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Package option `usenames' ignored on input line 216.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/dvipsnam.
+def"
+File: dvipsnam.def 2014/10/14 v3.0j Driver-dependent file (DPC,SPQR)
+)
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xcolor/svgnam.def"
+File: svgnam.def 2007/01/21 v2.11 Predefined colors according to SVG 1.1 (UK)
+))
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/minted/minted.sty"
+Package: minted 2015/09/09 v2.1 Yet another Pygments shim for LaTeX
+
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/fancyvrb/fancyvrb.
+sty"
+Package: fancyvrb 2008/02/07
+
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz)
+\FV@CodeLineNo=\count99
+\FV@InFile=\read1
+\FV@TabBox=\box32
+\c@FancyVerbLine=\count100
+\FV@StepNumber=\count101
+\FV@OutFile=\write3
+)
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/float/float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count102
+\float@exts=\toks19
+\float@box=\box33
+\@float@everytoks=\toks20
+\@floatcapt=\box34
+)
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/tools/calc.sty"
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count103
+\calc@Bcount=\count104
+\calc@Adimen=\dimen126
+\calc@Bdimen=\dimen127
+\calc@Askip=\skip55
+\calc@Bskip=\skip56
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count105
+\calc@Cskip=\skip57
+)
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/ifplatform/ifplatf
+orm.sty"
+Package: ifplatform 2010/10/22 v0.4 Testing for the operating system
+
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/catchfi
+le.sty"
+Package: catchfile 2011/03/01 v1.6 Catch the contents of a file (HO)
+))
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/etoolbox/etoolbox.
+sty"
+Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count106
+)
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xstring/xstring.st
+y"
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/generic/xstring/xstring.
+tex"
+\@xs@message=\write4
+\integerpart=\count107
+\decimalpart=\count108
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/lineno/lineno.sty"
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count109
+\output=\toks21
+\linenoprevgraf=\count110
+\linenumbersep=\dimen128
+\linenumberwidth=\dimen129
+\c@linenumber=\count111
+\c@pagewiselinenumber=\count112
+\c@LN@truepage=\count113
+\c@internallinenumber=\count114
+\c@internallinenumbers=\count115
+\quotelinenumbersep=\dimen130
+\bframerule=\dimen131
+\bframesep=\dimen132
+\bframebox=\box35
+LaTeX Info: Redefining \\ on input line 3056.
+)
+\minted@appexistsfile=\read2
+\FV@BreakIndent=\dimen133
+\FV@BreakSymbolSepLeft=\dimen134
+\FV@BreakSymbolSepRight=\dimen135
+\FV@BreakSymbolIndentLeft=\dimen136
+\FV@BreakSymbolIndentRight=\dimen137
+\c@FancyVerbLineBreakLast=\count116
+\FV@LineBox=\box36
+\FV@LineIndentBox=\box37
+\minted@bgbox=\box38
+\minted@code=\write5
+\c@minted@FancyVerbLineTemp=\count117
+\@float@every@listing=\toks22
+\c@listing=\count118
+)
+runsystem(if not exist "_minted-report" mkdir "_minted-report")...executed.
+
+ (./_minted-report/default.pygstyle) (./_minted-report/colorful.pygstyle)
+runsystem(for ^%i in (pygmentize.exe pygmentize.bat pygmentize.cmd) do set >"rep
+ort.aex" <nul: /p x=^%~$PATH:i>>"report.aex")...executed.
+
+runsystem(del "report.aex")...executed.
+
+
+(./report.aux)
+\openout1 = report.aux
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 39.
+
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/ts1cmr.fd"
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 39.
+
+("C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/tex/context/base/supp-pdf.mk
+ii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count119
+\scratchdimen=\dimen138
+\scratchbox=\box39
+\nofMPsegments=\count120
+\nofMParguments=\count121
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count122
+\MPscratchDim=\dimen139
+\MPnumerator=\count123
+\makeMPintoPDFobject=\count124
+\everyMPtoPDFconversion=\toks24
+)
+\symgns@font=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
+(Font)                  TS1/cmr/m/n --> TS1/cmr/bx/n on input line 39.
+Package gensymb Info: Math companion symbols declared on input line 39.
+LaTeX Info: Redefining \degree on input line 39.
+LaTeX Info: Redefining \celsius on input line 39.
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \pe
+rthousand on input line 39.
+LaTeX Info: Redefining \ohm on input line 39.
+Package gensymb Info: Using \textohm for \ohm on input line 39.
+Package gensymb Info: Using \textmu for \micro on input line 39.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: End \AtBeginDocument code.
+ (./_minted-report/default-pyg-prefix.pygstyle)
+<logo.jpg, id=1, 1498.59875pt x 1060.96375pt>
+File: logo.jpg Graphic file (type jpg)
+ <use logo.jpg>
+Package pdftex.def Info: logo.jpg used on input line 46.
+(pdftex.def)             Requested size: 120.55348pt x 85.35826pt.
+ [1
+
+{C:/Users/tverv/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}<./logo.jpg>]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 86.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 86.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 86.
+Package epstopdf Info: Source file: <../figures/queue_content11111.eps>
+(epstopdf)                    date: 2016-05-20 23:27:17
+(epstopdf)                    size: 381781 bytes
+(epstopdf)             Output file: <../figures/queue_content11111-eps-converted
+-to.pdf>
+(epstopdf)                    date: 2016-05-20 23:27:21
+(epstopdf)                    size: 83880 bytes
+(epstopdf)             Command: <epstopdf --outfile=../figures/queue_content1111
+1-eps-converted-to.pdf ../figures/queue_content11111.eps>
+(epstopdf)             \includegraphics on input line 93.
+Package epstopdf Info: Output file is already uptodate.
+
+<../figures/queue_content11111-eps-converted-to.pdf, id=8, 578.16pt x 433.62pt>
+File: ../figures/queue_content11111-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ../figures/queue_content11111-eps-converted-to.pdf>
+Package pdftex.def Info: ../figures/queue_content11111-eps-converted-to.pdf used
+ on input line 93.
+(pdftex.def)             Requested size: 212.29312pt x 159.21945pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 95.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 95.
+Package epstopdf Info: Source file: <../figures/queue_content11211.eps>
+(epstopdf)                    date: 2016-05-20 23:26:18
+(epstopdf)                    size: 235434 bytes
+(epstopdf)             Output file: <../figures/queue_content11211-eps-converted
+-to.pdf>
+(epstopdf)                    date: 2016-05-20 23:26:21
+(epstopdf)                    size: 61387 bytes
+(epstopdf)             Command: <epstopdf --outfile=../figures/queue_content1121
+1-eps-converted-to.pdf ../figures/queue_content11211.eps>
+(epstopdf)             \includegraphics on input line 98.
+Package epstopdf Info: Output file is already uptodate.
+
+<../figures/queue_content11211-eps-converted-to.pdf, id=9, 578.16pt x 433.62pt>
+File: ../figures/queue_content11211-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ../figures/queue_content11211-eps-converted-to.pdf>
+Package pdftex.def Info: ../figures/queue_content11211-eps-converted-to.pdf used
+ on input line 98.
+(pdftex.def)             Requested size: 212.29312pt x 159.21945pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 91--101
+[][]$[]$ $[]$ 
+ []
+
+[1]
+Package epstopdf Info: Source file: <../figures/queue_content22111.eps>
+(epstopdf)                    date: 2016-05-20 23:28:34
+(epstopdf)                    size: 172371 bytes
+(epstopdf)             Output file: <../figures/queue_content22111-eps-converted
+-to.pdf>
+(epstopdf)                    date: 2016-05-20 23:28:39
+(epstopdf)                    size: 61922 bytes
+(epstopdf)             Command: <epstopdf --outfile=../figures/queue_content2211
+1-eps-converted-to.pdf ../figures/queue_content22111.eps>
+(epstopdf)             \includegraphics on input line 108.
+Package epstopdf Info: Output file is already uptodate.
+
+<../figures/queue_content22111-eps-converted-to.pdf, id=18, 578.16pt x 433.62pt
+>
+File: ../figures/queue_content22111-eps-converted-to.pdf Graphic file (type pdf)
+
+ <use ../figures/queue_content22111-eps-converted-to.pdf>
+Package pdftex.def Info: ../figures/queue_content22111-eps-converted-to.pdf used
+ on input line 108.
+(pdftex.def)             Requested size: 212.29312pt x 159.21945pt.
+Package epstopdf Info: Source file: <../figures/queue_content22114.eps>
+(epstopdf)                    date: 2016-05-20 23:28:09
+(epstopdf)                    size: 259722 bytes
+(epstopdf)             Output file: <../figures/queue_content22114-eps-converted
+-to.pdf>
+(epstopdf)                    date: 2016-05-20 23:28:13
+(epstopdf)                    size: 72375 bytes
+(epstopdf)             Command: <epstopdf --outfile=../figures/queue_content2211
+4-eps-converted-to.pdf ../figures/queue_content22114.eps>
+(epstopdf)             \includegraphics on input line 113.
+Package epstopdf Info: Output file is already uptodate.
+
+<../figures/queue_content22114-eps-converted-to.pdf, id=19, 578.16pt x 433.62pt
+>
+File: ../figures/queue_content22114-eps-converted-to.pdf Graphic file (type pdf)
+
+ <use ../figures/queue_content22114-eps-converted-to.pdf>
+Package pdftex.def Info: ../figures/queue_content22114-eps-converted-to.pdf used
+ on input line 113.
+(pdftex.def)             Requested size: 212.29312pt x 159.21945pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 106--116
+[][]$[]$ $[]$ 
+ []
+
+Package epstopdf Info: Source file: <../figures/waiting_times11111.eps>
+(epstopdf)                    date: 2016-05-20 23:27:17
+(epstopdf)                    size: 121918 bytes
+(epstopdf)             Output file: <../figures/waiting_times11111-eps-converted
+-to.pdf>
+(epstopdf)                    date: 2016-05-20 23:27:22
+(epstopdf)                    size: 42731 bytes
+(epstopdf)             Command: <epstopdf --outfile=../figures/waiting_times1111
+1-eps-converted-to.pdf ../figures/waiting_times11111.eps>
+(epstopdf)             \includegraphics on input line 124.
+Package epstopdf Info: Output file is already uptodate.
+
+<../figures/waiting_times11111-eps-converted-to.pdf, id=20, 578.16pt x 433.62pt
+>
+File: ../figures/waiting_times11111-eps-converted-to.pdf Graphic file (type pdf)
+
+ <use ../figures/waiting_times11111-eps-converted-to.pdf>
+Package pdftex.def Info: ../figures/waiting_times11111-eps-converted-to.pdf used
+ on input line 124.
+(pdftex.def)             Requested size: 212.29312pt x 159.21945pt.
+Package epstopdf Info: Source file: <../figures/waiting_times11112.eps>
+(epstopdf)                    date: 2016-05-20 23:31:06
+(epstopdf)                    size: 198598 bytes
+(epstopdf)             Output file: <../figures/waiting_times11112-eps-converted
+-to.pdf>
+(epstopdf)                    date: 2016-05-20 23:31:47
+(epstopdf)                    size: 60922 bytes
+(epstopdf)             Command: <epstopdf --outfile=../figures/waiting_times1111
+2-eps-converted-to.pdf ../figures/waiting_times11112.eps>
+(epstopdf)             \includegraphics on input line 129.
+Package epstopdf Info: Output file is already uptodate.
+
+<../figures/waiting_times11112-eps-converted-to.pdf, id=21, 578.16pt x 433.62pt
+>
+File: ../figures/waiting_times11112-eps-converted-to.pdf Graphic file (type pdf)
+
+ <use ../figures/waiting_times11112-eps-converted-to.pdf>
+Package pdftex.def Info: ../figures/waiting_times11112-eps-converted-to.pdf used
+ on input line 129.
+(pdftex.def)             Requested size: 212.29312pt x 159.21945pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 122--132
+[][]$[]$ $[]$ 
+ []
+
+[2<../figures/queue_content11111-eps-converted-to.pdf><../figures/queue_content1
+1211-eps-converted-to.pdf><../figures/queue_content22111-eps-converted-to.pdf><.
+./figures/queue_content22114-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <../figures/waiting_times11121.eps>
+(epstopdf)                    date: 2016-05-20 23:29:06
+(epstopdf)                    size: 239775 bytes
+(epstopdf)             Output file: <../figures/waiting_times11121-eps-converted
+-to.pdf>
+(epstopdf)                    date: 2016-05-20 23:29:15
+(epstopdf)                    size: 71554 bytes
+(epstopdf)             Command: <epstopdf --outfile=../figures/waiting_times1112
+1-eps-converted-to.pdf ../figures/waiting_times11121.eps>
+(epstopdf)             \includegraphics on input line 137.
+Package epstopdf Info: Output file is already uptodate.
+
+<../figures/waiting_times11121-eps-converted-to.pdf, id=190, 578.16pt x 433.62p
+t>
+File: ../figures/waiting_times11121-eps-converted-to.pdf Graphic file (type pdf)
+
+ <use ../figures/waiting_times11121-eps-converted-to.pdf>
+Package pdftex.def Info: ../figures/waiting_times11121-eps-converted-to.pdf used
+ on input line 137.
+(pdftex.def)             Requested size: 212.29312pt x 159.21945pt.
+Package epstopdf Info: Source file: <../figures/waiting_times44111.eps>
+(epstopdf)                    date: 2016-05-20 23:34:14
+(epstopdf)                    size: 51186 bytes
+(epstopdf)             Output file: <../figures/waiting_times44111-eps-converted
+-to.pdf>
+(epstopdf)                    date: 2016-05-20 23:34:18
+(epstopdf)                    size: 26708 bytes
+(epstopdf)             Command: <epstopdf --outfile=../figures/waiting_times4411
+1-eps-converted-to.pdf ../figures/waiting_times44111.eps>
+(epstopdf)             \includegraphics on input line 142.
+Package epstopdf Info: Output file is already uptodate.
+
+<../figures/waiting_times44111-eps-converted-to.pdf, id=191, 578.16pt x 433.62p
+t>
+File: ../figures/waiting_times44111-eps-converted-to.pdf Graphic file (type pdf)
+
+ <use ../figures/waiting_times44111-eps-converted-to.pdf>
+Package pdftex.def Info: ../figures/waiting_times44111-eps-converted-to.pdf used
+ on input line 142.
+(pdftex.def)             Requested size: 212.29312pt x 159.21945pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 135--145
+[][]$[]$ $[]$ 
+ []
+
+Package epstopdf Info: Source file: <../figures/sojourn_times11111.eps>
+(epstopdf)                    date: 2016-05-20 23:27:18
+(epstopdf)                    size: 123217 bytes
+(epstopdf)             Output file: <../figures/sojourn_times11111-eps-converted
+-to.pdf>
+(epstopdf)                    date: 2016-05-20 23:27:22
+(epstopdf)                    size: 43161 bytes
+(epstopdf)             Command: <epstopdf --outfile=../figures/sojourn_times1111
+1-eps-converted-to.pdf ../figures/sojourn_times11111.eps>
+(epstopdf)             \includegraphics on input line 151.
+Package epstopdf Info: Output file is already uptodate.
+
+<../figures/sojourn_times11111-eps-converted-to.pdf, id=192, 578.16pt x 433.62p
+t>
+File: ../figures/sojourn_times11111-eps-converted-to.pdf Graphic file (type pdf)
+
+ <use ../figures/sojourn_times11111-eps-converted-to.pdf>
+Package pdftex.def Info: ../figures/sojourn_times11111-eps-converted-to.pdf used
+ on input line 151.
+(pdftex.def)             Requested size: 212.29312pt x 159.21945pt.
+Package epstopdf Info: Source file: <../figures/sojourn_times44111.eps>
+(epstopdf)                    date: 2016-05-20 23:34:15
+(epstopdf)                    size: 50994 bytes
+(epstopdf)             Output file: <../figures/sojourn_times44111-eps-converted
+-to.pdf>
+(epstopdf)                    date: 2016-05-20 23:34:19
+(epstopdf)                    size: 26607 bytes
+(epstopdf)             Command: <epstopdf --outfile=../figures/sojourn_times4411
+1-eps-converted-to.pdf ../figures/sojourn_times44111.eps>
+(epstopdf)             \includegraphics on input line 156.
+Package epstopdf Info: Output file is already uptodate.
+
+<../figures/sojourn_times44111-eps-converted-to.pdf, id=193, 578.16pt x 433.62p
+t>
+File: ../figures/sojourn_times44111-eps-converted-to.pdf Graphic file (type pdf)
+
+ <use ../figures/sojourn_times44111-eps-converted-to.pdf>
+Package pdftex.def Info: ../figures/sojourn_times44111-eps-converted-to.pdf used
+ on input line 156.
+(pdftex.def)             Requested size: 212.29312pt x 159.21945pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 149--159
+[][]$[]$ $[]$ 
+ []
+
+[3<../figures/waiting_times11111-eps-converted-to.pdf><../figures/waiting_times1
+1112-eps-converted-to.pdf><../figures/waiting_times11121-eps-converted-to.pdf><.
+./figures/waiting_times44111-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <../figures/FCFS_batch_mean_ci.eps>
+(epstopdf)                    date: 2016-05-20 23:10:50
+(epstopdf)                    size: 30892 bytes
+(epstopdf)             Output file: <../figures/FCFS_batch_mean_ci-eps-converted
+-to.pdf>
+(epstopdf)                    date: 2016-05-20 23:12:11
+(epstopdf)                    size: 19529 bytes
+(epstopdf)             Command: <epstopdf --outfile=../figures/FCFS_batch_mean_c
+i-eps-converted-to.pdf ../figures/FCFS_batch_mean_ci.eps>
+(epstopdf)             \includegraphics on input line 168.
+Package epstopdf Info: Output file is already uptodate.
+
+<../figures/FCFS_batch_mean_ci-eps-converted-to.pdf, id=377, 578.16pt x 433.62p
+t>
+File: ../figures/FCFS_batch_mean_ci-eps-converted-to.pdf Graphic file (type pdf)
+
+ <use ../figures/FCFS_batch_mean_ci-eps-converted-to.pdf>
+Package pdftex.def Info: ../figures/FCFS_batch_mean_ci-eps-converted-to.pdf used
+ on input line 168.
+(pdftex.def)             Requested size: 212.29312pt x 159.21945pt.
+Package epstopdf Info: Source file: <../figures/LCFS_batch_mean_ci.eps>
+(epstopdf)                    date: 2016-05-20 23:11:12
+(epstopdf)                    size: 30896 bytes
+(epstopdf)             Output file: <../figures/LCFS_batch_mean_ci-eps-converted
+-to.pdf>
+(epstopdf)                    date: 2016-05-20 23:12:12
+(epstopdf)                    size: 19528 bytes
+(epstopdf)             Command: <epstopdf --outfile=../figures/LCFS_batch_mean_c
+i-eps-converted-to.pdf ../figures/LCFS_batch_mean_ci.eps>
+(epstopdf)             \includegraphics on input line 173.
+Package epstopdf Info: Output file is already uptodate.
+
+<../figures/LCFS_batch_mean_ci-eps-converted-to.pdf, id=378, 578.16pt x 433.62p
+t>
+File: ../figures/LCFS_batch_mean_ci-eps-converted-to.pdf Graphic file (type pdf)
+
+ <use ../figures/LCFS_batch_mean_ci-eps-converted-to.pdf>
+Package pdftex.def Info: ../figures/LCFS_batch_mean_ci-eps-converted-to.pdf used
+ on input line 173.
+(pdftex.def)             Requested size: 212.29312pt x 159.21945pt.
+Package epstopdf Info: Source file: <../figures/SSTF_batch_mean_ci.eps>
+(epstopdf)                    date: 2016-05-20 23:11:39
+(epstopdf)                    size: 30346 bytes
+(epstopdf)             Output file: <../figures/SSTF_batch_mean_ci-eps-converted
+-to.pdf>
+(epstopdf)                    date: 2016-05-20 23:12:12
+(epstopdf)                    size: 20129 bytes
+(epstopdf)             Command: <epstopdf --outfile=../figures/SSTF_batch_mean_c
+i-eps-converted-to.pdf ../figures/SSTF_batch_mean_ci.eps>
+(epstopdf)             \includegraphics on input line 181.
+Package epstopdf Info: Output file is already uptodate.
+
+<../figures/SSTF_batch_mean_ci-eps-converted-to.pdf, id=379, 578.16pt x 433.62p
+t>
+File: ../figures/SSTF_batch_mean_ci-eps-converted-to.pdf Graphic file (type pdf)
+
+ <use ../figures/SSTF_batch_mean_ci-eps-converted-to.pdf>
+Package pdftex.def Info: ../figures/SSTF_batch_mean_ci-eps-converted-to.pdf used
+ on input line 181.
+(pdftex.def)             Requested size: 212.29312pt x 159.21945pt.
+Package epstopdf Info: Source file: <../figures/ROS_batch_mean_ci.eps>
+(epstopdf)                    date: 2016-05-20 23:12:04
+(epstopdf)                    size: 30899 bytes
+(epstopdf)             Output file: <../figures/ROS_batch_mean_ci-eps-converted-
+to.pdf>
+(epstopdf)                    date: 2016-05-20 23:12:12
+(epstopdf)                    size: 19527 bytes
+(epstopdf)             Command: <epstopdf --outfile=../figures/ROS_batch_mean_ci
+-eps-converted-to.pdf ../figures/ROS_batch_mean_ci.eps>
+(epstopdf)             \includegraphics on input line 186.
+Package epstopdf Info: Output file is already uptodate.
+
+<../figures/ROS_batch_mean_ci-eps-converted-to.pdf, id=380, 578.16pt x 433.62pt
+>
+File: ../figures/ROS_batch_mean_ci-eps-converted-to.pdf Graphic file (type pdf)
+ <use ../figures/ROS_batch_mean_ci-eps-converted-to.pdf>
+Package pdftex.def Info: ../figures/ROS_batch_mean_ci-eps-converted-to.pdf used 
+on input line 186.
+(pdftex.def)             Requested size: 212.29312pt x 159.21945pt.
+ [4<../figures/sojourn_times11111-eps-converted-to.pdf><../figures/sojourn_times
+44111-eps-converted-to.pdf><../figures/FCFS_batch_mean_ci-eps-converted-to.pdf><
+../figures/LCFS_batch_mean_ci-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <../figures/batch_mean_var.eps>
+(epstopdf)                    date: 2016-05-20 23:12:04
+(epstopdf)                    size: 33410 bytes
+(epstopdf)             Output file: <../figures/batch_mean_var-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2016-05-20 23:12:13
+(epstopdf)                    size: 20239 bytes
+(epstopdf)             Command: <epstopdf --outfile=../figures/batch_mean_var-ep
+s-converted-to.pdf ../figures/batch_mean_var.eps>
+(epstopdf)             \includegraphics on input line 194.
+Package epstopdf Info: Output file is already uptodate.
+
+<../figures/batch_mean_var-eps-converted-to.pdf, id=557, 578.16pt x 433.62pt>
+File: ../figures/batch_mean_var-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ../figures/batch_mean_var-eps-converted-to.pdf>
+Package pdftex.def Info: ../figures/batch_mean_var-eps-converted-to.pdf used on 
+input line 194.
+(pdftex.def)             Requested size: 254.75433pt x 191.06467pt.
+
+(./_minted-report/F2767697E8326106EAB8239607CC78E417E06CD4D1BB90589FB1C5BF61D7E
+EAA.pygtex
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <8> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 2.
+ [5<../figures/SSTF_batch_mean_ci-eps-converted-to.pdf><../figures/ROS_batch_mea
+n_ci-eps-converted-to.pdf><../figures/batch_mean_var-eps-converted-to.pdf>] [6]
+)
+
+Package caption Warning: \captionsetup{type*=...} or \captionof
+(caption)                outside box or environment on input line 201.
+See the caption package documentation for explanation.
+
+
+(./_minted-report/3013508DD92358F949E9DEFDBF26BA0A8EFD421C43D66C25D470DADDB03AF
+3E8.pygtex [7] [8])
+(./_minted-report/19BDEEB25C545D73F954F5385E427B686132F3276414E566D05B58DA1D403
+63F.pygtex)
+(./_minted-report/044A356C691B7DB1804DB118F443623824C3C0622947EBEFD22641D791FD9
+44C.pygtex) [9]
+(./_minted-report/8156CED87A84C428DE65D98A11B844224C5F4D997BFD7C148E5E53F60E040
+52D.pygtex)
+(./_minted-report/ED13F08DF56F2F8C9D8C3C036D0F2302DEC3633D0FC1E8D256C376B529BA0
+9AD.pygtex)
+(./_minted-report/69CFE3F874A57C727F19FC141EA6C5D827CDA90F14593BA0C541C6D9CA87C
+E37.pygtex)
+(./_minted-report/981BCC18D2AEF3B76342945416BA8B75850769B685420F919DCEEBAC662DF
+90E.pygtex) [10] (./report.aux))
+
+Here is how much of LuaTeX's memory you used:
+ 8839 strings out of 494933
+ 100000,266212 words of node,token memory allocated
+ 319 words of node memory still in use:
+    nodes
+   avail lists: 1:1,2:19,3:99,4:1630,5:334,6:2655,7:66,9:300,10:187,11:1
+ 11420 multiletter control sequences out of 65536+200000
+ 59 fonts using 2328635 bytes
+ 42i,11n,43p,820b,411s stack positions out of 5000i,500n,10000p,200000b,50000s
+<<C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmbx12.pfb><<C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmcsc10.pfb><<C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmmi12.pfb><<C:/Users/tverv/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><<C:/Users/tverv/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><<C:/Users/tverv
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><<C:
+/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+r5.pfb><<C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmr8.pfb><<C:/Users/tverv/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmtt8.pfb>
+Output written on report.pdf (11 pages, 1009598 bytes).
+
+PDF statistics: 735 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 131072)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

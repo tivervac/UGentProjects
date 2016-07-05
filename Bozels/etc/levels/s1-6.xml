@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<level>
+  <block x="88.719" y="17.219" material="ice" angle="359.977" width="8" height="1"/>
+  <block x="77.866" y="10.097" material="ice" angle="179.965" width="8" height="1"/>
+  <block x="81.034" y="11.645" material="wood" angle="0.161" width="2" height="2"/>
+  <block x="91.912" y="18.767" material="wood" angle="0.123" width="2" height="2"/>
+  <block x="88.553" y="18.769" material="wood" angle="359.974" width="2" height="2"/>
+  <block x="77.757" y="11.646" material="wood" angle="0.019" width="2" height="2"/>
+  <block x="74.555" y="11.642" material="wood" angle="359.758" width="2" height="2"/>
+  <block x="85.355" y="18.763" material="wood" angle="359.686" width="2" height="2"/>
+  <target type="small" x="77.692" y="6.666"/>
+  <target type="small" x="88.889" y="13.784"/>
+  <bozel x="10.962" y="0.822" type="red" id="2"/>
+  <bozel x="7.623" y="0.859" type="red" id="3"/>
+  <bozel x="15.832" y="0.615" type="red" id="1"/>
+  <bozel x="5" y="0.941" type="red" id="4"/>
+  <block x="92.06" y="14.709" material="ice" angle="89.999" width="4" height="2"/>
+  <block x="85.575" y="14.708" material="ice" angle="90.009" width="4" height="2"/>
+  <block x="74.654" y="7.587" material="ice" angle="90.033" width="4" height="2"/>
+  <block x="81.056" y="7.59" material="ice" angle="89.996" width="4" height="2"/>
+  <block x="111.476" y="-0.434" material="solid" angle="225" width="10" height="10"/>
+  <block x="77.65" y="-2.345" material="solid" angle="90" width="10" height="10"/>
+  <block x="77.692" y="5.083" material="stone" angle="359.999" width="8" height="1"/>
+  <block x="75.596" y="3.547" material="stone" angle="0.048" width="4" height="2"/>
+  <block x="88.721" y="4.679" material="solid" angle="0" width="10" height="10"/>
+  <block x="88.696" y="12.2" material="stone" angle="359.998" width="8" height="1"/>
+  <block x="79.736" y="3.547" material="stone" angle="359.961" width="4" height="2"/>
+  <block x="90.701" y="10.662" material="stone" angle="359.958" width="4" height="2"/>
+  <block x="86.62" y="10.662" material="stone" angle="0.034" width="4" height="2"/>
+</level>

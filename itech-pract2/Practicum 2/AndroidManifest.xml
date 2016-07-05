@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="be.itech"
+          android:versionCode="1"
+          android:versionName="1.0">
+    
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="16" />    
+    <uses-permission android:name="android.permission.INTERNET"/>
+	
+    <application android:label="@string/app_name" 
+                 android:icon="@drawable/ic_launcher" 
+                 android:theme="@android:style/Theme.Holo.Light"
+                 android:allowBackup="true">
+        
+        <activity android:name=".ui.HomePageActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".ui.EventsActivity"
+            android:label="@string/events"
+            android:parentActivityName=".ui.HomePageActivity">
+        </activity>
+        
+        <activity
+            android:name=".ui.PeopleActivity"
+            android:label="@string/people"
+            android:parentActivityName=".ui.HomePageActivity">
+        </activity>
+        
+        <activity
+            android:name=".ui.DetailedEventActivity"
+            android:label="@string/detailed_event"
+            android:parentActivityName=".ui.EventsActivity">
+        </activity>
+		
+        <activity
+            android:name=".ui.ParticipantsActivity"
+            android:label="@string/participants"
+            android:parentActivityName=".ui.DetailedEventActivity">
+        </activity>
+        
+        <activity
+            android:name=".ui.DetailedPersonActivity"
+            android:label="@string/detailed_person"
+            android:parentActivityName=".ui.PeopleActivity">
+        </activity>
+        
+        <activity
+            android:name=".ui.AddPersonActivity"
+            android:label="@string/add_person"
+            android:parentActivityName=".ui.PeopleActivity">
+        </activity>
+		
+        <activity
+            android:name=".ui.AddEventActivity"
+            android:label="@string/add_event"
+            android:parentActivityName=".ui.EventsActivity">
+        </activity>
+		
+        <activity
+            android:name=".ui.AddMessageActivity"
+            android:label="@string/add_message"
+            android:parentActivityName=".ui.DetailedEventActivity">
+        </activity>
+                
+        <activity
+            android:name=".ui.PatchPersonActivity"
+            android:label="@string/patch_person"
+            android:parentActivityName=".ui.PeopleActivity">
+        </activity>
+        
+        <activity
+            android:name=".ui.PatchEventActivity"
+            android:label="@string/patch_event"
+            android:parentActivityName=".ui.EventsActivity">
+        </activity>
+        
+        <activity
+            android:name=".ui.PatchMessageActivity"
+            android:label="@string/patch_message"
+            android:parentActivityName=".ui.DetailedEventActivity">
+        </activity>
+        
+    </application>
+</manifest>

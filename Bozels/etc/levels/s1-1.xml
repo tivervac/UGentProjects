@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<level>
+  <block x="63.933" y="8.342000000000001" material="wood" angle="359.812" width="4" height="1"/>
+  <block x="67.463" y="6.749" material="wood" angle="269.86" width="8" height="1"/>
+  <bozel x="25.394" y="1.02" type="red" id="2"/>
+  <bozel x="22.167" y="1.019" type="red" id="3"/>
+  <block x="63.941" y="11.222" material="wood" angle="359.986" width="8" height="1"/>
+  <bozel x="10" y="0.974" type="red" id="1"/>
+  <block x="65.996" y="15.696" material="wood" angle="89.994" width="8" height="1"/>
+  <block x="62.182" y="15.696" material="wood" angle="90.018" width="8" height="1"/>
+  <block x="63.921" y="3.317" material="wood" angle="359.747" width="4" height="1"/>
+  <block x="64.158" y="20.17" material="wood" angle="179.983" width="4" height="1"/>
+  <block x="60.304" y="6.748" material="wood" angle="270.084" width="8" height="1"/>
+  <block x="71.852" y="3.658" material="wood" angle="90" width="2" height="1"/>
+  <block x="55.78" y="3.658" material="wood" angle="90" width="2" height="1"/>
+  <block x="64.301" y="23.605" material="wood" angle="90" width="2" height="1"/>
+  <block x="68.208" y="1.316" material="solid" angle="0" width="9" height="3"/>
+  <block x="59.509" y="1.3" material="solid" angle="0" width="9" height="3"/>
+  <block x="64.023" y="12.291" material="wood" angle="359.985" width="2" height="1"/>
+  <block x="64.26" y="21.602" material="stone" angle="180" width="2" height="2"/>
+  <target type="small" x="64.169" y="13.88"/>
+  <block x="65.35" y="5.83" material="ice" angle="90.221" width="4" height="1"/>
+  <block x="62.58" y="5.822" material="ice" angle="89.561" width="4" height="1"/>
+</level>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <!--Divider-->
+    <color name="divider">#FFAAAAAA</color>
+    <color name="row_divider">#FFDEDEDE</color>
+    
+    <!--Buttons-->
+    <color name="button">#FFE0E0E0</color>
+    <color name="addbutton">#FFEEEEEE</color>
+    <color name="buttontext">#FF0EBFE9</color>
+</resources>

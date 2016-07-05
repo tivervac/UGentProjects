@@ -1,0 +1,2 @@
+maxdist: main.c polygon.c safe_alloc.c genetic_algorithm.c
+maxdist_mpi: mpi_main.c mpi_polygon.c safe_alloc.c mpi_genetic_algorithm.c mpi_wrapper.c

@@ -1,0 +1,21 @@
+
+Errors reported: 0
+
+L1.1 Data Cache Stats: 
+	Hits:      9835723
+	Misses:    164277
+	Accesses:  10000000
+
+Bus Stats: 
+	busReads:     67043
+	busWrites:    97234
+	busUpgrades:  0
+
+Dram Stats: 
+	Access:  299840
+	Reads:   164277
+	Written: 135563
+
+	Data read:   10267 kbyte
+	Data written: 8472 kbyte
+

@@ -1,0 +1,35 @@
+@prefix fo: <http://berio.elis.ugent.be/ontology/itech4/> .
+@prefix db: <http://dbpedia.org/resource/Category:/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+fo:Dorkly a foaf:Person;
+            foaf:firstName "Dorkly" .
+
+fo:Nagano_Toyokazu a foaf:Person;
+                     foaf:firstName "Nagano" ;
+                     foaf:lastName "Toyozaku" .
+
+<http://0.media.dorkly.cvcdn.com/14/45/e8778698ee7cec2245a192746b5a8ddc.jpg>
+	rdf:type fo:Foto;
+	fo:maker fo:Dorkly ;
+	fo:content dbpedia:Pikachu ;
+	fo:content dbpedia:Cat;
+	fo:thema db:Animals ;
+	fo:location db:Japan ;
+	fo:date "2006-01-01"^^xsd:date ;
+	fo:description "Kat die lijkt op Pikachu" ;
+	fo:title "Pikachu kitteh" .
+
+<http://i.imgur.com/CoRyYKo.jpg>
+	rdf:type fo:Foto ;
+	fo:maker fo:Nagano_Toyokazu ;
+	fo:content dbpedia:Duck ;
+	fo:content dbpedia:Umbrella;
+	fo:thema db:Culture ;
+	fo:location db:Japan ;
+	fo:date "2012-03-23"^^xsd:date ;
+	fo:description "Umbrella girl with ducks" ;
+	fo:title "Stalker" .

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>TCP/IP: Layers</title>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+
+				<li>
+					<a href="history.html">History</a>
+				</li>
+
+				<li>
+					<a href="layers.html">Layers</a>
+				</li>
+
+				<li>
+					<a href="implementations.html">Implementations</a>
+				</li>
+
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<div id="container">
+		<section>
+			<header>
+				<h2>The <abbr title="Open Systems Interconnection">OSI</abbr>
+				model</h2>
+			</header>
+
+			<table>
+				<caption>
+					Open Systems Interconnection model
+				</caption>
+
+				<thead>
+					<tr>
+						<th>Data Unit</th>
+
+						<th>Layer</th>
+
+						<th>Function</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>Data</td>
+
+						<td>Application</td>
+
+						<td>Network process to application</td>
+					</tr>
+
+					<tr>
+						<td>Data</td>
+
+						<td>Presentation</td>
+
+						<td>Data representation, encryption and decryption,
+						convert machine dependent data to machine independent
+						data</td>
+					</tr>
+
+					<tr>
+						<td>Data</td>
+
+						<td>Session</td>
+
+						<td>Interhost communication, managing sessions between
+						applications</td>
+					</tr>
+
+					<tr>
+						<td>Segments</td>
+
+						<td>Transport</td>
+
+						<td>End-to-end connections, reliability and flow
+						control</td>
+					</tr>
+
+					<tr>
+						<td>Packet/Datagram</td>
+
+						<td>Network</td>
+
+						<td>Path determination and logical addressing</td>
+					</tr>
+
+					<tr>
+						<td>Frame</td>
+
+						<td>Data link</td>
+
+						<td>Physical addressing</td>
+					</tr>
+
+					<tr>
+						<td>Bit</td>
+
+						<td>Physical</td>
+
+						<td>Media, signal and binary transmission</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<header>
+				<h2>OSI and TCP/IP layering differences</h2>
+			</header>
+
+			<p>The three top layers in the OSI model—the application layer, the
+			presentation layer and the session layer—are not distinguished
+			separately in the TCP/IP model where it is just the application
+			layer. While some pure OSI protocol applications, such as X.400,
+			also combined them, there is no requirement that a TCP/IP protocol
+			stack must impose monolithic architecture above the transport
+			layer. For example, the NFS application protocol runs over the
+			eXternal Data Representation (XDR) presentation protocol, which, in
+			turn, runs over a protocol called Remote Procedure Call (RPC). RPC
+			provides reliable record transmission, so it can run safely over
+			the best-effort UDP transport.</p>
+
+			<p>Different authors have interpreted the RFCs differently, about
+			whether the link layer (and the TCP/IP model) covers OSI model
+			layer 1 (physical layer) issues, or if a hardware layer is assumed
+			below the link layer.</p>
+
+			<p>Several authors have attempted to incorporate the OSI model's
+			layers 1 and 2 into the TCP/IP model, since these are commonly
+			referred to in modern standards (for example, by IEEE and ITU).
+			This often results in a model with five layers, where the link
+			layer or network access layer is split into the OSI model's layers
+			1 and 2.</p>
+
+			<p>The session layer roughly corresponds to the Telnet virtual
+			terminal functionality[citation needed], which is part of text
+			based protocols such as the HTTP and SMTP TCP/IP model application
+			layer protocols. It also corresponds to TCP and UDP port numbering,
+			which is considered as part of the transport layer in the TCP/IP
+			model. Some functions that would have been performed by an OSI
+			presentation layer are realized at the Internet application layer
+			using the MIME standard, which is used in application layer
+			protocols such as HTTP and SMTP.</p>
+
+			<p>The IETF protocol development effort is not concerned with
+			strict layering. Some of its protocols may not fit cleanly into the
+			OSI model, although RFCs sometimes refer to it and often use the
+			old OSI layer numbers. The IETF has repeatedly stated that Internet
+			protocol and architecture development is not intended to be
+			OSI-compliant. RFC 3439, addressing Internet architecture, contains
+			a section entitled: "Layering Considered Harmful".</p>
+
+			<p>Conflicts are apparent also in the original OSI model, ISO 7498,
+			when not considering the annexes to this model (e.g., ISO 7498/4
+			Management Framework), or the ISO 8648 Internal Organization of the
+			Network layer (IONL). When the IONL and Management Framework
+			documents are considered, the ICMP and IGMP are neatly defined as
+			layer management protocols for the network layer. In like manner,
+			the IONL provides a structure for "subnetwork dependent convergence
+			facilities" such as ARP and RARP.</p>
+
+			<p>IETF protocols can be encapsulated recursively, as demonstrated
+			by tunneling protocols such as Generic Routing Encapsulation (GRE).
+			GRE uses the same mechanism that OSI uses for tunneling at the
+			network layer.</p>
+
+			<figure>
+				<img alt="UDP_encapsulation" src=
+				"http://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/UDP_encapsulation.svg/500px-UDP_encapsulation.svg.png">
+
+				<figcaption>
+					Encapsulation of application data descending through the
+					layers.
+				</figcaption>
+			</figure>
+
+			<header>
+				<h2>Link layer</h2>
+			</header>
+
+			<p>The link layer is the networking scope of the local network
+			connection to which a host is attached. This regime is called the
+			link in Internet literature. This is the lowest component layer of
+			the Internet protocols, as TCP/IP is designed to be hardware
+			independent. As a result TCP/IP is able to be implemented on top of
+			virtually any hardware networking technology.</p>
+
+			<p>The link layer is used to move packets between the Internet
+			layer interfaces of two different hosts on the same link. The
+			processes of transmitting and receiving packets on a given link can
+			be controlled both in the software device driver for the network
+			card, as well as on firmware or specialized chipsets. These will
+			perform data link functions such as adding a packet header to
+			prepare it for transmission, then actually transmit the frame over
+			a physical medium. The TCP/IP model includes specifications of
+			translating the network addressing methods used in the Internet
+			Protocol to data link addressing, such as Media Access Control
+			(MAC), however all other aspects below that level are implicitly
+			assumed to exist in the link layer, but are not explicitly
+			defined.</p>
+
+			<p>This is also the layer where packets may be selected to be sent
+			over a virtual private network or other networking tunnel. In this
+			scenario, the link layer data may be considered application data
+			which traverses another instantiation of the IP stack for
+			transmission or reception over another IP connection. Such a
+			connection, or virtual link, may be established with a transport
+			protocol or even an application scope protocol that serves as a
+			tunnel in the link layer of the protocol stack. Thus, the TCP/IP
+			model does not dictate a strict hierarchical encapsulation
+			sequence.</p>
+
+			<p>The TCP/IP model's link layer corresponds to the Open Systems
+			Interconnection (OSI) model physical and data link layers, layers
+			one and two of the OSI model.</p>
+
+			<header>
+				<h2>Internet layer</h2>
+			</header>
+
+			<p>The internet layer has the responsibility of sending packets
+			across potentially multiple networks. Internetworking requires
+			sending data from the source network to the destination network.
+			This process is called routing.</p>
+
+			<p>In the Internet protocol suite, the Internet Protocol performs
+			two basic functions:</p>
+
+			<ol>
+				<li>Host addressing and identification: This is accomplished
+				with a hierarchical addressing system (see IP address).</li>
+
+				<li>Packet routing: This is the basic task of sending packets
+				of data (datagrams) from source to destination by sending them
+				to the next network node (router) closer to the final
+				destination.</li>
+			</ol>
+
+			<p>The internet layer is not only agnostic of application data
+			structures at the transport layer, but it also does not distinguish
+			between operation of the various transport layer protocols. So, IP
+			can carry data for a variety of different upper layer protocols.
+			These protocols are each identified by a unique protocol number:
+			for example, Internet Control Message Protocol (ICMP) and Internet
+			Group Management Protocol (IGMP) are protocols 1 and 2,
+			respectively.</p>
+
+			<p>Some of the protocols carried by IP, such as ICMP (used to
+			transmit diagnostic information about IP transmission) and IGMP
+			(used to manage IP Multicast data) are layered on top of IP but
+			perform internetworking functions. This illustrates the differences
+			in the architecture of the TCP/IP stack of the Internet and the OSI
+			model. The TCP/IP model's internet layer corresponds to layer three
+			of the Open Systems Interconnection (OSI) model, where it is
+			referred to as the network layer.</p>
+
+			<header>
+				<h2>Transport layer</h2>
+			</header>
+
+			<p>The transport layer establishes host-to-host connectivity,
+			meaning it handles the details of data transmission that are
+			independent of the structure of user data and the logistics of
+			exchanging information for any particular specific purpose. Its
+			responsibility includes end-to-end message transfer independent of
+			the underlying network, along with error control, segmentation,
+			flow control, congestion control, and application addressing (port
+			numbers). End to end message transmission or connecting
+			applications at the transport layer can be categorized as either
+			connection-oriented, implemented in TCP, or connectionless,
+			implemented in UDP.</p>
+
+			<p>The transport layer can be thought of as a transport mechanism,
+			e.g., a vehicle with the responsibility to make sure that its
+			contents (passengers/goods) reach their destination safely and
+			soundly, unless another protocol layer is responsible for safe
+			delivery. The layer simply establishes a basic data channel that an
+			application uses in its task-specific data exchange.</p>
+
+			<p>For this purpose the layer establishes the concept of the port,
+			a numbered logical construct allocated specifically for each of the
+			communication channels an application needs. For many types of
+			services, these port numbers have been standardized so that client
+			computers may address specific services of a server computer
+			without the involvement of service announcements or directory
+			services.</p>
+
+			<p>Since IP provides only a best effort delivery, the transport
+			layer is the first layer of the TCP/IP stack to offer reliability.
+			IP can run over a reliable data link protocol such as the
+			High-Level Data Link Control (HDLC).</p>
+
+			<header>
+				<h2>Application layer</h2>
+			</header>
+
+			<p>The application layer contains the higher-level protocols used
+			by most applications for network communication. Examples of
+			application layer protocols include the File Transfer Protocol
+			(FTP) and the Simple Mail Transfer Protocol (SMTP). Data coded
+			according to application layer protocols are then encapsulated into
+			one or (occasionally) more transport layer protocols (such as TCP
+			or UDP), which in turn use lower layer protocols to effect actual
+			data transfer.</p>
+
+			<p>Since the IP stack defines no layers between the application and
+			transport layers, the application layer must include any protocols
+			that act like the OSI's presentation and session layer protocols.
+			This is usually done through libraries.</p>
+
+			<p>Application layer protocols generally treat the transport layer
+			(and lower) protocols as black boxes which provide a stable network
+			connection across which to communicate, although the applications
+			are usually aware of key qualities of the transport layer
+			connection such as the end point IP addresses and port numbers. As
+			noted above, layers are not necessarily clearly defined in the
+			Internet protocol suite. Application layer protocols are most often
+			associated with client–server applications, and the commoner
+			servers have specific ports assigned to them by the IANA: HTTP has
+			port 80; Telnet has port 23; etc. Clients, on the other hand, tend
+			to use ephemeral ports, i.e. port numbers assigned at random from a
+			range set aside for the purpose.</p>
+
+			<p>Transport and lower level layers are largely unconcerned with
+			the specifics of application layer protocols. Routers and switches
+			do not typically "look inside" the encapsulated traffic to see what
+			kind of application protocol it represents, rather they just
+			provide a conduit for it. However, some firewall and bandwidth
+			throttling applications do try to determine what's inside, as with
+			the Resource Reservation Protocol (RSVP). It's also sometimes
+			necessary for Network Address Translation (NAT) facilities to take
+			account of the needs of particular application layer protocols.
+			(NAT allows hosts on private networks to communicate with the
+			outside world via a single visible IP address using port
+			forwarding, and is an almost ubiquitous feature of modern domestic
+			broadband routers).</p>
+		</section>
+
+		<footer>
+			<p>Source of content:Wikipedia, The Free Encyclopedia, "Internet
+			protocol suite", April 2013,
+			http://en.wikipedia.org/wiki/Internet_protocol_suites</p>
+
+			<p>Group 39, Stefaan Vermassen and Titouan Vervack.</p>
+		</footer>
+	</div>
+</body>
+</html>

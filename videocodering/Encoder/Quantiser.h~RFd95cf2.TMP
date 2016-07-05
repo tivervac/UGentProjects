@@ -1,0 +1,15 @@
+#ifndef QUANTISER_H
+#define QUANTISER_H
+
+#include "Macroblock.h"
+
+class Quantiser
+{
+public:
+	static void Quantise(Macroblock *mb, int qp);
+private:
+	static const int max = 8;
+	static void Quantise_8x8(pixel **block, int qp, int offset_x, int offset_y);
+};
+
+#endif

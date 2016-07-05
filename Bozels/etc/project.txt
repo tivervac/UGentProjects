@@ -1,0 +1,43 @@
+In de mainklasse begin ik met een SpelModel aan te maken. Dit model is het hoofdmodel van het programma. 
+Het houdt de zwaartekracht, lanceerkracht, dichtheid en tijdsstap bij maar ook mappen met de bodys, bozels en doelen. 
+Alsook coordinaten voor de katapult, een lijst met objecten die moeten verwijderd worden, het World object, de booleans om te kijken of bvb een zwaartepunt moet getekend worden.
+Na dit model aan te maken maak ik de menubalk aan en zet ik MainPanel als contentPane.
+MainPanel is het hoofdpaneel hierop zet ik het bovenste paneel, SpelPanel, en het onderste paneel, EditorPanel.
+SpelPanel is een ChangeListener van SpelModel en is ook een Mouse(Motion)Listener om mijn bozels te kunnen lanceren.
+In de paintComponent van SpelPanel wordt een lijst van alle bodies overlopen en deze worden een voor een getekend.
+In de mouseClicked wordt een kracht van de bozel gebruikt. 
+Als deze geen kracht heeft wordt hij verwijdert zodat je niet hoeft te wachten tot de bozel slaapt om de volgende te lanceren.
+In de MouseReleased/Dragged/Pressed staat code om te bozel te lanceren.
+In EditorPanel zet ik de twee knoppen, pauze en herstart, samen met een JTabbedPane, TabbedPanel, via grouplayout.
+PauzeAction zorgt voor het synchroniseren van de twee pauzeknoppen.
+Terwijl HerstartAction alle nodige lijsten leegmaakt, nodige variabelen reset en het level, wat het opvraagt aan SpelModel, herinlaad.
+In TabbedPanel add ik de vier tabs, Algemeen-, Bozels- , Doelen- en MaterialenPanel.
+In alle vier de panels wordt GroupLayout gebruikt.
+In AlgemeenPanel maak ik alle velden en checkboxes. De nodige booleans hiervoor worden opgeslaan in SpelModel.
+Het gedrag van de tekstvelden wordt beheert door een KeyListener, FieldListener, om het veld geel te maken, en een anonieme action om het veld rood te maken.
+Voor de layout van de andere drie tabs heb ik twee klassen.
+De drie tabs zijn ook ChangeListeners voor SpelModel.
+MakeLayout kan de linker en rechterkant van de instellingen maken terwijl MakeList de JList aanmaakt.
+De nodige layout wordt gemaakt en samengevoegd met GroupLayout in de respectievelijk tabs.
+Om naar de JList te luisteren is er SelectionAction deze doet gewoon een fireStateChanged van het SpelModel.
+Wanneer er een stateChange is worden de tekstvelden heringesteld en wordt de achtergrond van de kleurknop aangepast.
+Het level wordt ingeladen door de klasse XMLParser. 
+Deze klasse vraagt een int mee. Als deze int 0 is leest hij gewoon het level in.
+Indien de int 1 is maakt hij eerst alle lijsten leeg en reset hij de nodige variabelen en leest dan het level in.
+In XMLParser worden verschillende keren objecten van de klasse Blok, Bal, Bozel en Doel aangemaakt.
+Deze klassen maken een blok, bozel, bal of doel aan in JBox2D en voegt deze toe aan een lijst die wordt bijgehouden in SpelModel.
+De gegevens om deze blokken, bozels, ballen of doelen aan te maken haalt hij uit map gemaakt door de klasse MateriaalFactory.
+MateriaalFactory verbind Strings zoals "solid" met een subklasse van Objecten, bvb Vast.
+Objecten heeft de subklassen: Vast, Ijs,..., BlauweBozel,...,KleinDoel,GrootDoel.
+Deze subklassen stellen de eigenschappen in door een super.
+In Objecten staat wordt in de constructor de eigenschappen ingesteld.
+Objecten kan elke eigenschappen teruggeven en aanpassen.
+Ten slotte word mijn wereld gemaakt in de klasse Wereld.
+Hier worden standaard een onzichtbaar plafond, grond, linker en rechtmuur aangemaakt.
+Dit om te voorkomen dat objecten uit het level worden gegooid of zo goed als onbereikbaar worden.
+Wereld wordt altijd aangemaakt in een nieuwe thread. 
+In de run methode staat een while(model.getRun()).
+model.getRun() returned altijd true tenzij een level moet worden herstart dan wordt deze op false gezet om de thread te stoppen.
+Hier op volgend wordt een nieuwe thread opgestart.
+In die while lus worden objecten verwijderd indien nodig en wordt er gekeken of je verloren/gewonnen hebt, zoja komt er een popup op het scherm.
+Eens je daar op OK klikt, wordt je thread gestopt en wordt het level herstart.

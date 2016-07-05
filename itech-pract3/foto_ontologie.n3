@@ -1,0 +1,34 @@
+@prefix : <http://berio.elis.ugent.be/ontology/itech4/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix db: <http://dbpedia.org/resource/Category:/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+:Foto	 rdf:type rdfs:Class .
+
+:maker rdf:type rdf:Property ;
+			rdfs:subPropertyOf foaf:Person ;
+			rdfs:domain :Foto ;
+			rdfs:range xsd:string .
+
+:content rdf:type rdf:Property ;
+			 rdfs:range xsd:string .
+
+:thema rdf:type rdf:Property ;
+           owl:oneOf (db:People db:Animals db:Architecture db:Nature db:Politics db:Humor db:Culture db:News) . 
+
+:location rdf:type rdf:Property ;
+			 rdf:subPropertyOf dbo:Place .
+
+:date rdf:type rdf:Property ;
+		 rdf:subPropertyOf xsd:Date .
+
+:description rdf:type rdf:Property ;
+				  rdfs:range xsd:string .
+
+:title rdf:type rdf:Property ;
+        rdfs:domain :Foto ;
+		rdfs:range xsd:string .

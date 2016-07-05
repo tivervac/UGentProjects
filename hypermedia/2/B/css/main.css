@@ -1,0 +1,186 @@
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #6F3736;
+}
+
+body {
+	background: #f2f2f2;
+	margin: 0;
+	font-family: 'Lucida sans', Arial, Helvetica;
+	font-size: small;
+}
+
+#menu {
+	float: left;
+	width: 250px;
+	margin-right: 20px;
+}
+
+#container {
+	float: left;
+	width: 690px;
+}
+
+#helpful {
+	padding: 10px;
+	width: 300px;
+	border-style: double;
+	border-width: 5px;
+}
+
+#helpful figure img {
+	width: 20%;
+	height: 20%;
+	float: right;
+}
+
+#menu li {
+	margin: 0 0 3px;
+}
+
+#menu a {
+	display: block;
+	display: inline-block;
+	width: 240px;
+	text-decoration: none;
+	background: #ddd;
+	color: #444;
+	padding: 10px 5px;
+	text-transform: uppercase;
+	font: bold 12px Arial,Helvetica;
+	border-radius: 5px;
+	box-shadow: 0 1px 0 #ccc;
+}
+
+#menu nav a:hover,#menu nav a:active,#menu nav .active a:link,#menu nav .active a:visited {
+	color: #eee;
+	background: #9c9c9c;
+}
+
+h1 {
+	color: #3FAAEF;
+	font-size: 28px;
+}
+
+h2 {
+	color: #3EAFD0;
+	font-size: 24px;
+}
+
+#useful_links {
+	float: right;
+}
+
+#social {
+	float: left;
+}
+
+#useful_links ul li,#social ul li {
+	padding: .5em;
+	display: run-in;
+}
+
+#useful_links a,#social a {
+	text-decoration: none;
+	color: #3D6FD0;
+}
+
+#useful_links a:hover,#social a:hover {
+	color: #000;
+}
+
+#footer {
+	position: relative;
+	height: 50px;
+	clear: both;
+}
+
+form#contact fieldset {
+	border: 0;
+	text-align: left;
+}
+
+form#contact input[type=text],input[type=email],textarea {
+	margin: 3px 0 0;
+	padding: 6px;
+	width: 260px;
+	border: 3px solid #ccc;
+}
+
+form#contact textarea {
+	width: 275px;
+	height: 150px;
+}
+
+form#contact label {
+	display: block;
+	font-size: 14px;
+	margin-top: 10px;
+	font-weight: 700;
+}
+
+#submit {
+	display: block;
+}
+
+#authors {
+	margin-top: 25px;
+}
+
+#authors a {
+	text-decoration: none;
+	font-style: normal;
+	color: #3D6FD0;
+}
+
+table {
+	background-color: #FFF;
+	border: 1px solid #FFF;
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+
+table caption {
+	font-weight: 700;
+	font-size: 14px;
+}
+
+table th,table thead {
+	background-color: #ABD6B3;
+	border: 1px solid #ABD6B3;
+	text-align: left;
+	padding: 8px 8px 9px;
+	font-weight: 700;
+	font-size: 14px;
+}
+
+table td {
+	font-size: 12px;
+	padding: 5px 8px 2px;
+	vertical-align: top;
+}
+
+.popUpControl {
+	display: none;
+}
+
+.box {
+	display: none;
+}
+
+.popUpControl:checked ~ label > .box {
+	display: inline;
+	position: absolute;
+	border: 1px solid #ccc;
+	background: #fff;
+	color: #000;
+}
+
+.source {
+	text-decoration: underline;
+}
