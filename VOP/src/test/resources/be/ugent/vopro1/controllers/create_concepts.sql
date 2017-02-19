@@ -1,0 +1,3 @@
+INSERT INTO document (name, project_id, type, blob) VALUES ('concept1', 1, 'concept', '{"attributes":["attr1"],"definition":{"type":"textual","data":{"text":"Example Definition"}},"name":"concept1"}');
+INSERT INTO document (name, project_id, type, blob) VALUES ('concept2', 1, 'concept', '{"attributes":["attr2"],"definition":{"type":"textual","data":{"text":"Example Definition"}},"name":"concept2"}');
+INSERT INTO document (name, project_id, type, blob) VALUES ('concept3', 1, 'concept', '{"attributes":["attr3"],"definition":{"type":"textual","data":{"text":"Example Definition"}},"name":"concept3"}');

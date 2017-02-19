@@ -1,0 +1,564 @@
+<div class="custom-container" id="projectDetails" data-ng-init="gCtrl.update()">
+
+<h1 id="projectTitle">
+    {{gCtrl.formatToHtml(ctrl.projectName)}}
+</h1>
+
+<div id="alerts">
+
+<div id="deleteActorAlert" ng-show="gCtrl.getAlert('deleteActorAlert') == true"  class="alert alert-success" role="alert">
+  <button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('deleteActorAlert');"><span aria-hidden="true">&times;</span></button>
+  Actor successfully deleted!
+</div>
+<div id="createActorAlert" ng-show="gCtrl.getAlert('createActorAlert') == true"  class="alert alert-success" role="alert">
+  <button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('createActorAlert');"><span aria-hidden="true">&times;</span></button>
+  Actor successfully created!
+</div>
+<div id="patchActorAlert" ng-show="gCtrl.getAlert('patchActorAlert') == true"  class="alert alert-success" role="alert">
+  <button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('patchActorAlert');"><span aria-hidden="true">&times;</span></button>
+  Actor successfully updated!
+</div>
+<div id="deleteConceptAlert" ng-show="gCtrl.getAlert('deleteConceptAlert') == true"  class="alert alert-success" role="alert">
+  <button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('deleteConceptAlert');"><span aria-hidden="true">&times;</span></button>
+  Concept successfully deleted!
+</div>
+<div id="createConceptAlert" ng-show="gCtrl.getAlert('createConceptAlert') == true"  class="alert alert-success" role="alert">
+  <button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('createConceptAlert');"><span aria-hidden="true">&times;</span></button>
+  Concept successfully created!
+</div>
+<div id="patchConceptAlert" ng-show="gCtrl.getAlert('patchConceptAlert')"  class="alert alert-success" role="alert">
+  <button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('patchConceptAlert');"><span aria-hidden="true">&times;</span></button>
+  Concept successfully updated!
+</div>
+<div id="deleteUsecaseAlert" ng-show="gCtrl.getAlert('deleteUsecaseAlert')"  class="alert alert-success" role="alert">
+  <button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('deleteUsecaseAlert');"><span aria-hidden="true">&times;</span></button>
+  Use case successfully deleted!
+</div>
+<div id="createUsecaseAlert" ng-show="gCtrl.getAlert('createUsecaseAlert')"  class="alert alert-success" role="alert">
+  <button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('createUsecaseAlert');"><span aria-hidden="true">&times;</span></button>
+  Use case successfully created!
+</div>
+<div id="patchUsecaseAlert" ng-show="gCtrl.getAlert('patchUsecaseAlert')"  class="alert alert-success" role="alert">
+  <button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('patchUsecaseAlert');"><span aria-hidden="true">&times;</span></button>
+  Use case successfully updated!
+</div>
+<div id="patchProjectNameAlert" ng-show="gCtrl.getAlert('patchProjectNameAlert')"  class="alert alert-success" role="alert">
+  <button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('patchProjectNameAlert');"><span aria-hidden="true">&times;</span></button>
+  Projectname successfully changed!
+</div>
+<div id="patchProjectLeaderAlert" ng-show="gCtrl.getAlert('patchProjectLeaderAlert')"  class="alert alert-success" role="alert">
+  <button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('patchProjectLeaderAlert');"><span aria-hidden="true">&times;</span></button>
+  Projectleader successfully changed!
+</div>
+<div id="patchAnalystAlert" ng-show="gCtrl.getAlert('patchAnalystAlert')"  class="alert alert-success" role="alert">
+<button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('patchAnalystAlert');"><span aria-hidden="true">&times;</span></button>
+Project analysts successfully updated!
+</div>
+<div id="importUsecaseAlert" ng-show="gCtrl.getAlert('importUsecaseAlert')"  class="alert alert-success" role="alert">
+<button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('importUsecaseAlert');"><span aria-hidden="true">&times;</span></button>
+Use case successfully imported!
+</div>
+<div id="exportUsecaseAlert" ng-show="gCtrl.getAlert('exportUsecaseAlert')"  class="alert alert-success" role="alert">
+<button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('exportUsecaseAlert');"><span aria-hidden="true">&times;</span></button>
+Use case successfully exported!
+</div>
+<div id="deleteProcessAlert" ng-show="gCtrl.getAlert('deleteProcessAlert') == true"  class="alert alert-success" role="alert">
+  <button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('deleteProcessAlert');"><span aria-hidden="true">&times;</span></button>
+  Process successfully deleted!
+</div>
+<div id="createProcessAlert" ng-show="gCtrl.getAlert('createProcessAlert') == true"  class="alert alert-success" role="alert">
+  <button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('createProcessAlert');"><span aria-hidden="true">&times;</span></button>
+  Process successfully created!
+</div>
+<div id="patchProcessAlert" ng-show="gCtrl.getAlert('patchProcessAlert') == true"  class="alert alert-success" role="alert">
+  <button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('patchProcessAlert');"><span aria-hidden="true">&times;</span></button>
+  Process successfully updated!
+</div>
+<div id="scheduleAlert" ng-show="gCtrl.getAlert('scheduleAlert') == true"  class="alert alert-success" role="alert">
+  <button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('scheduleAlert');"><span aria-hidden="true">&times;</span></button>
+  Schedule successfully created!
+</div>
+
+</div>
+
+<div ng-show="ctrl.patchProjectName && (gCtrl.isAdmin() || ctrl.isProjectLeader)">
+    <input type="text" ng-model="ctrl.newProjectName">
+    <button class="btn btn-success" ng-click="ctrl.updateProjectName()">
+        <span class="glyphicon glyphicon-ok"></span> Save
+    </button>
+    <button class="btn btn-danger" ng-click="ctrl.patchProjectName = false">
+        <span class="glyphicon glyphicon-remove"></span> Cancel
+    </button>
+</div>
+<div ng-show="!ctrl.patchProjectName && !gCtrl.isPatchProjectLeader() && !ctrl.patchSchedule && (gCtrl.isAdmin() || ctrl.isProjectLeader)">
+    <button class="btn btn-warning" ng-click="ctrl.patchProjectName = true; ctrl.newProjectName = gCtrl.formatToHtml(ctrl.project.name)">
+        <span class="glyphicon glyphicon-pencil"></span> Edit project name
+    </button>
+    <button class="btn btn-warning" ng-click="gCtrl.setPatchProjectLeader(true)">
+        <span class="glyphicon glyphicon-pencil"></span> Edit project leader
+    </button>
+    <a href="#/projects/{{ctrl.projectName}}/analysts/update">
+        <button class="btn btn-warning" >
+            <span class="glyphicon glyphicon-pencil"></span> Update analysts
+        </button>
+    </a>
+    <button class="btn btn-info" ng-click="ctrl.patchSchedule = true">
+        <span class="glyphicon glyphicon-calendar"></span> Update Schedule
+    </button>
+</div>
+<br>
+<div ng-hide="ctrl.patchSchedule">
+<a ng-href="#/projects/{{gCtrl.currentProject}}/schedule" ng-click="gCtrl.update()">
+    <button id="showSchedule" class="btn btn-info">
+        <span class="glyphicon glyphicon-calendar"></span> Show schedule
+    </button>
+</a>
+</div>
+
+<div ng-show="ctrl.patchSchedule && (gCtrl.isAdmin() || ctrl.isProjectLeader)">
+    From:
+    <input type="text" ng-model="ctrl.day" > -
+    <input type="text" ng-model="ctrl.month" > -
+    <input type="text" ng-model="ctrl.year" >
+    <button class="btn btn-success" ng-click="ctrl.schedule()">
+        <span class="glyphicon glyphicon-ok"></span> Save
+    </button>
+    <button class="btn btn-danger" ng-click="ctrl.patchSchedule = false">
+        <span class="glyphicon glyphicon-remove"></span> Cancel
+    </button>
+</div>
+
+<div ng-show="gCtrl.isPatchProjectLeader() && (gCtrl.isAdmin() || ctrl.isProjectLeader)">
+    <h3>Update project leader</h3>
+    <hr/>
+    <button class="btn btn-danger" ng-click="gCtrl.setPatchProjectLeader(false)">
+        <span class="glyphicon glyphicon-chevron-left"></span> Back
+    </button>
+    <table class="table table-hover">
+    <thead>
+    <th class="col-xs-2">
+    Projectleader
+    </th>
+    <th class="col-xs-2">
+    First name
+    </th>
+    <th class="col-xs-2">
+    Last name
+    </th>
+    <th>
+    Email
+    </th>
+    </thead>
+    <tr ng-repeat="member in ctrl.members">
+    <td class="col-xs-2 central-td">
+        <button class="btn btn-success" ng-hide="member.id == ctrl.project.leader.id" ng-click="ctrl.updateProjectLeader(member.email)">
+        <span class="glyphicon glyphicon-ok"></span> Select
+        </button>
+        <span class="glyphicon glyphicon-ok" ng-show="member.id == ctrl.project.leader.id"></span>
+    </td>
+    <td class="col-xs-2 central-td">
+    {{member.firstName}}
+    </td>
+    <td class="col-xs-2 central-td">
+    {{member.lastName}}
+    </td>
+    <td class="central-td">
+    {{member.email}}
+    </td>
+    </tr>
+    </table>
+</div>
+
+<div ng-hide="gCtrl.isPatchProjectLeader()">
+
+<h3>Project leader: {{ctrl.project.leader.firstName + ' ' + ctrl.project.leader.lastName}}</h3>
+<div id="project-details-usecase">
+
+<h2>
+    Use cases in project
+</h2>
+<p ng-show="(gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName)) && !gCtrl.isImportUsecase()">
+  <a ng-href="#/projects/{{gCtrl.currentProject}}/usecases/new" ng-click="gCtrl.update()">
+    <button id="createUsecase" class="btn btn-success">
+        <span class="glyphicon glyphicon-plus"></span> Create new use case
+    </button>
+  </a>
+  <button id="importUsecase" class="btn btn-warning" ng-click="gCtrl.setImportUsecase(true)">
+    <span class="glyphicon glyphicon-plus"></span> Import use case
+  </button>
+</p>
+
+<div ng-show="gCtrl.isImportUsecase()">
+    <h3>Import use cases</h3>
+
+    <div ng-hide="ctrl.importableUsecases.length == 0">
+        <table class="table table-hover">
+        <thead>
+            <th class="col-xs-1">Import</th>
+            <th class="col-xs-2">Team</th>
+            <th class="col-xs-2">Project</th>
+            <th>Usecase</th>
+        </thead>
+        <tr ng-repeat="usecase in ctrl.importableUsecases">
+            <td class="col-xs-1"><input type="checkbox" ng-model="usecase.toImport"></td>
+            <td class="col-xs-2">{{gCtrl.formatToHtml(usecase.team)}}</td>
+            <td class="col-xs-2">{{gCtrl.formatToHtml(usecase.project)}}</td>
+            <td>{{gCtrl.formatToHtml(usecase.name)}}</td>
+        </tr>
+        </table>
+        <div>
+        <button class="btn btn-success" ng-click="ctrl.importUsecases()">
+            <span class="glyphicon glyphicon-plus"></span> Import selection
+        </button>
+        <button class="btn btn-danger" ng-click="gCtrl.setImportUsecase(false)">
+            <span class="glyphicon glyphicon-remove"></span> Cancel
+        </button>
+        </div>
+    </div>
+
+    <div ng-show="ctrl.importableUsecases.length == 0">
+        <p class="empty-message">
+            There are no use cases you can import...
+        </p>
+        <button class="btn btn-danger" ng-click="gCtrl.setImportUsecase(false)">
+            <span class="glyphicon glyphicon-chevron-left"></span> Back
+        </button>
+    </div>
+</div>
+
+<div ng-hide="gCtrl.isImportUsecase()">
+
+<div ng-hide="gCtrl.getUseCaseList().length == 0">
+    <form class="form-inline" role="form">
+        <div class="form-group">
+            <label>Show per page:&nbsp;</label>
+            <select class="form-control" ng-init="ctrl.usecasesPerPage = ctrl.options[0]" ng-change="currentUsecasePage = 1" ng-model="ctrl.usecasesPerPage" ng-options="option.name for option in ctrl.options"></select>
+        </div>
+
+        <div class="form-group" ng-show="ctrl.usecasesPerPage.value != -1">
+            <label>&nbsp;&nbsp;|&nbsp;&nbsp;Current page:&nbsp;</label>
+            <select class="form-control" ng-init="currentUsecasePage = 1" ng-model="currentUsecasePage" ng-options="option for option in ctrl.getUsecasePages()"></select>
+        </div>
+    </form>
+</div>
+
+<table class="table table-hover" ng-hide="gCtrl.getUseCaseList().length == 0">
+<thead>
+  <th>
+    Use case
+  </th>
+  <th>
+    Stories
+  </th>
+  <th ng-show="gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName)">
+    Edit
+  </th>
+  <th ng-show="gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName)">
+    Delete
+  </th>
+  <th>
+    Validate
+  </th>
+  <th ng-show="gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName)">
+    Export
+  </th>
+</thead>
+<tr ng-repeat="usecase in gCtrl.getUseCaseList() track by $index" ng-if="ctrl.usecasesPerPage.value == -1 || ($index >= ctrl.usecasesPerPage.value * (currentUsecasePage - 1) && $index < ctrl.usecasesPerPage.value * currentUsecasePage)">
+  <td>
+  <a ng-href="#/projects/{{gCtrl.currentProject}}/usecases/{{usecase.name}}" ng-click="gCtrl.update()">
+    <button class="btn">
+      <span class="glyphicon glyphicon-info-sign"></span> {{gCtrl.formatToHtml(usecase.name)}}
+    </button>
+  </a>
+  </td>
+  <td>
+  <a ng-href="#/projects/{{gCtrl.currentProject}}/usecases/{{usecase.name}}/stories" ng-click="gCtrl.update()">
+    <button class="btn btn-success">
+      <span class="glyphicon glyphicon-random"></span> Generate
+    </button>
+  </a>
+  </td>
+  <td ng-show="gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName)">
+  <a ng-href="#/projects/{{gCtrl.currentProject}}/usecases/{{usecase.name}}/edit" ng-click="gCtrl.update()">
+    <button class="btn btn-warning">
+      <span class="glyphicon glyphicon-pencil"></span> Edit
+    </button>
+  </a>
+  </td>
+  <td ng-show="gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName)">
+    <button class="btn btn-danger" ng-click="ctrl.deleteUsecase($index)">
+      <span class="glyphicon glyphicon-remove"></span>  Delete
+    </button>
+  </td>
+  <td>
+    <button class="btn btn-info" ng-click="ctrl.validateUsecase($index)">
+      <span class="glyphicon glyphicon-thumbs-up"></span>  Validate
+    </button>
+  </td>
+  <td ng-show="gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName)">
+    <div class="btn-group">
+        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+          <span class="glyphicon glyphicon-export"></span> Export to
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li role="presentation" class="dropdown-header"><strong>Choose project</strong></li>
+            <li ng-repeat="project in ctrl.exportProjects track by $index" ng-click="ctrl.exportUsecase($parent.$index, project.name)">
+                <a>{{gCtrl.formatToHtml(project.name)}}</a>
+            </li>
+            <li ng-show="ctrl.exportProjects.length == 0">
+                <a><em>No available projects...</em></a>
+            </li>
+        </ul>
+    </div>
+  </td>
+</tr>
+</table>
+<p class="empty-message" ng-show="gCtrl.getUseCaseList().length == 0 && gCtrl.query == '' && !gCtrl.isImportUsecase()">
+    There are no use cases defined in this project...
+</p>
+<p class="empty-message" ng-show="gCtrl.getUseCaseList().length == 0 && gCtrl.query != '' && !gCtrl.isImportUsecase()">
+    There are no use cases matching the current query...
+</p>
+
+</div>
+
+</div>
+
+<hr />
+
+<div ng-hide="gCtrl.isImportUsecase()">
+
+<div id="project-details-actors">
+<h2>
+    Actors in project
+</h2>
+
+<p ng-show="gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName)">
+    <button ng-hide="gCtrl.createActor" id="showActorCreation" class="btn btn-success" ng-click="gCtrl.createActor = true; ctrl.actorName=''">
+        <span class="glyphicon glyphicon-plus"></span> Create new Actor
+    </button>
+    <div ng-show="gCtrl.createActor">
+    <input placeholder="Actor Name"  type="text" id="createActor" ng-model="ctrl.actorName">
+    <button class="btn btn-success" ng-click="ctrl.createActor(ctrl.actorName); gCtrl.createActor = false">
+        <span class="glyphicon glyphicon-ok"></span> Create
+    </button>
+    <button class="btn btn-danger" ng-click="gCtrl.createActor = false">
+        <span class="glyphicon glyphicon-remove"></span> Cancel
+    </button>
+    </div>
+</p>
+
+<div ng-hide="gCtrl.getActorList().length == 0">
+    <form class="form-inline" role="form">
+        <div class="form-group">
+            <label>Show per page:&nbsp;</label>
+            <select class="form-control" ng-init="ctrl.actorsPerPage = ctrl.options[0]" ng-change="currentActorPage = 1" ng-model="ctrl.actorsPerPage" ng-options="option.name for option in ctrl.options"></select>
+        </div>
+
+        <div class="form-group" ng-show="ctrl.actorsPerPage.value != -1">
+            <label>&nbsp;&nbsp;|&nbsp;&nbsp;Current page:&nbsp;</label>
+            <select class="form-control" ng-init="currentActorPage = 1" ng-model="currentActorPage" ng-options="option for option in ctrl.getActorPages()"></select>
+        </div>
+    </form>
+</div>
+
+<table class="table table-hover" ng-hide="gCtrl.getActorList().length == 0">
+<thead>
+  <th ng-class="{'col-xs-4': (gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName))}">
+    Actor
+  </th>
+  <th class="col-xs-2" ng-show="gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName)">
+    Edit
+  </th>
+  <th ng-show="gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName)">
+    Delete
+  </th>
+</thead>
+<tr ng-repeat="actor in gCtrl.getActorList() track by $index" ng-if="ctrl.actorsPerPage.value == -1 || ($index >= ctrl.actorsPerPage.value * (currentActorPage - 1) && $index < ctrl.actorsPerPage.value * currentActorPage)">
+  <td ng-hide="ctrl.patchActor[actor.name]" ng-class="{'col-xs-4': (gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName))}">
+  <a ng-href="#/projects/{{gCtrl.currentProject}}/actors/{{actor.name}}" ng-click="gCtrl.update()">
+  <button class="btn">
+    <span class="glyphicon glyphicon-user"></span> {{gCtrl.formatToHtml(actor.name)}}
+  </button>
+  </a>
+  </td>
+  <td ng-show="(gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName)) && ctrl.patchActor[actor.name]" class="col-xs-6">
+    <input type="text"  ng-attr-id="{{actor.name}}-patch" ng-model="ctrl.actorName">
+    <button class="btn btn-success" ng-click="ctrl.patchActor($index); gCtrl.update()">
+       <span class="glyphicon glyphicon-ok"></span> Save
+    </button>
+    <button class="btn btn-danger" ng-click="ctrl.patchActor[actor.name] = false">
+        <span class="glyphicon glyphicon-remove"></span> Cancel
+    </button>
+  </td>
+  <td class="col-xs-2 central-td" ng-show="gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName)">
+    <button class="btn btn-warning" ng-click="ctrl.patchActor[actor.name] = true; ctrl.actorName = gCtrl.formatToHtml(actor.name)" ng-hide="actor.name == 'System'">
+       <span class="glyphicon glyphicon-pencil"></span> Edit
+    </button>
+	<span class="glyphicon glyphicon-remove" ng-show="actor.name == 'System'"></span>
+  </td>
+  <td class="central-td" ng-show="gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName)">
+    <button class="btn btn-danger" ng-click="ctrl.deleteActor($index)" ng-hide="actor.name == 'System'">
+      <span class="glyphicon glyphicon-remove"></span> Delete
+    </button>
+	<span class="glyphicon glyphicon-remove" ng-show="actor.name == 'System'"></span>
+  </td>
+</tr>
+</table>
+<p class="empty-message" ng-show="gCtrl.getActorList().length == 0 && gCtrl.query != ''">
+    There are no actors matching the query...
+</p>
+<p class="empty-message" ng-show="gCtrl.getActorList().length == 0 && gCtrl.query == ''">
+    There are no actors defined in this project...
+</p>
+
+</div>
+
+<hr />
+
+<div id="project-details-concepts">
+
+<h2>Concepts in project</h2>
+
+<p ng-show="gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName)">
+  <a ng-href="#/projects/{{gCtrl.currentProject}}/concepts/new" ng-click="gCtrl.update()">
+    <button id="createConcept" class="btn btn-success">
+        <span class="glyphicon glyphicon-plus"></span> Create new concept
+    </button>
+  </a>
+</p>
+
+<div ng-hide="gCtrl.getConceptList().length == 0">
+    <form class="form-inline" role="form">
+        <div class="form-group">
+            <label>Show per page:&nbsp;</label>
+            <select class="form-control" ng-init="ctrl.conceptsPerPage = ctrl.options[0]" ng-change="currentConceptPage = 1" ng-model="ctrl.conceptsPerPage" ng-options="option.name for option in ctrl.options"></select>
+        </div>
+
+        <div class="form-group" ng-show="ctrl.conceptsPerPage.value != -1">
+            <label>&nbsp;&nbsp;|&nbsp;&nbsp;Current page:&nbsp;</label>
+            <select class="form-control" ng-init="currentConceptPage = 1" ng-model="currentConceptPage" ng-options="option for option in ctrl.getConceptPages()"></select>
+        </div>
+    </form>
+</div>
+
+<table class="table table-hover" ng-hide="gCtrl.getConceptList().length == 0">
+<thead>
+  <th ng-class="{'col-xs-4': (gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName))}">
+    Concept
+  </th>
+  <th ng-show="gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName)" class="col-xs-2">
+    Edit
+  </th>
+  <th ng-show="gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName)">
+    Delete
+  </th>
+</thead>
+<tr ng-repeat="concept in gCtrl.getConceptList() track by $index" ng-if="ctrl.conceptsPerPage.value == -1 || ($index >= ctrl.conceptsPerPage.value * (currentConceptPage - 1) && $index < ctrl.conceptsPerPage.value * currentConceptPage)">
+  <td ng-class="{'col-xs-4': (gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName))}">
+  <a ng-href="#/projects/{{gCtrl.currentProject}}/concepts/{{concept.name}}" ng-click="gCtrl.update()">
+    <button class="btn">
+      <span class="glyphicon glyphicon-info-sign"></span> {{gCtrl.formatToHtml(concept.name)}}
+    </button>
+  </a>
+  </td>
+  <td ng-show="gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName)" class="col-xs-2">
+  <a ng-href="#/projects/{{gCtrl.currentProject}}/concepts/{{concept.name}}/edit"  ng-click="gCtrl.update()">
+    <button class="btn btn-warning">
+      <span class="glyphicon glyphicon-pencil"></span> Edit
+    </button>
+  </a>
+  </td>
+  <td ng-show="gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName)">
+    <button class="btn btn-danger" ng-click="ctrl.deleteConcept($index)">
+      <span class="glyphicon glyphicon-remove"></span>  Delete
+    </button>
+  </td>
+</tr>
+</table>
+<p class="empty-message" ng-show="gCtrl.getConceptList().length == 0 && gCtrl.query == ''">
+    There are no concepts defined in this project...
+</p>
+<p class="empty-message" ng-show="gCtrl.getConceptList().length == 0 && gCtrl.query != ''">
+    There are no concepts matching the query...
+</p>
+
+</div>
+
+<hr />
+
+<div id="project-details-processes">
+
+<h2>Processes in project</h2>
+
+<p ng-show="gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName)">
+  <a ng-href="#/projects/{{gCtrl.currentProject}}/processes/new" ng-click="gCtrl.update()">
+    <button id="createProcess" class="btn btn-success">
+        <span class="glyphicon glyphicon-plus"></span> Create new process
+    </button>
+  </a>
+</p>
+
+<div ng-hide="gCtrl.getProcessList().length == 0">
+    <form class="form-inline" role="form">
+        <div class="form-group">
+            <label>Show per page:&nbsp;</label>
+            <select class="form-control" ng-init="ctrl.processesPerPage = ctrl.options[0]" ng-change="currentProcessPage = 1" ng-model="ctrl.processesPerPage" ng-options="option.name for option in ctrl.options"></select>
+        </div>
+
+        <div class="form-group" ng-show="ctrl.processesPerPage.value != -1">
+            <label>&nbsp;&nbsp;|&nbsp;&nbsp;Current page:&nbsp;</label>
+            <select class="form-control" ng-init="currentProcessPage = 1" ng-model="currentProcessPage" ng-options="option for option in ctrl.getProcessPages()"></select>
+        </div>
+    </form>
+</div>
+
+<table class="table table-hover" ng-hide="gCtrl.getProcessList().length == 0">
+<thead>
+  <th ng-class="{'col-xs-4': (gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName))}">
+    Process
+  </th>
+  <th ng-show="gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName)" class="col-xs-2">
+    Edit
+  </th>
+  <th ng-show="gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName)">
+    Delete
+  </th>
+</thead>
+<tr ng-repeat="process in gCtrl.getProcessList() track by $index" ng-if="ctrl.processesPerPage.value == -1 || ($index >= ctrl.processesPerPage.value * (currentProcessPage - 1) && $index < ctrl.processesPerPage.value * currentProcessPage)">
+  <td ng-class="{'col-xs-4': (gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName))}">
+  <a ng-href="#/projects/{{gCtrl.currentProject}}/processes/{{process.name}}" ng-click="gCtrl.update()">
+    <button class="btn">
+      <span class="glyphicon glyphicon-info-sign"></span> {{gCtrl.formatToHtml(process.name)}}
+    </button>
+  </a>
+  </td>
+  <td ng-show="gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName)" class="col-xs-2">
+  <a ng-href="#/projects/{{gCtrl.currentProject}}/processes/{{process.name}}/edit"  ng-click="gCtrl.update()">
+    <button class="btn btn-warning">
+      <span class="glyphicon glyphicon-pencil"></span> Edit
+    </button>
+  </a>
+  </td>
+  <td ng-show="gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName)">
+    <button class="btn btn-danger" ng-click="ctrl.deleteProcess($index)">
+      <span class="glyphicon glyphicon-remove"></span> Delete
+    </button>
+  </td>
+</tr>
+</table>
+<p class="empty-message" ng-show="gCtrl.getProcessList().length == 0 && gCtrl.query == ''">
+    There are no processes defined in this project...
+</p>
+<p class="empty-message" ng-show="gCtrl.getProcessList().length == 0 && gCtrl.query != ''">
+    There are no processes matching the query...
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>

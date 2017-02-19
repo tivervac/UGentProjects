@@ -1,0 +1,392 @@
+<div class="custom-container" id="teamDetails" data-ng-init="gCtrl.update()">
+
+    <div ng-hide="gCtrl.isAddExistingProjects()">
+
+    <h1>{{ctrl.team.name}}</h1>
+
+    <div id="alerts">
+        <div id="deleteProjectAlert" ng-show="gCtrl.getAlert('deleteProjectAlert') == true"  class="alert alert-success" role="alert">
+        <button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('deleteProjectAlert');"><span aria-hidden="true">&times;</span></button>
+        Project successfully deleted!
+        </div>
+        <div id="createProjectAlert" ng-show="gCtrl.getAlert('createProjectAlert') == true"  class="alert alert-success" role="alert">
+        <button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('createProjectAlert');"><span aria-hidden="true">&times;</span></button>
+        Project successfully created and put in team!
+        </div>
+        <div id="addProjectAlert" ng-show="gCtrl.getAlert('addProjectAlert') == true"  class="alert alert-success" role="alert">
+        <button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('addProjectAlert');"><span aria-hidden="true">&times;</span></button>
+        Project successfully added to team!
+        </div>
+        <div id="removeProjectAlert" ng-show="gCtrl.getAlert('removeProjectAlert') == true"  class="alert alert-success" role="alert">
+        <button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('removeProjectAlert');"><span aria-hidden="true">&times;</span></button>
+        Project successfully removed from team!
+        </div>
+        <div id="patchTeamNameAlert" ng-show="gCtrl.getAlert('patchTeamNameAlert') == true"  class="alert alert-success" role="alert">
+        <button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('patchTeamNameAlert');"><span aria-hidden="true">&times;</span></button>
+        Teamname successfully updated!
+        </div>
+        <div id="patchTeamLeaderAlert" ng-show="gCtrl.getAlert('patchTeamLeaderAlert') == true"  class="alert alert-success" role="alert">
+        <button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('patchTeamLeaderAlert');"><span aria-hidden="true">&times;</span></button>
+        Teamleader successfully updated!
+        </div>
+        <div id="addUserAlert" ng-show="gCtrl.getAlert('addUserAlert') == true"  class="alert alert-success" role="alert">
+        <button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('addUserAlert');"><span aria-hidden="true">&times;</span></button>
+        User(s) successfully added to team!
+        </div>
+        <div id="removeUserAlert" ng-show="gCtrl.getAlert('removeUserAlert') == true"  class="alert alert-success" role="alert">
+        <button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('removeUserAlert');"><span aria-hidden="true">&times;</span></button>
+        User(s) successfully removed to team!
+        </div>
+    </div>
+
+    <div ng-show="ctrl.patchTeamName  && (gCtrl.isAdmin() || ctrl.isTeamLeader)">
+        <input type="text" ng-model="ctrl.newTeamName">
+        <button class="btn btn-success" ng-click="ctrl.updateTeamName()">
+            <span class="glyphicon glyphicon-ok"></span> Save
+        </button>
+        <button class="btn btn-danger" ng-click="ctrl.patchTeamName = false">
+            <span class="glyphicon glyphicon-remove"></span> Cancel
+        </button>
+    </div>
+    <div ng-show="!ctrl.patchTeamName && !gCtrl.isPatchTeamLeader() && (gCtrl.isAdmin() || ctrl.isTeamLeader)">
+        <button class="btn btn-warning" ng-click="ctrl.patchTeamName = true; ctrl.newTeamName = ctrl.team.name">
+            <span class="glyphicon glyphicon-pencil"></span> Edit team name
+        </button>
+        <button class="btn btn-warning" ng-click="gCtrl.setPatchTeamLeader(true)">
+            <span class="glyphicon glyphicon-pencil"></span> Edit team leader
+        </button>
+    </div>
+
+    <div ng-show="gCtrl.isPatchTeamLeader()">
+    <h3>Update team leader</h3>
+    <hr/>
+    <button class="btn btn-danger" ng-click="gCtrl.setPatchTeamLeader(false)">
+        <span class="glyphicon glyphicon-chevron-left"></span> Back
+    </button>
+    <table class="table table-hover">
+    <thead>
+    <th class="col-xs-2">
+    Teamleader
+    </th>
+    <th class="col-xs-2">
+    First name
+    </th>
+    <th class="col-xs-2">
+    Last name
+    </th>
+    <th>
+    Email
+    </th>
+    </thead>
+    <tr ng-repeat="member in ctrl.members">
+    <td class="col-xs-2 central-td">
+        <button class="btn btn-success" ng-hide="member.id == ctrl.team.leader.id" ng-click="ctrl.updateTeamLeader(member.email)">
+        <span class="glyphicon glyphicon-ok"></span> Select
+        </button>
+        <span class="glyphicon glyphicon-ok" ng-show="member.id == ctrl.team.leader.id"></span>
+    </td>
+    <td class="col-xs-2 central-td">
+    {{member.firstName}}
+    </td>
+    <td class="col-xs-2 central-td">
+    {{member.lastName}}
+    </td>
+    <td class="central-td">
+    {{member.email}}
+    </td>
+    </tr>
+    </table>
+    </div>
+
+    <div ng-hide="gCtrl.isPatchTeamLeader()">
+    <h2>Users in team</h2>
+
+    <table class="table table-hover" ng-hide="ctrl.members.length == 0">
+    <thead>
+      <th ng-show="ctrl.removing && (gCtrl.isAdmin() || ctrl.isTeamLeader)" class="col-xs-1">
+        Remove
+      </th>
+      <th class="col-xs-2">
+        First name
+      </th>
+      <th class="col-xs-2">
+        Last name
+      </th>
+      <th class="col-xs-4">
+        Email
+      </th>
+      <th class="col-xs-1">
+        Admin
+      </th>
+      <th>
+        Team leader
+      </th>
+    </thead>
+    <tr ng-repeat="member in ctrl.members" ng-class="{info: member.id == ctrl.userId}">
+      <td class="col-xs-1" ng-show="ctrl.removing && (gCtrl.isAdmin() || ctrl.isTeamLeader) && member.id == ctrl.userId">
+        <span class="glyphicon glyphicon-remove"></span>
+      </td>
+      <td class="col-xs-1" ng-show="ctrl.removing && (gCtrl.isAdmin() || ctrl.isTeamLeader) && member.id != ctrl.userId">
+        <input type="checkbox" ng-model="member.remove">
+      </td>
+      <td class="col-xs-2">
+        {{member.firstName}}
+      </td>
+      <td class="col-xs-2">
+        {{member.lastName}}
+      </td>
+      <td class="col-xs-4">
+        {{member.email}}
+      </td>
+      <td class="col-xs-1">
+        <span class="glyphicon glyphicon-ok" ng-show="member.admin"></span>
+        <span class="glyphicon glyphicon-remove" ng-hide="member.admin"></span>
+      </td>
+      <td>
+        <span class="glyphicon glyphicon-ok" ng-show="member.id == ctrl.team.leader.id"></span>
+        <span class="glyphicon glyphicon-remove" ng-hide="member.id == ctrl.team.leader.id"></span>
+      </td>
+    </tr>
+    </table>
+    <p class="empty-message" ng-show="ctrl.members.length == 0">
+        There are no members in this team...
+    </p>
+
+    <div ng-show ="gCtrl.isAdmin() || ctrl.isTeamLeader">
+
+        <div ng-show="!ctrl.adding && !ctrl.removing">
+            <button class="btn btn-success" ng-click="ctrl.showUserAddList()">
+                <span class="glyphicon glyphicon-plus"></span> Add users to team
+            </button>
+            <button class="btn btn-danger" ng-click="ctrl.showRemoveIcons()">
+                <span class="glyphicon glyphicon-remove"></span> Remove users from team
+            </button>
+        </div>
+
+        <div ng-show="ctrl.removing">
+            <button class="btn btn-success" ng-click="ctrl.removeUsersFromTeam()">
+                <span class="glyphicon glyphicon-ok"></span> Remove selected
+            </button>
+            <button class="btn btn-danger" ng-click="ctrl.cancelRemoving()">
+                <span class="glyphicon glyphicon-remove"></span> Cancel
+            </button>
+        </div>
+
+        <div ng-show="ctrl.adding">
+            <button class="btn btn-success" ng-click="ctrl.addUsersToTeam()">
+                <span class="glyphicon glyphicon-plus"></span> Add selected
+            </button>
+            <button class="btn btn-danger" ng-click="ctrl.cancelAdding()">
+                <span class="glyphicon glyphicon-remove"></span> Cancel
+            </button>
+        </div>
+
+    </div>
+
+    <div ng-show="ctrl.adding && (gCtrl.isAdmin() || ctrl.isTeamLeader)">
+        <p>
+        <div class="input-group col-xs-4">
+          <input type="text" class="form-control" ng-model="ctrl.userQuery" ng-change="ctrl.filterOtherUsers()" placeholder="Filter users on first or last name">
+          <div class="input-group-btn">
+          <button class="btn"><span class="glyphicon glyphicon-search "></span></button>
+         </div>
+        </div>
+        </p>
+
+        <table class="table table-hover" ng-hide="ctrl.otherUsers.length == 0">
+        <thead>
+          <th class="col-xs-1">
+            Add
+          </th>
+          <th class="col-xs-2">
+            First name
+          </th>
+          <th class="col-xs-2">
+            Last name
+          </th>
+          <th class="col-xs-4">
+            Email
+          </th>
+          <th>
+            Admin
+          </th>
+        </thead>
+        <tr ng-repeat="member in ctrl.otherUsers" ng-if="member.show">
+          <td class="col-xs-1">
+              <input type="checkbox" ng-model="member.add">
+          </td>
+          <td class="col-xs-2">
+            {{member.firstName}}
+          </td>
+          <td class="col-xs-2">
+            {{member.lastName}}
+          </td>
+          <td class="col-xs-4">
+            {{member.email}}
+          </td>
+          <td>
+            <span class="glyphicon glyphicon-ok" ng-show="member.admin"></span>
+            <span class="glyphicon glyphicon-remove" ng-hide="member.admin"></span>
+          </td>
+        </tr>
+        </table>
+        <p class="empty-message" ng-show="ctrl.otherUsers.length == 0">
+            There are no users who are no member of this team...
+        </p>
+    </div>
+
+        <hr />
+
+        <h2>Projects in team</h2>
+
+        <div>
+            <p>
+                <div ng-show="gCtrl.isAdmin()">
+                    <button ng-hide="gCtrl.createProject" id="showCreation" class="btn btn-success" ng-click="gCtrl.createProject = true; ctrl.selectLeader = true">
+                        <span class="glyphicon glyphicon-plus"></span> Create new project in team
+                    </button>
+
+                    <div ng-show="gCtrl.createProject">
+
+  <div class="form-group">
+      <div class="col-xs-11">
+        <div class="alert alert-info" role="alert" style="width:auto">
+            <strong>Note:</strong> It's mandatory to select a project leader when creating a new project. You can appoint a leader by selecting a user in the list below.
+        </div>
+      </div>
+  </div>
+
+                        <input  placeholder="Project Name" type="text" id="createProject" ng-model="ctrl.projectName"></input>
+                        <button class="btn btn-success" ng-click="ctrl.createProject(); gCtrl.createProject = false">
+                            <span class="glyphicon glyphicon-ok"></span> Create
+                        </button>
+                        <button class="btn btn-danger" ng-click="gCtrl.createProject = false">
+                            <span class="glyphicon glyphicon-remove"></span> Cancel
+                        </button>
+                    </div>
+
+                    <div ng-show="gCtrl.createProject">
+                    <table class="table table-hover">
+                    <thead>
+                    <th class="col-xs-2">
+                    Projectleader
+                    </th>
+                    <th class="col-xs-2">
+                    First name
+                    </th>
+                    <th class="col-xs-2">
+                    Last name
+                    </th>
+                    <th>
+                    Email
+                    </th>
+                    </thead>
+                    <tr ng-repeat="member in ctrl.members">
+                    <td class="col-xs-2 central-td">
+                        <button ng-show="ctrl.selectLeader" class="btn btn-success" ng-click="ctrl.projectLeader = member.id; ctrl.projectLeaderEmail = member.email; ctrl.selectLeader = false">
+                        <span class="glyphicon glyphicon-ok"></span> Select
+                        </button>
+                        <button ng-show="!ctrl.selectLeader && member.id == ctrl.projectLeader" class="btn btn-danger" ng-click="ctrl.selectLeader = true">
+                        <span class="glyphicon glyphicon-remove"></span> Undo
+                        </button>
+                    </td>
+                    <td class="col-xs-2 central-td">
+                    {{member.firstName}}
+                    </td>
+                    <td class="col-xs-2 central-td">
+                    {{member.lastName}}
+                    </td>
+                    <td class="central-td">
+                    {{member.email}}
+                    </td>
+                    </tr>
+                    </table>
+                    </div>
+                </div>
+            </p>
+
+            <p>
+                <button ng-show="(gCtrl.isAdmin() || ctrl.isTeamLeader) && !gCtrl.createProject" class="btn btn-success" ng-click="gCtrl.setAddExistingProjects(true)">
+                    <span class="glyphicon glyphicon-plus"></span> Add existing project to team
+                </button>
+            </p>
+        </div>
+
+        <table class="table table-hover" ng-hide="gCtrl.createProject || ctrl.projectList.length == 0">
+        <thead>
+          <th class="col-xs-3">
+            Project
+          </th>
+          <th ng-show="gCtrl.isAdmin() || ctrl.isTeamLeader" ng-class="{'col-xs-4': gCtrl.isAdmin()}">
+            Remove from team
+          </th>
+          <th ng-show="gCtrl.isAdmin()">
+            Delete
+          </th>
+        </thead>
+        <tr ng-repeat="project in ctrl.projectList">
+          <td class="col-xs-3">
+            <a ng-href="#/projects/{{project.name}}" ng-click="gCtrl.setProject(project.name)">
+              <button class="btn">
+                <span class="glyphicon glyphicon-open"></span> {{gCtrl.formatToHtml(project.name)}}
+              </button>
+            </a>
+          </td>
+          <td ng-show="gCtrl.isAdmin() || ctrl.isTeamLeader" ng-class="{'col-xs-4': gCtrl.isAdmin()}">
+            <button class="btn btn-danger" ng-click="ctrl.removeProjectFromTeam(project.name)">
+              <span class="glyphicon glyphicon-remove"></span> Remove from team
+            </button>
+          </td>
+          <td ng-show="gCtrl.isAdmin()">
+            <button class="btn btn-danger" ng-click="ctrl.deleteProject(project.name)">
+              <span class="glyphicon glyphicon-remove"></span> Delete
+            </button>
+          </td>
+        </tr>
+        </table>
+        <p  class="empty-message" ng-show="ctrl.projectList.length == 0 && !gCtrl.createProject">
+            There are no projects assigned to this team...
+        </p>
+
+    </div>
+
+    </div>
+
+    <div ng-show="(gCtrl.isAdmin() || ctrl.isTeamLeader) && gCtrl.isAddExistingProjects()">
+
+        <h1>Add existing projects to team</h1>
+
+        <p>
+            <button class="btn btn-danger" ng-click="gCtrl.setAddExistingProjects(false)">
+                <span class="glyphicon glyphicon-chevron-left"></span> Back
+            </button>
+            <button class="btn btn-success" ng-click="ctrl.addExistingProjectsToTeam()">
+                <span class="glyphicon glyphicon-plus"></span> Add selection
+            </button>
+        </p>
+
+        <table class="table table-hover" ng-hide="ctrl.allOtherProjects.length == 0">
+        <thead>
+          <th class="col-xs-2">
+            Add
+          </th>
+          <th>
+            Project name
+          </th>
+        </thead>
+        <tr ng-repeat="project in ctrl.allOtherProjects">
+          <td class="col-xs-2">
+            <input type="checkbox" ng-model="project.toAdd">
+          </td>
+          <td>
+            {{gCtrl.formatToHtml(project.name)}}
+          </td>
+        </tr>
+        </table>
+        <p class="empty-message" ng-show="ctrl.allOtherProjects.length == 0">
+            There are no projects who are still assignable to a team...
+        </p>
+
+    </div>
+
+</div>

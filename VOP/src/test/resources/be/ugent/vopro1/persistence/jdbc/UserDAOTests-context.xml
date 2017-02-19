@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="entityDAO" class="be.ugent.vopro1.persistence.jdbc.postgresql.EntityDAOImpl">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
+    <bean id="projectDAO" class="be.ugent.vopro1.persistence.jdbc.postgresql.ProjectDAOImpl">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
+    <bean id="userDAO" class="be.ugent.vopro1.persistence.jdbc.postgresql.UserDAOImpl">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
+    <!-- DataSourceTransactionManager, makes sure that inserted data is rolled back after each seperate test -->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="org.postgresql.Driver"/>
+        <property name="url" value="jdbc:postgresql://localhost:5432/vopro_test"/>
+        <property name="username" value="vopro"/>
+        <property name="password" value="vopro"/>
+    </bean>
+</beans>

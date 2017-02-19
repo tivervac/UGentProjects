@@ -1,0 +1,59 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[dutch]{babel}
+\usepackage{url}
+\usepackage[latin1]{inputenc}
+\usepackage{fullpage}
+\usepackage{xspace}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{hyperref}
+
+
+\begin{document}
+
+\pagenumbering{roman}
+
+\title{Installatiehandleiding\\Vakoverschrijdend Project\\Groep 1}
+\author{Harm Delva\\ Mathias De Brouwer\\ Maxime Fern\'andez Alonso\\ Jens Spitaels\\ Casper Van Gheluwe\\ Steven Van Maldeghem\\ Titouan Vervack}
+\date{}
+\maketitle
+
+\pagenumbering{arabic}
+
+\section*{Dependencies}
+\begin{itemize}
+	\item Gradle - gebruikt om de code te compileren, tests uit te voeren en de server te starten
+	\item Java 8
+	\item PostgresSQL
+\end{itemize}
+
+\section*{Installatie}
+Er zijn twee manieren om te installeren; een manuele methode en een automatische methode waarvoor wat extra dependencies nodig zijn. We raden u aan de automatische methode te gebruiken. Ze worden echter beide besproken.
+	\subsection*{Manuele installatie}
+	\begin{enumerate}
+		\item Maak in het PostgreSQL DBMS een nieuwe databank aan
+		\item Voer de 7 DDL files in de directory \texttt{ddl} uit in alfabetische volgorde. Deze zorgen voor de gewenste databankstructuur.
+		\item Voer een \texttt{INSERT}-query uit om de `root'-administrator aan te maken. Dit kan bijvoorbeeld als volgt:
+			\begin{lstlisting}[frame=single, language=SQL, breaklines=true]
+INSERT INTO person
+(first_name, last_name, email, password, is_admin, is_analyst)
+VALUES
+('first', 'last', 'me@deloitte.com', 'paswoord', true, false);
+			\end{lstlisting}
+			Hierbij moet \texttt{paswoord} wel een geldige \hyperlink{http://bcrypt.sourceforge.net/}{bcrypt}-ge\"encrypteerde string zijn. Eventueel kan u dit laten doen door het Linux-commando \texttt{bcrypt}.
+		\item Kopieer het bestand \texttt{application\-context\-example.xml} naar \texttt{application\-context.xml} en pas daarin de nodige databankconnectieparameters aan.
+		\item Volg de instructies om de testomgeving op te zetten. Dit proces wordt uitgelegd in het bestand ``\href{run:TestHandleiding.pdf}{TestHandleiding.pdf}". Voor het starten van de server zullen immers ook de tests uitgevoerd worden.
+		\item Start nu de server met het commando \texttt{./gradlew clean build run}
+		\item De server begint te luisteren op \texttt{localhost}, poort \texttt{9000}. De poort kan naar wens aangepast worden in het bestand \texttt{src/main/resources/application.properties}.
+	\end{enumerate}
+	\subsection*{Automatische installatie}
+	\begin{enumerate}
+		\item Installeer de dependencies voor het \texttt{setup\_backend.py} script door het bash-script\\ \texttt{install\_dependencies.sh} uit te voeren.
+		\item Maak in het PostgreSQL DBMS een nieuwe databank aan
+		\item Voer volgend commando uit: ``\texttt{python setup\_backend.py setup\_db add\_admin context}''. Het script zal u vragen om de gewenste parameters en dan automatisch de databanktabellen instellen, een adminaccount installeren en de applicatiecontext juist initialiseren. Eventueel kan u ``\texttt{python setup\_backend.py --help}'' uitvoeren voor meer informatie.
+		\item Volg de instructies om de testomgeving op te zetten. Dit proces wordt uitgelegd in het bestand ``\href{run:TestHandleiding.pdf}{TestHandleiding.pdf}". Voor het starten van de server zullen immers ook de tests uitgevoerd worden.
+		\item Start nu de server met het commando \texttt{./gradlew clean build run}
+		\item De server begint te luisteren op \texttt{localhost}, poort \texttt{9000}. De poort kan naar wens aangepast worden in het bestand \texttt{src/main/resources/application.properties}.
+	\end{enumerate}
+\end{document}

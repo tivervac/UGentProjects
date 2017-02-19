@@ -1,0 +1,21 @@
+package be.ugent.vopro1.rest.route;
+
+import be.ugent.vopro1.util.LocalConstants;
+
+/**
+ * Stores routes for the /process endpoint of the API.
+ * <p>
+ * These routes are used by the
+ * {@link be.ugent.vopro1.rest.controller.ProjectRestController} to map the
+ * incoming requests to the right controller method.
+ *
+ * @see be.ugent.vopro1.rest.controller.ProjectRestController
+ */
+public class ProcessRoute {
+    private static final String ENDPOINT = "/process";
+    private static final String IDENTIFIER = "/{processName}";
+    public static final String GET_ALL = ENDPOINT;
+    public static final String PATCH = LocalConstants.URL + IDENTIFIER;
+    public static final String DELETE = LocalConstants.URL + IDENTIFIER;
+    public static final String SELF = LocalConstants.URL + IDENTIFIER;
+}

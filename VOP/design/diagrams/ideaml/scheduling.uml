@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>be.ugent.vopro1.scheduling</OriginalElement>
+  <nodes>
+    <node x="373.0" y="227.0">be.ugent.vopro1.scheduling.FirstFitScheduler</node>
+    <node x="0.0" y="60.5">be.ugent.vopro1.scheduling.Scheduler</node>
+    <node x="746.0" y="0.0">be.ugent.vopro1.scheduling.Schedule</node>
+    <node x="541.0" y="72.5">be.ugent.vopro1.scheduling.comparators</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="be.ugent.vopro1.scheduling.FirstFitScheduler" target="be.ugent.vopro1.scheduling.Schedule">
+      <point x="195.375" y="-28.0" />
+      <point x="828.875" y="202.0" />
+      <point x="938.0" y="202.0" />
+      <point x="0.0" y="88.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.scheduling.FirstFitScheduler" target="be.ugent.vopro1.scheduling.comparators">
+      <point x="-65.125" y="-28.0" />
+      <point x="568.375" y="202.0" />
+      <point x="587.25" y="202.0" />
+      <point x="-46.25" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.scheduling.FirstFitScheduler" target="be.ugent.vopro1.scheduling.Scheduler">
+      <point x="-195.375" y="-28.0" />
+      <point x="438.125" y="202.0" />
+      <point x="260.5" y="202.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="565.0" y="141.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

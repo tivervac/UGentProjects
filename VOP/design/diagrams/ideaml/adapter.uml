@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>be.ugent.vopro1.adapter</OriginalElement>
+  <nodes>
+    <node x="3122.78125" y="1116.0">be.ugent.vopro1.adapter.UserAdapter</node>
+    <node x="1192.0" y="1128.0">be.ugent.vopro1.adapter.TaskAdapter</node>
+    <node x="802.0" y="1128.0">be.ugent.vopro1.adapter.ProjectAdapter</node>
+    <node x="3073.875" y="36.0">be.ugent.vopro1.adapter.result.Result</node>
+    <node x="6090.041964285716" y="672.0">be.ugent.vopro1.adapter.CommonAdapterFactory</node>
+    <node x="0.0" y="1623.0">be.ugent.vopro1.adapter.DefaultAdapterManager</node>
+    <node x="3718.3107142857143" y="0.0">be.ugent.vopro1.adapter.CommonAdapter</node>
+    <node x="174.0" y="1873.0">be.ugent.vopro1.adapter.AdapterManagerFactory</node>
+    <node x="4440.410714285714" y="1128.0">be.ugent.vopro1.adapter.EntityAnalystAdapter</node>
+    <node x="2348.5" y="600.0">be.ugent.vopro1.adapter.result.ResultSupplier</node>
+    <node x="1582.0" y="1128.0">be.ugent.vopro1.adapter.TeamProjectAdapter</node>
+    <node x="0.0" y="1104.0">be.ugent.vopro1.adapter.result.ResultSupplierImpl</node>
+    <node x="3225.5380952380965" y="696.0">be.ugent.vopro1.adapter.result.mapper</node>
+    <node x="3658.410714285714" y="1128.0">be.ugent.vopro1.adapter.EntityAdapter</node>
+    <node x="114.0" y="1373.0">be.ugent.vopro1.adapter.AdapterManager</node>
+    <node x="5220.410714285714" y="1128.0">be.ugent.vopro1.adapter.ProjectAnalystAdapter</node>
+    <node x="5634.348214285714" y="1200.0">be.ugent.vopro1.adapter.action</node>
+    <node x="4830.410714285714" y="1128.0">be.ugent.vopro1.adapter.MemberTeamAdapter</node>
+    <node x="2919.875" y="84.0">be.ugent.vopro1.adapter.result.types</node>
+    <node x="4050.410714285714" y="1128.0">be.ugent.vopro1.adapter.TeamMemberAdapter</node>
+    <node x="2732.78125" y="1128.0">be.ugent.vopro1.adapter.AnalystProjectAdapter</node>
+    <node x="1972.0" y="1116.0">be.ugent.vopro1.adapter.TeamAdapter</node>
+    <node x="412.0" y="1128.0">be.ugent.vopro1.adapter.ScheduleAdapter</node>
+    <node x="2382.0" y="1176.0">be.ugent.vopro1.adapter.result.ResultSupplierFactory</node>
+    <node x="5682.041964285716" y="612.0">be.ugent.vopro1.adapter.ActionAdapter</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="be.ugent.vopro1.adapter.ScheduleAdapter" target="be.ugent.vopro1.adapter.result.types">
+      <point x="-148.0" y="-88.0" />
+      <point x="449.0" y="934.0" />
+      <point x="456.5163066436262" y="934.0" />
+      <point x="456.5163066436262" y="380.0" />
+      <point x="2932.4375" y="380.0" />
+      <point x="-54.4375" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TeamMemberAdapter" target="be.ugent.vopro1.adapter.CommonAdapter">
+      <point x="148.0" y="-88.0" />
+      <point x="4383.410714285714" y="1084.0" />
+      <point x="4335.49944796467" y="1084.0" />
+      <point x="4335.49944796467" y="350.0" />
+      <point x="3955.0964285714285" y="350.0" />
+      <point x="41.78571428571422" y="100.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.ProjectAnalystAdapter" target="be.ugent.vopro1.adapter.result.mapper">
+      <point x="-74.0" y="-88.0" />
+      <point x="5331.410714285714" y="874.0" />
+      <point x="3359.466666666668" y="874.0" />
+      <point x="58.92857142857156" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TeamProjectAdapter" target="be.ugent.vopro1.adapter.result.Result">
+      <point x="-74.0" y="-88.0" />
+      <point x="1693.0" y="934.0" />
+      <point x="1665.8639256912454" y="934.0" />
+      <point x="1665.8639256912454" y="490.0" />
+      <point x="3201.975" y="490.0" />
+      <point x="-85.40000000000009" y="64.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.EntityAnalystAdapter" target="be.ugent.vopro1.adapter.result.mapper">
+      <point x="-74.0" y="-88.0" />
+      <point x="4551.410714285714" y="914.0" />
+      <point x="3338.0380952380965" y="914.0" />
+      <point x="37.5" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.AnalystProjectAdapter" target="be.ugent.vopro1.adapter.result.ResultSupplier">
+      <point x="-148.0" y="-88.0" />
+      <point x="2769.78125" y="994.0" />
+      <point x="2558.5" y="994.0" />
+      <point x="14.0" y="112.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TeamAdapter" target="be.ugent.vopro1.adapter.result.ResultSupplier">
+      <point x="78.0" y="-100.0" />
+      <point x="2245.0" y="994.0" />
+      <point x="2502.5" y="994.0" />
+      <point x="-42.0" y="112.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.result.mapper" target="be.ugent.vopro1.adapter.result.mapper">
+      <point x="-69.64285714285714" y="16.0" />
+      <point x="3230.8952380952396" y="748.0" />
+      <point x="3205.5380952380965" y="748.0" />
+      <point x="3205.5380952380965" y="712.0" />
+      <point x="-75.0" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.AnalystProjectAdapter" target="be.ugent.vopro1.adapter.result.Result">
+      <point x="0.0" y="-88.0" />
+      <point x="2917.78125" y="994.0" />
+      <point x="3053.7722590245776" y="994.0" />
+      <point x="3053.7722590245776" y="510.0" />
+      <point x="3258.9083333333333" y="510.0" />
+      <point x="-28.466666666666697" y="64.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.MemberTeamAdapter" target="be.ugent.vopro1.adapter.CommonAdapter">
+      <point x="148.0" y="-88.0" />
+      <point x="5163.410714285714" y="1084.0" />
+      <point x="5115.49944796467" y="1084.0" />
+      <point x="5115.49944796467" y="290.0" />
+      <point x="4010.8107142857143" y="290.0" />
+      <point x="97.5" y="100.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.result.ResultSupplierImpl" target="be.ugent.vopro1.adapter.result.types">
+      <point x="-130.66666666666652" y="-112.0" />
+      <point x="65.33333333333348" y="1084.0" />
+      <point x="147.2181979646707" y="1084.0" />
+      <point x="147.2181979646707" y="370.0" />
+      <point x="2924.0625" y="370.0" />
+      <point x="-62.8125" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.ScheduleAdapter" target="be.ugent.vopro1.adapter.result.mapper">
+      <point x="148.0" y="-88.0" />
+      <point x="745.0" y="1004.0" />
+      <point x="3241.609523809525" y="1004.0" />
+      <point x="-58.92857142857156" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.UserAdapter" target="be.ugent.vopro1.adapter.CommonAdapter">
+      <point x="156.0" y="-100.0" />
+      <point x="3473.78125" y="1084.0" />
+      <point x="3618.435354262674" y="1084.0" />
+      <point x="3618.435354262674" y="580.0" />
+      <point x="3899.3821428571428" y="580.0" />
+      <point x="-13.928571428571558" y="100.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.ProjectAnalystAdapter" target="be.ugent.vopro1.adapter.result.types">
+      <point x="0.0" y="-88.0" />
+      <point x="5405.410714285714" y="1084.0" />
+      <point x="5468.410714285714" y="1084.0" />
+      <point x="5468.410714285714" y="280.0" />
+      <point x="3041.3125" y="280.0" />
+      <point x="54.4375" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.ProjectAdapter" target="be.ugent.vopro1.adapter.CommonAdapter">
+      <point x="0.0" y="-88.0" />
+      <point x="987.0" y="934.0" />
+      <point x="949.2181979646707" y="934.0" />
+      <point x="949.2181979646707" y="530.0" />
+      <point x="3760.0964285714285" y="530.0" />
+      <point x="-153.21428571428578" y="100.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.result.ResultSupplierImpl" target="be.ugent.vopro1.adapter.result.ResultSupplier">
+      <point x="130.66666666666663" y="-112.0" />
+      <point x="326.6666666666665" y="944.0" />
+      <point x="2362.5" y="944.0" />
+      <point x="-182.0" y="112.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.ProjectAnalystAdapter" target="be.ugent.vopro1.adapter.CommonAdapter">
+      <point x="148.0" y="-88.0" />
+      <point x="5553.410714285714" y="1084.0" />
+      <point x="5490.410714285714" y="1084.0" />
+      <point x="5490.410714285714" y="260.0" />
+      <point x="4038.667857142857" y="260.0" />
+      <point x="125.35714285714266" y="100.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.EntityAnalystAdapter" target="be.ugent.vopro1.adapter.CommonAdapter">
+      <point x="148.0" y="-88.0" />
+      <point x="4773.410714285714" y="1084.0" />
+      <point x="4725.49944796467" y="1084.0" />
+      <point x="4725.49944796467" y="320.0" />
+      <point x="3982.953571428571" y="320.0" />
+      <point x="69.64285714285688" y="100.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TeamAdapter" target="be.ugent.vopro1.adapter.result.types">
+      <point x="-156.0" y="-100.0" />
+      <point x="2011.0" y="934.0" />
+      <point x="2049.8639256912456" y="934.0" />
+      <point x="2049.8639256912456" y="420.0" />
+      <point x="2965.9375" y="420.0" />
+      <point x="-20.9375" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.CommonAdapterFactory" target="be.ugent.vopro1.adapter.CommonAdapter">
+      <point x="0.0" y="-40.0" />
+      <point x="6292.541964285716" y="220.0" />
+      <point x="4094.3821428571428" y="220.0" />
+      <point x="181.07142857142844" y="100.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.result.ResultSupplierFactory" target="be.ugent.vopro1.adapter.result.ResultSupplier">
+      <point x="0.0" y="-40.0" />
+      <point x="-14.0" y="112.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.ScheduleAdapter" target="be.ugent.vopro1.adapter.result.ResultSupplier">
+      <point x="74.0" y="-88.0" />
+      <point x="671.0" y="954.0" />
+      <point x="2390.5" y="954.0" />
+      <point x="-154.0" y="112.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.AdapterManagerFactory" target="be.ugent.vopro1.adapter.DefaultAdapterManager">
+      <point x="-78.75" y="-40.0" />
+      <point x="252.75" y="1848.0" />
+      <point x="217.5" y="1848.0" />
+      <point x="0.0" y="100.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.ScheduleAdapter" target="be.ugent.vopro1.adapter.CommonAdapter">
+      <point x="0.0" y="-88.0" />
+      <point x="597.0" y="934.0" />
+      <point x="559.2181979646707" y="934.0" />
+      <point x="559.2181979646707" y="520.0" />
+      <point x="3732.239285714286" y="520.0" />
+      <point x="-181.07142857142844" y="100.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.action" target="be.ugent.vopro1.adapter.result.mapper">
+      <point x="-52.125" y="-16.0" />
+      <point x="5651.723214285714" y="864.0" />
+      <point x="3370.1809523809543" y="864.0" />
+      <point x="69.64285714285734" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TeamAdapter" target="be.ugent.vopro1.adapter.result.mapper">
+      <point x="156.0" y="-100.0" />
+      <point x="2323.0" y="1044.0" />
+      <point x="3284.466666666668" y="1044.0" />
+      <point x="-16.07142857142844" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TeamMemberAdapter" target="be.ugent.vopro1.adapter.result.mapper">
+      <point x="-74.0" y="-88.0" />
+      <point x="4161.410714285714" y="934.0" />
+      <point x="3327.323809523811" y="934.0" />
+      <point x="26.78571428571422" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.EntityAdapter" target="be.ugent.vopro1.adapter.result.Result">
+      <point x="74.40000000000009" y="-88.0" />
+      <point x="3918.8107142857143" y="1084.0" />
+      <point x="3934.399447964671" y="1084.0" />
+      <point x="3934.399447964671" y="390.0" />
+      <point x="3344.3083333333334" y="390.0" />
+      <point x="56.933333333333394" y="64.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TaskAdapter" target="be.ugent.vopro1.adapter.result.ResultSupplier">
+      <point x="74.0" y="-88.0" />
+      <point x="1451.0" y="974.0" />
+      <point x="2446.5" y="974.0" />
+      <point x="-98.0" y="112.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.AnalystProjectAdapter" target="be.ugent.vopro1.adapter.result.mapper">
+      <point x="74.0" y="-88.0" />
+      <point x="2991.78125" y="1054.0" />
+      <point x="3295.1809523809543" y="1054.0" />
+      <point x="-5.357142857142662" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.ScheduleAdapter" target="be.ugent.vopro1.adapter.result.Result">
+      <point x="-74.0" y="-88.0" />
+      <point x="523.0" y="934.0" />
+      <point x="467.5163066436262" y="934.0" />
+      <point x="467.5163066436262" y="460.0" />
+      <point x="3116.575" y="460.0" />
+      <point x="-170.80000000000018" y="64.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.ProjectAnalystAdapter" target="be.ugent.vopro1.adapter.result.ResultSupplier">
+      <point x="-148.0" y="-88.0" />
+      <point x="5257.410714285714" y="884.0" />
+      <point x="2726.5" y="884.0" />
+      <point x="182.0" y="112.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.ProjectAdapter" target="be.ugent.vopro1.adapter.result.types">
+      <point x="-148.0" y="-88.0" />
+      <point x="839.0" y="934.0" />
+      <point x="874.8639256912456" y="934.0" />
+      <point x="874.8639256912456" y="390.0" />
+      <point x="2940.8125" y="390.0" />
+      <point x="-46.0625" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.MemberTeamAdapter" target="be.ugent.vopro1.adapter.result.mapper">
+      <point x="-74.0" y="-88.0" />
+      <point x="4941.410714285714" y="894.0" />
+      <point x="3348.7523809523827" y="894.0" />
+      <point x="48.21428571428578" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.result.mapper" target="be.ugent.vopro1.adapter.result.types">
+      <point x="0.0" y="-16.0" />
+      <point x="3300.5380952380965" y="430.0" />
+      <point x="2999.4375" y="430.0" />
+      <point x="12.5625" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TeamAdapter" target="be.ugent.vopro1.adapter.result.Result">
+      <point x="-78.0" y="-100.0" />
+      <point x="2089.0" y="934.0" />
+      <point x="2060.8639256912456" y="934.0" />
+      <point x="2060.8639256912456" y="500.0" />
+      <point x="3230.4416666666666" y="500.0" />
+      <point x="-56.933333333333394" y="64.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.MemberTeamAdapter" target="be.ugent.vopro1.adapter.result.ResultSupplier">
+      <point x="-148.0" y="-88.0" />
+      <point x="4867.410714285714" y="904.0" />
+      <point x="2698.5" y="904.0" />
+      <point x="154.0" y="112.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.result.ResultSupplierImpl" target="be.ugent.vopro1.adapter.result.Result">
+      <point x="0.0" y="-112.0" />
+      <point x="196.0" y="1084.0" />
+      <point x="158.2181979646707" y="1084.0" />
+      <point x="158.2181979646707" y="450.0" />
+      <point x="3088.1083333333336" y="450.0" />
+      <point x="-199.26666666666642" y="64.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TeamProjectAdapter" target="be.ugent.vopro1.adapter.result.types">
+      <point x="-148.0" y="-88.0" />
+      <point x="1619.0" y="934.0" />
+      <point x="1654.8639256912454" y="934.0" />
+      <point x="1654.8639256912454" y="410.0" />
+      <point x="2957.5625" y="410.0" />
+      <point x="-29.3125" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.EntityAnalystAdapter" target="be.ugent.vopro1.adapter.result.types">
+      <point x="0.0" y="-88.0" />
+      <point x="4625.410714285714" y="1084.0" />
+      <point x="4688.410714285714" y="1084.0" />
+      <point x="4688.410714285714" y="340.0" />
+      <point x="3024.5625" y="340.0" />
+      <point x="37.6875" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.UserAdapter" target="be.ugent.vopro1.adapter.result.mapper">
+      <point x="0.0" y="-100.0" />
+      <point x="3317.78125" y="1054.0" />
+      <point x="3305.8952380952396" y="1054.0" />
+      <point x="5.357142857142662" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TeamMemberAdapter" target="be.ugent.vopro1.adapter.result.ResultSupplier">
+      <point x="-148.0" y="-88.0" />
+      <point x="4087.410714285714" y="944.0" />
+      <point x="2642.5" y="944.0" />
+      <point x="98.0" y="112.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.EntityAdapter" target="be.ugent.vopro1.adapter.result.types">
+      <point x="0.0" y="-88.0" />
+      <point x="3844.410714285714" y="1084.0" />
+      <point x="3907.8107142857143" y="1084.0" />
+      <point x="3907.8107142857143" y="400.0" />
+      <point x="3007.8125" y="400.0" />
+      <point x="20.9375" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.AdapterManagerFactory" target="be.ugent.vopro1.adapter.AdapterManager">
+      <point x="78.75" y="-40.0" />
+      <point x="410.25" y="1848.0" />
+      <point x="445.5" y="1848.0" />
+      <point x="445.5" y="1598.0" />
+      <point x="440.25" y="1598.0" />
+      <point x="108.75" y="100.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.MemberTeamAdapter" target="be.ugent.vopro1.adapter.result.Result">
+      <point x="74.0" y="-88.0" />
+      <point x="5089.410714285714" y="1084.0" />
+      <point x="5104.49944796467" y="1084.0" />
+      <point x="5104.49944796467" y="300.0" />
+      <point x="3429.708333333333" y="300.0" />
+      <point x="142.33333333333303" y="64.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.EntityAdapter" target="be.ugent.vopro1.adapter.result.mapper">
+      <point x="-74.40000000000009" y="-88.0" />
+      <point x="3770.010714285714" y="954.0" />
+      <point x="3316.609523809525" y="954.0" />
+      <point x="16.07142857142844" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.UserAdapter" target="be.ugent.vopro1.adapter.result.ResultSupplier">
+      <point x="-156.0" y="-100.0" />
+      <point x="3161.78125" y="984.0" />
+      <point x="2586.5" y="984.0" />
+      <point x="42.0" y="112.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TeamMemberAdapter" target="be.ugent.vopro1.adapter.result.Result">
+      <point x="74.0" y="-88.0" />
+      <point x="4309.410714285714" y="1084.0" />
+      <point x="4324.49944796467" y="1084.0" />
+      <point x="4324.49944796467" y="360.0" />
+      <point x="3372.775" y="360.0" />
+      <point x="85.40000000000009" y="64.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TeamAdapter" target="be.ugent.vopro1.adapter.CommonAdapter">
+      <point x="0.0" y="-100.0" />
+      <point x="2167.0" y="934.0" />
+      <point x="2129.2181979646707" y="934.0" />
+      <point x="2129.2181979646707" y="560.0" />
+      <point x="3843.667857142857" y="560.0" />
+      <point x="-69.64285714285734" y="100.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.EntityAnalystAdapter" target="be.ugent.vopro1.adapter.result.Result">
+      <point x="74.0" y="-88.0" />
+      <point x="4699.410714285714" y="1084.0" />
+      <point x="4714.49944796467" y="1084.0" />
+      <point x="4714.49944796467" y="330.0" />
+      <point x="3401.241666666667" y="330.0" />
+      <point x="113.86666666666679" y="64.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TaskAdapter" target="be.ugent.vopro1.adapter.CommonAdapter">
+      <point x="0.0" y="-88.0" />
+      <point x="1377.0" y="934.0" />
+      <point x="1339.2181979646707" y="934.0" />
+      <point x="1339.2181979646707" y="540.0" />
+      <point x="3787.9535714285716" y="540.0" />
+      <point x="-125.35714285714266" y="100.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.UserAdapter" target="be.ugent.vopro1.adapter.result.Result">
+      <point x="78.0" y="-100.0" />
+      <point x="3395.78125" y="1074.0" />
+      <point x="3541.9994479646707" y="1074.0" />
+      <point x="3541.9994479646707" y="410.0" />
+      <point x="3315.8416666666667" y="410.0" />
+      <point x="28.466666666666697" y="64.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.result.mapper" target="be.ugent.vopro1.adapter.result.Result">
+      <point x="50.0" y="-16.0" />
+      <point x="3350.5380952380965" y="420.0" />
+      <point x="3287.375" y="420.0" />
+      <point x="0.0" y="64.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.ProjectAdapter" target="be.ugent.vopro1.adapter.result.Result">
+      <point x="-74.0" y="-88.0" />
+      <point x="913.0" y="934.0" />
+      <point x="885.8639256912456" y="934.0" />
+      <point x="885.8639256912456" y="470.0" />
+      <point x="3145.0416666666665" y="470.0" />
+      <point x="-142.33333333333348" y="64.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TaskAdapter" target="be.ugent.vopro1.adapter.result.mapper">
+      <point x="148.0" y="-88.0" />
+      <point x="1525.0" y="1024.0" />
+      <point x="3263.0380952380965" y="1024.0" />
+      <point x="-37.5" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TeamProjectAdapter" target="be.ugent.vopro1.adapter.CommonAdapter">
+      <point x="0.0" y="-88.0" />
+      <point x="1767.0" y="934.0" />
+      <point x="1729.2181979646707" y="934.0" />
+      <point x="1729.2181979646707" y="550.0" />
+      <point x="3815.8107142857143" y="550.0" />
+      <point x="-97.5" y="100.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.AnalystProjectAdapter" target="be.ugent.vopro1.adapter.CommonAdapter">
+      <point x="148.0" y="-88.0" />
+      <point x="3065.78125" y="1064.0" />
+      <point x="3529.966666666668" y="1064.0" />
+      <point x="3529.966666666668" y="570.0" />
+      <point x="3871.525" y="570.0" />
+      <point x="-41.78571428571422" y="100.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.EntityAdapter" target="be.ugent.vopro1.adapter.result.ResultSupplier">
+      <point x="-148.79999999999973" y="-88.0" />
+      <point x="3695.6107142857145" y="964.0" />
+      <point x="2614.5" y="964.0" />
+      <point x="70.0" y="112.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TeamMemberAdapter" target="be.ugent.vopro1.adapter.result.types">
+      <point x="0.0" y="-88.0" />
+      <point x="4235.410714285714" y="1084.0" />
+      <point x="4298.410714285714" y="1084.0" />
+      <point x="4298.410714285714" y="370.0" />
+      <point x="3016.1875" y="370.0" />
+      <point x="29.3125" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.EntityAdapter" target="be.ugent.vopro1.adapter.CommonAdapter">
+      <point x="148.80000000000018" y="-88.0" />
+      <point x="3993.2107142857144" y="1084.0" />
+      <point x="3945.399447964671" y="1084.0" />
+      <point x="3945.399447964671" y="380.0" />
+      <point x="3927.239285714286" y="380.0" />
+      <point x="13.928571428571558" y="100.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.AnalystProjectAdapter" target="be.ugent.vopro1.adapter.result.types">
+      <point x="-74.0" y="-88.0" />
+      <point x="2843.78125" y="994.0" />
+      <point x="2780.5" y="994.0" />
+      <point x="2780.5" y="430.0" />
+      <point x="2974.3125" y="430.0" />
+      <point x="-12.5625" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.action" target="be.ugent.vopro1.adapter.result.types">
+      <point x="-17.375" y="-16.0" />
+      <point x="5686.473214285714" y="854.0" />
+      <point x="5613.473214285714" y="854.0" />
+      <point x="5613.473214285714" y="250.0" />
+      <point x="3049.6875" y="250.0" />
+      <point x="62.8125" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.DefaultAdapterManager" target="be.ugent.vopro1.adapter.AdapterManager">
+      <point x="0.0" y="-100.0" />
+      <point x="217.5" y="1598.0" />
+      <point x="222.75" y="1598.0" />
+      <point x="-108.75" y="100.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.UserAdapter" target="be.ugent.vopro1.adapter.result.types">
+      <point x="-78.0" y="-100.0" />
+      <point x="3239.78125" y="974.0" />
+      <point x="2916.8660090245776" y="974.0" />
+      <point x="2916.8660090245776" y="440.0" />
+      <point x="2982.6875" y="440.0" />
+      <point x="-4.1875" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TeamProjectAdapter" target="be.ugent.vopro1.adapter.result.mapper">
+      <point x="148.0" y="-88.0" />
+      <point x="1915.0" y="1034.0" />
+      <point x="3273.7523809523827" y="1034.0" />
+      <point x="-26.78571428571422" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.ActionAdapter" target="be.ugent.vopro1.adapter.CommonAdapter">
+      <point x="0.0" y="-100.0" />
+      <point x="5876.041964285716" y="230.0" />
+      <point x="4066.525" y="230.0" />
+      <point x="153.21428571428578" y="100.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TaskAdapter" target="be.ugent.vopro1.adapter.result.types">
+      <point x="-148.0" y="-88.0" />
+      <point x="1229.0" y="934.0" />
+      <point x="1264.8639256912454" y="934.0" />
+      <point x="1264.8639256912454" y="400.0" />
+      <point x="2949.1875" y="400.0" />
+      <point x="-37.6875" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TaskAdapter" target="be.ugent.vopro1.adapter.result.Result">
+      <point x="-74.0" y="-88.0" />
+      <point x="1303.0" y="934.0" />
+      <point x="1275.8639256912454" y="934.0" />
+      <point x="1275.8639256912454" y="480.0" />
+      <point x="3173.508333333333" y="480.0" />
+      <point x="-113.86666666666679" y="64.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.ProjectAdapter" target="be.ugent.vopro1.adapter.result.ResultSupplier">
+      <point x="74.0" y="-88.0" />
+      <point x="1061.0" y="964.0" />
+      <point x="2418.5" y="964.0" />
+      <point x="-126.0" y="112.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.MemberTeamAdapter" target="be.ugent.vopro1.adapter.result.types">
+      <point x="0.0" y="-88.0" />
+      <point x="5015.410714285714" y="1084.0" />
+      <point x="5078.410714285714" y="1084.0" />
+      <point x="5078.410714285714" y="310.0" />
+      <point x="3032.9375" y="310.0" />
+      <point x="46.0625" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.ProjectAdapter" target="be.ugent.vopro1.adapter.result.mapper">
+      <point x="148.0" y="-88.0" />
+      <point x="1135.0" y="1014.0" />
+      <point x="3252.323809523811" y="1014.0" />
+      <point x="-48.21428571428578" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TeamProjectAdapter" target="be.ugent.vopro1.adapter.result.ResultSupplier">
+      <point x="74.0" y="-88.0" />
+      <point x="1841.0" y="984.0" />
+      <point x="2474.5" y="984.0" />
+      <point x="-70.0" y="112.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.action" target="be.ugent.vopro1.adapter.ActionAdapter">
+      <point x="52.125" y="-16.0" />
+      <point x="5755.973214285714" y="1084.0" />
+      <point x="5876.041964285716" y="1084.0" />
+      <point x="0.0" y="100.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.action" target="be.ugent.vopro1.adapter.result.Result">
+      <point x="17.375" y="-16.0" />
+      <point x="5721.223214285714" y="844.0" />
+      <point x="5671.541964285716" y="844.0" />
+      <point x="5671.541964285716" y="240.0" />
+      <point x="3486.6416666666664" y="240.0" />
+      <point x="199.26666666666642" y="64.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.ProjectAnalystAdapter" target="be.ugent.vopro1.adapter.result.Result">
+      <point x="74.0" y="-88.0" />
+      <point x="5479.410714285714" y="270.0" />
+      <point x="3458.1749999999997" y="270.0" />
+      <point x="170.79999999999973" y="64.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.EntityAnalystAdapter" target="be.ugent.vopro1.adapter.result.ResultSupplier">
+      <point x="-148.0" y="-88.0" />
+      <point x="4477.410714285714" y="924.0" />
+      <point x="2670.5" y="924.0" />
+      <point x="126.0" y="112.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.19628606507059546" x="3248.0" y="976.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>Production</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

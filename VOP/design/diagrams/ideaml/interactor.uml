@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>be.ugent.vopro1.interactor</OriginalElement>
+  <nodes>
+    <node x="378.5625" y="1093.0">be.ugent.vopro1.interactor.entity</node>
+    <node x="629.0625" y="687.0">be.ugent.vopro1.interactor.user.UserPermission</node>
+    <node x="1165.0625" y="687.0">be.ugent.vopro1.interactor.permission.PermissionFactory</node>
+    <node x="534.5625" y="985.0">be.ugent.vopro1.interactor.user.UserPermissionImpl</node>
+    <node x="182.25" y="0.0">be.ugent.vopro1.interactor.user.UserInteractor</node>
+    <node x="192.56250000000003" y="1093.0">be.ugent.vopro1.interactor.project</node>
+    <node x="1108.3125" y="817.0">be.ugent.vopro1.interactor.permission.PermissionFactoryImpl</node>
+    <node x="0.0" y="346.0">be.ugent.vopro1.interactor.user.UserInteractorImpl</node>
+    <node x="416.125" y="1278.0">be.ugent.vopro1.interactor.permission.NoPermissionException</node>
+    <node x="246.125" y="1281.96875">be.ugent.vopro1.interactor.task</node>
+    <node x="224.06250000000003" y="795.0">be.ugent.vopro1.interactor.authentication</node>
+    <node x="20.5625" y="1281.96875">be.ugent.vopro1.interactor.schedule</node>
+    <node x="1052.0625" y="947.0">be.ugent.vopro1.interactor.permission.PermissionProvider</node>
+    <node x="410.0" y="454.0">be.ugent.vopro1.interactor.user.UserInteractorFactory</node>
+    <node x="20.5625" y="1093.0">be.ugent.vopro1.interactor.team</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="be.ugent.vopro1.interactor.team" target="be.ugent.vopro1.interactor.authentication">
+      <point x="0.0" y="-16.0" />
+      <point x="86.5625" y="955.0" />
+      <point x="306.5625" y="955.0" />
+      <point x="-16.5" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.user.UserInteractorImpl" target="be.ugent.vopro1.interactor.user.UserInteractor">
+      <point x="0.0" y="-148.0" />
+      <point x="195.0" y="321.0" />
+      <point x="279.75" y="321.0" />
+      <point x="-97.5" y="148.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.authentication" target="be.ugent.vopro1.interactor.authentication">
+      <point x="-49.5" y="16.0" />
+      <point x="273.5625" y="857.0" />
+      <point x="194.06250000000003" y="857.0" />
+      <point x="194.06250000000003" y="803.0" />
+      <point x="-99.0" y="-8.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.permission.PermissionProvider" target="be.ugent.vopro1.interactor.permission.PermissionFactoryImpl">
+      <point x="-108.0" y="-76.0" />
+      <point x="1160.0625" y="922.0" />
+      <point x="1211.3125" y="922.0" />
+      <point x="0.0" y="40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.user.UserInteractorFactory" target="be.ugent.vopro1.interactor.user.UserInteractor">
+      <point x="0.0" y="-40.0" />
+      <point x="559.5" y="321.0" />
+      <point x="474.75" y="321.0" />
+      <point x="97.5" y="148.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.schedule" target="be.ugent.vopro1.interactor.schedule">
+      <point x="0.0" y="16.0" />
+      <point x="100.5625" y="1333.96875" />
+      <point x="0.5625" y="1333.96875" />
+      <point x="0.5625" y="1297.96875" />
+      <point x="-80.0" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.entity" target="be.ugent.vopro1.interactor.entity">
+      <point x="0.0" y="16.0" />
+      <point x="446.5625" y="1145.0" />
+      <point x="358.5625" y="1145.0" />
+      <point x="358.5625" y="1109.0" />
+      <point x="-68.0" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.project" target="be.ugent.vopro1.interactor.project">
+      <point x="0.0" y="16.0" />
+      <point x="265.5625" y="1145.0" />
+      <point x="172.5625" y="1145.0" />
+      <point x="172.5625" y="1109.0" />
+      <point x="-73.0" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.task" target="be.ugent.vopro1.interactor.task">
+      <point x="0.0" y="16.0" />
+      <point x="308.625" y="1333.96875" />
+      <point x="226.125" y="1333.96875" />
+      <point x="226.125" y="1297.96875" />
+      <point x="-62.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.permission.PermissionFactoryImpl" target="be.ugent.vopro1.interactor.permission.PermissionFactory">
+      <point x="0.0" y="-40.0" />
+      <point x="1211.3125" y="792.0" />
+      <point x="1216.5625" y="792.0" />
+      <point x="-51.5" y="40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.team" target="be.ugent.vopro1.interactor.team">
+      <point x="0.0" y="16.0" />
+      <point x="86.5625" y="1145.0" />
+      <point x="0.5625" y="1145.0" />
+      <point x="0.5625" y="1109.0" />
+      <point x="-66.0" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.user.UserPermissionImpl" target="be.ugent.vopro1.interactor.user.UserPermission">
+      <point x="94.5" y="-124.0" />
+      <point x="0.0" y="124.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.entity" target="be.ugent.vopro1.interactor.authentication">
+      <point x="0.0" y="-16.0" />
+      <point x="446.5625" y="965.0" />
+      <point x="372.5625" y="965.0" />
+      <point x="49.5" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.permission.PermissionProvider" target="be.ugent.vopro1.interactor.permission.PermissionFactory">
+      <point x="108.0" y="-76.0" />
+      <point x="1376.0625" y="922.0" />
+      <point x="1324.8125" y="922.0" />
+      <point x="1324.8125" y="792.0" />
+      <point x="1319.5625" y="792.0" />
+      <point x="51.5" y="40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.user.UserPermissionImpl" target="be.ugent.vopro1.interactor.authentication">
+      <point x="-94.5" y="-124.0" />
+      <point x="629.0625" y="955.0" />
+      <point x="405.5625" y="955.0" />
+      <point x="82.5" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.project" target="be.ugent.vopro1.interactor.authentication">
+      <point x="0.0" y="-16.0" />
+      <point x="265.5625" y="965.0" />
+      <point x="339.5625" y="965.0" />
+      <point x="16.5" y="16.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="742.5" y="669.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>Production</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

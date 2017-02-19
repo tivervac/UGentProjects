@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This is an example Spring-JDBC config file.
+        - Copy this file, and name the copy "application-context.xml".
+        - Adjust the url, username and password to your (locally) running PostgreSQL database instance -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd
+       http://www.springframework.org/schema/util
+       http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+    <bean class="be.ugent.vopro1.util.ApplicationContextProvider"/>
+
+    <!-- DAO -->
+    <bean id="entityDAO" class="be.ugent.vopro1.persistence.jdbc.postgresql.EntityDAOImpl">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <bean id="projectDAO" class="be.ugent.vopro1.persistence.jdbc.postgresql.ProjectDAOImpl">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <bean id="userDAO" class="be.ugent.vopro1.persistence.jdbc.postgresql.UserDAOImpl">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <bean id="teamDAO" class="be.ugent.vopro1.persistence.jdbc.postgresql.TeamDAOImpl">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <bean id="scheduleDAO" class="be.ugent.vopro1.persistence.jdbc.postgresql.ScheduleDAOImpl">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <!-- Transaction management so that interactor calls are transactional. Either they fail (and nothing changes),
+     or return execute entirely -->
+    <tx:advice id="transactionAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <!-- "get" (retrieval), "find" (retrieval/filter) and "can" (permission) methods are read only -->
+            <tx:method name="get*" read-only="true"/>
+            <tx:method name="find*" read-only="true"/>
+            <tx:method name="can*" read-only="true"/>
+            <!-- other methods use the default settings -->
+            <tx:method name="*"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <aop:config>
+        <aop:pointcut id="interactorOperation" expression="execution(* be.ugent.vopro1.interactor..*.*(..))"/>
+        <aop:advisor advice-ref="transactionAdvice" pointcut-ref="interactorOperation"/>
+    </aop:config>
+
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="org.postgresql.Driver"/>
+        <property name="url" value="jdbc:postgresql://{DB_HOST}:{DB_PORT}/{DB_NAME}"/>
+        <property name="username" value="{DB_USERNAME}"/>
+        <property name="password" value="{DB_PASSWORD}"/>
+    </bean>
+
+    <bean id="repo" class="be.ugent.vopro1.funky.CustomLanguageRepository"/>
+
+    <bean id="workspace" class="be.ugent.vopro1.funky.CustomWorkspace"
+          depends-on="persistentObjectConverter">
+        <constructor-arg ref="repo"/>
+    </bean>
+
+    <bean id="converter" class="be.ugent.vopro1.converter.json.JsonConverterImpl" />
+
+    <bean id="resultSupplier" class="be.ugent.vopro1.adapter.result.ResultSupplierImpl"/>
+
+    <bean id="resultMapper" class="be.ugent.vopro1.adapter.result.mapper.DefaultResultMapper"/>
+
+    <!-- INTERACTOR -->
+    <bean id="projectInteractor" class="be.ugent.vopro1.interactor.project.ProjectInteractorImpl"/>
+
+    <bean id="entityInteractor" class="be.ugent.vopro1.interactor.entity.EntityInteractorImpl"/>
+
+    <bean id="userInteractor" class="be.ugent.vopro1.interactor.user.UserInteractorImpl"/>
+
+    <bean id="teamInteractor" class="be.ugent.vopro1.interactor.team.TeamInteractorImpl"/>
+
+    <bean id="scheduleInteractor" class="be.ugent.vopro1.interactor.schedule.ScheduleInteractorImpl" />
+
+    <bean id="taskInteractor" class="be.ugent.vopro1.interactor.task.TaskInteractorImpl" />
+
+    <!-- PERMISSION -->
+    <bean id="userPermissionHandler" class="be.ugent.vopro1.interactor.user.UserPermissionImpl"/>
+
+    <bean id="projectPermissionHandler" class="be.ugent.vopro1.interactor.project.ProjectPermissionImpl"/>
+
+    <bean id="entityPermissionHandler" class="be.ugent.vopro1.interactor.entity.EntityPermissionImpl"/>
+
+    <bean id="teamPermissionHandler" class="be.ugent.vopro1.interactor.team.TeamPermissionImpl"/>
+
+    <!-- CONVERTER -->
+    <bean id="converterProvider" class="be.ugent.vopro1.converter.DefaultConverterProvider" />
+    <bean id="converterFacade" class="be.ugent.vopro1.converter.DefaultConverterFacade" />
+
+    <bean id="entityConverter" class="be.ugent.vopro1.converter.bean.EntityConverter">
+        <constructor-arg ref="converterProvider" />
+        <property name="types">
+            <util:map key-type="java.lang.Class" value-type="java.lang.String">
+                <entry key="be.ugent.vopro1.model.UsecaseEntity" value="usecase"/>
+                <entry key="org.aikodi.lang.funky.concept.Concept" value="concept"/>
+                <entry key="org.aikodi.lang.funky.executors.Actor" value="actor"/>
+                <entry key="be.ugent.vopro1.model.ProcessEntity" value="process"/>
+            </util:map>
+        </property>
+    </bean>
+
+    <bean id="persistentObjectConverter" class="be.ugent.vopro1.converter.bean.PersistentObjectConverter">
+        <constructor-arg ref="converterProvider" />
+        <property name="types">
+            <util:map key-type="java.lang.String" value-type="java.lang.Class">
+                <entry key="usecase" value="be.ugent.vopro1.model.UsecaseEntity" />
+                <entry key="actor" value="org.aikodi.lang.funky.executors.Actor"/>
+                <entry key="concept" value="org.aikodi.lang.funky.concept.Concept"/>
+                <entry key="process" value="be.ugent.vopro1.model.ProcessEntity"/>
+            </util:map>
+        </property>
+    </bean>
+
+    <bean id="persistentProjectConverter" class="be.ugent.vopro1.converter.bean.PersistentProjectConverter">
+        <constructor-arg ref="converterProvider" />
+    </bean>
+
+    <bean id="persistentTeamConverter" class="be.ugent.vopro1.converter.bean.PersistentTeamConverter">
+        <constructor-arg ref="converterProvider" />
+    </bean>
+
+    <bean id="persistentUserConverter" class="be.ugent.vopro1.converter.bean.PersistentUserConverter">
+        <constructor-arg ref="converterProvider" />
+    </bean>
+
+    <bean id="projectConverter" class="be.ugent.vopro1.converter.bean.ProjectConverter">
+        <constructor-arg ref="converterProvider" />
+    </bean>
+
+    <bean id="teamConverter" class="be.ugent.vopro1.converter.bean.TeamConverter">
+        <constructor-arg ref="converterProvider" />
+    </bean>
+
+    <bean id="userConverter" class="be.ugent.vopro1.converter.bean.UserConverter">
+        <constructor-arg ref="converterProvider" />
+    </bean>
+
+    <bean id="persistentTaskConverter" class="be.ugent.vopro1.converter.bean.PersistentTaskConverter">
+        <constructor-arg ref="converterProvider" />
+    </bean>
+
+    <bean id="taskConverter" class="be.ugent.vopro1.converter.bean.TaskConverter">
+        <constructor-arg ref="converterProvider" />
+    </bean>
+
+    <bean id="persistentAssignmentConverter" class="be.ugent.vopro1.converter.bean.PersistentAssignmentConverter">
+        <constructor-arg ref="converterProvider" />
+    </bean>
+
+    <bean id="assignmentConverter" class="be.ugent.vopro1.converter.bean.AssignmentConverter">
+        <constructor-arg ref="converterProvider" />
+    </bean>
+
+    <!-- ADAPTER -->
+    <bean id="adapterFactory" class="be.ugent.vopro1.adapter.CommonAdapterFactory"/>
+
+    <bean id="adapterManager" class="be.ugent.vopro1.adapter.DefaultAdapterManager"/>
+
+    <bean id="actorAdapter" class="be.ugent.vopro1.adapter.EntityAdapter">
+        <constructor-arg value="org.aikodi.lang.funky.executors.Actor"/>
+        <constructor-arg type="java.lang.String" value="actor" />
+    </bean>
+
+    <bean id="conceptAdapter" class="be.ugent.vopro1.adapter.EntityAdapter">
+        <constructor-arg value="org.aikodi.lang.funky.concept.Concept"/>
+        <constructor-arg type="java.lang.String" value="concept" />
+    </bean>
+
+    <bean id="usecaseAdapter" class="be.ugent.vopro1.adapter.EntityAdapter">
+        <constructor-arg value="be.ugent.vopro1.model.UsecaseEntity"/>
+        <constructor-arg type="java.lang.String" value="usecase"/>
+    </bean>
+
+    <bean id="processAdapter" class="be.ugent.vopro1.adapter.EntityAdapter">
+        <constructor-arg value="be.ugent.vopro1.model.ProcessEntity"/>
+        <constructor-arg type="java.lang.String" value="process"/>
+    </bean>
+
+    <bean id="projectAdapter" class="be.ugent.vopro1.adapter.ProjectAdapter"/>
+
+    <bean id="taskAdapter" class="be.ugent.vopro1.adapter.TaskAdapter"/>
+
+    <bean id="userAdapter" class="be.ugent.vopro1.adapter.UserAdapter"/>
+
+    <bean id="teamAdapter" class="be.ugent.vopro1.adapter.TeamAdapter"/>
+
+    <bean id="teamMemberAdapter" class="be.ugent.vopro1.adapter.TeamMemberAdapter"/>
+
+    <bean id="projectAnalystAdapter" class="be.ugent.vopro1.adapter.ProjectAnalystAdapter"/>
+
+    <bean id="teamProjectAdapter" class="be.ugent.vopro1.adapter.TeamProjectAdapter"/>
+
+    <bean id="memberTeamAdapter" class="be.ugent.vopro1.adapter.MemberTeamAdapter"/>
+
+    <bean id="analystProjectAdapter" class="be.ugent.vopro1.adapter.AnalystProjectAdapter"/>
+
+    <bean id="customConverterModule" class="be.ugent.vopro1.converter.json.CustomConverterModule"/>
+
+    <bean id="projectActionAdapter" class="be.ugent.vopro1.adapter.action.ProjectActionAdapter"/>
+
+    <bean id="entityAnalystAdapter" class="be.ugent.vopro1.adapter.EntityAnalystAdapter"/>
+
+    <bean id="scheduleAdapter" class="be.ugent.vopro1.adapter.ScheduleAdapter" />
+
+    <!-- LOOKUP -->
+    <bean id="lookupStrategy" class="be.ugent.vopro1.reference.DefaultLookupStrategy" />
+
+    <!-- EXECUTOR -->
+    <bean id="copyExecutor" class="be.ugent.vopro1.adapter.action.executor.copy.CopyExecutor">
+        <constructor-arg ref="projectActionAdapter"/>
+    </bean>
+
+    <bean id="storyExecutor" class="be.ugent.vopro1.adapter.action.executor.story.StoryExecutor">
+        <constructor-arg ref="projectActionAdapter"/>
+    </bean>
+
+    <bean id="validationExecutor" class="be.ugent.vopro1.adapter.action.executor.validation.ValidationExecutor">
+        <constructor-arg ref="projectActionAdapter"/>
+    </bean>
+
+    <bean id="referenceExecutor" class="be.ugent.vopro1.adapter.action.executor.reference.ReferenceExecutor">
+        <constructor-arg ref="projectActionAdapter"/>
+    </bean>
+
+    <bean id="schedulingExecutor" class="be.ugent.vopro1.adapter.action.executor.scheduling.SchedulingExecutor">
+        <constructor-arg ref="projectActionAdapter"/>
+    </bean>
+
+</beans>

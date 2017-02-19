@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>be.ugent.vopro1.model</OriginalElement>
+  <nodes>
+    <node x="292.99999999999994" y="334.0">be.ugent.vopro1.model.EntityProject</node>
+    <node x="763.0" y="298.0">be.ugent.vopro1.model.Task</node>
+    <node x="0.0" y="795.0">be.ugent.vopro1.model.ProcessEntity</node>
+    <node x="746.5" y="0.0">be.ugent.vopro1.model.UsecaseEntity</node>
+    <node x="0.0" y="322.0">be.ugent.vopro1.model.AvailableUser</node>
+    <node x="325.3749999999999" y="11.5">be.ugent.vopro1.model.User</node>
+    <node x="347.4999999999999" y="525.0">be.ugent.vopro1.model.Assignment</node>
+    <node x="250.0" y="795.0">be.ugent.vopro1.model.stub</node>
+    <node x="518.0" y="322.0">be.ugent.vopro1.model.Team</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="be.ugent.vopro1.model.Task" target="be.ugent.vopro1.model.UsecaseEntity">
+      <point x="0.0" y="-88.5" />
+      <point x="0.0" y="124.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.model.Team" target="be.ugent.vopro1.model.User">
+      <point x="56.25" y="-64.5" />
+      <point x="686.75" y="273.0" />
+      <point x="604.5" y="273.0" />
+      <point x="119.62500000000006" y="112.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.model.Assignment" target="be.ugent.vopro1.model.AvailableUser">
+      <point x="-89.5" y="-112.5" />
+      <point x="436.9999999999999" y="500.0" />
+      <point x="136.5" y="500.0" />
+      <point x="0.0" y="64.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.model.AvailableUser" target="be.ugent.vopro1.model.User">
+      <point x="0.0" y="-64.5" />
+      <point x="136.5" y="273.0" />
+      <point x="365.2499999999999" y="273.0" />
+      <point x="-119.625" y="112.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.model.Assignment" target="be.ugent.vopro1.model.Task">
+      <point x="89.5" y="-112.5" />
+      <point x="615.9999999999999" y="500.0" />
+      <point x="895.5" y="500.0" />
+      <point x="0.0" y="88.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.model.EntityProject" target="be.ugent.vopro1.model.User">
+      <point x="0.0" y="-52.5" />
+      <point x="395.49999999999994" y="273.0" />
+      <point x="444.9999999999999" y="273.0" />
+      <point x="-39.875" y="112.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="522.5" y="450.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>Production</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,570 @@
+<div class="custom-container" id="createUsecase">
+
+<div ng-hide="gCtrl.isCreateActorOnUsecase() || gCtrl.isCreateConceptOnUsecase()">
+
+<h1>
+    {{ctrl.action}} Use Case
+</h1>
+<div id="createConceptAlert" ng-show="gCtrl.getAlert('createConceptAlert') == true"  class="alert alert-success" role="alert">
+  <button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('createConceptAlert');"><span aria-hidden="true">&times;</span></button>
+  Concept successfully created!
+</div>
+<div ng-hide="gCtrl.isUsecaseDetails()">
+
+<form class="form-horizontal">
+
+  <hr />
+
+  <div class="form-group" ng-attr-id="nav-name">
+    <label for="name" class="col-xs-4 control-label" style="text-align:left">First choose a name for the use case:</label>
+    <div class="col-xs-4">
+      <input type="text" class="form-control" id="name"  ng-model="ctrl.name" placeholder="Name" autofocus>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="form-group">
+    <div class="col-xs-8">
+      <button type="button" class="btn btn-danger btn-lg" ng-click="ctrl.cancelCreateUsecase()">
+        <span class="glyphicon glyphicon-remove"></span> Cancel
+      </button>
+      <button type="submit" class="btn btn-success btn-lg" ng-click="ctrl.moveToDetails()">
+        Next <span class="glyphicon glyphicon-chevron-right"></span>
+      </button>
+    </div>
+  </div>
+
+</form>
+
+</div>
+
+<div ng-show="gCtrl.isUsecaseDetails()">
+
+<p>
+<button class="btn btn-success" ng-click="gCtrl.setCreateConceptOnUsecase(true)">
+    <span class="glyphicon glyphicon-plus"></span> Create concept
+</button>
+</p>
+
+<form class="form-horizontal">
+
+  <div class="form-group">
+      <div class="col-xs-11">
+        <div class="alert alert-info" role="alert" style="width:auto">
+            <strong>Note:</strong> You can add references to existing entities (actors / concepts / use cases) when creating/updating this use case in the following way. This can be done by typing the @ token followed by the entity name.<br/>References will be recognised in the use case objective, preconditions, postconditions, flow step descriptions and alternative / exceptional flow conditions.
+        </div>
+      </div>
+  </div>
+
+  <!-- Create/update, back and cancel button -->
+
+  <div class="form-group">
+    <div class="col-xs-8">
+      <button type="button" class="btn btn-warning btn-lg" ng-click="ctrl.moveToNoDetails()">
+        <span class="glyphicon glyphicon-chevron-left"></span> Back
+      </button>
+      <button type="submit" class="btn btn-success btn-lg" ng-click="ctrl.createOrUpdateUsecase()">
+        <span class="glyphicon glyphicon-ok"></span> {{ctrl.action}} use case
+      </button>
+      <button class="btn btn-danger btn-lg" ng-click="ctrl.cancelCreateUsecase(); gCtrl.update()">
+        <span class="glyphicon glyphicon-remove"></span> Cancel
+      </button>
+    </div>
+  </div>
+
+  <!-- End create and cancel button -->
+
+  <div class="form-group" ng-attr-id="nav-project-name">
+    <label for="projectName" class="col-xs-2 control-label">Project Name</label>
+    <div class="col-xs-4">
+      <input type="text" class="form-control" id="projectName" placeholder="Name" value="{{gCtrl.formatToHtml(ctrl.projectName)}}" readonly>
+    </div>
+  </div>
+
+  <div class="form-group" ng-attr-id="nav-name">
+    <label for="name" class="col-xs-2 control-label">Use Case Name</label>
+    <div class="col-xs-4">
+      <input type="text" class="form-control" id="name"  ng-model="ctrl.name" placeholder="Name" readonly>
+    </div>
+  </div>
+
+  <div class="form-group" ng-attr-id="nav-objective">
+    <label for="objective" class="col-xs-2 control-label">Objective</label>
+    <div class="col-xs-9">
+      <textarea class="form-control fixed-textarea" rows="3" id="objective" ng-model="ctrl.objective" placeholder="Objective" ng-blur="ctrl.noObj()"  ng-change="ctrl.matchConcepts(ctrl.objective, -1); ctrl.objRef = true" ng-keyboard="ctrl.dropDown"></textarea>
+      <ul class="list-group" ng-show="ctrl.conceptsFound && ctrl.objRef == true">
+      <a ng-repeat="concept in ctrl.matchingConcepts" ng-click="ctrl.insertConceptObj(concept)"><li class="list-group-item" ng-class="{active: $index == ctrl.conceptIndex}" ng-mouseover="ctrl.conceptIndex = $index">{{concept}}</li>
+      </a></ul>
+    </div>
+  </div>
+
+  <!-- Preconditions -->
+
+  <div ng-repeat="field in ctrl.preconditions track by $index" ng-attr-id="nav-precondition-{{$index}}">
+    <div class="form-group">
+        <label ng-show="$index == 0" class="col-xs-2 control-label">Preconditions</label>
+        <div ng-show="$index == 0" class="col-xs-7">
+          <input type='text' class="form-control" ng-model='ctrl.preconditions[$index]' placeholder='Precondition {{$index + 1}}' ng-focus="ctrl.preRef = true; ctrl.indexPre = $index" ng-change="ctrl.matchConcepts(ctrl.preconditions[$index], $index)" ng-keyboard="ctrl.dropDown" ng-blur="ctrl.noPre()">
+          <ul class="list-group" ng-show="ctrl.conceptsFound && ctrl.preRef == true && ctrl.indexPre == $index">
+          <a ng-repeat="concept in ctrl.matchingConcepts"><li class="list-group-item" ng-class="{active: $index == ctrl.conceptIndex}" ng-mouseover="ctrl.conceptIndex = $index" ng-click="ctrl.insertConceptPre(concept)">{{concept}}</li></a></ul>
+        </div>
+        <div ng-hide="$index == 0" class="col-xs-offset-2 col-xs-7">
+          <input type='text' class="form-control" ng-model="ctrl.preconditions[$index]" placeholder='Precondition {{$index + 1}}' ng-focus="ctrl.preRef = true; ctrl.indexPre = $index" ng-change="ctrl.matchConcepts(ctrl.preconditions[$index], $index)" ng-keyboard="ctrl.dropDown" ng-blur="ctrl.noPre()">
+          <ul class="list-group" ng-show="ctrl.conceptsFound && ctrl.preRef == true && ctrl.indexPre == $index">
+          <a ng-repeat="concept in ctrl.matchingConcepts"><li class="list-group-item" ng-class="{active: $index == ctrl.conceptIndex}" ng-mouseover="ctrl.conceptIndex = $index" ng-click="ctrl.insertConceptPre(concept)">{{concept}}</li></a></ul>
+        </div>
+        <button type="button" class="btn btn-danger" ng-click="ctrl.removePrecondition($index)">
+            <span class="glyphicon glyphicon-minus"></span>
+        </button>
+        <button ng-show="$index == ctrl.preconditions.length - 1" type="button" class="btn btn-success" ng-click="ctrl.addPrecondition()">
+            <span class="glyphicon glyphicon-plus"></span>
+        </button>
+    </div>
+  </div>
+
+  <!-- End preconditions -->
+
+  <!-- Postconditions -->
+
+  <div ng-repeat="field in ctrl.postconditions track by $index" ng-attr-id="nav-postcondition-{{$index}}">
+    <div class="form-group">
+        <label ng-show="$index == 0" class="col-xs-2 control-label">Postconditions</label>
+        <div ng-show="$index == 0" class="col-xs-7">
+          <input type='text' class="form-control" ng-model='ctrl.postconditions[$index]' placeholder='Postcondition {{$index + 1}}' ng-focus="ctrl.postRef = true; ctrl.indexPost = $index"  ng-change="ctrl.matchConcepts(ctrl.postconditions[$index], $index)" ng-keyboard="ctrl.dropDown" ng-blur="ctrl.noPost()">
+          <ul class="list-group" ng-show="ctrl.conceptsFound && ctrl.postRef == true && ctrl.indexPost == $index">
+          <a ng-repeat="concept in ctrl.matchingConcepts"><li class="list-group-item" ng-class="{active: $index == ctrl.conceptIndex}" ng-mouseover="ctrl.conceptIndex = $index" ng-click="ctrl.test()">{{concept}}</li></a></ul>
+        </div>
+        <div ng-hide="$index == 0" class="col-xs-offset-2 col-xs-7">
+          <input type='text' class="form-control" ng-model='ctrl.postconditions[$index]' placeholder='Postcondition {{$index + 1}}' ng-focus="ctrl.postRef = true; ctrl.indexPost = $index"  ng-change="ctrl.matchConcepts(ctrl.postconditions[$index], $index)" ng-keyboard="ctrl.dropDown" ng-blur="ctrl.noPost()">
+          <ul class="list-group" ng-show="ctrl.conceptsFound && ctrl.postRef == true && ctrl.indexPost == $index">
+          <a ng-repeat="concept in ctrl.matchingConcepts"><li class="list-group-item" ng-class="{active: $index == ctrl.conceptIndex}" ng-mouseover="ctrl.conceptIndex = $index" ng-click="ctrl.test()">{{concept}}</li></a></ul>
+        </div>
+        <button type="button" class="btn btn-danger" ng-click="ctrl.removePostcondition($index)">
+            <span class="glyphicon glyphicon-minus"></span>
+        </button>
+        <button ng-show="$index == ctrl.postconditions.length - 1" type="button" class="btn btn-success" ng-click="ctrl.addPostcondition()">
+            <span class="glyphicon glyphicon-plus"></span>
+        </button>
+    </div>
+  </div>
+
+  <!-- End postconditions -->
+
+  <!-- Normal flow -->
+
+  <div class="form-group" ng-attr-id="nav-normal-flow">
+      <h2><label class="col-xs-11 label label-default">Normal flow</label></h2>
+  </div>
+
+  <div ng-repeat="field in ctrl.normalFlow track by $index">
+
+      <div class="form-group" ng-attr-id="nav-flow-step-{{$index}}">
+          <label class="col-xs-2 control-label">Step {{$index + 1}}</label>
+
+          <div class="col-xs-4">
+              <div class="btn-group">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false" >
+                      <span ng-show="field.executor == ''"><em>No executor chosen yet</em></span>
+                      <span ng-hide="field.executor == ''">{{gCtrl.formatToHtml(field.executor)}}</span>
+                      <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                      <li role="presentation" class="dropdown-header"><strong>Choose executor</strong></li>
+                      <li class="divider"></li>
+                      <li ng-repeat="actor in ctrl.actorsInProject track by $index" ng-click="$parent.field.executor = actor">
+                          <a>
+                              <span ng-show="$parent.field.executor == actor" class="glyphicon glyphicon-ok"></span>
+                              <span ng-hide="$parent.field.executor == actor || $parent.field.executor == ''" class="glyphicon glyphicon-ok glyphicon-none"></span>
+                              {{gCtrl.formatToHtml(actor)}}
+                          </a>
+                      </li>
+                      <li ng-show="ctrl.actorsInProject.length == 0"><a><em>No actors...</em></a></li>
+                      <li class="divider"></li>
+                      <li ng-click="gCtrl.setCreateActorOnUsecase(true); ctrl.addActorFlowType = 'normal'; ctrl.addActorStepIndex = $index;"><a>Create new actor...</a></li>
+                  </ul>
+              </div>
+          </div>
+
+          <button type="button" class="btn btn-danger" ng-click="ctrl.removeNormalFlowStep($index)">
+              <span class="glyphicon glyphicon-minus"></span>
+          </button>
+          <button type="button" class="btn btn-success" ng-click="ctrl.addNormalFlowStep($index)">
+              <span class="glyphicon glyphicon-plus"></span>
+          </button>
+          <div class="btn-group">
+              <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" >
+                  <span class="glyphicon glyphicon-new-window"></span> Branch to <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li ng-click="ctrl.addAlternativeFlow($index)"><a>New alternative flow...</a></li>
+                <li ng-click="ctrl.addExceptionalFlow($index)"><a>New exceptional flow...</a></li>
+              </ul>
+          </div>
+          <button ng-hide="$index == ctrl.normalFlow.length - 1" type="button" class="btn btn-primary" ng-click="ctrl.swapNormalFlowSteps($index, $index + 1)">
+              <span class="glyphicon glyphicon-sort"></span> Swap
+          </button>
+
+      </div>
+
+      <div class="form-group">
+          <div class="col-xs-offset-2 col-xs-9">
+              <textarea class="form-control fixed-textarea" rows="3" ng-blur="ctrl.noNFlow($index)" ng-focus="ctrl.nFlow = true; ctrl.index=$index"  ng-change="ctrl.matchConcepts(field.action, $index); ctrl.nFlow=true" ng-model='field.action' placeholder='Description' ng-keyboard="ctrl.dropDown"></textarea>
+              <ul class="list-group" ng-show="ctrl.conceptsFound && ctrl.nFlow == true && ctrl.index == $index">
+              <a ng-repeat="concept in ctrl.matchingConcepts" ng-click="ctrl.insertConceptNFlow(concept)"><li class="list-group-item" ng-class="{active: $index == ctrl.conceptIndex}" ng-mouseover="ctrl.conceptIndex = $index">{{concept}}</li></a></ul>
+          </div>
+      </div>
+
+  </div>
+
+  <!-- End normal flow -->
+
+  <!-- Alternative flows -->
+
+  <div ng-repeat="flow in ctrl.alternativeFlows track by $index" ng-attr-id="nav-alt-flow-{{$index}}" ng-click="ctrl.indexAF = $index" ng-focus="ctrl.indexAF = $index">
+
+      <div class="form-group">
+          <h3>
+              <label class="col-xs-11 label label-default">
+                  <input type="checkbox" ng-model="flow.shown">
+                  Alternative flow {{$index + 1}}
+                  &nbsp;
+                  <button class="btn btn-danger btn-xs" ng-click="ctrl.removeAlternativeFlow($index)">
+                      <span class="glyphicon glyphicon-remove"></span>
+                  </button>
+              </label>
+          </h3>
+      </div>
+
+      <div ng-show="flow.shown">
+
+          <div class="form-group">
+              <label class="col-xs-2 control-label">Branches from</label>
+              <div class="col-xs-4">
+                  <div class="btn-group">
+                      <button type="button" class="btn btn-default" ng-click="ctrl.setLocationOnPage('flow-step-' + flow.branchIndex)">
+                          <span class="glyphicon glyphicon-upload"></span> Normal flow - step {{flow.branchIndex + 1}}
+                      </button>
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false" >
+                          <span class="caret"></span>
+                          <span class="sr-only"></span>
+                      </button>
+                      <ul class="dropdown-menu">
+                          <li ng-repeat="step in ctrl.normalFlow track by $index" ng-click="$parent.flow.branchIndex = $index">
+                              <a>
+                                  <span ng-show="$parent.flow.branchIndex == $index" class="glyphicon glyphicon-ok"></span>
+                                  <span ng-hide="$parent.flow.branchIndex == $index" class="glyphicon glyphicon-ok glyphicon-none"></span>
+                                  Normal flow - step {{$index + 1}}
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+
+          <div class="form-group" >
+            <label for="condition" class="col-xs-2 control-label">Condition</label>
+            <div class="col-xs-7">
+              <input type="text" class="form-control" id="condition" placeholder="Condition" ng-model="flow.condition" ng-blur="ctrl.condARef = false" ng-focus="ctrl.index = $index; ctrl.condARef = true" ng-change="ctrl.matchConcepts(flow.condition, $index); ctrl.condARef=true" ng-keyboard="ctrl.dropDown">
+              <ul class="list-group" ng-show="ctrl.conceptsFound && ctrl.condARef == true && ctrl.index == $index">
+              <a ng-repeat="concept in ctrl.matchingConcepts" ng-click="ctrl.insertAConceptCond(concept)">
+              <li class="list-group-item" ng-class="{active: $index == ctrl.conceptIndex}" ng-mouseover="ctrl.conceptIndex = $index">{{concept}}</li></a></ul>
+            </div>
+          </div>
+
+          <div ng-repeat="step in flow.steps track by $index" ng-attr-id="nav-alt-flow-{{$parent.$index}}-step-{{$index}}">
+
+              <div class="form-group">
+                  <label class="col-xs-2 control-label">Step {{$index + 1}}</label>
+
+                  <div class="col-xs-4">
+                      <div class="btn-group">
+                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expandend="false" >
+                              <span ng-show="step.executor == ''"><em>No executor chosen yet</em></span>
+                              <span ng-hide="step.executor == ''">{{gCtrl.formatToHtml(step.executor)}}</span>
+                              <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu">
+                              <li role="presentation" class="dropdown-header"><strong>Choose executor</strong></li>
+                              <li class="divider"></li>
+                              <li ng-repeat="actor in ctrl.actorsInProject track by $index" ng-click="$parent.step.executor = actor">
+                                  <a>
+                                      <span ng-show="$parent.step.executor == actor" class="glyphicon glyphicon-ok"></span>
+                                      <span ng-hide="$parent.step.executor == actor || $parent.step.executor == ''" class="glyphicon glyphicon-ok glyphicon-none"></span>
+                                      {{gCtrl.formatToHtml(actor)}}
+                                  </a>
+                              </li>
+                              <li ng-show="ctrl.actorsInProject.length == 0"><a><em>No actors...</em></a></li>
+                              <li class="divider"></li>
+                              <li ng-click="gCtrl.setCreateActorOnUsecase(true); ctrl.addActorFlowType = 'alternative'; ctrl.addActorFlowIndex = $parent.$index; ctrl.addActorStepIndex = $index;"><a>Create new actor...</a></li>
+                          </ul>
+                      </div>
+                  </div>
+
+                  <button type="button" class="btn btn-danger" ng-click="ctrl.removeAlternativeFlowStep($parent.$index, $index)">
+                      <span class="glyphicon glyphicon-minus"></span>
+                  </button>
+                  <button type="button" class="btn btn-success" ng-click="ctrl.addAlternativeFlowStep($parent.$index, $index)">
+                      <span class="glyphicon glyphicon-plus"></span>
+                  </button>
+                  <button ng-hide="$index == flow.steps.length - 1" type="button" class="btn btn-primary" ng-click="ctrl.swapAlternativeFlowSteps($parent.$index, $index, $index + 1)">
+                      <span class="glyphicon glyphicon-sort"></span> Swap
+                  </button>
+              </div>
+
+              <div class="form-group">
+                  <div class="col-xs-offset-2 col-xs-9">
+                      <textarea class="form-control fixed-textarea" rows="3" ng-blur="ctrl.noAFlow($index)" ng-focus="ctrl.aFlow = true; ctrl.index=$index; ctrl.indexFlow = $parent.$index"  ng-change="ctrl.matchConcepts(step.action, $index); ctrl.aFlow=true" ng-model='step.action' placeholder='Description' ng-keyboard="ctrl.dropDown"></textarea>
+                      <ul class="list-group" ng-show="ctrl.conceptsFound && ctrl.aFlow == true && ctrl.index == $index && ctrl.indexFlow == $parent.$index">
+                      <a ng-repeat="concept in ctrl.matchingConcepts" ng-click="ctrl.insertConceptAFlow(concept)"><li class="list-group-item" ng-class="{active: $index == ctrl.conceptIndex}" ng-mouseover="ctrl.conceptIndex = $index">{{concept}}</li></a></ul>
+                      </ul>
+
+                  </div>
+              </div>
+
+          </div>
+
+          <div class="form-group">
+              <label class="col-xs-2 control-label">Return to</label>
+              <div class="col-xs-4">
+                  <div class="btn-group">
+                      <button type="button" class="btn btn-default" ng-click="ctrl.setLocationOnPage('flow-step-' + flow.returnTo)" >
+                          <span ng-hide="flow.returnTo == -1" class="glyphicon glyphicon-upload"></span>
+                          <span ng-hide="flow.returnTo == -1"> Normal flow - step {{flow.returnTo + 1}} </span>
+                          <span ng-show="flow.returnTo == -1"> <em>Please select a return point</em> </span>
+                      </button>
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false" >
+                          <span class="caret"></span>
+                          <span class="sr-only"></span>
+                      </button>
+
+                      <ul class="dropdown-menu" role="menu">
+                          <li role="presentation" class="dropdown-header"><strong>Choose return point</strong></li>
+                          <li ng-repeat="step in ctrl.normalFlow track by $index" ng-click="$parent.flow.returnTo = $index">
+                              <a>
+                                  <span ng-hide="$parent.flow.returnTo == -1">
+                                      <span ng-show="$parent.flow.returnTo == $index" class="glyphicon glyphicon-ok"></span>
+                                      <span ng-hide="$parent.flow.returnTo == $index" class="glyphicon glyphicon-ok glyphicon-none"></span>
+                                  </span> Normal flow - step {{$index + 1}}
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+
+  </div>
+
+  <!-- End altnerative flows -->
+
+  <!-- Exceptional flows -->
+
+  <div ng-repeat="flow in ctrl.exceptionalFlows track by $index" ng-attr-id="nav-exc-flow-{{$index}}" ng-mouseenter="ctrl.indexEF = $index">
+
+      <div class="form-group">
+          <h3>
+              <label class="col-xs-11 label label-default">
+                  <input type="checkbox" ng-model="flow.shown">
+                  Exceptional flow {{$index + 1}}
+                  &nbsp;
+                  <button class="btn btn-danger btn-xs" ng-click="ctrl.removeExceptionalFlow($index)">
+                      <span class="glyphicon glyphicon-remove"></span>
+                  </button>
+              </label>
+          </h3>
+      </div>
+
+      <div ng-show="flow.shown">
+
+          <div class="form-group">
+              <label class="col-xs-2 control-label">Branches from</label>
+              <div class="col-xs-4">
+                  <div class="btn-group">
+                      <button type="button" class="btn btn-default" ng-click="ctrl.setLocationOnPage('flow-step-' + flow.branchIndex)">
+                          <span class="glyphicon glyphicon-upload"></span> Normal flow - step {{flow.branchIndex + 1}}
+                      </button>
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false" >
+                          <span class="caret"></span>
+                          <span class="sr-only"></span>
+                      </button>
+                      <ul class="dropdown-menu">
+                          <li ng-repeat="step in ctrl.normalFlow track by $index" ng-click="$parent.flow.branchIndex = $index">
+                              <a>
+                                  <span ng-show="$parent.flow.branchIndex == $index" class="glyphicon glyphicon-ok"></span>
+                                  <span ng-hide="$parent.flow.branchIndex == $index" class="glyphicon glyphicon-ok glyphicon-none"></span>
+                                  Normal flow - step {{$index + 1}}
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+
+          <div class="form-group" >
+            <label for="condition" class="col-xs-2 control-label">Condition</label>
+            <div class="col-xs-7">
+              <input type="text" class="form-control" id="condition" placeholder="Condition" ng-model="flow.condition"  ng-blur="ctrl.condERef = false" ng-focus="ctrl.index = $index; ctrl.condERef = true" ng-change="ctrl.matchConcepts(flow.condition, $index); ctrl.condERef=true" ng-keyboard="ctrl.dropDown">
+              <ul class="list-group" ng-show="ctrl.conceptsFound && ctrl.condERef == true && ctrl.index == $index">
+              <a ng-repeat="concept in ctrl.matchingConcepts" ng-click="ctrl.insertEConceptCond(concept)">
+              <li class="list-group-item" ng-class="{active: $index == ctrl.conceptIndex}" ng-mouseover="ctrl.conceptIndex = $index">{{concept}}</li></a></ul>
+            </div>
+          </div>
+
+          <div ng-repeat="step in flow.steps track by $index" ng-attr-id="nav-exc-flow-{{$parent.$index}}-step-{{$index}}">
+
+              <div class="form-group">
+                  <label class="col-xs-2 control-label">Step {{$index + 1}}</label>
+
+                  <div class="col-xs-4">
+                      <div class="btn-group">
+                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expandend="false" >
+                              <span ng-show="step.executor == ''"><em>No executor chosen yet</em></span>
+                              <span ng-hide="step.executor == ''">{{gCtrl.formatToHtml(step.executor)}}</span>
+                              <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu">
+                              <li role="presentation" class="dropdown-header"><strong>Choose executor</strong></li>
+                              <li class="divider"></li>
+                              <li ng-repeat="actor in ctrl.actorsInProject track by $index" ng-click="$parent.step.executor = actor">
+                                  <a>
+                                      <span ng-show="$parent.step.executor == actor" class="glyphicon glyphicon-ok"></span>
+                                      <span ng-hide="$parent.step.executor == actor || $parent.step.executor == ''" class="glyphicon glyphicon-ok glyphicon-none"></span>
+                                      {{gCtrl.formatToHtml(actor)}}
+                                  </a>
+                              </li>
+                              <li ng-show="ctrl.actorsInProject.length == 0"><a><em>No actors...</em></a></li>
+                              <li class="divider"></li>
+                              <li ng-click="gCtrl.setCreateActorOnUsecase(true); ctrl.addActorFlowType = 'exceptional'; ctrl.addActorFlowIndex = $parent.$index; ctrl.addActorStepIndex = $index;"><a>Create new actor...</a></li>
+                          </ul>
+                      </div>
+                  </div>
+
+                  <button type="button" class="btn btn-danger" ng-click="ctrl.removeExceptionalFlowStep($parent.$index, $index)">
+                      <span class="glyphicon glyphicon-minus"></span>
+                  </button>
+                  <button type="button" class="btn btn-success" ng-click="ctrl.addExceptionalFlowStep($parent.$index, $index)">
+                      <span class="glyphicon glyphicon-plus"></span>
+                  </button>
+                  <button ng-hide="$index == flow.steps.length - 1" type="button" class="btn btn-primary" ng-click="ctrl.swapExceptionalFlowSteps($parent.$index, $index, $index + 1)">
+                      <span class="glyphicon glyphicon-sort"></span> Swap
+                  </button>
+              </div>
+
+              <div class="form-group">
+                  <div class="col-xs-offset-2 col-xs-9">
+                       <textarea class="form-control fixed-textarea" rows="3" ng-blur="ctrl.noEFlow($index)" ng-focus="ctrl.eFlow = true; ctrl.index=$index; ctrl.indexFlow = $parent.$index" ng-change="ctrl.matchConcepts(step.action, $index); ctrl.eFlow=true" ng-model='step.action' placeholder='Description' ng-keyboard="ctrl.dropDown"></textarea>
+                       <ul class="list-group" ng-show="ctrl.conceptsFound && ctrl.eFlow == true && ctrl.index == $index && ctrl.indexFlow == $parent.$index">
+                       <a ng-repeat="concept in ctrl.matchingConcepts" ng-click="ctrl.insertConceptEFlow(concept)"><li class="list-group-item" ng-class="{active: $index == ctrl.conceptIndex}"  ng-mouseover="ctrl.conceptIndex = $index">{{concept}}</li></a></ul>
+                       </ul>
+                  </div>
+              </div>
+
+          </div>
+
+      </div>
+
+  </div>
+
+  <!-- End exceptional flows -->
+
+</form>
+
+</div>
+
+</div>
+
+<div ng-show="gCtrl.isCreateActorOnUsecase()">
+    <h1>
+        Create Actor
+    </h1>
+
+    <div class="form-group">
+        <div class="col-xs-4">
+            <input type="text" class="form-control"  ng-model="ctrl.newActorName" placeholder="Actor name">
+        </div>
+        <button class="btn btn-success" ng-click="ctrl.createActor()">
+           <span class="glyphicon glyphicon-ok"></span> Create actor
+        </button>
+        <button class="btn btn-danger" ng-click="ctrl.cancelCreateActor()">
+            <span class="glyphicon glyphicon-remove"></span> Cancel
+        </button>
+    </div>
+</div>
+
+<div ng-show="gCtrl.isCreateConceptOnUsecase()">
+    <h1>
+        Create Concept
+    </h1>
+
+    <form class="form-horizontal">
+
+      <div class="form-group">
+          <div class="col-xs-11">
+            <div class="alert alert-info" role="alert">
+                <strong>Note:</strong> You can add references to existing entities (actors / concepts / use cases) when creating/updating this concept. This can be done by typing the @ token followed by the entity name.<br/>References will only be recognised in the concept definition.
+            </div>
+          </div>
+      </div>
+
+      <div class="form-group">
+        <label for="conceptName" class="col-xs-2 control-label">Concept Name</label>
+        <div class="col-xs-6">
+          <input type="text" class="form-control" id="conceptName"  ng-model="ctrl.newConceptName" placeholder="Name">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="conceptDefinition" class="col-xs-2 control-label">Definition</label>
+        <div class="col-xs-6">
+          <textarea class="form-control fixed-textarea" rows="3" id="conceptDefinition" ng-model="ctrl.newConceptDefinition" placeholder="Definition" ng-blur="ctrl.ref = false; ctrl.noFlow()" ng-focus="ctrl.ref = true" ng-change="ctrl.matchConcepts(ctrl.newConceptDefinition)" ng-keyboard="ctrl.dropDown"></textarea>
+          <ul class="list-group" ng-show="ctrl.conceptsFound">
+          <a ng-repeat="concept in ctrl.matchingConcepts"><li class="list-group-item" ng-class="{active: $index == ctrl.conceptIndex}" ng-mouseover="ctrl.conceptIndex = $index" ng-click="ctrl.insertConcept(concept)">{{concept}}</li></a></ul>
+
+        </div>
+      </div>
+
+      <div ng-hide="ctrl.hasNoAttributes" ng-repeat="field in ctrl.newConceptAttributes track by $index">
+        <div class="form-group">
+            <label ng-show="$index == 0" for="newConceptAttributes" class="col-xs-2 control-label">Attributes</label>
+            <div ng-show="$index == 0" class="col-xs-5">
+              <input type='text' class="form-control" ng-model='ctrl.newConceptAttributes[$index]' placeholder='Attribute {{$index + 1}}'>
+            </div>
+            <div ng-hide="$index == 0" class="col-xs-offset-2 col-xs-5">
+              <input type='text' class="form-control" ng-model="ctrl.newConceptAttributes[$index]" placeholder='Attribute {{$index + 1}}'>
+            </div>
+            <button type="button" class="btn btn-danger" ng-click="ctrl.removeConceptAttribute($index)">
+                <span class="glyphicon glyphicon-minus"></span>
+            </button>
+            <button ng-show="$index == ctrl.newConceptAttributes.length - 1" type="button" class="btn btn-success" ng-click="ctrl.addConceptAttribute()">
+                <span class="glyphicon glyphicon-plus"></span>
+            </button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-xs-offset-2 col-xs-4">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" ng-model="ctrl.hasNoAttributes"> No attributes
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-xs-offset-2 col-xs-6">
+          <button type="submit" class="btn btn-success" ng-click="ctrl.createConcept()">
+            <span class="glyphicon glyphicon-ok"></span> Create concept
+          </button>
+          <button class="btn btn-danger" ng-click="ctrl.cancelCreateConcept()">
+            <span class="glyphicon glyphicon-remove"></span> Cancel
+          </button>
+        </div>
+      </div>
+
+    </form>
+</div>
+
+</div>

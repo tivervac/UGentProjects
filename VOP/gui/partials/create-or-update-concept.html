@@ -1,0 +1,83 @@
+<div class="custom-container" id="createConcept">
+
+<h1>
+    {{ctrl.action}} Concept
+</h1>
+
+<hr />
+
+<form class="form-horizontal">
+
+  <div class="form-group">
+      <div class="col-xs-11">
+        <div class="alert alert-info" role="alert">
+            <strong>Note:</strong> You can add references to existing entities (actors / concepts / use cases) when creating/updating this concept. This can be done by typing the @ token followed by the entity name.<br/>References will only be recognised in the concept definition.
+        </div>
+      </div>
+  </div>
+
+  <div class="form-group">
+    <label for="newConceptProjectName" class="col-xs-2 control-label">Project Name</label>
+    <div class="col-xs-6">
+      <input type="text" class="form-control" id="newConceptProjectName" placeholder="Name" value="{{gCtrl.formatToHtml(ctrl.projectName)}}" readonly>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="conceptName" class="col-xs-2 control-label">Concept Name</label>
+    <div class="col-xs-6">
+      <input type="text" autofocus class="form-control" id="conceptName"  ng-model="ctrl.conceptName" placeholder="Name">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="conceptDefinition" class="col-xs-2 control-label">Definition</label>
+    <div class="col-xs-6">
+          <textarea class="form-control fixed-textarea" rows="3" id="conceptDefinition" ng-model="ctrl.conceptDefinition" placeholder="Definition" ng-blur="ctrl.noFlow()" ng-focus="ctrl.ref = true" ng-change="ctrl.matchConcepts(ctrl.conceptDefinition)" ng-keyboard="ctrl.dropDown"></textarea>
+          <ul class="list-group" ng-show="ctrl.conceptsFound">
+          <a ng-repeat="concept in ctrl.matchingConcepts"><li class="list-group-item" ng-class="{active: $index == ctrl.conceptIndex}" ng-mouseover="ctrl.conceptIndex = $index" ng-click="ctrl.insertConcept(concept)">{{concept}}</li></a></ul>
+    </div>
+  </div>
+
+  <div ng-hide="ctrl.hasNoAttributes" ng-repeat="field in ctrl.conceptAttributes track by $index">
+    <div class="form-group">
+        <label ng-show="$index == 0" for="newConceptAttributes" class="col-xs-2 control-label">Attributes</label>
+        <div ng-show="$index == 0" class="col-xs-5">
+          <input type='text' class="form-control" ng-model='ctrl.conceptAttributes[$index]' placeholder='Attribute {{$index + 1}}'>
+        </div>
+        <div ng-hide="$index == 0" class="col-xs-offset-2 col-xs-5">
+          <input type='text' class="form-control" ng-model="ctrl.conceptAttributes[$index]" placeholder='Attribute {{$index + 1}}'>
+        </div>
+        <button type="button" class="btn btn-danger" ng-click="ctrl.removeConceptAttribute($index)">
+            <span class="glyphicon glyphicon-minus"></span>
+        </button>
+        <button ng-show="$index == ctrl.conceptAttributes.length - 1" type="button" class="btn btn-success" ng-click="ctrl.addConceptAttribute()">
+            <span class="glyphicon glyphicon-plus"></span>
+        </button>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-xs-offset-2 col-xs-4">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" ng-model="ctrl.hasNoAttributes"> No attributes
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-xs-offset-2 col-xs-6">
+      <button type="submit" class="btn btn-success" ng-click="ctrl.createOrUpdateConcept()">
+        <span class="glyphicon glyphicon-ok"></span> {{ctrl.action}} concept
+      </button>
+      <button class="btn btn-danger" ng-click="ctrl.cancelCreateOrUpdateConcept(); gCtrl.update()">
+        <span class="glyphicon glyphicon-remove"></span> Cancel
+      </button>
+    </div>
+  </div>
+
+</form>
+
+</div>

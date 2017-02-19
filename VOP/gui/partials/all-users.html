@@ -1,0 +1,85 @@
+<div class="custom-container" id="teamDetails" data-ng-init="gCtrl.update()">
+
+    <h1>User list</h1>
+
+    <div id="alerts">
+    <div id="patchAdminAlert" ng-show="gCtrl.getAlert('patchAdminAlert') == true"  class="alert alert-success" role="alert">
+        <button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('patchAdminAlert');"><span aria-hidden="true">&times;</span></button>
+        Admins successfully updated!
+    </div>
+    <div id="deleteUserAlert" ng-show="gCtrl.getAlert('deleteUserAlert') == true"  class="alert alert-success" role="alert">
+        <button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('deleteUserAlert');"><span aria-hidden="true">&times;</span></button>
+        User successfully deleted!
+    </div>
+    </div>
+
+    <div class="alert alert-danger" role="alert" ng-hide="gCtrl.isAdmin()">
+        <strong>Not allowed!</strong> You have no permission to update admins...
+    </div>
+
+    <div class="alert alert-info" role="alert" ng-show="gCtrl.isAdmin()">
+        <strong>Note:</strong> You can change which users are admins by checking the checkboxes and updating your changes.<br>Users accounts can also be removed. <strong>Please be aware removing a user account cannot be undone!</strong>
+    </div>
+
+    <div ng-show="gCtrl.isAdmin()">
+
+        <table class="table table-hover">
+        <thead>
+          <th class="col-xs-1">
+            Admin
+          </th>
+          <th class="col-xs-2">
+            First name
+          </th>
+          <th class="col-xs-2">
+            Last name
+          </th>
+          <th class="col-xs-4">
+            Email
+          </th>
+          <th>
+            Remove account
+          </th>
+        </thead>
+        <tbody>
+        <tr ng-repeat="user in gCtrl.getUserList() track by $index">
+          <td class="col-xs-1 central-td" ng-hide="user.id == ctrl.userid">
+            <input type="checkbox" ng-model="ctrl.newAdminState[user.email]">
+          </td>
+          <td class="col-xs-1 central-td" ng-show="user.id == ctrl.userid">
+            <span class="glyphicon glyphicon-ok"></span>
+          </td>
+          <td class="col-xs-2 central-td">
+            {{user.firstName}}
+          </td>
+          <td class="col-xs-2 central-td">
+            {{user.lastName}}
+          </td>
+          <td class="col-xs-4 central-td">
+            {{user.email}}
+          </td>
+          <td class="central-td" ng-hide="user.id == ctrl.userid">
+            <button class="btn btn-danger" ng-click="ctrl.removeUser($index)">
+                <span class="glyphicon glyphicon-remove"></span> Remove
+            </button>
+          </td>
+          <td class="central-td" ng-show="user.id == ctrl.userid">
+            <span class="glyphicon glyphicon-remove"></span>
+          </td>
+        </tr>
+        </tbody>
+        </table>
+
+        <p>
+            <button class="btn btn-danger" ng-click="ctrl.cancelUpdating()">
+                <span class="glyphicon glyphicon-chevron-left"></span> Back
+            </button>
+            <button class="btn btn-success" ng-click="ctrl.updateAdmins()">
+                <span class="glyphicon glyphicon-ok"></span> Update changes
+            </button>
+        </p>
+    </div>
+
+    </div>
+
+</div>

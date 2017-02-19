@@ -1,0 +1,132 @@
+<div class="custom-container" id="allProjects" data-ng-init="gCtrl.update()">
+
+    <h1 ng-hide="gCtrl.isCreateTeam()">Team list</h1>
+    <h1 ng-show="gCtrl.isCreateTeam()">Create team</h1>
+
+    <div id="alerts">
+    <div id="patchTeamAlert" ng-show="gCtrl.getAlert('patchTeamAlert') == true"  class="alert alert-success" role="alert">
+        <button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('patchTeamAlert');"><span aria-hidden="true">&times;</span></button>
+        Team successfully updated!
+    </div>
+    <div id="deleteTeamAlert" ng-show="gCtrl.getAlert('deleteTeamAlert') == true"  class="alert alert-success" role="alert">
+        <button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('deleteTeamAlert');"><span aria-hidden="true">&times;</span></button>
+        Team successfully deleted!
+    </div>
+    <div id="createTeamAlert" ng-show="gCtrl.getAlert('createTeamAlert') == true"  class="alert alert-success" role="alert">
+        <button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('createTeamAlert');"><span aria-hidden="true">&times;</span></button>
+        Team successfully Created!
+    </div>
+    </div>
+    <div class="alert alert-danger" role="alert" ng-hide="gCtrl.isAdmin()">
+        <strong>Not allowed!</strong> You have no permission to view the list of all teams...
+    </div>
+
+    <div ng-show="gCtrl.isAdmin()">
+        <p>
+            <button ng-hide="gCtrl.isCreateTeam()" id="teamCreation" class="btn btn-success" ng-click="gCtrl.setCreateTeam(true); ctrl.selectLeader = true">
+                <span class="glyphicon glyphicon-plus"></span> New Team
+            </button>
+            <div ng-show="gCtrl.isCreateTeam()">
+                  <div class="form-group" ng-show="gCtrl.isCreateTeam()" >
+                      <div class="col-xs-11">
+                        <div class="alert alert-info" role="alert" style="width:auto">
+                            <strong>Note:</strong> Team leaders are mandatory when creating a team, you can appoint one by selecting a user from the list below.
+                        </div>
+                      </div>
+                  </div>
+            
+                <input  placeholder="Team Name" type="text" id="createTeam" ng-model="ctrl.teamName"></input>
+                <button class="btn btn-success" ng-click="ctrl.createTeam()">
+                    <span class="glyphicon glyphicon-ok"></span> Create
+                </button>
+                <button class="btn btn-danger" ng-click="gCtrl.setCreateTeam(false)">
+                    <span class="glyphicon glyphicon-remove"></span> Cancel
+                </button>
+                <table class="table table-hover">
+                <thead>
+                <th class="col-xs-2">
+                Teamleader
+                </th>
+                <th class="col-xs-2">
+                First name
+                </th>
+                <th class="col-xs-2">
+                Last name
+                </th>
+                <th>
+                Email
+                </th>
+                </thead>
+                <tr ng-repeat="user in gCtrl.getUserList()">
+                <td class="col-xs-2 central-td">
+                <button ng-show="ctrl.selectLeader == true" class="btn btn-success" ng-click="ctrl.teamLeader = user.id; ctrl.teamLeaderEmail = user.email; ctrl.selectLeader = false">
+                    <span class="glyphicon glyphicon-ok"></span> Select
+                </button>
+                <button ng-show="ctrl.selectLeader == false && user.id == ctrl.teamLeader" class="btn btn-danger" ng-click="ctrl.selectLeader = true">
+                    <span class="glyphicon glyphicon-remove"></span> Undo
+                </button>
+                </td>
+                <td class="col-xs-2 central-td">
+                {{user.firstName}}
+                </td>
+                <td class="col-xs-2 central-td">
+                {{user.lastName}}
+                </td>
+                <td class="central-td">
+                {{user.email}}
+                </td>
+                </tr>
+                </table>
+            </div>
+        </p>
+
+        <table class="table table-hover" ng-hide="gCtrl.isCreateTeam() || gCtrl.getTeamList().length == 0">
+        <thead>
+          <th class="col-xs-4">
+            Team
+          </th>
+          <th class="col-xs-2">
+            Edit
+          </th>
+          <th>
+            Delete
+          </th>
+        </thead>
+        <tr ng-repeat="team in gCtrl.getTeamList()">
+          <td ng-hide="ctrl.patch[team.name]" class="col-xs-4">
+            <a ng-href="#/team/{{team.id}}" >
+              <button class="btn">
+                <span class="glyphicon glyphicon-open"></span> {{team.name}}
+              </button>
+            </a>
+          </td>
+          <td ng-show="ctrl.patch[team.name]" class="col-xs-6">
+            <input type="text" ng-attr-id="{{team.name}}-patch" ng-model="ctrl.newTeamName" >
+            <button class="btn btn-success" ng-click="ctrl.patchTeam(team.id,team.name)">
+               <span class="glyphicon glyphicon-ok"></span> Save
+            </button>
+            <button class="btn btn-danger" ng-click="ctrl.patch[team.name] = false">
+               <span class="glyphicon glyphicon-remove"></span> Cancel
+            </button>
+          </td>
+          <td class="col-xs-2">
+            <button class="btn btn-warning" ng-click="ctrl.patch[team.name] = true; ctrl.newTeamName = team.name">
+               <span class="glyphicon glyphicon-pencil"></span> Edit
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-danger" ng-click="ctrl.deleteTeam(team.id)">
+              <span class="glyphicon glyphicon-remove"></span> Delete
+            </button>
+          </td>
+        </tr>
+        </table>
+
+        <p class="empty-message" ng-show="gCtrl.getTeamList().length == 0 && !gCtrl.isCreateTeam() && gCtrl.query == ''">
+          There are currently no teams...
+        </p>
+        <p class="empty-message" ng-show="gCtrl.getTeamList().length == 0 && !gCtrl.isCreateTeam() && gCtrl.query != ''">
+          There are no teams matching the query...
+        </p>
+    </div>
+</div>

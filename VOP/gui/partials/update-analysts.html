@@ -1,0 +1,66 @@
+<div class="custom-container" id="updateAnalysts" data-ng-init="gCtrl.update()">
+
+    <h1>{{gCtrl.formatToHtml(ctrl.projectName)}}</h1>
+    <h3>Update project analysts</h3>
+
+    <div id="patchAnalystAlert" ng-show="gCtrl.getAlert('patchAnalystAlert') == true"  class="alert alert-success" role="alert">
+        <button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('patchAnalystAlert');"><span aria-hidden="true">&times;</span></button>
+        Analysts successfully updated!
+    </div>
+
+    <hr />
+
+    <div class="alert alert-danger" role="alert" ng-hide="gCtrl.isAdmin() || ctrl.isProjectLeader">
+        <strong>Not allowed!</strong> You have no permission to add analysts...
+    </div>
+
+    <div ng-show="gCtrl.isAdmin() || ctrl.isProjectLeader">
+
+        <table class="table table-hover">
+        <thead>
+          <th class="col-xs-2">
+            Analyst
+          </th>
+          <th class="col-xs-2">
+            First name
+          </th>
+          <th class="col-xs-2">
+            Last name
+          </th>
+          <th class="col-xs-3">
+            Email
+          </th>
+          <th>
+            Hours of Work
+          </th>
+        </thead>
+        <tr ng-repeat="member in ctrl.members">
+          <td class="col-xs-2">
+            <input type="checkbox" ng-model="member.analystHere">
+          </td>
+          <td class="col-xs-2">
+            {{member.firstName}}
+          </td>
+          <td class="col-xs-2">
+            {{member.lastName}}
+          </td>
+          <td class="col-xs-3">
+            {{member.email}}
+          </td>
+          <td >
+            <input type="number" ng-model="member.work">
+          </td>
+        </tr>
+        </table>
+
+        <p>
+            <button class="btn btn-danger" ng-click="ctrl.cancelUpdating()">
+                <span class="glyphicon glyphicon-chevron-left"></span> Back
+            </button>
+            <button class="btn btn-success" ng-click="ctrl.updateAnalysts()">
+                <span class="glyphicon glyphicon-ok"></span> Update changes
+            </button>
+        </p>
+    </div>
+
+</div>

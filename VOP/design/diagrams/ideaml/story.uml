@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>be.ugent.vopro1.story</OriginalElement>
+  <nodes>
+    <node x="-4.5" y="200.0">be.ugent.vopro1.story.StoryConfig</node>
+    <node x="994.0" y="399.5">org.aikodi.lang.funky.virtualmachine.Story</node>
+    <node x="972.5" y="164.0">be.ugent.vopro1.story.StoryGeneratorProcess</node>
+    <node x="451.0" y="572.0">org.aikodi.lang.funky.virtualmachine.StoryEntry</node>
+    <node x="693.0" y="400.0">be.ugent.vopro1.story.StoryGenerator</node>
+    <node x="441.0" y="399.5">org.aikodi.lang.funky.virtualmachine.StoryCondition</node>
+    <node x="241.0" y="559.5">org.aikodi.lang.funky.virtualmachine.StoryStep</node>
+    <node x="972.5" y="-36.0">org.aikodi.lang.funky.virtualmachine.VirtualProcess</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="be.ugent.vopro1.story.StoryGeneratorProcess" target="be.ugent.vopro1.story.StoryConfig">
+      <point x="-147.5" y="0.0" />
+      <point x="124.5" y="0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.story.StoryGeneratorProcess" target="org.aikodi.lang.funky.virtualmachine.VirtualProcess">
+      <point x="0.0" y="-76.0" />
+      <point x="0.0" y="76.0" />
+    </edge>
+    <edge source="org.aikodi.lang.funky.virtualmachine.StoryStep" target="org.aikodi.lang.funky.virtualmachine.StoryEntry">
+      <point x="79.0" y="0.0" />
+      <point x="-69.0" y="0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.story.StoryGenerator" target="org.aikodi.lang.funky.virtualmachine.Story">
+      <point x="107.0" y="0.0" />
+      <point x="-126.0" y="0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.story.StoryGenerator" target="be.ugent.vopro1.story.StoryGeneratorProcess">
+      <point x="0.0" y="-40.0" />
+      <point x="800.0" y="280.0" />
+      <point x="-147.5" y="40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.story.StoryGeneratorProcess" target="org.aikodi.lang.funky.virtualmachine.Story">
+      <point x="147.5" y="0.0" />
+      <point x="1320.0" y="240.0" />
+      <point x="1320.0" y="440.0" />
+      <point x="126.0" y="0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.story.StoryGeneratorProcess" target="be.ugent.vopro1.story.StoryGenerator">
+      <point x="-147.5" y="30.0" />
+      <point x="640.0" y="270.0" />
+      <point x="640.0" y="440.0" />
+      <point x="-107.0" y="0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.story.StoryGeneratorProcess" target="org.aikodi.lang.funky.virtualmachine.StoryCondition">
+      <point x="-147.5" y="20.0" />
+      <point x="520.0" y="260.0" />
+      <point x="0.0" y="-40.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.story.StoryGeneratorProcess" target="org.aikodi.lang.funky.virtualmachine.StoryStep">
+      <point x="-147.5" y="10.0" />
+      <point x="320.0" y="250.0" />
+      <point x="0.0" y="-40.5" />
+    </edge>
+    <edge source="org.aikodi.lang.funky.virtualmachine.StoryCondition" target="org.aikodi.lang.funky.virtualmachine.StoryEntry">
+      <point x="0.0" y="40.5" />
+      <point x="0.0" y="-28.0" />
+    </edge>
+    <edge source="org.aikodi.lang.funky.virtualmachine.Story" target="org.aikodi.lang.funky.virtualmachine.StoryEntry">
+      <point x="0.0" y="40.5" />
+      <point x="1120.0" y="600.0" />
+      <point x="69.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9509293680297398" x="657.5" y="302.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,40 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+//apply plugin: 'org.akhikhl.wuff.eclipse-ide-bundle'
+
+//dependencies {
+//  compile "${eclipseMavenGroup}:org.eclipse.core.commands:+"
+//}
+
+compileJava {
+  options.compilerArgs = ['-proc:none']
+}
+
+repositories {
+  mavenCentral()
+  maven {
+    url 'http://users.ugent.be/~mcvdoore/repository'
+  }
+}
+
+sourceSets {
+  main {
+    java {
+      srcDir 'src'
+      srcDir 'testsrc'
+    }
+  }
+}
+
+javadoc {
+    failOnError = false
+}
+
+dependencies {
+   compile 'com.google.java.contract:cofoja.contracts:1.2-20140817'
+   compile group: 'markovandooren', name: 'rejuse', version: '1.3.1'
+   compile group: 'markovandooren', name: 'chameleon', version: '1.1.22'
+   //compile project(':rejuse')
+   //compile project(':chameleon')
+}

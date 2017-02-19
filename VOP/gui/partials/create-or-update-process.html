@@ -1,0 +1,53 @@
+<div class="custom-container" id="createProject">
+
+<h1>
+    {{ctrl.action}} Process
+</h1>
+
+<form class="form-horizontal">
+    <div class="form-group">
+        <label for="processName" class="col-xs-2 control-label">Process Name</label>
+        <div class="col-xs-6">
+          <input type="text" class="form-control" id="processName"  ng-model="ctrl.processName" placeholder="Name">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="processPriority" class="col-xs-2 control-label">Process Priority</label>
+        <div class="col-xs-6">
+          <input type="number" class="form-control" id="processName"  ng-model="ctrl.processPriority" placeholder="Priority">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <table class="table table-hover" ng-hide="ctrl.assignableUsecases.length == 0">
+            <thead>
+                <th class="col-xs-2">Assign</th>
+                <th>Usecase</th>
+            </thead>
+            <tr ng-repeat="usecase in ctrl.assignableUsecases">
+                <td class="col-xs-2">
+                    <input type="checkbox" ng-model="usecase.toAssign">
+                </td>
+                <td>{{usecase.name}}</td>
+            </tr>
+        </table>
+        <p class="empty-message" ng-show="ctrl.assignableUsecases.length == 0">
+            There are currently no usecases in this project...
+        </p>
+    </div>
+
+<div class="form-group">
+    <div class="col-xs-offset-2 col-xs-6">
+        <button type="submit" class="btn btn-success" ng-click="ctrl.createOrUpdateProcess()">
+            <span class="glyphicon glyphicon-ok"></span> {{ctrl.action}} process
+        </button>
+        <button class="btn btn-danger" ng-click="ctrl.cancelCreateOrUpdateProcess(); gCtrl.update()">
+            <span class="glyphicon glyphicon-remove"></span> Cancel
+        </button>
+    </div>
+</div>
+
+</form>
+
+</div>

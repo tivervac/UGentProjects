@@ -1,0 +1,114 @@
+/* CSS code overwriting/extending the imported Bootstrap CSS  */
+
+.custom-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    
+    margin-bottom: 200px;
+  
+    width: 900px;
+}
+
+.nav-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  
+    width: 900px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+}
+
+h1 {
+    margin-top: 40px;
+}
+
+body { 
+    padding-top: 50px; 
+    padding-left: 20px;
+    background-color: #FDFDFD;
+}
+
+a:hover, a {
+    color: #000000;
+}
+
+.fixed-textarea {
+  resize: vertical;
+}
+
+ul.dropdown-menu {
+    background-color: #FFFFFF;
+    cursor: pointer; cursor: hand;
+}
+
+.glyphicon-none:before {
+    color: transparent !important;
+}
+
+a.ng-scope {
+   text-decoration: none;     
+}
+
+.empty-message {
+    font-style: italic;
+    font-size: 120%;
+}
+
+hr {
+    background: none;
+    clear: both;
+    visibility: hidden;
+}
+
+.team {
+    margin-bottom: 10px;
+}
+
+.alert {
+   width: 700px;    
+}
+
+.table tbody>tr>td.central-td {
+    vertical-align: middle;
+}
+
+.table tbody>tr>td.header-td {
+    font-weight: bold;
+    text-align: right;
+    padding-right: 20px;
+}
+
+
+/* Bootstrap dialogs size */
+
+.small-dialog .modal-dialog {
+    width: 350px;
+}
+
+.medium-dialog .modal-dialog {
+    width: 450px;
+}
+
+
+/* Login and register page id's */
+
+#deloitte-logo {
+    width: 75%;
+    padding: 20px;
+    padding-top: 50px;
+}
+
+#welcome-message {
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+}

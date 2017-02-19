@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration name="defaultConfiguration" status="warn" strict="true" monitorInterval="5">
+    <Properties>
+        <Property name="patternlayout">%d{ISO8601} [%t] %-5level %logger{1.} - %msg%n%throwable{full}</Property>
+        <Property name="filename">log/log.log</Property>
+        <Property name="filenamePattern">log/log-%d{yyyy-dd-MM}-%i.log.gz</Property>
+    </Properties>
+    <Appenders>
+        <Appender name="Console" type="Console" target="SYSTEM_OUT">
+            <Layout type="PatternLayout" pattern="${patternlayout}" />
+        </Appender>
+        <Appender name="File" type="RollingFile" fileName="${filename}" filePattern="${filenamePattern}" bufferedIO="true" immediateFlush="true"
+                  append="true">
+            <Layout type="PatternLayout" pattern="${patternlayout}" />
+            <Policies>
+                <TimeBasedTriggeringPolicy />
+                <SizeBasedTriggeringPolicy size="50 MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="30" />
+        </Appender>
+        <Appender name="AsynchFile" type="async" blocking="true" bufferSize="128">
+            <Appender-ref ref="File" />
+        </Appender>
+    </Appenders>
+    <Loggers>
+        <Logger name="org.springframework" level="WARN" additivity="false">
+            <appender-ref ref="Console" />
+            <appender-ref ref="AsynchFile" />
+        </Logger>
+        <Logger name="org.hibernate" level="ERROR" additivity="false">
+            <appender-ref ref="Console" />
+            <appender-ref ref="AsynchFile" />
+        </Logger>
+        <Logger name="org.apache" level="ERROR" additivity="false">
+            <appender-ref ref="Console" />
+            <appender-ref ref="AsynchFile" />
+        </Logger>
+        <Root level="TRACE">
+            <appender-ref ref="Console" />
+            <appender-ref ref="AsynchFile" />
+        </Root>
+    </Loggers>
+</Configuration>

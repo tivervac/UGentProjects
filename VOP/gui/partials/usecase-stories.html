@@ -1,0 +1,27 @@
+<div id="usecaseStories" class="custom-container">
+
+<h1>
+  {{gCtrl.formatToHtml(ctrl.usecaseName)}}
+</h1>
+<h2>
+  Stories
+</h2>
+
+<div id="story-params">
+
+  <form class="form-inline">
+      <button type="submit" class="btn btn-success"  ng-click="ctrl.downloadStories()">
+          <span class="glyphicon glyphicon-download"></span> Download
+      </button>
+      <div class="form-group">
+          <label for="branch">&nbsp;&nbsp;Branch Limit&nbsp;</label>
+          <select class="form-control" ng-init="ctrl.usecasesPerPage = ctrl.options[2]" ng-model="ctrl.numBranch" ng-change="ctrl.update()" ng-options="option for option in ctrl.numBranchOptions"></select>
+      </div>
+  </form>
+
+</div>
+
+<div class="storyTables">
+</div>
+
+</div>

@@ -1,0 +1,1070 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "API Vakoverschrijdend Project",
+    "description": "API for communication with the VoPro API",
+    "version": "1.0.0"
+  },
+  "host": "vopro1.ugent.be/api",
+  "schemes": [
+    "http"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/project": {
+      "get": {
+        "summary": "Retrieve list of all projects",
+        "description": "This endpoint returns a list of all projects. This response includes some details about each project as well.\n",
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "description": "String to search for in usecase names",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "type": "integer",
+            "description": "The page of results. The api returns a maximum number of results per request, if more results are needed this parameter can be used to obtain the remaining results. Omitting this request parameter will return the first page.",
+            "required": false
+          }
+        ],
+        "tags": [
+          "Project"
+        ],
+        "responses": {
+          "200": {
+            "description": "An array of projects",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Project"
+              }
+            }
+          },
+          "default": {
+            "description": "Unexpected error",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create a new project",
+        "description": "This endpoint creates a new project\n",
+        "parameters": [
+          {
+            "name": "name",
+            "type": "string",
+            "in": "formData",
+            "description": "Project to create",
+            "required": true
+          }
+        ],
+        "tags": [
+          "Project"
+        ],
+        "responses": {
+          "201": {
+            "description": "The created project",
+            "schema": {
+              "$ref": "#/definitions/Project"
+            }
+          },
+          "default": {
+            "description": "Unexpected error",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/project/{projectName}": {
+      "get": {
+        "summary": "Retrieve one project",
+        "description": "This endpoint returns a single project.\n",
+        "parameters": [
+          {
+            "name": "projectName",
+            "in": "path",
+            "description": "Name of the project to fetch",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "Project"
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested project",
+            "schema": {
+              "$ref": "#/definitions/Project"
+            }
+          },
+          "default": {
+            "description": "Unexpected error",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Remove one project entirely",
+        "description": "This endpoint removes the project from the system\n",
+        "parameters": [
+          {
+            "name": "projectName",
+            "in": "path",
+            "description": "Name of the project to remove",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "Project"
+        ],
+        "responses": {
+          "204": {
+            "description": "Project successfully deleted"
+          },
+          "default": {
+            "description": "Unexpected error",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      },
+      "patch": {
+        "summary": "Patch some data for this project",
+        "description": "This endpoint patches some data for this project\n",
+        "tags": [
+          "Project"
+        ],
+        "responses": {
+          "200": {
+            "description": "The updated project",
+            "schema": {
+              "$ref": "#/definitions/Project"
+            }
+          },
+          "default": {
+            "description": "Unexpected error",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "projectName",
+            "in": "path",
+            "description": "The (old) name of the project to update",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "formData",
+            "description": "New name for the project",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/project/{projectName}/actor": {
+      "get": {
+        "summary": "Retrieve list of actors in project",
+        "description": "This endpoint returns a list of actors in this project\n",
+        "parameters": [
+          {
+            "name": "projectName",
+            "in": "path",
+            "description": "Name of the project to fetch actors from",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "Project",
+          "Actor"
+        ],
+        "responses": {
+          "200": {
+            "description": "The list of actors in the requested project",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Actor"
+              }
+            }
+          },
+          "default": {
+            "description": "Unexpected error",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create a new actor",
+        "description": "This endpoint creates a new actor in this project\n",
+        "parameters": [
+          {
+            "name": "projectName",
+            "in": "path",
+            "description": "Name of the project to create the actor in",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "in": "formData",
+            "description": "The name of the actor to create",
+            "required": true
+          }
+        ],
+        "tags": [
+          "Project",
+          "Actor"
+        ],
+        "responses": {
+          "201": {
+            "description": "The created Actor",
+            "schema": {
+              "$ref": "#/definitions/Actor"
+            }
+          },
+          "default": {
+            "description": "Unexpected error",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/project/{projectName}/concept": {
+      "get": {
+        "summary": "Retrieves list of concepts in project",
+        "description": "This endpoint returns a list of all concepts in this project\n",
+        "parameters": [
+          {
+            "name": "projectName",
+            "in": "path",
+            "description": "Name of the project to fetch concepts from",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "Project",
+          "Concept"
+        ],
+        "responses": {
+          "200": {
+            "description": "The list of concepts in this project",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Concept"
+              }
+            }
+          },
+          "default": {
+            "description": "Unexpected error",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create a new concept in this project",
+        "description": "This endpoint creates a new concept in this project\n",
+        "tags": [
+          "Project",
+          "Concept"
+        ],
+        "parameters": [
+          {
+            "name": "projectName",
+            "in": "path",
+            "description": "Name of the project to create the concept in",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "concept",
+            "in": "body",
+            "description": "The concept to create, Only the name is required.",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Concept"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The created concept",
+            "schema": {
+              "$ref": "#/definitions/Concept"
+            }
+          },
+          "default": {
+            "description": "Unexpected error",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/project/{projectName}/usecase": {
+      "get": {
+        "summary": "Retrieves list of usecases in this project",
+        "description": "This endpoint returns a list of all usecases in this project\n",
+        "parameters": [
+          {
+            "name": "projectName",
+            "in": "path",
+            "description": "Name of the project to fetch usecases from",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "Project",
+          "Usecase"
+        ],
+        "responses": {
+          "200": {
+            "description": "The list of usecases in the requested project",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Usecase"
+              }
+            }
+          },
+          "default": {
+            "description": "Unexpected error",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Creates a new usecase in this project",
+        "description": "This endpoint creates a new usecase in this project",
+        "parameters": [
+          {
+            "name": "projectName",
+            "in": "path",
+            "description": "Name of the project to fetch usecases from",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "usecase",
+            "in": "body",
+            "description": "The use case to create, only the name is required.",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Usecase"
+            }
+          }
+        ],
+        "tags": [
+          "Project",
+          "Usecase"
+        ],
+        "responses": {
+          "200": {
+            "description": "The created usecase",
+            "schema": {
+              "$ref": "#/definitions/Usecase"
+            }
+          },
+          "default": {
+            "description": "Unexpected error",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/project/{projectName}/actor/{actorName}": {
+      "delete": {
+        "summary": "Remove actor",
+        "description": "This endpoint removes an actor\n",
+        "tags": [
+          "Project",
+          "Actor"
+        ],
+        "parameters": [
+          {
+            "name": "projectName",
+            "in": "path",
+            "description": "Name of the project to remove the actor from",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "actorName",
+            "in": "path",
+            "description": "Name of the actor to remove",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "The actor has been removed succesfully"
+          },
+          "default": {
+            "description": "Unexpected error",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      },
+      "get": {
+        "summary": "Retrieve one actor from this project",
+        "description": "This endpoint returns the actor with given name from this project\n",
+        "parameters": [
+          {
+            "name": "projectName",
+            "in": "path",
+            "description": "Name of the project to fetch the actor from",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "actorName",
+            "in": "path",
+            "description": "Name of the actor to retrieve from the project",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "Project",
+          "Actor"
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested actor",
+            "schema": {
+              "$ref": "#/definitions/Actor"
+            }
+          },
+          "default": {
+            "description": "Unexpected error",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      },
+      "patch": {
+        "summary": "Updates this actor",
+        "description": "This endpoint updates an actor\n",
+        "tags": [
+          "Actor"
+        ],
+        "parameters": [
+          {
+            "name": "actorName",
+            "in": "path",
+            "description": "Name of the actor to patch",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "projectName",
+            "in": "path",
+            "description": "Name of the project to create the actor in",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "actor",
+            "in": "body",
+            "description": "Modified actor, omitted fields will not be modified.",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Actor"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The updated actor",
+            "schema": {
+              "$ref": "#/definitions/Actor"
+            }
+          },
+          "default": {
+            "description": "Unexpected error",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/project/{projectName}/concept/{conceptName}": {
+      "get": {
+        "summary": "Retrieves a single concept",
+        "description": "This endpoint returns the requested concept\n",
+        "parameters": [
+          {
+            "name": "projectName",
+            "in": "path",
+            "description": "Name of the project containing the desired concept",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "conceptName",
+            "in": "path",
+            "description": "Name of the concept to retrieve",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "Project",
+          "Concept"
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested concept",
+            "schema": {
+              "$ref": "#/definitions/Concept"
+            }
+          },
+          "default": {
+            "description": "Unexpected error",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Remove this concept",
+        "description": "This endpoint removes a concept\n",
+        "tags": [
+          "Project",
+          "Concept"
+        ],
+        "parameters": [
+          {
+            "name": "projectName",
+            "in": "path",
+            "description": "Name of the project that contains the concept to delete",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "conceptName",
+            "in": "path",
+            "description": "Name of the concept to delete",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "The concept has been removed succesfully"
+          },
+          "default": {
+            "description": "Unexpected error",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      },
+      "patch": {
+        "summary": "Update this concept",
+        "description": "This endpoint updates this concept\n",
+        "tags": [
+          "Project",
+          "Concept"
+        ],
+        "parameters": [
+          {
+            "name": "projectName",
+            "in": "path",
+            "description": "Name of the project that contains the concept to delete",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "conceptName",
+            "in": "path",
+            "description": "The (old) name of the concept to update",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "concept",
+            "in": "body",
+            "description": "Modified concept. Omitted fields will not be modified.",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Concept"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The updated concept",
+            "schema": {
+              "$ref": "#/definitions/Concept"
+            }
+          },
+          "default": {
+            "description": "Unexpected error",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/project/{projectName}/usecase/{usecaseName}": {
+      "get": {
+        "summary": "Retrieve a single usecase",
+        "description": "This endpoint retrieves a single usecase from this project\n",
+        "tags": [
+          "Project",
+          "Usecase"
+        ],
+        "parameters": [
+          {
+            "name": "projectName",
+            "in": "path",
+            "description": "Name of the project containing the desired usecase",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "usecaseName",
+            "in": "path",
+            "description": "Name of the desired usecase",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested usecase",
+            "schema": {
+              "$ref": "#/definitions/Usecase"
+            }
+          },
+          "default": {
+            "description": "Unexpected error",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Remove a usecase",
+        "description": "This endpoint removes a usecase\n",
+        "tags": [
+          "Project",
+          "Usecase"
+        ],
+        "parameters": [
+          {
+            "name": "projectName",
+            "in": "path",
+            "description": "Name of the project containing the usecase",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "usecaseName",
+            "in": "path",
+            "description": "Name of the usecase to remove",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "The usecase has been removed succesfully"
+          },
+          "default": {
+            "description": "Unexpected error",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      },
+      "patch": {
+        "summary": "Update this usecase",
+        "description": "This endpoint updates this usecase\n",
+        "tags": [
+          "Project",
+          "Usecase"
+        ],
+        "parameters": [
+          {
+            "name": "projectName",
+            "in": "path",
+            "description": "Name of the project containing the usecase",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "usecaseName",
+            "in": "path",
+            "description": "name of the usecase to update",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "usecase",
+            "in": "body",
+            "description": "The modified usecase, omitted fields will not be modified. When modifying flows all the flows must be present (including exceptional and alternative flows).",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Usecase"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The updated usecase",
+            "schema": {
+              "$ref": "#/definitions/Usecase"
+            }
+          },
+          "default": {
+            "description": "Unexpected error",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/usecase": {
+      "get": {
+        "summary": "Retrieves list of usecases",
+        "description": "This endpoint returns a list of all existing usecases, can be filtred by name\n",
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "description": "String to search for in usecase names",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "type": "integer",
+            "description": "The page of results. The api returns a maximum number of results per request, if more results are needed this parameter can be used to obtain the remaining results. Omitting this request parameter will return the first page.",
+            "required": false
+          }
+        ],
+        "tags": [
+          "Usecase"
+        ],
+        "responses": {
+          "200": {
+            "description": "The list of (filtered) usecases",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Usecase"
+              }
+            }
+          },
+          "default": {
+            "description": "Unexpected error",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/concept": {
+      "get": {
+        "summary": "Retrieves list of concepts",
+        "description": "This endpoint returns a list of all existing concepts, can be filtred by name\n",
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "description": "String to search for in concept names",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "type": "integer",
+            "description": "The page of results. The api returns a maximum number of results per request, if more results are needed this parameter can be used to obtain the remaining results. Omitting this request parameter will return the first page.",
+            "required": false
+          }
+        ],
+        "tags": [
+          "Concept"
+        ],
+        "responses": {
+          "200": {
+            "description": "The list of concepts",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Concept"
+              }
+            }
+          },
+          "default": {
+            "description": "Unexpected error",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/actor": {
+      "get": {
+        "summary": "Retrieves list of all existing actors",
+        "description": "This endpoint returns a list of all existing actors, can be filtred by name\n",
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "description": "String to search for in actor names",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "type": "integer",
+            "description": "The page of results. The api returns a maximum number of results per request, if more results are needed this parameter can be used to obtain the remaining results. Omitting this request parameter will return the first page.",
+            "required": false
+          }
+        ],
+        "tags": [
+          "Actor"
+        ],
+        "responses": {
+          "200": {
+            "description": "The list of actors",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Actor"
+              }
+            }
+          },
+          "default": {
+            "description": "Unexpected error",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Project": {
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of this project."
+        }
+      }
+    },
+    "Actor": {
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of this actor"
+        }
+      }
+    },
+    "Concept": {
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of this concept"
+        },
+        "definition": {
+          "type": "string",
+          "description": "Definition of this concept, explaining its meaning"
+        },
+        "attributes": {
+          "type": "array",
+          "description": "List of attributes of this concept",
+          "items": {
+            "type": "string",
+            "description": "One attribute of this concept"
+          }
+        }
+      }
+    },
+    "Usecase": {
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of this usecase"
+        },
+        "proces": {
+          "type": "string",
+          "description": "Proces this usecase belongs to"
+        },
+        "primary_actor": {
+          "type": "object",
+          "description": "The primary actor of this use case"
+        },
+        "objective": {
+          "type": "string",
+          "description": "Goal to achieve in this usecase"
+        },
+        "precondition": {
+          "type": "array",
+          "description": "Preconditions of this usecase",
+          "items": {
+            "type": "object"
+          }
+        },
+        "postcondition": {
+          "type": "array",
+          "description": "Postconditions of this usecase",
+          "items": {
+            "type": "object"
+          }
+        },
+        "normal_flow": {
+          "type": "array",
+          "description": "The normal flow of this usecase",
+          "items": {
+            "$ref": "#/definitions/FlowStep",
+            "description": "The steps in the normal flow"
+          }
+        },
+        "alternative_flows": {
+          "type": "array",
+          "description": "Alternative flow(s) of this usecase",
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/FlowStep"
+            }
+          }
+        },
+        "exceptional_flows": {
+          "type": "array",
+          "description": "Exceptional flow(s) of this usecase",
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/FlowStep"
+            }
+          }
+        },
+        "actors": {
+          "type": "array",
+          "description": "List of actors required in this usecase",
+          "items": {
+            "type": "string",
+            "description": "Url pointing to the actor in question"
+          }
+        },
+        "concepts": {
+          "type": "array",
+          "description": "List of concepts required in this usecase",
+          "items": {
+            "type": "string",
+            "descriptription": "Url pointing to concept in question"
+          }
+        }
+      }
+    },
+    "Error": {
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "message": {
+          "type": "string"
+        },
+        "fields": {
+          "type": "string"
+        }
+      }
+    },
+    "FlowStep": {
+      "required": ["id", "executor", "step", "previous", "next"],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int32",
+          "description": "Step number to allow sorting, branching etc. The lowest step id must be greater than 0."
+        },
+        "executor": {
+          "type": "string",
+          "format": "url",
+          "description": "Url pointing to the actor executing this step."
+        },
+        "step": {
+          "type": "string",
+          "description": "String describing the action taken in this step."
+        },
+        "previous": {
+          "type": "integer",
+          "format": "int32",
+          "description": "The id of the step AFTER which this step can/will occur. Using 0 makes this step come first, an empty/absent field will cause this step to be sorted numerically."
+        },
+        "next": {
+          "type": "integer",
+          "format": "int32",
+          "description": "The id of the step that will be executed after this step, a value less than 0 means no steps will follow. Not specifying this field places the next greater id as the next step."
+        },
+        "branch_condition": {
+          "type": "string",
+          "description": "EXTRA: String describing the branch condition that, should it be evaluated to true, will execute the branch_to flow"
+        },
+        "branch_to": {
+          "type": "integer",
+          "format": "int32",
+          "description": "EXTRA: The id of the step that will be executed after this step if the branch_condition is true"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html ng-app="voproApp" ng-controller="generalCtrl as gCtrl">
+<head>
+    <!-- AngularJS -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.6/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.6/angular-sanitize.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.6/angular-route.js"></script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Bootstrap dialog -->
+    <script src="assets/prettify/run_prettify.js"></script>
+    <link href="assets/bootstrap-dialog/css/bootstrap-dialog.min.css" rel="stylesheet" type="text/css" />
+    <script src="assets/bootstrap-dialog/js/bootstrap-dialog.min.js"></script>
+    <!-- AngularJS main app -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- AngularJS controllers -->
+    <script type="text/javascript" src="js/controllers/general-controller.js"></script>
+    <script type="text/javascript" src="js/controllers/all-teams-controller.js"></script>
+    <script type="text/javascript" src="js/controllers/project-explorer-controller.js"></script>
+    <script type="text/javascript" src="js/controllers/project-details-controller.js"></script>
+    <script type="text/javascript" src="js/controllers/concept-details-controller.js"></script>
+    <script type="text/javascript" src="js/controllers/usecase-details-controller.js"></script>
+    <script type="text/javascript" src="js/controllers/actor-details-controller.js"></script>
+    <script type="text/javascript" src="js/controllers/create-or-update-concept-controller.js"></script>
+    <script type="text/javascript" src="js/controllers/create-or-update-usecase-controller.js"></script>
+    <script type="text/javascript" src="js/controllers/team-details-controller.js"></script>
+    <script type="text/javascript" src="js/controllers/login-controller.js"></script>
+    <script type="text/javascript" src="js/controllers/register-controller.js"></script>
+    <script type="text/javascript" src="js/controllers/all-users-controller.js"></script>
+    <script type="text/javascript" src="js/controllers/update-analysts-controller.js"></script>
+    <script type="text/javascript" src="js/controllers/usecase-stories-controller.js"></script>
+    <script type="text/javascript" src="js/controllers/schedule-controller.js"></script>
+    <script type="text/javascript" src="js/controllers/create-or-update-process-controller.js"></script>
+    <script type="text/javascript" src="js/controllers/process-details-controller.js"></script>
+    <!-- AngularJS services -->
+    <script type="text/javascript" src="js/services/dialog-service.js"></script>
+    <script type="text/javascript" src="js/services/list-service.js"></script>
+    <script type="text/javascript" src="js/services/path-service.js"></script>
+    <script type="text/javascript" src="js/services/auth-service.js"></script>
+    <script type="text/javascript" src="js/services/hateoas-service.js"></script>
+    <script type="text/javascript" src="js/services/format-service.js"></script>
+    <script type="text/javascript" src="js/services/nav-service.js"></script>
+    <script type="text/javascript" src="http://danml.com/js/download.js"></script>
+    <!-- AngularJS custom directives -->
+    <script type="text/javascript" src="js/directives.js"></script>
+    <!-- SHA1 hash support -->
+    <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha1.js"></script>
+    <!-- Extra CSS -->
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="css/navigation-bar.css">
+    <link rel="stylesheet" type="text/css" href="css/story.css">
+</head>
+
+<!-- Nav bar -->
+<header ng-show="gCtrl.loggedIn" class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+    <div ng-include="'partials/navigation-bar.html'"></div>
+</header>
+
+<body>
+    <div ng-view></div>
+</body>
+
+</html>

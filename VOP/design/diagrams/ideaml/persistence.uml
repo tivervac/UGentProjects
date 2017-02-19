@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>be.ugent.vopro1.persistence</OriginalElement>
+  <nodes>
+    <node x="243.0" y="1827.0">be.ugent.vopro1.persistence.exception</node>
+    <node x="4298.066115520282" y="1163.0">be.ugent.vopro1.persistence.jdbc.postgresql.UserDAOImpl</node>
+    <node x="4883.066115520282" y="1235.5">be.ugent.vopro1.persistence.jdbc.postgresql.ScheduleDAOImpl</node>
+    <node x="0.0" y="300.0">be.ugent.vopro1.persistence.EntityDAO</node>
+    <node x="3552.4050264550265" y="504.5">be.ugent.vopro1.persistence.jdbc.AbstractDAO</node>
+    <node x="3639.0661155202824" y="1127.0">be.ugent.vopro1.persistence.jdbc.postgresql.TeamDAOImpl</node>
+    <node x="4381.581305114639" y="12.0">be.ugent.vopro1.persistence.jdbc.Table</node>
+    <node x="2622.0" y="420.5">be.ugent.vopro1.persistence.ScheduleDAO</node>
+    <node x="1376.9999999999998" y="312.0">be.ugent.vopro1.persistence.TeamDAO</node>
+    <node x="4163.7137014991185" y="432.5">be.ugent.vopro1.persistence.jdbc.postgresql.QueryBuilderImpl</node>
+    <node x="20.0" y="1827.0">be.ugent.vopro1.persistence.jdbc.postgresql.rowmapper</node>
+    <node x="4842.8304122574955" y="35.5">be.ugent.vopro1.persistence.jdbc.Column</node>
+    <node x="57.25" y="1630.0">be.ugent.vopro1.persistence.funky.CustomDocumentScanner</node>
+    <node x="2263.0661155202824" y="1115.0">be.ugent.vopro1.persistence.jdbc.postgresql.EntityDAOImpl</node>
+    <node x="696.0" y="312.0">be.ugent.vopro1.persistence.ProjectDAO</node>
+    <node x="4594.394951499118" y="516.5">be.ugent.vopro1.persistence.jdbc.postgresql.structure</node>
+    <node x="2035.9999999999998" y="348.0">be.ugent.vopro1.persistence.UserDAO</node>
+    <node x="2958.0661155202824" y="1127.0">be.ugent.vopro1.persistence.jdbc.postgresql.ProjectDAOImpl</node>
+    <node x="121.25" y="1319.5">be.ugent.vopro1.persistence.funky.CustomDocumentLoader</node>
+    <node x="1463.7499999999998" y="1331.5">be.ugent.vopro1.persistence.factory</node>
+    <node x="4010.581305114639" y="0.0">be.ugent.vopro1.persistence.jdbc.JdbcQueryBuilder</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="be.ugent.vopro1.persistence.jdbc.postgresql.EntityDAOImpl" target="be.ugent.vopro1.persistence.jdbc.AbstractDAO">
+      <point x="-56.25" y="-232.5" />
+      <point x="2544.3161155202824" y="975.0" />
+      <point x="3574.4050264550265" y="975.0" />
+      <point x="-88.0" y="28.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc.postgresql.TeamDAOImpl" target="be.ugent.vopro1.persistence.TeamDAO">
+      <point x="-266.25000000000045" y="-220.5" />
+      <point x="3692.3161155202815" y="905.0" />
+      <point x="1856.2499999999998" y="905.0" />
+      <point x="159.75" y="220.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.factory" target="be.ugent.vopro1.persistence.TeamDAO">
+      <point x="0.0" y="-16.0" />
+      <point x="-159.75" y="220.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.factory" target="be.ugent.vopro1.persistence.ScheduleDAO">
+      <point x="58.40000000000009" y="-16.0" />
+      <point x="1595.1499999999999" y="965.0" />
+      <point x="2762.0" y="965.0" />
+      <point x="-140.0" y="112.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc.postgresql.ScheduleDAOImpl" target="be.ugent.vopro1.persistence.jdbc.AbstractDAO">
+      <point x="-160.0" y="-112.0" />
+      <point x="5003.066115520282" y="835.0" />
+      <point x="3750.4050264550265" y="835.0" />
+      <point x="88.0" y="28.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc.postgresql.rowmapper" target="be.ugent.vopro1.persistence.jdbc.postgresql.rowmapper">
+      <point x="0.0" y="16.0" />
+      <point x="109.0" y="1879.0" />
+      <point x="0.0" y="1879.0" />
+      <point x="0.0" y="1843.0" />
+      <point x="-89.0" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc.postgresql.structure" target="be.ugent.vopro1.persistence.jdbc.postgresql.structure">
+      <point x="-69.42857142857133" y="16.0" />
+      <point x="4605.966380070547" y="568.5" />
+      <point x="4574.394951499118" y="568.5" />
+      <point x="4574.394951499118" y="540.5" />
+      <point x="-81.0" y="8.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc.postgresql.ProjectDAOImpl" target="be.ugent.vopro1.persistence.jdbc.AbstractDAO">
+      <point x="-55.083333333333485" y="-220.5" />
+      <point x="3233.4827821869485" y="985.0" />
+      <point x="3618.4050264550265" y="985.0" />
+      <point x="-44.0" y="28.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc.postgresql.UserDAOImpl" target="be.ugent.vopro1.persistence.jdbc.AbstractDAO">
+      <point x="-161.42857142857156" y="-184.5" />
+      <point x="4419.137544091711" y="875.0" />
+      <point x="3706.4050264550265" y="875.0" />
+      <point x="44.0" y="28.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.factory" target="be.ugent.vopro1.persistence.EntityDAO">
+      <point x="-58.40000000000009" y="-16.0" />
+      <point x="1478.3499999999997" y="1095.0" />
+      <point x="421.875" y="1095.0" />
+      <point x="84.375" y="232.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc.postgresql.TeamDAOImpl" target="be.ugent.vopro1.persistence.jdbc.postgresql.QueryBuilderImpl">
+      <point x="-53.250000000000455" y="-220.5" />
+      <point x="3905.3161155202815" y="1035.0" />
+      <point x="4321.663701499117" y="1035.0" />
+      <point x="-17.550000000000182" y="100.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc.postgresql.TeamDAOImpl" target="be.ugent.vopro1.persistence.jdbc.Table">
+      <point x="159.74999999999955" y="-220.5" />
+      <point x="4118.3161155202815" y="1055.0" />
+      <point x="4525.2137014991185" y="1055.0" />
+      <point x="4525.2137014991185" y="280.0" />
+      <point x="4456.268805114639" y="280.0" />
+      <point x="-44.8125" y="88.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.factory" target="be.ugent.vopro1.persistence.UserDAO">
+      <point x="29.200000000000045" y="-16.0" />
+      <point x="1565.9499999999998" y="955.0" />
+      <point x="2177.25" y="955.0" />
+      <point x="-141.25" y="184.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.funky.CustomDocumentLoader" target="be.ugent.vopro1.persistence.EntityDAO">
+      <point x="0.0" y="-28.0" />
+      <point x="226.75" y="1095.0" />
+      <point x="253.125" y="1095.0" />
+      <point x="-84.375" y="232.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc.postgresql.ScheduleDAOImpl" target="be.ugent.vopro1.persistence.jdbc.postgresql.structure">
+      <point x="80.0" y="-112.0" />
+      <point x="5243.066115520282" y="805.0" />
+      <point x="4744.82352292769" y="805.0" />
+      <point x="69.42857142857156" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc.postgresql.ProjectDAOImpl" target="be.ugent.vopro1.persistence.ProjectDAO">
+      <point x="-275.4166666666665" y="-220.5" />
+      <point x="3013.1494488536155" y="925.0" />
+      <point x="1191.75" y="925.0" />
+      <point x="165.25" y="220.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc.postgresql.ScheduleDAOImpl" target="be.ugent.vopro1.persistence.jdbc.Column">
+      <point x="240.0" y="-112.0" />
+      <point x="5403.066115520282" y="785.0" />
+      <point x="5162.2116953262785" y="785.0" />
+      <point x="5162.2116953262785" y="220.0" />
+      <point x="5016.9554122574955" y="220.0" />
+      <point x="74.625" y="64.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc.postgresql.structure" target="be.ugent.vopro1.persistence.jdbc.Table">
+      <point x="-32.399999999999636" y="-16.0" />
+      <point x="4642.9949514991185" y="260.0" />
+      <point x="4516.018805114639" y="260.0" />
+      <point x="14.9375" y="88.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc.postgresql.EntityDAOImpl" target="be.ugent.vopro1.persistence.EntityDAO">
+      <point x="-281.25" y="-232.5" />
+      <point x="2319.3161155202824" y="945.0" />
+      <point x="590.625" y="945.0" />
+      <point x="253.125" y="232.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc.postgresql.EntityDAOImpl" target="be.ugent.vopro1.persistence.jdbc.Table">
+      <point x="-168.75" y="-232.5" />
+      <point x="2431.8161155202824" y="935.0" />
+      <point x="685.5" y="935.0" />
+      <point x="685.5" y="270.0" />
+      <point x="4396.518805114639" y="270.0" />
+      <point x="-104.5625" y="88.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc.postgresql.ScheduleDAOImpl" target="be.ugent.vopro1.persistence.jdbc.postgresql.QueryBuilderImpl">
+      <point x="-80.0" y="-112.0" />
+      <point x="5083.066115520282" y="825.0" />
+      <point x="4462.063701499119" y="825.0" />
+      <point x="122.85000000000036" y="100.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc.postgresql.ScheduleDAOImpl" target="be.ugent.vopro1.persistence.jdbc.Table">
+      <point x="160.0" y="-112.0" />
+      <point x="5323.066115520282" y="795.0" />
+      <point x="5052.1804453262785" y="795.0" />
+      <point x="5052.1804453262785" y="230.0" />
+      <point x="4605.643805114639" y="230.0" />
+      <point x="104.5625" y="88.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc.postgresql.ScheduleDAOImpl" target="be.ugent.vopro1.persistence.ScheduleDAO">
+      <point x="-240.0" y="-112.0" />
+      <point x="4923.066115520282" y="845.0" />
+      <point x="3042.0" y="845.0" />
+      <point x="140.0" y="112.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc.postgresql.EntityDAOImpl" target="be.ugent.vopro1.persistence.jdbc.postgresql.QueryBuilderImpl">
+      <point x="56.25" y="-232.5" />
+      <point x="2656.8161155202824" y="995.0" />
+      <point x="4181.263701499118" y="995.0" />
+      <point x="-157.94999999999982" y="100.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc.postgresql.UserDAOImpl" target="be.ugent.vopro1.persistence.jdbc.Column">
+      <point x="242.14285714285688" y="-184.5" />
+      <point x="4822.708972663139" y="1095.0" />
+      <point x="4967.2054122574955" y="1095.0" />
+      <point x="24.875" y="64.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc.postgresql.UserDAOImpl" target="be.ugent.vopro1.persistence.jdbc.postgresql.structure">
+      <point x="80.71428571428532" y="-184.5" />
+      <point x="4661.280401234568" y="1095.0" />
+      <point x="4721.680665784833" y="1095.0" />
+      <point x="46.285714285714675" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc.postgresql.ProjectDAOImpl" target="be.ugent.vopro1.persistence.jdbc.postgresql.structure">
+      <point x="275.4166666666665" y="-220.5" />
+      <point x="3563.9827821869485" y="1075.0" />
+      <point x="4675.394951499118" y="1075.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc.postgresql.TeamDAOImpl" target="be.ugent.vopro1.persistence.jdbc.postgresql.structure">
+      <point x="266.24999999999955" y="-220.5" />
+      <point x="4224.8161155202815" y="1085.0" />
+      <point x="4698.537808641975" y="1085.0" />
+      <point x="23.142857142856883" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc.postgresql.structure" target="be.ugent.vopro1.persistence.jdbc.Column">
+      <point x="64.80000000000018" y="-16.0" />
+      <point x="4740.194951499118" y="280.0" />
+      <point x="4917.4554122574955" y="280.0" />
+      <point x="-24.875" y="64.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc.postgresql.ProjectDAOImpl" target="be.ugent.vopro1.persistence.jdbc.Table">
+      <point x="-165.25" y="-220.5" />
+      <point x="3123.3161155202824" y="915.0" />
+      <point x="2611.5" y="915.0" />
+      <point x="2611.5" y="280.0" />
+      <point x="4426.393805114639" y="280.0" />
+      <point x="-74.6875" y="88.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc.postgresql.UserDAOImpl" target="be.ugent.vopro1.persistence.jdbc.postgresql.QueryBuilderImpl">
+      <point x="-80.71428571428532" y="-184.5" />
+      <point x="4499.851829805997" y="865.0" />
+      <point x="4391.863701499118" y="865.0" />
+      <point x="52.649999999999636" y="100.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc.postgresql.ProjectDAOImpl" target="be.ugent.vopro1.persistence.jdbc.postgresql.QueryBuilderImpl">
+      <point x="165.25" y="-220.5" />
+      <point x="3453.8161155202824" y="1025.0" />
+      <point x="4286.563701499119" y="1025.0" />
+      <point x="-52.649999999999636" y="100.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc.postgresql.UserDAOImpl" target="be.ugent.vopro1.persistence.jdbc.Table">
+      <point x="161.42857142857156" y="-184.5" />
+      <point x="4741.994686948854" y="1085.0" />
+      <point x="4900.449162257495" y="1085.0" />
+      <point x="4900.449162257495" y="240.0" />
+      <point x="4575.768805114639" y="240.0" />
+      <point x="74.6875" y="88.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc.postgresql.TeamDAOImpl" target="be.ugent.vopro1.persistence.jdbc.AbstractDAO">
+      <point x="-159.75000000000045" y="-220.5" />
+      <point x="3798.8161155202815" y="895.0" />
+      <point x="3662.4050264550265" y="895.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc.postgresql.UserDAOImpl" target="be.ugent.vopro1.persistence.UserDAO">
+      <point x="-242.14285714285688" y="-184.5" />
+      <point x="4338.423258377426" y="885.0" />
+      <point x="2459.75" y="885.0" />
+      <point x="141.25" y="184.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc.postgresql.EntityDAOImpl" target="be.ugent.vopro1.persistence.jdbc.postgresql.structure">
+      <point x="281.25" y="-232.5" />
+      <point x="2881.8161155202824" y="1065.0" />
+      <point x="4652.252094356261" y="1065.0" />
+      <point x="-23.142857142856883" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.funky.CustomDocumentScanner" target="be.ugent.vopro1.persistence.EntityDAO">
+      <point x="-55.75" y="-76.0" />
+      <point x="113.0" y="1605.0" />
+      <point x="110.75" y="1605.0" />
+      <point x="110.75" y="1095.0" />
+      <point x="84.375" y="1095.0" />
+      <point x="-253.125" y="232.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.factory" target="be.ugent.vopro1.persistence.ProjectDAO">
+      <point x="-29.200000000000045" y="-16.0" />
+      <point x="1507.5499999999997" y="1085.0" />
+      <point x="861.25" y="1085.0" />
+      <point x="-165.25" y="220.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.funky.CustomDocumentScanner" target="be.ugent.vopro1.persistence.funky.CustomDocumentLoader">
+      <point x="55.75" y="-76.0" />
+      <point x="224.5" y="1605.0" />
+      <point x="226.75" y="1605.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc.postgresql.QueryBuilderImpl" target="be.ugent.vopro1.persistence.jdbc.JdbcQueryBuilder">
+      <point x="0.0" y="-100.0" />
+      <point x="4339.2137014991185" y="260.0" />
+      <point x="4186.081305114639" y="260.0" />
+      <point x="0.0" y="100.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.factory" target="be.ugent.vopro1.persistence.factory">
+      <point x="36.5" y="16.0" />
+      <point x="1573.2499999999998" y="1393.5" />
+      <point x="1433.7499999999998" y="1393.5" />
+      <point x="1433.7499999999998" y="1339.5" />
+      <point x="-73.0" y="-8.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.23407759882869691" x="2722.0" y="944.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>Production</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

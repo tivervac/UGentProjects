@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>be.ugent.vopro1</OriginalElement>
+  <nodes>
+    <node x="277.3526192337764" y="938.0375293197811">be.ugent.vopro1.rest</node>
+    <node x="1244.5" y="224.0">be.ugent.vopro1.adapter</node>
+    <node x="448.5" y="584.0">be.ugent.vopro1.stories</node>
+    <node x="-3.5" y="664.0">be.ugent.vopro1.reference</node>
+    <node x="751.0" y="584.0">be.ugent.vopro1.persistence</node>
+    <node x="454.5" y="704.0">be.ugent.vopro1.story</node>
+    <node x="12.5" y="784.0">be.ugent.vopro1.funky</node>
+    <node x="277.5" y="224.0">be.ugent.vopro1.converter</node>
+    <node x="890.0" y="224.0">be.ugent.vopro1.model</node>
+    <node x="877.0" y="-16.0">be.ugent.vopro1.interactor</node>
+    <node x="61.0" y="464.0">be.ugent.vopro1.util</node>
+    <node x="594.0" y="344.0">be.ugent.vopro1.scheduling</node>
+    <node x="12.852619233776394" y="938.0375293197811">be.ugent.vopro1.controllers</node>
+    <node x="54.5" y="224.0">be.ugent.vopro1.bean</node>
+    <node x="545.8526192337764" y="938.0375293197811">be.ugent.vopro1.Main</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="be.ugent.vopro1.funky" target="be.ugent.vopro1.funky">
+      <point x="0.0" y="16.0" />
+      <point x="80.0" y="880.0" />
+      <point x="200.0" y="880.0" />
+      <point x="200.0" y="800.0" />
+      <point x="67.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.scheduling" target="be.ugent.vopro1.util">
+      <point x="-86.0" y="-0.0" />
+      <point x="160.0" y="360.0" />
+      <point x="40.0" y="-16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.scheduling" target="be.ugent.vopro1.model">
+      <point x="0.0" y="-16.0" />
+      <point x="680.0" y="248.57142857142856" />
+      <point x="-70.0" y="8.571428571428555" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor" target="be.ugent.vopro1.model">
+      <point x="0.0" y="16.0" />
+      <point x="0.0" y="-16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.reference" target="be.ugent.vopro1.funky">
+      <point x="0.0" y="16.0" />
+      <point x="0.0" y="-16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.reference" target="be.ugent.vopro1.reference">
+      <point x="83.5" y="-0.0" />
+      <point x="240.0" y="680.0" />
+      <point x="240.0" y="600.0" />
+      <point x="80.0" y="600.0" />
+      <point x="0.0" y="-16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter" target="be.ugent.vopro1.model">
+      <point x="82.5" y="-0.0" />
+      <point x="-70.0" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.bean" target="be.ugent.vopro1.util">
+      <point x="0.0" y="16.0" />
+      <point x="0.0" y="-16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter" target="be.ugent.vopro1.model">
+      <point x="-75.5" y="-0.0" />
+      <point x="70.0" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter" target="be.ugent.vopro1.converter">
+      <point x="0.0" y="16.0" />
+      <point x="360.0" y="320.0" />
+      <point x="520.0" y="320.0" />
+      <point x="520.0" y="248.57142857142856" />
+      <point x="82.5" y="8.571428571428555" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter" target="be.ugent.vopro1.adapter">
+      <point x="0.0" y="16.0" />
+      <point x="1320.0" y="360.0" />
+      <point x="1520.0" y="360.0" />
+      <point x="1520.0" y="240.0" />
+      <point x="75.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.bean" target="be.ugent.vopro1.bean">
+      <point x="-40.0" y="-16.0" />
+      <point x="80.0" y="160.0" />
+      <point x="0.0" y="160.0" />
+      <point x="0.0" y="240.0" />
+      <point x="-65.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.scheduling" target="be.ugent.vopro1.scheduling">
+      <point x="0.0" y="16.0" />
+      <point x="680.0" y="440.0" />
+      <point x="840.0" y="440.0" />
+      <point x="840.0" y="368.57142857142856" />
+      <point x="86.0" y="8.571428571428584" />
+    </edge>
+    <edge source="be.ugent.vopro1.model" target="be.ugent.vopro1.util">
+      <point x="0.0" y="16.0" />
+      <point x="960.0" y="480.0" />
+      <point x="59.0" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.stories" target="be.ugent.vopro1.story">
+      <point x="0.0" y="16.0" />
+      <point x="0.0" y="-16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor" target="be.ugent.vopro1.bean">
+      <point x="-83.0" y="-0.0" />
+      <point x="120.0" y="0.0" />
+      <point x="0.0" y="-16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.model" target="be.ugent.vopro1.model">
+      <point x="70.0" y="-2.857142857142833" />
+      <point x="1200.0" y="237.14285714285717" />
+      <point x="1200.0" y="80.0" />
+      <point x="973.3333333333334" y="80.0" />
+      <point x="13.333333333333371" y="-16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.story" target="be.ugent.vopro1.story">
+      <point x="-65.5" y="-0.0" />
+      <point x="360.0" y="720.0" />
+      <point x="360.0" y="840.0" />
+      <point x="520.0" y="840.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter" target="be.ugent.vopro1.bean">
+      <point x="-82.5" y="-0.0" />
+      <point x="65.5" y="-0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8267614738202973" x="756.5" y="500.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

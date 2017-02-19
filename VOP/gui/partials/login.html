@@ -1,0 +1,39 @@
+<div class="custom-container" id="login" data-ng-init="gCtrl.loggedIn = false">
+
+    <img src="img/deloitte-logo.png" class="img-responsive center-block" id="deloitte-logo" />
+
+    <h3 id="welcome-message">Welcome - please sign in to continue</h3>
+    <div id="registerUserAlert" ng-show="gCtrl.getAlert('registerUserAlert') == true"  class="alert alert-success" role="alert" style="margin:auto">
+        <button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('registerUserAlert');"><span aria-hidden="true">&times;</span></button>
+        User successfully registered!
+    </div>
+
+    <hr ng-show="gCtrl.getAlert('registerUserAlert') == true"/>
+
+    <form class="form-horizontal" name="login-form" ng-submit="ctrl.signIn()" novalidate>
+        <div class="form-group" id="email-div">
+            <label class="col-xs-3 control-label">Email</label>
+            <div class="col-xs-7">
+                <div class="input-group">
+                    <input type="text" autofocus ng-model="ctrl.username" class="form-control" placeholder="Username" aria-describedby="email-addon" required> <span class="input-group-addon" id="email-addon">{{ctrl.emailEnd}}</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group" id="password-div">
+            <label class="col-xs-3 control-label">Password</label>
+            <div class="col-xs-7">
+                <input type="password" ng-model="ctrl.password" class="form-control" id="password" placeholder="Password" required>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-xs-offset-3 col-xs-7">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+                &nbsp;&nbsp; or
+                <button class="btn btn-link" type="button" ng-click="ctrl.register()">Create a new account</button>
+            </div>
+        </div>
+    </form>
+
+</div>

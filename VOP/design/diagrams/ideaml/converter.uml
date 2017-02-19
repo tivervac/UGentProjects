@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>be.ugent.vopro1.converter</OriginalElement>
+  <nodes>
+    <node x="3137.0" y="758.0">be.ugent.vopro1.converter.bean.TaskConverter</node>
+    <node x="4002.0" y="238.0">be.ugent.vopro1.converter.DefaultConverterFacade</node>
+    <node x="4427.0" y="286.0">be.ugent.vopro1.converter.ConverterFactory</node>
+    <node x="4250.0" y="758.0">be.ugent.vopro1.converter.bean.PersistentTaskConverter</node>
+    <node x="2421.0" y="758.0">be.ugent.vopro1.converter.bean.PersistentProjectConverter</node>
+    <node x="679.4487179487182" y="226.0">be.ugent.vopro1.converter.json.JsonConverter</node>
+    <node x="3810.0" y="310.0">be.ugent.vopro1.converter.conversion</node>
+    <node x="1794.9999999999998" y="758.0">be.ugent.vopro1.converter.bean.UserConverter</node>
+    <node x="119.0" y="770.0">be.ugent.vopro1.converter.json.serialization</node>
+    <node x="4563.0" y="758.0">be.ugent.vopro1.converter.bean.AssignmentConverter</node>
+    <node x="3185.458333333333" y="60.0">be.ugent.vopro1.converter.bean.BeanConverter</node>
+    <node x="2810.0" y="758.0">be.ugent.vopro1.converter.bean.TeamConverter</node>
+    <node x="4327.375" y="0.0">be.ugent.vopro1.converter.ConverterFacade</node>
+    <node x="4974.0" y="758.0">be.ugent.vopro1.converter.bean.PersistentTeamConverter</node>
+    <node x="3450.0" y="758.0">be.ugent.vopro1.converter.bean.ProjectConverter</node>
+    <node x="3839.0" y="758.0">be.ugent.vopro1.converter.bean.PersistentAssignmentConverter</node>
+    <node x="317.0" y="686.0">be.ugent.vopro1.converter.json.JsonConverterImpl</node>
+    <node x="2351.730128205128" y="286.0">be.ugent.vopro1.converter.bean.AbstractBeanConverter</node>
+    <node x="3296.083333333333" y="286.0">be.ugent.vopro1.converter.DefaultConverterProvider</node>
+    <node x="0.0" y="936.0">be.ugent.vopro1.converter.json.CustomConverterModule</node>
+    <node x="1299.9999999999998" y="746.0">be.ugent.vopro1.converter.bean.EntityConverter</node>
+    <node x="804.9999999999998" y="746.0">be.ugent.vopro1.converter.bean.PersistentObjectConverter</node>
+    <node x="3559.083333333333" y="48.0">be.ugent.vopro1.converter.ConverterProvider</node>
+    <node x="2108.0" y="758.0">be.ugent.vopro1.converter.bean.PersistentUserConverter</node>
+    <node x="553.75" y="936.0">be.ugent.vopro1.converter.json.JsonConverterFactory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="be.ugent.vopro1.converter.bean.PersistentTeamConverter" target="be.ugent.vopro1.converter.bean.AbstractBeanConverter">
+      <point x="-102.33333333333303" y="-28.0" />
+      <point x="5025.166666666667" y="466.0" />
+      <point x="2544.355128205128" y="466.0" />
+      <point x="92.125" y="40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter.bean.PersistentTaskConverter" target="be.ugent.vopro1.converter.bean.AbstractBeanConverter">
+      <point x="-97.66666666666697" y="-28.0" />
+      <point x="4298.833333333333" y="526.0" />
+      <point x="2510.855128205128" y="526.0" />
+      <point x="58.625" y="40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter.bean.EntityConverter" target="be.ugent.vopro1.converter.json.JsonConverter">
+      <point x="-118.75" y="-40.0" />
+      <point x="1418.7499999999998" y="626.0" />
+      <point x="1005.2487179487182" y="626.0" />
+      <point x="144.79999999999995" y="100.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter.bean.TeamConverter" target="be.ugent.vopro1.converter.bean.AbstractBeanConverter">
+      <point x="-102.33333333333348" y="-28.0" />
+      <point x="2861.166666666666" y="586.0" />
+      <point x="2443.855128205128" y="586.0" />
+      <point x="-8.375" y="40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter.ConverterFactory" target="be.ugent.vopro1.converter.ConverterFacade">
+      <point x="0.0" y="-40.0" />
+      <point x="4586.0" y="201.0" />
+      <point x="4505.125" y="201.0" />
+      <point x="59.25" y="88.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter.DefaultConverterFacade" target="be.ugent.vopro1.converter.ConverterProvider">
+      <point x="-101.25" y="-88.0" />
+      <point x="4103.25" y="201.0" />
+      <point x="3820.833333333333" y="201.0" />
+      <point x="87.25" y="40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter.json.JsonConverterImpl" target="be.ugent.vopro1.converter.json.JsonConverter">
+      <point x="0.0" y="-100.0" />
+      <point x="550.5" y="666.0" />
+      <point x="788.0487179487181" y="666.0" />
+      <point x="-72.39999999999998" y="100.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter.bean.ProjectConverter" target="be.ugent.vopro1.converter.conversion">
+      <point x="123.0" y="-28.0" />
+      <point x="3757.5" y="666.0" />
+      <point x="3890.625" y="666.0" />
+      <point x="-5.375" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter.bean.PersistentAssignmentConverter" target="be.ugent.vopro1.converter.conversion">
+      <point x="0.0" y="-28.0" />
+      <point x="4034.5" y="546.0" />
+      <point x="3901.375" y="546.0" />
+      <point x="5.375" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter.json.JsonConverterFactory" target="be.ugent.vopro1.converter.json.serialization">
+      <point x="-80.25" y="-52.0" />
+      <point x="634.0" y="911.0" />
+      <point x="252.5" y="911.0" />
+      <point x="44.5" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter.bean.PersistentObjectConverter" target="be.ugent.vopro1.converter.bean.AbstractBeanConverter">
+      <point x="118.75" y="-40.0" />
+      <point x="1161.2499999999998" y="636.0" />
+      <point x="2360.105128205128" y="636.0" />
+      <point x="-92.125" y="40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter.bean.TaskConverter" target="be.ugent.vopro1.converter.bean.AbstractBeanConverter">
+      <point x="-97.66666666666652" y="-28.0" />
+      <point x="3185.833333333333" y="576.0" />
+      <point x="2460.605128205128" y="576.0" />
+      <point x="8.375" y="40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter.json.JsonConverterFactory" target="be.ugent.vopro1.converter.json.JsonConverter">
+      <point x="80.25" y="-52.0" />
+      <point x="794.4999999999998" y="666.0" />
+      <point x="860.4487179487182" y="666.0" />
+      <point x="0.0" y="100.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter.bean.PersistentProjectConverter" target="be.ugent.vopro1.converter.bean.AbstractBeanConverter">
+      <point x="-123.0" y="-28.0" />
+      <point x="2482.5" y="666.0" />
+      <point x="2427.105128205128" y="666.0" />
+      <point x="-25.125" y="40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter.DefaultConverterProvider" target="be.ugent.vopro1.converter.ConverterProvider">
+      <point x="80.25" y="-40.0" />
+      <point x="3536.833333333333" y="201.0" />
+      <point x="3646.333333333333" y="201.0" />
+      <point x="-87.25" y="40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter.DefaultConverterProvider" target="be.ugent.vopro1.converter.bean.BeanConverter">
+      <point x="-80.25" y="-40.0" />
+      <point x="3376.333333333333" y="201.0" />
+      <point x="3321.208333333333" y="201.0" />
+      <point x="45.25" y="28.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter.bean.AssignmentConverter" target="be.ugent.vopro1.converter.conversion">
+      <point x="0.0" y="-28.0" />
+      <point x="4758.5" y="486.0" />
+      <point x="3944.375" y="486.0" />
+      <point x="48.375" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter.bean.EntityConverter" target="be.ugent.vopro1.converter.bean.AbstractBeanConverter">
+      <point x="118.75" y="-40.0" />
+      <point x="1656.2499999999998" y="646.0" />
+      <point x="2376.855128205128" y="646.0" />
+      <point x="-75.375" y="40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter.bean.PersistentProjectConverter" target="be.ugent.vopro1.converter.conversion">
+      <point x="0.0" y="-28.0" />
+      <point x="2605.5" y="596.0" />
+      <point x="3815.375" y="596.0" />
+      <point x="-80.625" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter.bean.PersistentObjectConverter" target="be.ugent.vopro1.converter.json.JsonConverter">
+      <point x="-118.75" y="-40.0" />
+      <point x="923.7499999999998" y="666.0" />
+      <point x="932.8487179487183" y="666.0" />
+      <point x="72.39999999999998" y="100.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter.bean.PersistentTeamConverter" target="be.ugent.vopro1.converter.conversion">
+      <point x="102.33333333333303" y="-28.0" />
+      <point x="5229.833333333333" y="446.0" />
+      <point x="3976.625" y="446.0" />
+      <point x="80.625" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter.bean.UserConverter" target="be.ugent.vopro1.converter.bean.AbstractBeanConverter">
+      <point x="2.2737367544323206E-13" y="-28.0" />
+      <point x="1941.5" y="656.0" />
+      <point x="2393.605128205128" y="656.0" />
+      <point x="-58.625" y="40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter.DefaultConverterFacade" target="be.ugent.vopro1.converter.ConverterFacade">
+      <point x="101.25" y="-88.0" />
+      <point x="4305.75" y="201.0" />
+      <point x="4386.625" y="201.0" />
+      <point x="-59.25" y="88.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter.json.CustomConverterModule" target="be.ugent.vopro1.converter.json.serialization">
+      <point x="0.0" y="-52.0" />
+      <point x="-44.5" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter.bean.AbstractBeanConverter" target="be.ugent.vopro1.converter.bean.BeanConverter">
+      <point x="0.0" y="-40.0" />
+      <point x="2452.230128205128" y="201.0" />
+      <point x="3230.708333333333" y="201.0" />
+      <point x="-45.25" y="28.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter.bean.TaskConverter" target="be.ugent.vopro1.converter.conversion">
+      <point x="0.0" y="-28.0" />
+      <point x="3283.5" y="636.0" />
+      <point x="3858.375" y="636.0" />
+      <point x="-37.625" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter.bean.TeamConverter" target="be.ugent.vopro1.converter.conversion">
+      <point x="0.0" y="-28.0" />
+      <point x="2963.5" y="616.0" />
+      <point x="3836.875" y="616.0" />
+      <point x="-59.125" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter.bean.ProjectConverter" target="be.ugent.vopro1.converter.bean.AbstractBeanConverter">
+      <point x="-123.0" y="-28.0" />
+      <point x="3511.5" y="566.0" />
+      <point x="2477.355128205128" y="566.0" />
+      <point x="25.125" y="40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter.json.serialization" target="be.ugent.vopro1.converter.json.JsonConverter">
+      <point x="0.0" y="-16.0" />
+      <point x="208.0" y="656.0" />
+      <point x="715.6487179487183" y="656.0" />
+      <point x="-144.79999999999995" y="100.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter.bean.AssignmentConverter" target="be.ugent.vopro1.converter.bean.AbstractBeanConverter">
+      <point x="-130.33333333333303" y="-28.0" />
+      <point x="4628.166666666667" y="496.0" />
+      <point x="2527.605128205128" y="496.0" />
+      <point x="75.375" y="40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter.bean.PersistentUserConverter" target="be.ugent.vopro1.converter.bean.AbstractBeanConverter">
+      <point x="0.0" y="-28.0" />
+      <point x="2254.5" y="666.0" />
+      <point x="2410.355128205128" y="666.0" />
+      <point x="-41.875" y="40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter.bean.PersistentAssignmentConverter" target="be.ugent.vopro1.converter.bean.AbstractBeanConverter">
+      <point x="-130.33333333333348" y="-28.0" />
+      <point x="3904.166666666666" y="556.0" />
+      <point x="2494.105128205128" y="556.0" />
+      <point x="41.875" y="40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter.bean.PersistentTaskConverter" target="be.ugent.vopro1.converter.conversion">
+      <point x="0.0" y="-28.0" />
+      <point x="4396.5" y="516.0" />
+      <point x="3922.875" y="516.0" />
+      <point x="26.875" y="16.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.24127523108847387" x="2640.5" y="520.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>Production</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>be.ugent.vopro1.rest</OriginalElement>
+  <nodes>
+    <node x="298.75" y="526.0">be.ugent.vopro1.rest.mapper.normal.NormalWebMapper</node>
+    <node x="48.75" y="514.0">be.ugent.vopro1.rest.mapper.AbstractWebMapperFactory</node>
+    <node x="0.0" y="335.5">be.ugent.vopro1.rest.mapper.WebMapperFactory</node>
+    <node x="1098.0" y="347.5">be.ugent.vopro1.rest.controller</node>
+    <node x="398.8847117794485" y="96.5">be.ugent.vopro1.rest.presentationmodel</node>
+    <node x="147.25" y="748.0">be.ugent.vopro1.rest.mapper.WebMapperProvider</node>
+    <node x="272.75" y="642.0">be.ugent.vopro1.rest.mapper.normal.NormalWebMapperFactory</node>
+    <node x="619.53320802005" y="642.0">be.ugent.vopro1.rest.mapper.hateoas.HateoasWebMapperFactory</node>
+    <node x="0.0" y="921.0">be.ugent.vopro1.rest.route</node>
+    <node x="1015.7142857142858" y="0.0">be.ugent.vopro1.rest.mapper.WebMapper</node>
+    <node x="498.00000000000006" y="275.0">be.ugent.vopro1.rest.mapper.AbstractWebMapper</node>
+    <node x="488.75000000000006" y="502.0">be.ugent.vopro1.rest.mapper.hateoas.HateoasWebMapper</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="be.ugent.vopro1.rest.mapper.WebMapperProvider" target="be.ugent.vopro1.rest.mapper.WebMapperFactory">
+      <point x="-157.66666666666663" y="-64.0" />
+      <point x="226.08333333333337" y="723.0" />
+      <point x="38.25" y="723.0" />
+      <point x="38.25" y="482.0" />
+      <point x="50.5" y="482.0" />
+      <point x="-50.5" y="28.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.rest.mapper.WebMapperProvider" target="be.ugent.vopro1.rest.mapper.normal.NormalWebMapperFactory">
+      <point x="0.0" y="-64.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.rest.controller" target="be.ugent.vopro1.rest.mapper.WebMapper">
+      <point x="41.5" y="-16.0" />
+      <point x="1222.5" y="255.0" />
+      <point x="1248.2142857142858" y="255.0" />
+      <point x="-77.5" y="112.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.rest.mapper.normal.NormalWebMapper" target="be.ugent.vopro1.rest.presentationmodel">
+      <point x="-42.5" y="-16.0" />
+      <point x="341.25" y="245.0" />
+      <point x="513.8847117794485" y="245.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.rest.mapper.hateoas.HateoasWebMapperFactory" target="be.ugent.vopro1.rest.mapper.AbstractWebMapperFactory">
+      <point x="-76.33333333333337" y="-28.0" />
+      <point x="657.6998746867166" y="602.0" />
+      <point x="221.25" y="602.0" />
+      <point x="57.5" y="28.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.rest.mapper.hateoas.HateoasWebMapper" target="be.ugent.vopro1.rest.mapper.AbstractWebMapper">
+      <point x="110.75" y="-40.0" />
+      <point x="821.0" y="482.0" />
+      <point x="933.0" y="482.0" />
+      <point x="145.0" y="88.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.rest.mapper.AbstractWebMapper" target="be.ugent.vopro1.rest.presentationmodel">
+      <point x="-145.0" y="-88.5" />
+      <point x="643.0" y="255.0" />
+      <point x="579.5989974937341" y="255.0" />
+      <point x="65.71428571428567" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.rest.mapper.AbstractWebMapper" target="be.ugent.vopro1.rest.mapper.WebMapper">
+      <point x="145.0" y="-88.5" />
+      <point x="933.0" y="255.0" />
+      <point x="1093.2142857142858" y="255.0" />
+      <point x="-232.5" y="112.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.rest.mapper.normal.NormalWebMapperFactory" target="be.ugent.vopro1.rest.mapper.AbstractWebMapperFactory">
+      <point x="-74.0" y="-28.0" />
+      <point x="309.75" y="622.0" />
+      <point x="106.25" y="622.0" />
+      <point x="-57.5" y="28.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.rest.mapper.hateoas.HateoasWebMapper" target="be.ugent.vopro1.rest.presentationmodel">
+      <point x="-110.75" y="-40.0" />
+      <point x="599.5" y="472.0" />
+      <point x="487.50000000000006" y="472.0" />
+      <point x="487.50000000000006" y="255.0" />
+      <point x="546.7418546365914" y="255.0" />
+      <point x="32.85714285714289" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.rest.mapper.AbstractWebMapperFactory" target="be.ugent.vopro1.rest.mapper.WebMapperFactory">
+      <point x="0.0" y="-28.0" />
+      <point x="163.75" y="482.0" />
+      <point x="151.5" y="482.0" />
+      <point x="50.5" y="28.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.rest.mapper.hateoas.HateoasWebMapperFactory" target="be.ugent.vopro1.rest.mapper.hateoas.HateoasWebMapper">
+      <point x="0.0" y="-28.0" />
+      <point x="734.03320802005" y="602.0" />
+      <point x="710.25" y="602.0" />
+      <point x="0.0" y="40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.rest.controller" target="be.ugent.vopro1.rest.presentationmodel">
+      <point x="-41.5" y="-16.0" />
+      <point x="1139.5" y="245.0" />
+      <point x="612.456140350877" y="245.0" />
+      <point x="98.57142857142856" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.rest.mapper.normal.NormalWebMapper" target="be.ugent.vopro1.rest.mapper.AbstractWebMapper">
+      <point x="42.5" y="-16.0" />
+      <point x="426.25" y="482.0" />
+      <point x="643.0" y="482.0" />
+      <point x="-145.0" y="88.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.rest.mapper.normal.NormalWebMapperFactory" target="be.ugent.vopro1.rest.mapper.normal.NormalWebMapper">
+      <point x="0.0" y="-28.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.rest.mapper.normal.NormalWebMapperFactory" target="be.ugent.vopro1.rest.mapper.WebMapper">
+      <point x="74.0" y="-28.0" />
+      <point x="457.75" y="612.0" />
+      <point x="1410.28320802005" y="612.0" />
+      <point x="1410.28320802005" y="255.0" />
+      <point x="1403.2142857142858" y="255.0" />
+      <point x="77.5" y="112.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.rest.presentationmodel" target="be.ugent.vopro1.rest.presentationmodel">
+      <point x="-98.57142857142856" y="16.0" />
+      <point x="415.3132832080199" y="148.5" />
+      <point x="378.8847117794485" y="148.5" />
+      <point x="378.8847117794485" y="123.16666666666663" />
+      <point x="-115.0" y="10.666666666666629" />
+    </edge>
+    <edge source="be.ugent.vopro1.rest.mapper.WebMapperProvider" target="be.ugent.vopro1.rest.mapper.hateoas.HateoasWebMapperFactory">
+      <point x="157.66666666666663" y="-64.0" />
+      <point x="541.4166666666666" y="723.0" />
+      <point x="734.03320802005" y="723.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.rest.mapper.hateoas.HateoasWebMapperFactory" target="be.ugent.vopro1.rest.mapper.WebMapper">
+      <point x="76.33333333333337" y="-28.0" />
+      <point x="810.3665413533834" y="622.0" />
+      <point x="1421.28320802005" y="622.0" />
+      <point x="1421.28320802005" y="255.0" />
+      <point x="1558.2142857142858" y="255.0" />
+      <point x="232.5" y="112.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7723429951690821" x="818.0" y="476.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>Production</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

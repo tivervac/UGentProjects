@@ -1,0 +1,11 @@
+/* CSS for AngularJS provided form validation */
+
+.ng-invalid.ng-dirty {
+    border-color: #A94442;
+    border-width: 2px;
+}
+
+.ng-valid.ng-dirty {
+    border-color: #3C763D;
+    border-width: 2px;
+}

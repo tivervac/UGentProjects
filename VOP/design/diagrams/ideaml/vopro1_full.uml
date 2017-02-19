@@ -1,0 +1,1061 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>be.ugent.vopro1</OriginalElement>
+  <nodes>
+    <node x="4458.0" y="8704.0">be.ugent.vopro1.rest</node>
+    <node x="4215.0" y="6791.5">be.ugent.vopro1.adapter.ProjectAdapter</node>
+    <node x="3022.5" y="1007.5">be.ugent.vopro1.persistence.EntityDAO</node>
+    <node x="-25.0" y="-8.0">be.ugent.vopro1.bean.PersistentAssignment.PersistentAssignmentBuilder</node>
+    <node x="15187.5" y="1871.5">be.ugent.vopro1.model.Task</node>
+    <node x="15128.0" y="8151.5">be.ugent.vopro1.scheduling.Schedule</node>
+    <node x="6591.0" y="5332.0">be.ugent.vopro1.interactor.team.TeamPermission</node>
+    <node x="14815.0" y="1552.0">be.ugent.vopro1.model.Task.TaskBuilder</node>
+    <node x="2780.5" y="3320.0">be.ugent.vopro1.interactor.entity.SimpleRefactorStrategy</node>
+    <node x="972.5" y="904.0">be.ugent.vopro1.funky</node>
+    <node x="2096.0" y="8991.5">be.ugent.vopro1.bean.PersistentTask</node>
+    <node x="8135.0" y="6071.5">be.ugent.vopro1.adapter.TeamProjectAdapter</node>
+    <node x="2794.0" y="3440.0">be.ugent.vopro1.interactor.entity.RefactorStrategy</node>
+    <node x="4696.5" y="8704.0">be.ugent.vopro1.model.stub</node>
+    <node x="49.5" y="271.5">be.ugent.vopro1.bean.PersistentAssignment</node>
+    <node x="14430.0" y="424.0">be.ugent.vopro1.interactor.entity.EntityInteractorImpl</node>
+    <node x="11565.0" y="3291.5">be.ugent.vopro1.interactor.user.UserInteractorImpl</node>
+    <node x="10777.5" y="7824.0">be.ugent.vopro1.interactor.task</node>
+    <node x="-16.0" y="8704.0">be.ugent.vopro1.bean.PersistentUser.PersistentUserBuilder</node>
+    <node x="9863.5" y="3508.0">be.ugent.vopro1.interactor.authentication.AuthenticationHandler</node>
+    <node x="582.5" y="8980.0">be.ugent.vopro1.adapter.AdapterManager</node>
+    <node x="3486.5" y="4800.0">be.ugent.vopro1.interactor.entity.InteractorFactory</node>
+    <node x="12711.0" y="2772.0">be.ugent.vopro1.interactor.project.ProjectPermissionImpl</node>
+    <node x="6167.0" y="6400.0">be.ugent.vopro1.interactor.team.TeamInteractorFactory</node>
+    <node x="14046.0" y="7232.0">be.ugent.vopro1.bean.PersistentProject.PersistentProjectBuilder</node>
+    <node x="3534.5" y="8704.0">be.ugent.vopro1.story</node>
+    <node x="8775.0" y="6631.5">be.ugent.vopro1.adapter.MemberTeamAdapter</node>
+    <node x="9525.0" y="4811.5">be.ugent.vopro1.interactor.user.UserInteractor</node>
+    <node x="4711.0" y="6372.0">be.ugent.vopro1.interactor.project.ProjectPermission</node>
+    <node x="2247.5" y="7375.5">be.ugent.vopro1.model.Team</node>
+    <node x="13318.0" y="1788.0">be.ugent.vopro1.interactor.project.ProjectInteractorImpl</node>
+    <node x="9015.0" y="4871.5">be.ugent.vopro1.adapter.AnalystProjectAdapter</node>
+    <node x="15661.0" y="344.0">be.ugent.vopro1.util</node>
+    <node x="2955.0" y="7008.0">be.ugent.vopro1.model.User.UserBuilder</node>
+    <node x="7318.0" y="6708.0">be.ugent.vopro1.interactor.project.ProjectInteractor</node>
+    <node x="5175.0" y="5111.5">be.ugent.vopro1.adapter.ScheduleAdapter</node>
+    <node x="1497.0" y="8712.0">be.ugent.vopro1.bean.PersistentTeam.PersistentTeamBuilder</node>
+    <node x="2520.5" y="7007.5">be.ugent.vopro1.model.User</node>
+    <node x="12287.0" y="3904.0">be.ugent.vopro1.persistence.factory</node>
+    <node x="15667.5" y="8384.0">be.ugent.vopro1.scheduling.comparators</node>
+    <node x="15541.0" y="1847.5">be.ugent.vopro1.model.Assignment</node>
+    <node x="9823.5" y="3100.0">be.ugent.vopro1.interactor.authentication.HeaderAuthenticationHandlerImpl</node>
+    <node x="2793.5" y="3560.0">be.ugent.vopro1.interactor.entity.NoRefactorStrategy</node>
+    <node x="3292.5" y="824.0">be.ugent.vopro1.persistence.funky</node>
+    <node x="9285.0" y="4099.5">be.ugent.vopro1.adapter.UserAdapter</node>
+    <node x="4197.0" y="8704.0">be.ugent.vopro1.persistence.exception</node>
+    <node x="10655.0" y="7151.5">be.ugent.vopro1.adapter.TaskAdapter</node>
+    <node x="3947.0" y="3756.0">be.ugent.vopro1.interactor.entity.EntityPermission</node>
+    <node x="676.5" y="904.0">be.ugent.vopro1.reference</node>
+    <node x="9677.5" y="6960.0">be.ugent.vopro1.adapter.CommonAdapterFactory</node>
+    <node x="11067.0" y="3556.0">be.ugent.vopro1.interactor.entity.EntityPermissionImpl</node>
+    <node x="582.5" y="8700.0">be.ugent.vopro1.adapter.DefaultAdapterManager</node>
+    <node x="10205.0" y="7139.5">be.ugent.vopro1.adapter.CommonAdapter</node>
+    <node x="3470.0" y="4464.0">be.ugent.vopro1.interactor.entity.EntityInteractor</node>
+    <node x="9291.0" y="2356.0">be.ugent.vopro1.interactor.user.UserPermissionImpl</node>
+    <node x="3975.0" y="4511.5">be.ugent.vopro1.adapter.EntityAnalystAdapter</node>
+    <node x="1082.5" y="8760.0">be.ugent.vopro1.adapter.AdapterManagerFactory</node>
+    <node x="14147.5" y="6951.5">be.ugent.vopro1.bean.PersistentProject</node>
+    <node x="14517.5" y="1944.0">be.ugent.vopro1.converter</node>
+    <node x="30.5" y="9067.5">be.ugent.vopro1.bean.PersistentUser</node>
+    <node x="12080.0" y="7528.0">be.ugent.vopro1.persistence.ScheduleDAO</node>
+    <node x="7961.5" y="6560.0">be.ugent.vopro1.interactor.project.ProjectInteractorFactory</node>
+    <node x="2592.0" y="8712.0">be.ugent.vopro1.model.ProcessEntity.ProcessEntityBuilder</node>
+    <node x="12134.5" y="1507.5">be.ugent.vopro1.interactor.team.TeamInteractorImpl</node>
+    <node x="3454.0" y="3511.5">be.ugent.vopro1.adapter.EntityAdapter</node>
+    <node x="10437.5" y="3015.5">be.ugent.vopro1.persistence.UserDAO</node>
+    <node x="6895.0" y="6431.5">be.ugent.vopro1.adapter.ProjectAnalystAdapter</node>
+    <node x="9317.5" y="2856.0">be.ugent.vopro1.interactor.authentication.HeaderAuthenticationHandler</node>
+    <node x="9570.5" y="6760.0">be.ugent.vopro1.interactor.user.UserInteractorFactory</node>
+    <node x="2064.0" y="8712.0">be.ugent.vopro1.bean.PersistentTask.PersistentTaskBuilder</node>
+    <node x="1402.5" y="7044.0">be.ugent.vopro1.model.EntityProject.EntityProjectBuilder</node>
+    <node x="1587.5" y="8991.5">be.ugent.vopro1.bean.PersistentTeam</node>
+    <node x="10090.5" y="4424.0">be.ugent.vopro1.adapter.action</node>
+    <node x="14459.5" y="8492.0">be.ugent.vopro1.scheduling.Scheduler</node>
+    <node x="9011.0" y="4516.0">be.ugent.vopro1.interactor.user.UserPermission</node>
+    <node x="3114.5" y="8704.0">be.ugent.vopro1.interactor.permission</node>
+    <node x="14811.0" y="1836.0">be.ugent.vopro1.model.UsecaseEntity</node>
+    <node x="15983.5" y="2095.5">be.ugent.vopro1.model.AvailableUser</node>
+    <node x="8571.5" y="4344.0">be.ugent.vopro1.adapter.result</node>
+    <node x="12040.5" y="2259.5">be.ugent.vopro1.persistence.TeamDAO</node>
+    <node x="5655.0" y="5391.5">be.ugent.vopro1.adapter.TeamMemberAdapter</node>
+    <node x="2577.5" y="6827.5">be.ugent.vopro1.model.EntityProject</node>
+    <node x="6605.0" y="5739.5">be.ugent.vopro1.adapter.TeamAdapter</node>
+    <node x="15059.5" y="8492.0">be.ugent.vopro1.scheduling.FirstFitScheduler</node>
+    <node x="14127.5" y="2007.5">be.ugent.vopro1.bean.PersistentObject</node>
+    <node x="13269.5" y="2699.5">be.ugent.vopro1.persistence.ProjectDAO</node>
+    <node x="14217.5" y="3904.0">be.ugent.vopro1.persistence.jdbc</node>
+    <node x="2697.5" y="8987.5">be.ugent.vopro1.model.ProcessEntity</node>
+    <node x="9811.5" y="3360.0">be.ugent.vopro1.interactor.authentication.AuthenticationFactory</node>
+    <node x="1080.0" y="8224.0">be.ugent.vopro1.interactor.schedule</node>
+    <node x="9966.0" y="4700.0">be.ugent.vopro1.adapter.ActionAdapter</node>
+    <node x="6591.0" y="2052.0">be.ugent.vopro1.interactor.team.TeamPermissionImpl</node>
+    <node x="1888.0" y="7352.0">be.ugent.vopro1.model.Team.TeamBuilder</node>
+    <node x="6094.5" y="5987.5">be.ugent.vopro1.interactor.team.TeamInteractor</node>
+    <node x="3860.0" y="8720.0">be.ugent.vopro1.Main</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="be.ugent.vopro1.interactor.user.UserInteractorImpl" target="be.ugent.vopro1.persistence.TeamDAO">
+      <point x="0.0" y="-148.5" />
+      <point x="11760.0" y="2560.0" />
+      <point x="-319.5" y="80.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.schedule" target="be.ugent.vopro1.persistence.ScheduleDAO">
+      <point x="80.0" y="-8.571428571428555" />
+      <point x="12360.0" y="8231.42857142857" />
+      <point x="0.0" y="112.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc" target="be.ugent.vopro1.persistence.jdbc">
+      <point x="40.0" y="16.0" />
+      <point x="14320.0" y="4000.0" />
+      <point x="14400.0" y="4000.0" />
+      <point x="14400.0" y="3920.0" />
+      <point x="62.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.ProjectAnalystAdapter" target="be.ugent.vopro1.interactor.project.ProjectPermission">
+      <point x="-185.0" y="-0.0" />
+      <point x="209.0" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.project.ProjectPermissionImpl" target="be.ugent.vopro1.persistence.UserDAO">
+      <point x="-40.0" y="148.0" />
+      <point x="12880.0" y="3200.0" />
+      <point x="282.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.permission" target="be.ugent.vopro1.interactor.permission">
+      <point x="0.0" y="16.0" />
+      <point x="3200.0" y="8840.0" />
+      <point x="3400.0" y="8840.0" />
+      <point x="3400.0" y="8720.0" />
+      <point x="85.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.funky" target="be.ugent.vopro1.converter">
+      <point x="67.5" y="-0.0" />
+      <point x="14580.0" y="840.0" />
+      <point x="-20.0" y="-16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.UserAdapter" target="be.ugent.vopro1.interactor.user.UserInteractor">
+      <point x="195.0" y="40.0" />
+      <point x="9720.0" y="4240.0" />
+      <point x="0.0" y="-148.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.reference" target="be.ugent.vopro1.funky">
+      <point x="83.5" y="-0.0" />
+      <point x="-67.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TeamAdapter" target="be.ugent.vopro1.interactor.team.TeamInteractor">
+      <point x="-195.0" y="-0.0" />
+      <point x="6320.0" y="5840.0" />
+      <point x="0.0" y="-172.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.funky" target="be.ugent.vopro1.persistence.funky">
+      <point x="40.0" y="-16.0" />
+      <point x="1080.0" y="840.0" />
+      <point x="-67.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.funky" target="be.ugent.vopro1.persistence.funky">
+      <point x="67.5" y="-8.571428571428442" />
+      <point x="3480.0" y="831.4285714285716" />
+      <point x="3480.0" y="760.0" />
+      <point x="3360.0" y="760.0" />
+      <point x="0.0" y="-16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.ProjectAnalystAdapter" target="be.ugent.vopro1.adapter.result">
+      <point x="185.0" y="-0.0" />
+      <point x="8637.142857142857" y="6520.0" />
+      <point x="-2.857142857143117" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.entity.EntityPermissionImpl" target="be.ugent.vopro1.persistence.ProjectDAO">
+      <point x="213.0" y="-0.0" />
+      <point x="13520.0" y="3680.0" />
+      <point x="-80.0" y="220.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.ProjectAdapter" target="be.ugent.vopro1.adapter.CommonAdapter">
+      <point x="0.0" y="88.5" />
+      <point x="4400.0" y="7240.0" />
+      <point x="-195.0" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.team.TeamPermissionImpl" target="be.ugent.vopro1.interactor.authentication.HeaderAuthenticationHandler">
+      <point x="40.0" y="148.0" />
+      <point x="6840.0" y="2920.0" />
+      <point x="-162.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.ProjectAdapter" target="be.ugent.vopro1.interactor.project.ProjectInteractor">
+      <point x="185.0" y="-0.0" />
+      <point x="-282.0" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.model.Assignment" target="be.ugent.vopro1.util">
+      <point x="0.0" y="-112.5" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc" target="be.ugent.vopro1.persistence.UserDAO">
+      <point x="-40.0" y="16.0" />
+      <point x="14240.0" y="4080.0" />
+      <point x="10320.0" y="4080.0" />
+      <point x="10320.0" y="3240.0" />
+      <point x="-282.5" y="40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.user.UserInteractorImpl" target="be.ugent.vopro1.persistence.ProjectDAO">
+      <point x="195.0" y="-0.0" />
+      <point x="13480.0" y="3440.0" />
+      <point x="-120.0" y="220.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.MemberTeamAdapter" target="be.ugent.vopro1.adapter.result">
+      <point x="-185.0" y="-0.0" />
+      <point x="8648.0" y="6720.0" />
+      <point x="8.0" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.team.TeamInteractorFactory" target="be.ugent.vopro1.interactor.team.TeamInteractor">
+      <point x="0.0" y="-40.0" />
+      <point x="0.0" y="172.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.scheduling.FirstFitScheduler" target="be.ugent.vopro1.scheduling.comparators">
+      <point x="40.0" y="-28.0" />
+      <point x="15360.0" y="8400.0" />
+      <point x="-92.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.EntityAnalystAdapter" target="be.ugent.vopro1.adapter.CommonAdapter">
+      <point x="0.0" y="88.5" />
+      <point x="4160.0" y="7400.0" />
+      <point x="10360.0" y="7400.0" />
+      <point x="-40.0" y="100.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.user.UserPermissionImpl" target="be.ugent.vopro1.interactor.user.UserPermission">
+      <point x="-189.0" y="-0.0" />
+      <point x="9200.0" y="2480.0" />
+      <point x="0.0" y="-124.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.scheduling.FirstFitScheduler" target="be.ugent.vopro1.model.Assignment">
+      <point x="260.5" y="-0.0" />
+      <point x="16360.0" y="8520.0" />
+      <point x="16360.0" y="1960.0" />
+      <point x="179.0" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TaskAdapter" target="be.ugent.vopro1.interactor.task">
+      <point x="0.0" y="88.5" />
+      <point x="0.0" y="-16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.entity.EntityInteractorImpl" target="be.ugent.vopro1.persistence.ProjectDAO">
+      <point x="-170.0" y="80.0" />
+      <point x="14080.0" y="640.0" />
+      <point x="14080.0" y="2920.0" />
+      <point x="330.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.story" target="be.ugent.vopro1.story">
+      <point x="40.0" y="16.0" />
+      <point x="3640.0" y="8800.0" />
+      <point x="3720.0" y="8800.0" />
+      <point x="3720.0" y="8730.0" />
+      <point x="65.5" y="10.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TeamProjectAdapter" target="be.ugent.vopro1.interactor.team.TeamPermission">
+      <point x="0.0" y="-88.5" />
+      <point x="8320.0" y="5480.0" />
+      <point x="209.0" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.EntityAdapter" target="be.ugent.vopro1.interactor.entity.SimpleRefactorStrategy">
+      <point x="0.0" y="-88.5" />
+      <point x="3640.0" y="3360.0" />
+      <point x="99.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc" target="be.ugent.vopro1.persistence.TeamDAO">
+      <point x="-26.66666666666606" y="-16.0" />
+      <point x="14253.333333333334" y="2480.0" />
+      <point x="319.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TeamAdapter" target="be.ugent.vopro1.adapter.result">
+      <point x="40.0" y="-100.5" />
+      <point x="6840.0" y="5680.0" />
+      <point x="8622.857142857143" y="5680.0" />
+      <point x="-17.142857142856883" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.entity.EntityPermissionImpl" target="be.ugent.vopro1.persistence.TeamDAO">
+      <point x="0.0" y="-124.0" />
+      <point x="11280.0" y="2520.0" />
+      <point x="-319.5" y="40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.team.TeamInteractorImpl" target="be.ugent.vopro1.converter">
+      <point x="225.5" y="-0.0" />
+      <point x="14560.0" y="1680.0" />
+      <point x="-40.0" y="-16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.UserAdapter" target="be.ugent.vopro1.adapter.result">
+      <point x="-195.0" y="-0.0" />
+      <point x="8660.0" y="4200.0" />
+      <point x="20.0" y="-16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.project.ProjectInteractorImpl" target="be.ugent.vopro1.interactor.project.ProjectInteractor">
+      <point x="40.0" y="172.0" />
+      <point x="13640.0" y="2280.0" />
+      <point x="14440.0" y="2280.0" />
+      <point x="14440.0" y="6880.0" />
+      <point x="282.0" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.entity.EntityInteractorImpl" target="be.ugent.vopro1.funky">
+      <point x="-170.0" y="20.0" />
+      <point x="920.0" y="580.0" />
+      <point x="920.0" y="911.4285714285716" />
+      <point x="-67.5" y="-8.571428571428442" />
+    </edge>
+    <edge source="be.ugent.vopro1.model.Assignment" target="be.ugent.vopro1.model.Task">
+      <point x="-179.0" y="-0.0" />
+      <point x="132.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.scheduling.Schedule" target="be.ugent.vopro1.util">
+      <point x="-40.0" y="88.5" />
+      <point x="15280.0" y="8400.0" />
+      <point x="520.0" y="8400.0" />
+      <point x="520.0" y="365.71428571428623" />
+      <point x="-59.0" y="5.714285714286234" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.ScheduleAdapter" target="be.ugent.vopro1.interactor.schedule">
+      <point x="0.0" y="-88.5" />
+      <point x="5360.0" y="4920.0" />
+      <point x="1200.0" y="4920.0" />
+      <point x="40.0" y="-16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.model.ProcessEntity.ProcessEntityBuilder" target="be.ugent.vopro1.model.ProcessEntity">
+      <point x="0.0" y="88.0" />
+      <point x="0.0" y="-52.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.user.UserPermissionImpl" target="be.ugent.vopro1.persistence.TeamDAO">
+      <point x="189.0" y="-0.0" />
+      <point x="-319.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.project.ProjectInteractorImpl" target="be.ugent.vopro1.persistence.UserDAO">
+      <point x="-282.0" y="-0.0" />
+      <point x="11240.0" y="1960.0" />
+      <point x="11240.0" y="3160.0" />
+      <point x="282.5" y="-40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc" target="be.ugent.vopro1.persistence.ProjectDAO">
+      <point x="-40.0" y="-16.0" />
+      <point x="14240.0" y="2960.0" />
+      <point x="330.5" y="40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.model.Task.TaskBuilder" target="be.ugent.vopro1.model.UsecaseEntity">
+      <point x="0.0" y="88.0" />
+      <point x="0.0" y="-124.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.task" target="be.ugent.vopro1.persistence.ScheduleDAO">
+      <point x="40.0" y="-16.0" />
+      <point x="10880.0" y="7640.0" />
+      <point x="-280.0" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.ScheduleAdapter" target="be.ugent.vopro1.adapter.result">
+      <point x="185.0" y="-0.0" />
+      <point x="8614.285714285714" y="5200.0" />
+      <point x="-25.714285714286234" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.model.Task.TaskBuilder" target="be.ugent.vopro1.model.Task">
+      <point x="145.0" y="-0.0" />
+      <point x="15320.0" y="1640.0" />
+      <point x="0.0" y="-88.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.team.TeamInteractorImpl" target="be.ugent.vopro1.persistence.EntityDAO">
+      <point x="-225.5" y="-0.0" />
+      <point x="3440.0" y="1680.0" />
+      <point x="80.0" y="232.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.scheduling.FirstFitScheduler" target="be.ugent.vopro1.scheduling.Schedule">
+      <point x="0.0" y="-28.0" />
+      <point x="0.0" y="88.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.funky" target="be.ugent.vopro1.funky">
+      <point x="40.0" y="16.0" />
+      <point x="1080.0" y="1000.0" />
+      <point x="1200.0" y="1000.0" />
+      <point x="1200.0" y="928.5714285714284" />
+      <point x="67.5" y="8.571428571428442" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.schedule" target="be.ugent.vopro1.persistence.EntityDAO">
+      <point x="0.0" y="-16.0" />
+      <point x="1160.0" y="1240.0" />
+      <point x="-337.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.bean.PersistentTask.PersistentTaskBuilder" target="be.ugent.vopro1.bean.PersistentTask">
+      <point x="0.0" y="88.0" />
+      <point x="0.0" y="-88.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.project.ProjectPermissionImpl" target="be.ugent.vopro1.persistence.ProjectDAO">
+      <point x="209.0" y="-0.0" />
+      <point x="-330.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter" target="be.ugent.vopro1.bean.PersistentProject">
+      <point x="-40.0" y="16.0" />
+      <point x="14560.0" y="7040.0" />
+      <point x="132.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.funky" target="be.ugent.vopro1.persistence.EntityDAO">
+      <point x="0.0" y="16.0" />
+      <point x="0.0" y="-232.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.reference" target="be.ugent.vopro1.reference">
+      <point x="0.0" y="-16.0" />
+      <point x="760.0" y="840.0" />
+      <point x="600.0" y="840.0" />
+      <point x="600.0" y="920.0" />
+      <point x="-83.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.schedule" target="be.ugent.vopro1.interactor.schedule">
+      <point x="-80.0" y="8.571428571428555" />
+      <point x="1000.0" y="8248.57142857143" />
+      <point x="1000.0" y="8320.0" />
+      <point x="1160.0" y="8320.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TaskAdapter" target="be.ugent.vopro1.adapter.result">
+      <point x="0.0" y="-88.5" />
+      <point x="10840.0" y="4360.0" />
+      <point x="68.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.authentication.HeaderAuthenticationHandlerImpl" target="be.ugent.vopro1.persistence.UserDAO">
+      <point x="216.5" y="-0.0" />
+      <point x="-282.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TaskAdapter" target="be.ugent.vopro1.interactor.project.ProjectPermission">
+      <point x="-40.0" y="88.5" />
+      <point x="10800.0" y="7440.0" />
+      <point x="5320.0" y="7440.0" />
+      <point x="5320.0" y="6560.0" />
+      <point x="209.0" y="40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.model.EntityProject" target="be.ugent.vopro1.model.User">
+      <point x="0.0" y="52.5" />
+      <point x="0.0" y="-112.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.schedule" target="be.ugent.vopro1.scheduling.Schedule">
+      <point x="80.0" y="-0.0" />
+      <point x="-192.0" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TaskAdapter" target="be.ugent.vopro1.adapter.CommonAdapter">
+      <point x="-185.0" y="-0.0" />
+      <point x="195.0" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.model.Team" target="be.ugent.vopro1.model.User">
+      <point x="112.5" y="-0.0" />
+      <point x="2680.0" y="7440.0" />
+      <point x="0.0" y="112.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TeamProjectAdapter" target="be.ugent.vopro1.adapter.result">
+      <point x="185.0" y="-0.0" />
+      <point x="8631.42857142857" y="6160.0" />
+      <point x="-8.571428571429351" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.scheduling.Schedule" target="be.ugent.vopro1.model.AvailableUser">
+      <point x="192.0" y="-40.0" />
+      <point x="16120.0" y="8200.0" />
+      <point x="0.0" y="64.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.entity.EntityPermissionImpl" target="be.ugent.vopro1.interactor.authentication.HeaderAuthenticationHandler">
+      <point x="-213.0" y="-0.0" />
+      <point x="9520.0" y="3680.0" />
+      <point x="40.0" y="64.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.user.UserPermissionImpl" target="be.ugent.vopro1.persistence.UserDAO">
+      <point x="189.0" y="40.0" />
+      <point x="10720.0" y="2520.0" />
+      <point x="0.0" y="-184.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.model.Assignment" target="be.ugent.vopro1.model.AvailableUser">
+      <point x="40.0" y="112.5" />
+      <point x="15760.0" y="2160.0" />
+      <point x="-136.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.AnalystProjectAdapter" target="be.ugent.vopro1.interactor.user.UserInteractor">
+      <point x="185.0" y="-0.0" />
+      <point x="-195.0" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.scheduling.Schedule" target="be.ugent.vopro1.model.Assignment">
+      <point x="192.0" y="-80.0" />
+      <point x="15720.0" y="8160.0" />
+      <point x="0.0" y="112.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.factory" target="be.ugent.vopro1.persistence.UserDAO">
+      <point x="-73.0" y="-0.0" />
+      <point x="10360.0" y="3920.0" />
+      <point x="10360.0" y="3280.0" />
+      <point x="-282.5" y="80.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.EntityAdapter" target="be.ugent.vopro1.interactor.entity.EntityPermission">
+      <point x="40.0" y="88.5" />
+      <point x="3680.0" y="3880.0" />
+      <point x="-213.0" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.authentication.HeaderAuthenticationHandler" target="be.ugent.vopro1.interactor.authentication.AuthenticationHandler">
+      <point x="80.0" y="64.0" />
+      <point x="9560.0" y="3560.0" />
+      <point x="-176.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TeamProjectAdapter" target="be.ugent.vopro1.adapter.CommonAdapter">
+      <point x="0.0" y="88.5" />
+      <point x="8320.0" y="7200.0" />
+      <point x="-195.0" y="-40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.model.Team.TeamBuilder" target="be.ugent.vopro1.model.Team">
+      <point x="152.0" y="-0.0" />
+      <point x="-112.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.EntityAdapter" target="be.ugent.vopro1.adapter.result">
+      <point x="186.0" y="-0.0" />
+      <point x="8640.0" y="3600.0" />
+      <point x="0.0" y="-16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.MemberTeamAdapter" target="be.ugent.vopro1.interactor.user.UserPermission">
+      <point x="0.0" y="-88.5" />
+      <point x="8960.0" y="4640.0" />
+      <point x="-189.0" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.model.Task" target="be.ugent.vopro1.model.UsecaseEntity">
+      <point x="-132.5" y="-0.0" />
+      <point x="149.0" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.entity.EntityInteractorImpl" target="be.ugent.vopro1.interactor.entity.EntityInteractor">
+      <point x="-170.0" y="-0.0" />
+      <point x="560.0" y="560.0" />
+      <point x="560.0" y="4600.0" />
+      <point x="-170.0" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.entity.EntityInteractorImpl" target="be.ugent.vopro1.persistence.EntityDAO">
+      <point x="-170.0" y="60.0" />
+      <point x="3760.0" y="620.0" />
+      <point x="3760.0" y="1200.0" />
+      <point x="337.5" y="-40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.ProjectAdapter" target="be.ugent.vopro1.model.EntityProject">
+      <point x="-185.0" y="-0.0" />
+      <point x="102.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.MemberTeamAdapter" target="be.ugent.vopro1.interactor.user.UserInteractor">
+      <point x="185.0" y="-0.0" />
+      <point x="9680.0" y="6720.0" />
+      <point x="-40.0" y="148.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TeamMemberAdapter" target="be.ugent.vopro1.adapter.result">
+      <point x="40.0" y="-88.5" />
+      <point x="5880.0" y="5280.0" />
+      <point x="8620.0" y="5280.0" />
+      <point x="-20.0" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.team.TeamInteractorImpl" target="be.ugent.vopro1.interactor.team.TeamInteractor">
+      <point x="-225.5" y="40.0" />
+      <point x="5600.0" y="1720.0" />
+      <point x="5600.0" y="6160.0" />
+      <point x="-225.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.EntityAdapter" target="be.ugent.vopro1.adapter.CommonAdapter">
+      <point x="-186.0" y="40.0" />
+      <point x="3400.0" y="3640.0" />
+      <point x="3400.0" y="7560.0" />
+      <point x="10400.0" y="7560.0" />
+      <point x="0.0" y="100.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.schedule" target="be.ugent.vopro1.persistence.ProjectDAO">
+      <point x="80.0" y="-5.714285714285722" />
+      <point x="13600.0" y="8234.285714285714" />
+      <point x="0.0" y="220.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.scheduling.Schedule" target="be.ugent.vopro1.model.Task">
+      <point x="0.0" y="-88.5" />
+      <point x="0.0" y="88.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.team.TeamPermissionImpl" target="be.ugent.vopro1.persistence.UserDAO">
+      <point x="209.0" y="40.0" />
+      <point x="11080.0" y="2240.0" />
+      <point x="11080.0" y="3120.0" />
+      <point x="282.5" y="-80.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter" target="be.ugent.vopro1.model.UsecaseEntity">
+      <point x="82.5" y="-0.0" />
+      <point x="-149.0" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.entity.NoRefactorStrategy" target="be.ugent.vopro1.interactor.entity.RefactorStrategy">
+      <point x="0.0" y="-40.0" />
+      <point x="0.0" y="40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.DefaultAdapterManager" target="be.ugent.vopro1.adapter.AdapterManager">
+      <point x="0.0" y="100.0" />
+      <point x="0.0" y="-100.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.project.ProjectInteractorImpl" target="be.ugent.vopro1.persistence.ProjectDAO">
+      <point x="0.0" y="172.0" />
+      <point x="0.0" y="-220.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.EntityAdapter" target="be.ugent.vopro1.interactor.entity.NoRefactorStrategy">
+      <point x="-186.0" y="-0.0" />
+      <point x="86.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.entity.EntityInteractorImpl" target="be.ugent.vopro1.converter">
+      <point x="0.0" y="136.0" />
+      <point x="0.0" y="-16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.action" target="be.ugent.vopro1.adapter.result">
+      <point x="-69.5" y="-0.0" />
+      <point x="8680.0" y="4440.0" />
+      <point x="40.0" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.AnalystProjectAdapter" target="be.ugent.vopro1.interactor.user.UserPermission">
+      <point x="0.0" y="-88.5" />
+      <point x="0.0" y="124.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.ActionAdapter" target="be.ugent.vopro1.adapter.CommonAdapter">
+      <point x="0.0" y="100.0" />
+      <point x="10160.0" y="7160.0" />
+      <point x="-195.0" y="-80.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.entity.SimpleRefactorStrategy" target="be.ugent.vopro1.converter">
+      <point x="-99.5" y="34.285714285714675" />
+      <point x="1320.0" y="3394.2857142857147" />
+      <point x="1320.0" y="8000.0" />
+      <point x="14592.0" y="8000.0" />
+      <point x="-8.0" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.team.TeamInteractorImpl" target="be.ugent.vopro1.persistence.TeamDAO">
+      <point x="0.0" y="172.5" />
+      <point x="0.0" y="-220.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.user.UserInteractorImpl" target="be.ugent.vopro1.persistence.UserDAO">
+      <point x="-195.0" y="-0.0" />
+      <point x="10760.0" y="3440.0" />
+      <point x="40.0" y="184.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter" target="be.ugent.vopro1.converter">
+      <point x="82.5" y="-8.571428571428442" />
+      <point x="14760.0" y="1951.4285714285716" />
+      <point x="14760.0" y="1880.0" />
+      <point x="14640.0" y="1880.0" />
+      <point x="40.0" y="-16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.authentication.AuthenticationFactory" target="be.ugent.vopro1.interactor.authentication.HeaderAuthenticationHandlerImpl">
+      <point x="0.0" y="-40.0" />
+      <point x="0.0" y="100.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.entity.EntityPermissionImpl" target="be.ugent.vopro1.interactor.entity.EntityPermission">
+      <point x="0.0" y="124.0" />
+      <point x="11280.0" y="3880.0" />
+      <point x="213.0" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.EntityAdapter" target="be.ugent.vopro1.interactor.entity.EntityInteractor">
+      <point x="0.0" y="88.5" />
+      <point x="0.0" y="-136.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.bean.PersistentAssignment" target="be.ugent.vopro1.util">
+      <point x="190.5" y="-0.0" />
+      <point x="-59.0" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.bean.PersistentUser.PersistentUserBuilder" target="be.ugent.vopro1.bean.PersistentUser">
+      <point x="0.0" y="136.0" />
+      <point x="0.0" y="-172.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.team.TeamPermissionImpl" target="be.ugent.vopro1.interactor.team.TeamPermission">
+      <point x="0.0" y="148.0" />
+      <point x="0.0" y="-148.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.action" target="be.ugent.vopro1.adapter.ActionAdapter">
+      <point x="0.0" y="16.0" />
+      <point x="0.0" y="-100.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc" target="be.ugent.vopro1.persistence.factory">
+      <point x="-62.5" y="-0.0" />
+      <point x="73.0" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.entity.SimpleRefactorStrategy" target="be.ugent.vopro1.persistence.EntityDAO">
+      <point x="0.0" y="-40.0" />
+      <point x="2880.0" y="1280.0" />
+      <point x="-337.5" y="40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.user.UserInteractorImpl" target="be.ugent.vopro1.interactor.user.UserInteractor">
+      <point x="0.0" y="148.5" />
+      <point x="11760.0" y="4960.0" />
+      <point x="195.0" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TeamMemberAdapter" target="be.ugent.vopro1.adapter.CommonAdapter">
+      <point x="0.0" y="88.5" />
+      <point x="5840.0" y="7224.0" />
+      <point x="-195.0" y="-16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.schedule" target="be.ugent.vopro1.converter">
+      <point x="80.0" y="-2.857142857142833" />
+      <point x="14600.0" y="8237.142857142857" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.ProjectAnalystAdapter" target="be.ugent.vopro1.interactor.project.ProjectInteractor">
+      <point x="0.0" y="88.5" />
+      <point x="7080.0" y="6840.0" />
+      <point x="-282.0" y="-40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.ProjectAdapter" target="be.ugent.vopro1.interactor.project.ProjectPermission">
+      <point x="80.0" y="-88.5" />
+      <point x="4480.0" y="6520.0" />
+      <point x="-209.0" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc" target="be.ugent.vopro1.bean.PersistentProject">
+      <point x="0.0" y="16.0" />
+      <point x="0.0" y="-88.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.MemberTeamAdapter" target="be.ugent.vopro1.adapter.CommonAdapter">
+      <point x="0.0" y="88.5" />
+      <point x="8960.0" y="7192.0" />
+      <point x="-195.0" y="-48.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TeamAdapter" target="be.ugent.vopro1.interactor.team.TeamPermission">
+      <point x="0.0" y="-100.5" />
+      <point x="0.0" y="148.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.factory" target="be.ugent.vopro1.persistence.TeamDAO">
+      <point x="0.0" y="-16.0" />
+      <point x="0.0" y="220.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.model.AvailableUser" target="be.ugent.vopro1.model.User">
+      <point x="-40.0" y="64.5" />
+      <point x="16080.0" y="8040.0" />
+      <point x="2880.0" y="8040.0" />
+      <point x="2880.0" y="7160.0" />
+      <point x="159.5" y="40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.factory" target="be.ugent.vopro1.persistence.ScheduleDAO">
+      <point x="0.0" y="16.0" />
+      <point x="0.0" y="-112.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.scheduling.FirstFitScheduler" target="be.ugent.vopro1.util">
+      <point x="0.0" y="28.0" />
+      <point x="15320.0" y="8600.0" />
+      <point x="480.0" y="8600.0" />
+      <point x="480.0" y="362.8571428571431" />
+      <point x="-59.0" y="2.857142857143117" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.UserAdapter" target="be.ugent.vopro1.adapter.CommonAdapter">
+      <point x="195.0" y="-0.0" />
+      <point x="10400.0" y="4200.0" />
+      <point x="0.0" y="-100.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.user.UserInteractorImpl" target="be.ugent.vopro1.converter">
+      <point x="195.0" y="40.0" />
+      <point x="12000.0" y="3480.0" />
+      <point x="12000.0" y="7480.0" />
+      <point x="14568.0" y="7480.0" />
+      <point x="-32.0" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.EntityAnalystAdapter" target="be.ugent.vopro1.interactor.entity.EntityPermission">
+      <point x="0.0" y="-88.5" />
+      <point x="0.0" y="124.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.project.ProjectInteractorImpl" target="be.ugent.vopro1.funky">
+      <point x="282.0" y="-80.0" />
+      <point x="13960.0" y="1880.0" />
+      <point x="13960.0" y="920.0" />
+      <point x="67.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.ProjectAnalystAdapter" target="be.ugent.vopro1.adapter.CommonAdapter">
+      <point x="-185.0" y="40.0" />
+      <point x="6840.0" y="6560.0" />
+      <point x="6840.0" y="7208.0" />
+      <point x="-195.0" y="-32.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.ProjectAdapter" target="be.ugent.vopro1.adapter.result">
+      <point x="40.0" y="-88.5" />
+      <point x="4440.0" y="5000.0" />
+      <point x="8608.57142857143" y="5000.0" />
+      <point x="-31.42857142857065" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.CommonAdapterFactory" target="be.ugent.vopro1.adapter.CommonAdapter">
+      <point x="0.0" y="40.0" />
+      <point x="9880.0" y="7168.0" />
+      <point x="-195.0" y="-72.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.EntityAnalystAdapter" target="be.ugent.vopro1.adapter.result">
+      <point x="185.0" y="-0.0" />
+      <point x="8602.857142857143" y="4600.0" />
+      <point x="-37.14285714285688" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.team.TeamPermissionImpl" target="be.ugent.vopro1.persistence.TeamDAO">
+      <point x="209.0" y="-0.0" />
+      <point x="12320.0" y="2200.0" />
+      <point x="-40.0" y="-220.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.AdapterManagerFactory" target="be.ugent.vopro1.adapter.DefaultAdapterManager">
+      <point x="-157.5" y="-0.0" />
+      <point x="217.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.bean.PersistentProject.PersistentProjectBuilder" target="be.ugent.vopro1.bean.PersistentProject">
+      <point x="0.0" y="-88.0" />
+      <point x="0.0" y="88.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.ScheduleAdapter" target="be.ugent.vopro1.adapter.CommonAdapter">
+      <point x="0.0" y="88.5" />
+      <point x="5360.0" y="7232.0" />
+      <point x="-195.0" y="-8.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc" target="be.ugent.vopro1.bean.PersistentObject">
+      <point x="0.0" y="-16.0" />
+      <point x="0.0" y="112.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.project.ProjectPermissionImpl" target="be.ugent.vopro1.interactor.authentication.HeaderAuthenticationHandler">
+      <point x="-209.0" y="-0.0" />
+      <point x="162.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.user.UserInteractorFactory" target="be.ugent.vopro1.interactor.user.UserInteractor">
+      <point x="0.0" y="-40.0" />
+      <point x="0.0" y="148.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.project.ProjectInteractorFactory" target="be.ugent.vopro1.interactor.project.ProjectInteractor">
+      <point x="-158.5" y="-0.0" />
+      <point x="7640.0" y="6600.0" />
+      <point x="40.0" y="-172.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.model.EntityProject.EntityProjectBuilder" target="be.ugent.vopro1.model.User">
+      <point x="197.5" y="-0.0" />
+      <point x="-159.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.project.ProjectInteractorImpl" target="be.ugent.vopro1.converter">
+      <point x="282.0" y="-0.0" />
+      <point x="-82.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TeamProjectAdapter" target="be.ugent.vopro1.interactor.team.TeamInteractor">
+      <point x="-185.0" y="-0.0" />
+      <point x="225.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.factory" target="be.ugent.vopro1.persistence.factory">
+      <point x="20.0" y="16.0" />
+      <point x="12380.0" y="4040.0" />
+      <point x="12560.0" y="4040.0" />
+      <point x="12560.0" y="3924.2857142857147" />
+      <point x="73.0" y="4.2857142857146755" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.project.ProjectPermissionImpl" target="be.ugent.vopro1.interactor.project.ProjectPermission">
+      <point x="0.0" y="148.0" />
+      <point x="12920.0" y="6840.0" />
+      <point x="12040.0" y="6840.0" />
+      <point x="12040.0" y="7520.0" />
+      <point x="4920.0" y="7520.0" />
+      <point x="0.0" y="148.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.project.ProjectInteractorImpl" target="be.ugent.vopro1.persistence.EntityDAO">
+      <point x="0.0" y="-172.0" />
+      <point x="13600.0" y="1280.0" />
+      <point x="337.5" y="40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TeamMemberAdapter" target="be.ugent.vopro1.interactor.team.TeamInteractor">
+      <point x="185.0" y="40.0" />
+      <point x="6280.0" y="5520.0" />
+      <point x="-40.0" y="-172.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.team.TeamInteractorImpl" target="be.ugent.vopro1.persistence.ProjectDAO">
+      <point x="225.5" y="40.0" />
+      <point x="13200.0" y="1720.0" />
+      <point x="13200.0" y="2880.0" />
+      <point x="-330.5" y="-40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.schedule" target="be.ugent.vopro1.funky">
+      <point x="-80.0" y="-0.0" />
+      <point x="1040.0" y="8240.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.AdapterManagerFactory" target="be.ugent.vopro1.adapter.AdapterManager">
+      <point x="0.0" y="40.0" />
+      <point x="1240.0" y="9080.0" />
+      <point x="217.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.entity.SimpleRefactorStrategy" target="be.ugent.vopro1.funky">
+      <point x="-99.5" y="-0.0" />
+      <point x="1060.0" y="3360.0" />
+      <point x="20.0" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.project.ProjectInteractorImpl" target="be.ugent.vopro1.persistence.TeamDAO">
+      <point x="-40.0" y="172.0" />
+      <point x="13560.0" y="2200.0" />
+      <point x="12400.0" y="2200.0" />
+      <point x="40.0" y="-220.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.entity.InteractorFactory" target="be.ugent.vopro1.interactor.entity.EntityInteractor">
+      <point x="0.0" y="-40.0" />
+      <point x="0.0" y="136.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.bean.PersistentAssignment.PersistentAssignmentBuilder" target="be.ugent.vopro1.bean.PersistentAssignment">
+      <point x="0.0" y="88.0" />
+      <point x="0.0" y="-88.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.entity.SimpleRefactorStrategy" target="be.ugent.vopro1.interactor.entity.RefactorStrategy">
+      <point x="0.0" y="40.0" />
+      <point x="0.0" y="-40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TeamAdapter" target="be.ugent.vopro1.adapter.CommonAdapter">
+      <point x="0.0" y="100.5" />
+      <point x="6800.0" y="7216.0" />
+      <point x="-195.0" y="-24.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.authentication.AuthenticationFactory" target="be.ugent.vopro1.interactor.authentication.AuthenticationHandler">
+      <point x="0.0" y="40.0" />
+      <point x="0.0" y="-52.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.entity.EntityPermissionImpl" target="be.ugent.vopro1.persistence.UserDAO">
+      <point x="-213.0" y="-40.0" />
+      <point x="10720.0" y="3640.0" />
+      <point x="0.0" y="184.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.factory" target="be.ugent.vopro1.persistence.EntityDAO">
+      <point x="-40.0" y="16.0" />
+      <point x="12320.0" y="4000.0" />
+      <point x="9240.0" y="4000.0" />
+      <point x="9240.0" y="2960.0" />
+      <point x="3400.0" y="2960.0" />
+      <point x="40.0" y="232.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.entity.EntityInteractorImpl" target="be.ugent.vopro1.util">
+      <point x="0.0" y="-136.0" />
+      <point x="14600.0" y="368.57142857142935" />
+      <point x="-59.0" y="8.571428571429351" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.result" target="be.ugent.vopro1.adapter.result">
+      <point x="68.5" y="-8.571428571428442" />
+      <point x="8800.0" y="4351.428571428572" />
+      <point x="8800.0" y="4280.0" />
+      <point x="8680.0" y="4280.0" />
+      <point x="40.0" y="-16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.bean.PersistentTeam.PersistentTeamBuilder" target="be.ugent.vopro1.bean.PersistentTeam">
+      <point x="0.0" y="88.0" />
+      <point x="0.0" y="-88.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.bean.PersistentAssignment.PersistentAssignmentBuilder" target="be.ugent.vopro1.util">
+      <point x="265.0" y="-0.0" />
+      <point x="15720.0" y="80.0" />
+      <point x="0.0" y="-16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.scheduling.FirstFitScheduler" target="be.ugent.vopro1.scheduling.Scheduler">
+      <point x="-260.5" y="-0.0" />
+      <point x="260.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.user.UserPermissionImpl" target="be.ugent.vopro1.interactor.authentication.HeaderAuthenticationHandler">
+      <point x="0.0" y="124.0" />
+      <point x="0.0" y="-64.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.jdbc" target="be.ugent.vopro1.persistence.EntityDAO">
+      <point x="-13.33333333333394" y="-16.0" />
+      <point x="14266.666666666666" y="2440.0" />
+      <point x="14040.0" y="2440.0" />
+      <point x="14040.0" y="1240.0" />
+      <point x="337.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.model.User.UserBuilder" target="be.ugent.vopro1.model.User">
+      <point x="-165.0" y="-0.0" />
+      <point x="159.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.project.ProjectPermissionImpl" target="be.ugent.vopro1.persistence.TeamDAO">
+      <point x="0.0" y="-148.0" />
+      <point x="12920.0" y="2520.0" />
+      <point x="319.5" y="40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.AnalystProjectAdapter" target="be.ugent.vopro1.adapter.CommonAdapter">
+      <point x="0.0" y="88.5" />
+      <point x="9200.0" y="7184.0" />
+      <point x="-195.0" y="-56.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TeamMemberAdapter" target="be.ugent.vopro1.interactor.team.TeamPermission">
+      <point x="185.0" y="-0.0" />
+      <point x="-209.0" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.task" target="be.ugent.vopro1.converter">
+      <point x="62.5" y="-0.0" />
+      <point x="14576.0" y="7840.0" />
+      <point x="-24.0" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.AnalystProjectAdapter" target="be.ugent.vopro1.adapter.result">
+      <point x="-40.0" y="88.5" />
+      <point x="9160.0" y="5120.0" />
+      <point x="8664.0" y="5120.0" />
+      <point x="24.0" y="16.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.model.EntityProject.EntityProjectBuilder" target="be.ugent.vopro1.model.EntityProject">
+      <point x="0.0" y="-76.0" />
+      <point x="1600.0" y="6920.0" />
+      <point x="-102.5" y="40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.task" target="be.ugent.vopro1.persistence.EntityDAO">
+      <point x="-62.5" y="-0.0" />
+      <point x="3360.0" y="7840.0" />
+      <point x="0.0" y="232.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.authentication.HeaderAuthenticationHandlerImpl" target="be.ugent.vopro1.interactor.authentication.HeaderAuthenticationHandler">
+      <point x="-216.5" y="-0.0" />
+      <point x="9600.0" y="3200.0" />
+      <point x="120.0" y="64.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter" target="be.ugent.vopro1.bean.PersistentObject">
+      <point x="-82.5" y="8.571428571428442" />
+      <point x="14280.0" y="1968.5714285714284" />
+      <point x="0.0" y="-112.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.converter" target="be.ugent.vopro1.model.EntityProject">
+      <point x="-16.0" y="16.0" />
+      <point x="14584.0" y="7960.0" />
+      <point x="1360.0" y="7960.0" />
+      <point x="1360.0" y="6880.0" />
+      <point x="-102.5" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.model.Team.TeamBuilder" target="be.ugent.vopro1.model.User">
+      <point x="0.0" y="-88.0" />
+      <point x="2040.0" y="7160.0" />
+      <point x="-159.5" y="40.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.task" target="be.ugent.vopro1.interactor.task">
+      <point x="0.0" y="16.0" />
+      <point x="10840.0" y="7920.0" />
+      <point x="10960.0" y="7920.0" />
+      <point x="10960.0" y="7848.571428571428" />
+      <point x="62.5" y="8.571428571428555" />
+    </edge>
+    <edge source="be.ugent.vopro1.interactor.project.ProjectInteractorImpl" target="be.ugent.vopro1.model.AvailableUser">
+      <point x="282.0" y="-40.0" />
+      <point x="14000.0" y="1920.0" />
+      <point x="14000.0" y="800.0" />
+      <point x="16120.0" y="800.0" />
+      <point x="0.0" y="-64.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.EntityAnalystAdapter" target="be.ugent.vopro1.interactor.entity.EntityInteractor">
+      <point x="-185.0" y="-0.0" />
+      <point x="170.0" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.UserAdapter" target="be.ugent.vopro1.interactor.authentication.HeaderAuthenticationHandler">
+      <point x="0.0" y="-100.5" />
+      <point x="0.0" y="64.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.persistence.factory" target="be.ugent.vopro1.persistence.ProjectDAO">
+      <point x="40.0" y="-16.0" />
+      <point x="12400.0" y="3840.0" />
+      <point x="13560.0" y="3840.0" />
+      <point x="-40.0" y="220.5" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.ScheduleAdapter" target="be.ugent.vopro1.interactor.project.ProjectPermission">
+      <point x="-185.0" y="-0.0" />
+      <point x="4920.0" y="5200.0" />
+      <point x="0.0" y="-148.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.UserAdapter" target="be.ugent.vopro1.interactor.user.UserPermission">
+      <point x="0.0" y="100.5" />
+      <point x="9480.0" y="4640.0" />
+      <point x="189.0" y="-0.0" />
+    </edge>
+    <edge source="be.ugent.vopro1.adapter.TeamProjectAdapter" target="be.ugent.vopro1.interactor.project.ProjectInteractor">
+      <point x="-185.0" y="40.0" />
+      <point x="7600.0" y="6200.0" />
+      <point x="0.0" y="-172.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.07782172193489505" x="8182.5" y="4702.5" />
+  <SelectedNodes>
+    <node>be.ugent.vopro1.rest</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>Production</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>cec47796-2770-46a9-b86a-4b2645487916.schema:vopro.public</OriginalElement>
+  <nodes>
+    <node x="815.5" y="787.5">cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.project</node>
+    <node x="-36.5" y="800.0">cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.team_project</node>
+    <node x="595.5" y="600.0">cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.project_analyst</node>
+    <node x="-24.5" y="587.5">cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.team</node>
+    <node x="185.5" y="551.5">cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.person</node>
+    <node x="-36.5" y="400.0">cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.team_member</node>
+    <node x="795.5" y="123.5">cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.document</node>
+    <node x="415.5" y="147.5">cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.task</node>
+    <node x="800.0" y="0.0">cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.entity_analyst</node>
+    <node x="416.0" y="323.5">cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.assignment</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.entity_analyst" target="cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.document">
+      <point x="0.0" y="40.0" />
+      <point x="0.0" y="-76.5" />
+    </edge>
+    <edge source="cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.team" target="cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.person">
+      <point x="64.5" y="-0.0" />
+      <point x="-94.5" y="-0.0" />
+    </edge>
+    <edge source="cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.document" target="cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.project">
+      <point x="0.0" y="76.5" />
+      <point x="0.0" y="-52.5" />
+    </edge>
+    <edge source="cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.entity_analyst" target="cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.person">
+      <point x="-80.0" y="-0.0" />
+      <point x="280.0" y="40.0" />
+      <point x="0.0" y="-88.5" />
+    </edge>
+    <edge source="cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.team_project" target="cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.project">
+      <point x="76.5" y="-0.0" />
+      <point x="-64.5" y="-0.0" />
+    </edge>
+    <edge source="cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.project_analyst" target="cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.project">
+      <point x="0.0" y="40.0" />
+      <point x="680.0" y="800.0" />
+      <point x="-64.5" y="-40.0" />
+    </edge>
+    <edge source="cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.team_project" target="cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.team">
+      <point x="0.0" y="-40.0" />
+      <point x="0.0" y="52.5" />
+    </edge>
+    <edge source="cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.assignment" target="cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.person">
+      <point x="0.0" y="76.5" />
+      <point x="520.0" y="600.0" />
+      <point x="94.5" y="-40.0" />
+    </edge>
+    <edge source="cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.team_member" target="cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.team">
+      <point x="0.0" y="40.0" />
+      <point x="0.0" y="-52.5" />
+    </edge>
+    <edge source="cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.project_analyst" target="cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.person">
+      <point x="-84.5" y="-0.0" />
+      <point x="94.5" y="-0.0" />
+    </edge>
+    <edge source="cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.project" target="cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.person">
+      <point x="-64.5" y="-20.0" />
+      <point x="280.0" y="820.0" />
+      <point x="0.0" y="88.5" />
+    </edge>
+    <edge source="cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.assignment" target="cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.project">
+      <point x="104.0" y="-0.0" />
+      <point x="840.0" y="400.0" />
+      <point x="-40.0" y="-52.5" />
+    </edge>
+    <edge source="cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.team_member" target="cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.person">
+      <point x="76.5" y="-0.0" />
+      <point x="240.0" y="440.0" />
+      <point x="-40.0" y="-88.5" />
+    </edge>
+    <edge source="cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.assignment" target="cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.task">
+      <point x="0.0" y="-76.5" />
+      <point x="0.0" y="52.5" />
+    </edge>
+    <edge source="cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.task" target="cec47796-2770-46a9-b86a-4b2645487916.table:vopro.public.document">
+      <point x="104.5" y="-0.0" />
+      <point x="-84.5" y="-0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="464.0" y="446.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Key columns</Category>
+    <Category>Columns</Category>
+  </Categories>
+</Diagram>
+

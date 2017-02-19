@@ -1,0 +1,63 @@
+<div class="custom-container" id="processDetails">
+
+<h1>
+    {{gCtrl.formatToHtml(ctrl.processName)}}
+</h1>
+
+<p ng-show="gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName)">
+  <a ng-href="#/projects/{{ctrl.projectName}}/processes/{{ctrl.processName}}/edit" ng-click="gCtrl.update()">
+    <button class="btn btn-warning">
+      <span class="glyphicon glyphicon-pencil"></span> Edit process
+    </button>
+  </a>
+  <button class="btn btn-danger" ng-click="ctrl.deleteProcess()">
+    <span class="glyphicon glyphicon-remove"></span> Delete process
+  </button>
+</p>
+
+<hr />
+
+<table class="table table-hover">
+<tbody>
+<tr>
+    <td class="header-td col-xs-2">
+        Project name:
+    </td>
+    <td>
+        {{gCtrl.formatToHtml(ctrl.projectName)}}
+    </td>
+</tr>
+<tr>
+    <td class="header-td col-xs-2">
+        Process name:
+    </td>
+    <td>
+        {{gCtrl.formatToHtml(ctrl.processName)}}
+    </td>
+</tr>
+<tr>
+    <td class="header-td col-xs-2">
+        Priority:
+    </td>
+    <td>
+        {{ctrl.processPriority}}
+    </td>
+</tr>
+<tr>
+    <td class="header-td">
+        Usecases:
+    </td>
+    <td>
+        <span ng-repeat="usecase in ctrl.usecases track by $index" ng-hide="ctrl.usecases.length == 0">
+            <span ng-hide="$index == 0"><br></span>
+            {{usecase}}
+        </span>
+        <span ng-show="ctrl.usecases.length == 0">
+            <em>No usecases</em>
+        </span>
+    </td>
+</tr>
+</tbody>
+</table>
+
+</div>

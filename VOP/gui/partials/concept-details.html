@@ -1,0 +1,113 @@
+<div class="custom-container" id="conceptDetails">
+
+<h1>
+    {{gCtrl.formatToHtml(ctrl.conceptName)}}
+</h1>
+
+<p ng-show="gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName)">
+  <a ng-href="#/projects/{{ctrl.projectName}}/concepts/{{ctrl.conceptName}}/edit" ng-click="gCtrl.update()">
+    <button class="btn btn-warning">
+      <span class="glyphicon glyphicon-pencil"></span> Edit concept
+    </button>
+  </a>
+  <button class="btn btn-danger" ng-click="ctrl.deleteConcept()" ng-show="ctrl.referencesLoaded">
+    <span class="glyphicon glyphicon-remove"></span> Delete concept
+  </button>
+</p>
+
+<hr />
+
+<table class="table table-hover">
+<tbody>
+<tr>
+    <td class="header-td col-xs-2">
+        Project name:
+    </td>
+    <td>
+        {{gCtrl.formatToHtml(ctrl.projectName)}}
+    </td>
+</tr>
+<tr>
+    <td class="header-td col-xs-2">
+        Concept name:
+    </td>
+    <td>
+        {{gCtrl.formatToHtml(ctrl.conceptName)}}
+    </td>
+</tr>
+<tr>
+    <td class="header-td col-xs-2">
+        Definition:
+    </td>
+    <td>
+        {{ctrl.conceptDefinition}}
+    </td>
+</tr>
+<tr>
+    <td class="header-td col-xs-2">
+        Attributes:
+    </td>
+    <td>
+        <span ng-repeat="attr in ctrl.conceptAttributes track by $index">
+            <span ng-hide="$index == 0"><br></span>
+            {{attr}}
+        </span>
+        <span ng-show="ctrl.conceptAttributes.length == 0">
+            <em>No attributes...</em>
+        </span>
+    </td>
+</tr>
+</tbody>
+</table>
+
+<h3>Concept referenced by:</h3>
+
+<div ng-show="ctrl.referencesLoaded">
+<table class="table table-hover" ng-hide="ctrl.references.length == 0">
+    <thead>
+    <th class="col-xs-4">
+    Entity name
+    </th>
+    <th>
+    Type
+    </th>
+    </thead>
+    <tr ng-repeat="reference in ctrl.references">
+    <td class="col-xs-4" ng-show="reference.type == 'usecase'">
+        <a ng-href="#/projects/{{gCtrl.currentProject}}/usecases/{{reference.name}}" ng-click="gCtrl.update()">
+        <button class="btn">
+        <span class="glyphicon glyphicon-info-sign"></span> {{gCtrl.formatToHtml(reference.name)}}
+        </button>
+        </a>
+    </td>
+    <td class="col-xs-4" ng-show="reference.type == 'concept'">
+        <a ng-href="#/projects/{{gCtrl.currentProject}}/concepts/{{reference.name}}" ng-click="gCtrl.update()">
+        <button class="btn">
+        <span class="glyphicon glyphicon-info-sign"></span> {{gCtrl.formatToHtml(reference.name)}}
+        </button>
+        </a>
+    </td>
+    <td class="col-xs-4" ng-show="reference.type == 'actor'">
+        <a ng-href="#/projects/{{gCtrl.currentProject}}/actors/{{reference.name}}" ng-click="gCtrl.update()">
+        <button class="btn">
+        <span class="glyphicon glyphicon-info-sign"></span> {{gCtrl.formatToHtml(reference.name)}}
+        </button>
+        </a>
+    </td>
+    <td class="central-td">
+    {{reference.type}}
+    </td>
+    </tr>
+</table>
+<p class="empty-message" ng-show="ctrl.references.length == 0">
+    There are no references to this concept...
+</p>
+</div>
+
+<div ng-hide="ctrl.referencesLoaded">
+<p class="empty-message" ng-show="ctrl.references.length == 0">
+    References to this concept could not be loaded...
+</p>
+</div>
+
+</div>

@@ -1,0 +1,489 @@
+<div class="custom-container" id="usecaseDetails">
+
+<h1 id="usecaseTitle">
+    {{gCtrl.formatToHtml(ctrl.usecaseName)}}
+</h1>
+
+<div id="alerts">
+    <div id="patchAnalystAlert" ng-show="gCtrl.getAlert('patchAnalystAlert') == true"  class="alert alert-success" role="alert">
+        <button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('patchAnalystAlert');"><span aria-hidden="true">&times;</span></button>
+        Analysts successfully updated!
+    </div>
+    <div id="scheduleUsecaseAlert" ng-show="gCtrl.getAlert('scheduleUsecaseAlert') == true"  class="alert alert-success" role="alert">
+        <button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('scheduleUsecaseAlert');"><span aria-hidden="true">&times;</span></button>
+        Usecase successfully scheduled!
+    </div>
+    <div id="rescheduleUsecaseAlert" ng-show="gCtrl.getAlert('rescheduleUsecaseAlert') == true"  class="alert alert-success" role="alert">
+        <button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('rescheduleUsecaseAlert');"><span aria-hidden="true">&times;</span></button>
+        Usecase successfully rescheduled!
+    </div>
+    <div id="unscheduleUsecaseAlert" ng-show="gCtrl.getAlert('unscheduleUsecaseAlert') == true"  class="alert alert-success" role="alert">
+        <button type="button" class="close" aria-label="Close" ng-click="gCtrl.clearAlert('unscheduleUsecaseAlert');"><span aria-hidden="true">&times;</span></button>
+        Usecase successfully unscheduled!
+    </div>
+</div>
+
+<p ng-hide="ctrl.scheduleUsecase || ctrl.rescheduleUsecase">
+  <a ng-href="#/projects/{{ctrl.projectName}}/usecases/{{ctrl.usecaseName}}/stories" ng-click="gCtrl.update()">
+    <button class="btn btn-success">
+       <span class="glyphicon glyphicon-random"></span> Generate stories
+    </button>
+  </a>
+  <a ng-show="gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName)" ng-href="#/projects/{{ctrl.projectName}}/usecases/{{ctrl.usecaseName}}/edit" ng-click="gCtrl.update()">
+    <button class="btn btn-warning">
+      <span class="glyphicon glyphicon-pencil"></span> Edit use case
+    </button>
+  </a>
+  <button class="btn btn-warning"  ng-show="gCtrl.isAdmin() || ctrl.isProjectLeader" ng-click="gCtrl.setUpdateUsecaseAnalysts(true)">
+    <span class="glyphicon glyphicon-pencil"></span> Update use case analysts
+  </button>
+  <button class="btn btn-danger" ng-click="ctrl.deleteUsecase()" ng-show="ctrl.referencesLoaded && (gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName))">
+    <span class="glyphicon glyphicon-remove"></span> Delete use case
+  </button>
+</p>
+
+<h2 ng-show="(gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName))">Scheduling</h2>
+
+<div ng-show="!ctrl.scheduleUsecase && !ctrl.rescheduleUsecase && (gCtrl.isAdmin() || ctrl.isProjectLeader)">
+  <button ng-show="!ctrl.usecaseIsScheduled" class="btn btn-info" ng-click="ctrl.scheduleUsecase = true" ng-show="(gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName))">
+    <span class="glyphicon glyphicon-calendar"></span> Schedule use case
+  </button>
+  <button ng-show="ctrl.usecaseIsScheduled" class="btn btn-danger" ng-click="ctrl.unschedule()" ng-show="(gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName))">
+    <span class="glyphicon glyphicon-remove"></span> Unschedule use case
+  </button>
+  <button ng-show="ctrl.usecaseIsScheduled" class="btn btn-warning" ng-click="ctrl.rescheduleUsecase = true" ng-show="(gCtrl.isAdmin() || ctrl.isProjectLeader || gCtrl.isAnalyst(ctrl.projectName))">
+    <span class="glyphicon glyphicon-pencil"></span> Reschedule use case
+  </button>
+</div>
+
+<div ng-show="ctrl.scheduleUsecase">
+    Hours of Work:
+    <input type="number" ng-model="ctrl.workload" >
+    Priority:
+    <input type="number" ng-model="ctrl.priority" >
+    <button class="btn btn-info"  ng-click="ctrl.schedule()">
+        <span class="glyphicon glyphicon-calendar"></span> Schedule
+    </button>
+    <button class="btn btn-danger"  ng-click="ctrl.scheduleUsecase = false">
+        <span class="glyphicon glyphicon-remove"></span> Cancel
+    </button>
+</div>
+
+<div ng-show="ctrl.rescheduleUsecase">
+Hours of Work:	<input type="number" ng-model="ctrl.workload" > Priority: <input type="number" ng-model="ctrl.priority" >
+<button class="btn btn-info"  ng-click="ctrl.reschedule()">
+    <span class="glyphicon glyphicon-calender"></span> Schedule
+</button>
+<button class="btn btn-danger"  ng-click="ctrl.rescheduleUsecase = false">
+    <span class="glyphicon glyphicon-calender"></span> Cancel
+</button>
+</div>
+
+<div ng-show="gCtrl.isUpdateUsecaseAnalysts()">
+    <table class="table table-hover">
+        <thead>
+          <th class="col-xs-2">
+            Use case analyst
+          </th>
+          <th class="col-xs-2">
+            First name
+          </th>
+          <th class="col-xs-2">
+            Last name
+          </th>
+          <th>
+            Email
+          </th>
+        </thead>
+        <tr ng-repeat="member in ctrl.members">
+          <td class="col-xs-2">
+            <input type="checkbox" ng-model="member.analystHere">
+          </td>
+          <td class="col-xs-2">
+            {{member.user.firstName}}
+          </td>
+          <td class="col-xs-2">
+            {{member.user.lastName}}
+          </td>
+          <td>
+            {{member.user.email}}
+          </td>
+        </tr>
+        </table>
+        <p>
+            <button class="btn btn-danger" ng-click="gCtrl.setUpdateUsecaseAnalysts(false)">
+                <span class="glyphicon glyphicon-chevron-left"></span> Back
+            </button>
+            <button class="btn btn-success" ng-click="ctrl.updateAnalysts()">
+                <span class="glyphicon glyphicon-ok"></span> Update changes
+            </button>
+        </p>
+</div>
+
+<div ng-hide="gCtrl.isUpdateUsecaseAnalysts()">
+
+<hr />
+
+<table class="table table-hover">
+<tbody>
+<tr>
+    <td class="header-td col-xs-2">
+        Project name:
+    </td>
+    <td>
+        {{gCtrl.formatToHtml(ctrl.projectName)}}
+    </td>
+</tr>
+<tr>
+    <td class="header-td col-xs-2">
+        Use case name:
+    </td>
+    <td>
+        {{gCtrl.formatToHtml(ctrl.usecaseName)}}
+    </td>
+</tr>
+<tr>
+    <td class="header-td col-xs-2">
+        Objective:
+    </td>
+    <td>
+        <span ng-show="ctrl.usecaseObjective.length != 0">
+            <span ng-if="ctrl.isReference(ctrl.usecaseObjective)">
+            {{ctrl.linearizeReference(ctrl.usecaseObjective)}}
+            </span>
+            <span ng-if="ctrl.isTextual(ctrl.usecaseObjective)">
+            {{ctrl.usecaseObjective.data.text}}
+            </span>
+        </span>
+        <span ng-show="ctrl.usecaseObjective.length == 0"><em>Objective unknown</em></span>
+    </td>
+</tr>
+<tr>
+    <td class="header-td col-xs-2">
+        Preconditions:
+    </td>
+    <td>
+        <span ng-repeat="precondition in ctrl.usecasePreconditions track by $index">
+            <span ng-hide="$index == 0"><br></span>
+            <span ng-if="ctrl.isReference(precondition)">
+            {{ctrl.linearizeReference(precondition)}}
+            </span>
+            <span ng-if="ctrl.isTextual(precondition)">
+            {{precondition.data.text}}
+            </span>
+        </span>
+        <span ng-show="ctrl.usecasePreconditions.length == 0">
+            <em>No preconditions...</em>
+        </span>
+    </td>
+</tr>
+<tr>
+    <td class="header-td col-xs-2">
+        Postconditions:
+    </td>
+    <td>
+        <span ng-repeat="postcondition in ctrl.usecasePostconditions track by $index">
+            <span ng-hide="$index == 0"><br></span>
+            <span ng-if="ctrl.isReference(postcondition)">
+            {{ctrl.linearizeReference(postcondition)}}
+            </span>
+            <span ng-if="ctrl.isTextual(postcondition)">
+            {{postcondition.data.text}}
+            </span>
+        </span>
+        <span ng-show="ctrl.usecasePostconditions.length == 0">
+            <em>No postconditions...</em>
+        </span>
+    </td>
+</tr>
+<tr>
+    <td class="header-td col-xs-2">
+        Actors:
+    </td>
+    <td>
+        <span ng-repeat="actor in ctrl.usecaseActors track by $index">
+            <span ng-hide="$index == 0"><br></span>
+            <a ng-href="#/projects/{{gCtrl.currentProject}}/actors/{{actor}}" ng-click="gCtrl.update()">
+                {{gCtrl.formatToHtml(actor)}}
+            </a>
+        </span>
+        <span ng-show="ctrl.usecaseActors.length == 0">
+            <em>No actors...</em>
+        </span>
+    </td>
+</tr>
+<tr>
+    <td class="header-td col-xs-2">
+        Concepts:
+    </td>
+    <td>
+        <span ng-repeat="concept in ctrl.usecaseConcepts track by $index">
+            <span ng-hide="$index == 0"><br></span>
+            <a ng-href="#/projects/{{gCtrl.currentProject}}/concepts/{{concept}}" ng-click="gCtrl.update()">
+                {{gCtrl.formatToHtml(concept)}}
+            </a>
+        </span>
+        <span ng-show="ctrl.usecaseConcepts.length == 0">
+            <em>No concepts...</em>
+        </span>
+    </td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+  <h2>Normal flow</h2>
+  <table class="table table-hover">
+    <thead>
+      <th class="col-xs-2">
+      </th>
+      <th class="col-xs-6">
+        Text
+      </th>
+      <th>
+        Executor
+      </th>
+    </thead>
+    <tr ng-repeat="step in ctrl.usecaseNormalFlow.behaviors track by $index">
+      <td class="col-xs-2 header-td">
+        Step {{$index + 1}}
+      </td>
+      <td ng-if="ctrl.isTextualInStep(step)" class="col-xs-6">
+        {{step.behavior.description.data.text}}
+      </td>
+      <td ng-if="ctrl.isReferenceInStep(step)" class="col-xs-6">
+        {{ctrl.linearizeReference(step.behavior.description)}}
+      </td>
+      <td ng-if="ctrl.isBranch(step)" class="col-xs-6">
+        {{ctrl.findStepInBranch(step.behavior.normalBehavior)}}
+      </td>
+      <td ng-if="ctrl.isReferenceInStep(step) || ctrl.isTextualInStep(step)">
+        {{gCtrl.formatToHtml(step.behavior.executor)}}
+      </td>
+      <td ng-if="ctrl.isBranch(step)">
+        {{ctrl.findExecutorInBranch(step.behavior.normalBehavior)}}
+      </td>
+    </tr>
+  </table>
+  <p class="empty-message" ng-show="ctrl.usecaseNormalFlow.behaviors.length == 0">
+      No steps in normal flow...
+  </p>
+
+  <hr />
+
+  <h2>Alternative flows</h2>
+
+  <div ng-repeat="alternativeFlow in ctrl.usecaseAlternativeFlows track by $index">
+    <hr ng-show="$index != 0" />
+
+    <h3>Alternative flow {{$index + 1}}</h3>
+
+    <table class="table table-hover">
+    <tbody>
+    <tr>
+        <td class="header-td col-xs-2">
+            Branches from:
+        </td>
+        <td>
+            Step {{ctrl.BranchesAlternativeFlow[$index]}} in the normal flow
+        </td>
+    </tr>
+    <tr>
+        <td class="header-td col-xs-2">
+            Condition:
+        </td>
+        <td ng-if="ctrl.isTextual(alternativeFlow.condition)">
+            {{alternativeFlow.condition.data.text}}
+        </td>
+        <td ng-if="ctrl.isReference(alternativeFlow.condition)">
+            {{ctrl.linearizeReference(alternativeFlow.condition)}}
+        </td>
+    </tr>
+    </tbody>
+    </table>
+
+    <table class="table table-hover">
+    <thead>
+      <th class="col-xs-2">
+      </th>
+      <th class="col-xs-6">
+        Text
+      </th>
+      <th>
+        Executor
+      </th>
+    </thead>
+    <tbody>
+    <tr ng-repeat="alternativestep in alternativeFlow.behavior.behaviors track by $index">
+      <td ng-hide="ctrl.isReturn(alternativestep)" class="header-td col-xs-2">
+        Step {{$index + 1}}
+      </td>
+      <td ng-show="ctrl.isReturn(alternativestep)" class="header-td col-xs-2">
+        Return
+      </td>
+      <td ng-if="ctrl.isTextualInStep(alternativestep)" class="col-xs-6">
+        {{alternativestep.behavior.description.data.text}}
+      </td>
+      <td ng-if="ctrl.isReferenceInStep(alternativestep)" class="col-xs-6">
+        {{ctrl.linearizeReference(alternativestep.behavior.description)}}
+      </td>
+      <td ng-if="ctrl.isReturn(alternativestep)" class="col-xs-6">
+        Return to step {{ctrl.returnsMap[alternativeFlow.name]}}  of normal flow
+      </td>
+
+      <td>
+        {{gCtrl.formatToHtml(alternativestep.behavior.executor)}}
+      </td>
+
+      <td ng-if="ctrl.isReturn(alternativestep)">
+      </td>
+    </tr>
+    </tbody>
+    </table>
+
+    <p class="empty-message" ng-show="alternativeFlow.length == 0">
+        No steps in alternative flow...
+    </p>
+
+  </div>
+
+  <p class="empty-message" ng-show="ctrl.usecaseAlternativeFlows.length == 0">
+      No alternative flows...
+  </p>
+
+  <hr />
+
+  <h2>Exceptional flows</h2>
+
+  <div ng-repeat="exceptionalFlow in ctrl.usecaseExceptionalFlows track by $index">
+    <hr ng-show="$index != 0" />
+
+    <h3>Exceptional flow {{$index + 1}}</h3>
+
+    <table class="table table-hover">
+    <tbody>
+    <tr>
+        <td class="header-td col-xs-2">
+            Branches from:
+        </td>
+        <td>
+            Step {{ctrl.BranchesExceptionalFlow[$index]}} in the normal flow
+        </td>
+    </tr>
+    <tr>
+        <td class="header-td col-xs-2">
+            Condition:
+        </td>
+        <td ng-if="ctrl.isTextual(exceptionalFlow.condition)">
+            {{exceptionalFlow.condition.data.text}}
+        </td>
+        <td ng-if="ctrl.isReference(exceptionalFlow.condition)">
+            {{ctrl.linearizeReference(exceptionalFlow.condition)}}
+        </td>
+    </tr>
+    </tbody>
+    </table>
+
+    <table class="table table-hover">
+    <thead>
+      <th class="col-xs-2">
+      </th>
+      <th class="col-xs-6">
+        Text
+      </th>
+      <th>
+        Executor
+      </th>
+    </thead>
+    <tbody>
+    <tr  ng-repeat="exceptionalstep in exceptionalFlow.behavior.behaviors track by $index">
+      <td ng-hide="ctrl.isReturn(exceptionalstep)" class="header-td col-xs-2">
+        Step {{$index + 1}}
+      </td>
+      <td ng-show="ctrl.isReturn(exceptionalstep)" class="header-td col-xs-2">
+        Return
+      </td>
+      <td ng-if="ctrl.isTextualInStep(exceptionalstep)" class="col-xs-6">
+        {{exceptionalstep.behavior.description.data.text}}
+      </td>
+      <td ng-if="ctrl.isReferenceInStep(exceptionalstep)" class="col-xs-6">
+        {{ctrl.linearizeReference(exceptionalstep.behavior.description)}}
+      </td>
+      <td ng-if="ctrl.isReturn(exceptionalstep)" class="col-xs-6">
+        Return to step {{ctrl.returnsMap[exceptionalFlow.name]}}  of normal flow
+      </td>
+
+      <td>
+        {{gCtrl.formatToHtml(exceptionalstep.behavior.executor)}}
+      </td>
+
+      <td ng-if="ctrl.isReturn(exceptionalstep)">
+      </td>
+    </tr>
+    </tbody>
+    </table>
+
+    <p class="empty-message" ng-show="exceptionalFlow.length == 0">
+        No steps in exceptional flow...
+    </p>
+
+  </div>
+
+  <p class="empty-message" ng-show="ctrl.usecaseExceptionalFlows.length == 0">
+      No exceptional flows...
+  </p>
+
+  <hr />
+  <h2>Usecase referenced by:</h2>
+    <div ng-show="ctrl.referencesLoaded">
+    <table class="table table-hover" ng-hide="ctrl.references.length == 0">
+        <thead>
+        <th class="col-xs-4">
+        Entity name
+        </th>
+        <th>
+        Type
+        </th>
+        </thead>
+        <tr ng-repeat="reference in ctrl.references">
+        <td class="col-xs-4" ng-show="reference.type == 'usecase'">
+            <a ng-href="#/projects/{{gCtrl.currentProject}}/usecases/{{reference.name}}" ng-click="gCtrl.update()">
+            <button class="btn">
+            <span class="glyphicon glyphicon-info-sign"></span> {{gCtrl.formatToHtml(reference.name)}}
+            </button>
+            </a>
+        </td>
+        <td class="col-xs-4" ng-show="reference.type == 'concept'">
+            <a ng-href="#/projects/{{gCtrl.currentProject}}/concepts/{{reference.name}}" ng-click="gCtrl.update()">
+            <button class="btn">
+            <span class="glyphicon glyphicon-info-sign"></span> {{gCtrl.formatToHtml(reference.name)}}
+            </button>
+            </a>
+        </td>
+        <td class="col-xs-4" ng-show="reference.type == 'actor'">
+            <a ng-href="#/projects/{{gCtrl.currentProject}}/actors/{{reference.name}}" ng-click="gCtrl.update()">
+            <button class="btn">
+            <span class="glyphicon glyphicon-info-sign"></span> {{gCtrl.formatToHtml(reference.name)}}
+            </button>
+            </a>
+        </td>
+        <td class="central-td">
+        {{reference.type}}
+        </td>
+        </tr>
+    </table>
+    <p class="empty-message" ng-show="ctrl.references.length == 0">
+        There are no references to this use case...
+    </p>
+    </div>
+
+    <div ng-hide="ctrl.referencesLoaded">
+    <p class="empty-message" ng-show="ctrl.references.length == 0">
+        References to this use case could not be loaded...
+    </p>
+    </div>
+
+  </div>
+
+</div>

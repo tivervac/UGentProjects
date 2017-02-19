@@ -1,0 +1,37 @@
+<div class="custom-container" id="schedule">
+
+<h1>Schedule</h1>
+<table class="table table-hover" ng-hide="ctrl.tasks.length == 0">
+<thead>
+  <th ng-class="col-xs-4">
+    Task
+  </th>
+  <th class="col-xs-2">
+    Analyst
+  </th>
+  <th class="col-xs-2">
+    From
+  </th>
+  <th>
+    Till
+  </th>
+</thead>
+<tr ng-repeat="task in ctrl.tasks track by $index" >
+  <td ng-class="col-xs-4">
+    {{task.task.useCase}}
+  </td>
+  <td class="col-xs-2">
+    {{task.user.user.firstName}} {{task.user.user.lastName}}
+  </td>
+  <td class="col-xs-2">
+    {{ctrl.formatDate(task.startDate)}}
+  </td>
+  <td>
+   {{ctrl.formatDate(task.endDate)}}
+  </td>
+</tr>
+</table>
+<div ng-show="ctrl.tasks.length == 0">
+    You're Projectleader hasn't made a schedule yet.
+</div>
+</div>

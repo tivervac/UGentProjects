@@ -1,0 +1,43 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[dutch]{babel}
+\usepackage{url}
+\usepackage[latin1]{inputenc}
+\usepackage{fullpage}
+\usepackage{xspace}
+\usepackage{graphicx}
+
+\begin{document}
+
+\pagenumbering{roman}
+
+\title{Testhandleiding\\Vakoverschrijdend Project\\Groep 1}
+\author{Harm Delva\\ Mathias De Brouwer\\ Maxime Fern\'andez Alonso\\ Jens Spitaels\\ Casper Van Gheluwe\\ Steven Van Maldeghem\\ Titouan Vervack}
+\date{}
+\maketitle
+
+\pagenumbering{arabic}
+
+\section*{Dependencies}
+\begin{itemize}
+	\item Gradle - gebruikt om de code en tests te compileren
+	\item Java 8
+	\item PostgresSQL - gebruikt als testdatabank
+	\begin{itemize}
+		\item U kan zelf de databankconnectieparameters instellen. Dit kan op twee manieren:
+		\begin{itemize}
+			\item \textbf{Installatiescript:} Voer \texttt{python setup\_backend.py test\_context} uit en geef de gevraagde parameters in.
+			\item \textbf{Manueel:} Kopieer het bestand \texttt{spring\_test\_example.xml} naar \texttt{spring\_test.xml} en pas daarin de nodige parameters aan.
+		\end{itemize}
+		\item Alle tests worden volledig onafhankelijk van elkaar uitgevoerd; de tester moet zelf geen tabellen aanmaken of verwijderen. De databank wordt enkel aangesproken in de tests van de \texttt{Data Access Objects} zelf.
+	\end{itemize}
+\end{itemize}
+
+\section*{Uitvoeren}
+Na het installeren van \textbf{Gradle} en de \textbf{PostgreSQL} database kan u de tests uitvoeren door volgende commando's uit te voeren in de rootdirectory van het project:
+\begin{itemize}
+	\item op Unix-systemen: \texttt{gradle test}
+	\item op Windows-systemen: \texttt{gradlew.bat test}
+\end{itemize}
+\noindent Gradle zal automatisch alle andere libraries installeren, de code compileren en daarna de testen uitvoeren. Indien alle tests slagen, zal er \texttt{BUILD SUCCESS} verschijnen.
+\end{document}

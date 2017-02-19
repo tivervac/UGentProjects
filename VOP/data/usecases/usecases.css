@@ -1,0 +1,399 @@
+@charset "utf-8";
+
+body {
+    line-height: 115%;
+    font-family: Verdana;
+    font-size: 10pt;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 10pt 0pt;
+}
+
+li, table {
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+    margin-top: 10pt;
+    margin-bottom: 0pt;
+    line-height: 115%;
+    border-top-style: solid;
+    border-top-width: 3pt;
+    border-top-color: #4f81bd;
+    border-right-style: solid;
+    border-right-width: 3pt;
+    border-right-color: #4f81bd;
+    border-left-style: solid;
+    border-left-width: 3pt;
+    border-left-color: #4f81bd;
+    border-bottom-style: solid;
+    border-bottom-width: 3pt;
+    border-bottom-color: #4f81bd;
+    font-size: 11pt;
+    font-weight: bold;
+    letter-spacing: 0.75pt;
+    color: #ffffff;
+    background-color: #4f81bd;
+}
+
+h2 {
+    margin-top: 10pt;
+    margin-bottom: 0pt;
+    line-height: 115%;
+    border-top-style: solid;
+    border-top-width: 3pt;
+    border-top-color: #dbe5f1;
+    border-right-style: solid;
+    border-right-width: 3pt;
+    border-right-color: #dbe5f1;
+    border-left-style: solid;
+    border-left-width: 3pt;
+    border-left-color: #dbe5f1;
+    border-bottom-style: solid;
+    border-bottom-width: 3pt;
+    border-bottom-color: #dbe5f1;
+    font-size: 11pt;
+    font-weight: normal;
+    letter-spacing: 0.75pt;
+    background-color: #dbe5f1;
+}
+
+h3 {
+    margin-top: 15pt;
+    margin-bottom: 0pt;
+    line-height: 115%;
+    border-top-style: solid;
+    border-top-width: 0.75pt;
+    border-top-color: #4f81bd;
+    border-left-style: solid;
+    border-left-width: 0.75pt;
+    border-left-color: #4f81bd;
+    padding-top: 2pt;
+    padding-left: 2pt;
+    font-size: 11pt;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.75pt;
+    color: #243f60;
+}
+
+h4 {
+    margin-top: 15pt;
+    margin-bottom: 0pt;
+    line-height: 115%;
+    border-top-style: dotted;
+    border-top-width: 0.75pt;
+    border-top-color: #4f81bd;
+    border-left-style: dotted;
+    border-left-width: 0.75pt;
+    border-left-color: #4f81bd;
+    padding-top: 2pt;
+    padding-left: 2pt;
+    font-size: 11pt;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+    color: #365f91;
+}
+
+h5 {
+    margin-top: 15pt;
+    margin-bottom: 0pt;
+    line-height: 115%;
+    border-bottom-style: solid;
+    border-bottom-width: 0.75pt;
+    border-bottom-color: #4f81bd;
+    padding-bottom: 1pt;
+    font-size: 11pt;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+    color: #365f91;
+}
+
+h6 {
+    margin-top: 15pt;
+    margin-bottom: 0pt;
+    line-height: 115%;
+    border-bottom-style: dotted;
+    border-bottom-width: 0.75pt;
+    border-bottom-color: #4f81bd;
+    padding-bottom: 1pt;
+    font-size: 11pt;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+    color: #365f91;
+}
+
+.Heading7 {
+    margin-top: 15pt;
+    margin-bottom: 0pt;
+    line-height: 115%;
+    font-size: 11pt;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+    color: #365f91;
+}
+
+.Heading8 {
+    margin-top: 15pt;
+    margin-bottom: 0pt;
+    line-height: 115%;
+    font-size: 9pt;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+}
+
+.Heading9 {
+    margin-top: 15pt;
+    margin-bottom: 0pt;
+    line-height: 115%;
+    font-size: 9pt;
+    font-weight: normal;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+}
+
+.Caption {
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+    line-height: 115%;
+    font-size: 8pt;
+    font-weight: bold;
+    color: #365f91;
+}
+
+.Footer {
+    margin-top: 0pt;
+    margin-bottom: 0pt;
+    line-height: normal;
+    font-size: 10pt;
+}
+
+.Header {
+    margin-top: 0pt;
+    margin-bottom: 0pt;
+    line-height: normal;
+    font-size: 10pt;
+}
+
+.IntenseQuote {
+    margin: 10pt 57.6pt 0pt 64.8pt;
+    text-align: justify;
+    line-height: 115%;
+    border-top-style: solid;
+    border-top-width: 0.75pt;
+    border-top-color: #4f81bd;
+    border-left-style: solid;
+    border-left-width: 0.75pt;
+    border-left-color: #4f81bd;
+    padding-top: 10pt;
+    padding-left: 10pt;
+    font-size: 10pt;
+    font-style: italic;
+    color: #4f81bd;
+}
+
+.ListParagraph {
+    margin-top: 10pt;
+    margin-left: 36pt;
+    margin-bottom: 10pt;
+    line-height: 115%;
+    font-size: 10pt;
+}
+
+.NoSpacing {
+    margin-top: 0pt;
+    margin-bottom: 0pt;
+    line-height: normal;
+    font-size: 10pt;
+}
+
+.Quote {
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+    line-height: 115%;
+    font-size: 10pt;
+    font-style: italic;
+}
+
+.Subtitle {
+    margin-top: 10pt;
+    margin-bottom: 50pt;
+    line-height: normal;
+    font-size: 12pt;
+    letter-spacing: 0.5pt;
+    color: #595959;
+}
+
+.TOCHeading {
+    margin-top: 10pt;
+    margin-bottom: 0pt;
+    line-height: 115%;
+    border-top-style: solid;
+    border-top-width: 3pt;
+    border-top-color: #4f81bd;
+    border-right-style: solid;
+    border-right-width: 3pt;
+    border-right-color: #4f81bd;
+    border-left-style: solid;
+    border-left-width: 3pt;
+    border-left-color: #4f81bd;
+    border-bottom-style: solid;
+    border-bottom-width: 3pt;
+    border-bottom-color: #4f81bd;
+    font-size: 11pt;
+    font-weight: bold;
+    letter-spacing: 0.75pt;
+    color: #ffffff;
+    background-color: #4f81bd;
+}
+
+.Title {
+    margin-top: 36pt;
+    margin-bottom: 10pt;
+    line-height: 115%;
+    font-size: 26pt;
+    font-weight: bold;
+    letter-spacing: 0.5pt;
+    color: #4f81bd;
+}
+
+span.BookTitle {
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 0.45pt;
+}
+
+span.Emphasis {
+    text-transform: uppercase;
+    letter-spacing: 0.25pt;
+    color: #243f60;
+}
+
+span.FooterChar {
+    font-size: 10pt;
+}
+
+span.HeaderChar {
+    font-size: 10pt;
+}
+
+span.Heading1Char {
+    font-weight: bold;
+    letter-spacing: 0.75pt;
+    color: #ffffff;
+    background-color: #4f81bd;
+}
+
+span.Heading2Char {
+    letter-spacing: 0.75pt;
+    background-color: #dbe5f1;
+}
+
+span.Heading3Char {
+    text-transform: uppercase;
+    letter-spacing: 0.75pt;
+    color: #243f60;
+}
+
+span.Heading4Char {
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+    color: #365f91;
+}
+
+span.Heading5Char {
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+    color: #365f91;
+}
+
+span.Heading6Char {
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+    color: #365f91;
+}
+
+span.Heading7Char {
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+    color: #365f91;
+}
+
+span.Heading8Char {
+    font-size: 9pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+}
+
+span.Heading9Char {
+    font-size: 9pt;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+}
+
+span.IntenseEmphasis {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+    color: #243f60;
+}
+
+span.IntenseQuoteChar {
+    font-size: 10pt;
+    font-style: italic;
+    color: #4f81bd;
+}
+
+span.IntenseReference {
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #4f81bd;
+}
+
+span.NoSpacingChar {
+    font-size: 10pt;
+}
+
+span.QuoteChar {
+    font-size: 10pt;
+    font-style: italic;
+}
+
+span.Strong {
+    font-weight: bold;
+}
+
+span.SubtitleChar {
+    font-size: 12pt;
+    letter-spacing: 0.5pt;
+    color: #595959;
+}
+
+span.SubtleEmphasis {
+    font-style: italic;
+    color: #243f60;
+}
+
+span.SubtleReference {
+    font-weight: bold;
+    color: #4f81bd;
+}
+
+span.TitleChar {
+    font-size: 26pt;
+    font-weight: bold;
+    letter-spacing: 0.5pt;
+    color: #4f81bd;
+}
